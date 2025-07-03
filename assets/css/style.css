@@ -1723,3 +1723,13 @@ body[data-theme="dark"] {
     z-index: 1;
     max-width: 420px;
 }
+
+.nitech-logo {
+  height: 44px;
+  margin-left: 18px;
+  vertical-align: middle;
+  /* Optional: add a little border-radius for a softer look */
+  border-radius: 6px;
+  /* Prevent logo from shrinking too much on small screens */
+  max-width: 120px;
+}
