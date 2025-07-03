@@ -1,0 +1,686 @@
+# Updated AI Bot Block List - January 2025
+# Based on latest research from multiple sources including:
+# - Cloudflare's AI Bot monitoring
+# - Dark Visitors database
+# - Ahrefs research on 140M+ websites
+# - Perishable Press Ultimate AI Block List
+# - Various security and SEO research
+
+# OpenAI - ChatGPT, GPT models
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: ChatGPT-User/2.0
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Anthropic - Claude
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Google AI - Gemini, Bard (separate from regular search)
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Google-CloudVertexBot
+Disallow: /
+
+User-agent: GoogleOther
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Perplexity-User
+Disallow: /
+
+# Mistral AI
+User-agent: MistralAI-User
+Disallow: /
+
+# Meta/Facebook AI
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# ByteDance (TikTok) - Doubao AI
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Doubao
+Disallow: /
+
+# Amazon AI
+User-agent: Amazonbot
+Disallow: /
+
+# Apple AI
+User-agent: Applebot-Extended
+Disallow: /
+
+# Microsoft Bing AI (Copilot)
+User-agent: BingAI
+Disallow: /
+
+User-agent: bingbot-chat
+Disallow: /
+
+# Common Crawl (used by many AI models)
+User-agent: CCBot
+Disallow: /
+
+User-agent: CC-Crawler
+Disallow: /
+
+User-agent: CommonCrawl
+Disallow: /
+
+User-agent: Common Crawl
+Disallow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Disallow: /
+
+# You.com AI Search
+User-agent: YouBot
+Disallow: /
+
+# Diffbot
+User-agent: Diffbot
+Disallow: /
+
+# AI2 (Allen Institute)
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Ai2Bot-Dolma
+Disallow: /
+
+# Other AI/ML bots
+User-agent: omgili
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Webzio
+Disallow: /
+
+User-agent: Webzio-Extended
+Disallow: /
+
+User-agent: DuckAssistBot
+Disallow: /
+
+User-agent: TimpiBot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: KomoBot
+Disallow: /
+
+User-agent: Kangaroo Bot
+Disallow: /
+
+# Huawei AI
+User-agent: PanguBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# Various AI content and writing tools
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: AIBot
+Disallow: /
+
+User-agent: AI21Labs
+Disallow: /
+
+User-agent: AISearchBot
+Disallow: /
+
+User-agent: AI Article Writer
+Disallow: /
+
+User-agent: AI Content Detector
+Disallow: /
+
+User-agent: AI Dungeon
+Disallow: /
+
+User-agent: AI Search Engine
+Disallow: /
+
+User-agent: AI SEO Crawler
+Disallow: /
+
+User-agent: AI Writer
+Disallow: /
+
+User-agent: AIMatrix
+Disallow: /
+
+User-agent: AI Training
+Disallow: /
+
+User-agent: AITraining
+Disallow: /
+
+User-agent: Agentic
+Disallow: /
+
+User-agent: Alpha AI
+Disallow: /
+
+User-agent: AlphaAI
+Disallow: /
+
+User-agent: Automated Writer
+Disallow: /
+
+User-agent: BardBot
+Disallow: /
+
+User-agent: Brave Leo
+Disallow: /
+
+User-agent: CatBoost
+Disallow: /
+
+User-agent: ChatGLM
+Disallow: /
+
+User-agent: Chinchilla
+Disallow: /
+
+User-agent: ClearScope
+Disallow: /
+
+User-agent: Content Harmony
+Disallow: /
+
+User-agent: Content King
+Disallow: /
+
+User-agent: Content Optimizer
+Disallow: /
+
+User-agent: Content Samurai
+Disallow: /
+
+User-agent: ContentAtScale
+Disallow: /
+
+User-agent: ContentBot
+Disallow: /
+
+User-agent: Contentedge
+Disallow: /
+
+User-agent: Conversion AI
+Disallow: /
+
+User-agent: Copilot
+Disallow: /
+
+User-agent: CopyAI
+Disallow: /
+
+User-agent: Copymatic
+Disallow: /
+
+User-agent: Copyscape
+Disallow: /
+
+User-agent: CrawlQ AI
+Disallow: /
+
+User-agent: Crew AI
+Disallow: /
+
+User-agent: CrewAI
+Disallow: /
+
+User-agent: DALL-E
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: DeepAI
+Disallow: /
+
+User-agent: DeepL
+Disallow: /
+
+User-agent: DeepMind
+Disallow: /
+
+User-agent: DeepSeek
+Disallow: /
+
+User-agent: Falcon
+Disallow: /
+
+User-agent: Firecrawl
+Disallow: /
+
+User-agent: Frase AI
+Disallow: /
+
+User-agent: FriendlyCrawler
+Disallow: /
+
+User-agent: Gemini
+Disallow: /
+
+User-agent: Gemma
+Disallow: /
+
+User-agent: GenAI
+Disallow: /
+
+User-agent: Genspark
+Disallow: /
+
+User-agent: GLM
+Disallow: /
+
+User-agent: GPT
+Disallow: /
+
+User-agent: Grammarly
+Disallow: /
+
+User-agent: Grok
+Disallow: /
+
+User-agent: GTBot
+Disallow: /
+
+User-agent: GT Bot
+Disallow: /
+
+User-agent: Hugging Face
+Disallow: /
+
+User-agent: HuggingFace
+Disallow: /
+
+User-agent: Hypotenuse AI
+Disallow: /
+
+User-agent: iaskspider
+Disallow: /
+
+User-agent: ICC-Crawler
+Disallow: /
+
+User-agent: ImageGen
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+User-agent: Inferkit
+Disallow: /
+
+User-agent: JasperAI
+Disallow: /
+
+User-agent: Kafkai
+Disallow: /
+
+User-agent: Knowledge
+Disallow: /
+
+User-agent: LLaMA
+Disallow: /
+
+User-agent: LLMs
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: MarketMuse
+Disallow: /
+
+User-agent: Meltwater
+Disallow: /
+
+User-agent: Meta AI
+Disallow: /
+
+User-agent: Meta-AI
+Disallow: /
+
+User-agent: MetaAI
+Disallow: /
+
+User-agent: Mistral
+Disallow: /
+
+User-agent: NeevaBot
+Disallow: /
+
+User-agent: Neural Text
+Disallow: /
+
+User-agent: NeuralSEO
+Disallow: /
+
+User-agent: Nova Act
+Disallow: /
+
+User-agent: Open AI
+Disallow: /
+
+User-agent: OpenAI
+Disallow: /
+
+User-agent: OpenBot
+Disallow: /
+
+User-agent: Operator
+Disallow: /
+
+User-agent: Outwrite
+Disallow: /
+
+User-agent: Page Analyzer AI
+Disallow: /
+
+User-agent: Paperlibot
+Disallow: /
+
+User-agent: Paraphraser.io
+Disallow: /
+
+User-agent: Perplexity
+Disallow: /
+
+User-agent: Phindbot
+Disallow: /
+
+User-agent: PiplBot
+Disallow: /
+
+User-agent: ProWritingAid
+Disallow: /
+
+User-agent: QuillBot
+Disallow: /
+
+User-agent: RobotSpider
+Disallow: /
+
+User-agent: Rytr
+Disallow: /
+
+User-agent: SaplingAI
+Disallow: /
+
+User-agent: Scalenut
+Disallow: /
+
+User-agent: Scraper
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: SEO Content Machine
+Disallow: /
+
+User-agent: SEO Robot
+Disallow: /
+
+User-agent: Sentibot
+Disallow: /
+
+User-agent: Simplified AI
+Disallow: /
+
+User-agent: Sitefinity
+Disallow: /
+
+User-agent: Sonic
+Disallow: /
+
+User-agent: Spin Rewriter
+Disallow: /
+
+User-agent: Spinbot
+Disallow: /
+
+User-agent: Stability
+Disallow: /
+
+User-agent: StableDiffusionBot
+Disallow: /
+
+User-agent: Sudowrite
+Disallow: /
+
+User-agent: Super Agent
+Disallow: /
+
+User-agent: Surfer AI
+Disallow: /
+
+User-agent: Text Blaze
+Disallow: /
+
+User-agent: TextCortex
+Disallow: /
+
+User-agent: The Knowledge AI
+Disallow: /
+
+User-agent: Vidnami AI
+Disallow: /
+
+User-agent: Whisper
+Disallow: /
+
+User-agent: WordAI
+Disallow: /
+
+User-agent: Wordtune
+Disallow: /
+
+User-agent: WPBot
+Disallow: /
+
+User-agent: Writecream
+Disallow: /
+
+User-agent: WriterZen
+Disallow: /
+
+User-agent: Writescope
+Disallow: /
+
+User-agent: Writesonic
+Disallow: /
+
+User-agent: xAI
+Disallow: /
+
+User-agent: xBot
+Disallow: /
+
+User-agent: Zero GTP
+Disallow: /
+
+User-agent: Zerochat
+Disallow: /
+
+User-agent: Zhipu
+Disallow: /
+
+User-agent: Zimm
+Disallow: /
+
+# Generic AI-related crawlers
+User-agent: .ai
+Disallow: /
+
+User-agent: bot*
+Disallow: /
+
+User-agent: *bot
+Disallow: /
+
+User-agent: crawl
+Disallow: /
+
+User-agent: scanner
+Disallow: /
+
+User-agent: Unknown robot (identified by hit on robots.txt)
+Disallow: /
+
+User-agent: 360Spider
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: link
+Disallow: /
+
+User-agent: feed
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Go-http-client
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Yandex ( catchall )
+Disallow: /
+
+User-agent: Dalvik
+Disallow: /
+
+User-agent: Barkrowler
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: nbot
+Disallow: /
+
+User-agent: Sogou web spider
+Disallow: /
+
+# Additional bots from ai-robots-txt/ai.robots.txt (GitHub) - fetched recently
+User-agent: aiHitBot
+Disallow: /
+
+User-agent: Brightbot 1.0
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: Claude-User
+Disallow: /
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+User-agent: Cotoyogi
+Disallow: /
+
+User-agent: Crawlspace
+Disallow: /
+
+User-agent: Factset_spyderbot
+Disallow: /
+
+User-agent: FirecrawlAgent
+Disallow: /
+
+User-agent: GoogleOther-Image
+Disallow: /
+
+User-agent: GoogleOther-Video
+Disallow: /
+
+User-agent: imgproxy
+Disallow: /
+
+User-agent: ISSCyberRiskCrawler
+Disallow: /
+
+User-agent: QualifiedBot
+Disallow: /
+
+User-agent: SemrushBot-OCOB
+Disallow: /
+
+User-agent: SemrushBot-SWA
+Disallow: /
+
+User-agent: Sidetrade indexer bot
+Disallow: /
+
+User-agent: TikTokSpider
+Disallow: /
+
+User-agent: VelenPublicWebCrawler
+Disallow: /
+
+# Disallow empty user agent string
+User-agent:
+Disallow: /
+
+# Allow all other bots (legitimate search engines and crawlers)
+User-agent: *
+Allow: /

@@ -1,0 +1,1578 @@
+sets:
+  - id: 1
+    name: "Practice Set 1 - Introduction to Programming, Algorithm and Flowcharts (20 marks)"
+    duration_minutes: 45
+    questions:
+      - text: "What is the primary purpose of an algorithm?"
+        choices:
+          A: "To draw pictures"
+          B: "To provide step-by-step instructions to solve a problem"
+          C: "To write poetry"
+          D: "To compile code"
+        answer: "B"
+        explanation: "An algorithm provides step-by-step instructions to solve a problem."
+        topic: "Introduction to Programming, Algorithm and Flowcharts to solve problems"
+
+      - text: "Which of the following is not a characteristic of a good algorithm?"
+        choices:
+          A: "Unambiguous"
+          B: "Finite"
+          C: "Infinite loops"
+          D: "Well-defined inputs and outputs"
+        answer: "C"
+        explanation: "A good algorithm should not have infinite loops."
+
+      - text: "What symbol is used for decision-making in a flowchart?"
+        choices:
+          A: "Rectangle"
+          B: "Oval"
+          C: "Diamond"
+          D: "Circle"
+        answer: "C"
+        explanation: "A diamond symbol is used for decision-making in flowcharts."
+
+      - text: "What does a rectangle represent in a flowchart?"
+        choices:
+          A: "Start or End"
+          B: "Input/Output"
+          C: "Decision"
+          D: "Process or Operation"
+        answer: "D"
+        explanation: "A rectangle represents a process or operation in a flowchart."
+
+      - text: "Which shape represents the start or end of a flowchart?"
+        choices:
+          A: "Oval"
+          B: "Diamond"
+          C: "Parallelogram"
+          D: "Square"
+        answer: "A"
+        explanation: "An oval shape is used for the start or end (terminator) in a flowchart."
+
+      - text: "In flowcharts, arrows are used to:"
+        choices:
+          A: "Show processing steps"
+          B: "Indicate flow of control"
+          C: "Indicate data types"
+          D: "Connect to databases"
+        answer: "B"
+        explanation: "Arrows indicate the flow of control or direction of process in a flowchart."
+
+      - text: "What is the main advantage of using flowcharts in programming?"
+        choices:
+          A: "They speed up typing"
+          B: "They make code look fancy"
+          C: "They visually represent the logic and flow of an algorithm"
+          D: "They replace code entirely"
+        answer: "C"
+        explanation: "Flowcharts help programmers visualize the logic and flow of an algorithm, making it easier to understand and debug."
+
+      - text: "What is an algorithm?"
+        choices:
+          A: "A programming language"
+          B: "A hardware device"
+          C: "A step-by-step procedure to solve a problem"
+          D: "A type of loop"
+        answer: "C"
+        explanation: "An algorithm is a step-by-step procedure to solve a problem."
+
+      - text: "In a flowchart, a parallelogram represents:"
+        choices:
+          A: "Input/Output"
+          B: "Decision"
+          C: "Loop"
+          D: "Process"
+        answer: "A"
+        explanation: "A parallelogram represents input or output operations in a flowchart."
+
+      - text: "What symbol in a flowchart denotes the start or end?"
+        choices:
+          A: "Circle"
+          B: "Rectangle"
+          C: "Oval"
+          D: "Hexagon"
+        answer: "C"
+        explanation: "An oval denotes the start or end (terminator) in a flowchart."
+
+      - text: "Which of the following is a property of a good algorithm?"
+        choices:
+          A: "Infinite loop"
+          B: "Ambiguous steps"
+          C: "Finite steps"
+          D: "Undefined inputs"
+        answer: "C"
+        explanation: "A good algorithm has a finite number of steps."
+
+      - text: "In flowcharts, arrows are used to:"
+        choices:
+          A: "Connect components"
+          B: "Represent output"
+          C: "Store data"
+          D: "Show direction of flow"
+        answer: "D"
+        explanation: "Arrows show the direction of flow in a flowchart."
+
+      - text: "A rectangle in a flowchart represents:"
+        choices:
+          A: "Input/Output"
+          B: "Process"
+          C: "Loop"
+          D: "Terminator"
+        answer: "B"
+        explanation: "A rectangle represents a process or operation in a flowchart."
+
+      - text: "What is the first step in designing an algorithm?"
+        choices:
+          A: "Write the code"
+          B: "Identify the problem"
+          C: "Debug the solution"
+          D: "Draw a flowchart"
+        answer: "B"
+        explanation: "The first step in designing an algorithm is to identify the problem to be solved."
+
+      - text: "Which algorithmic approach does a recursive function represent?"
+        choices:
+          A: "Iterative"
+          B: "Top-down"
+          C: "Bottom-up"
+          D: "Randomized"
+        answer: "B"
+        explanation: "Recursive functions typically use a top-down approach, breaking problems into subproblems."
+
+      - text: "What is the main idea behind the Divide and Conquer algorithm?"
+        choices:
+          A: "Solve recursively and merge"
+          B: "Brute force all solutions"
+          C: "Use dynamic memory"
+          D: "Avoid recursion"
+        answer: "A"
+        explanation: "Divide and Conquer solves problems by dividing them into subproblems, solving recursively, and merging results."
+
+      - text: "In which algorithm is the array divided into smaller subarrays and sorted individually?"
+        choices:
+          A: "Bubble Sort"
+          B: "Merge Sort"
+          C: "Insertion Sort"
+          D: "Selection Sort"
+        answer: "B"
+        explanation: "Merge Sort divides the array into subarrays, sorts them, and merges the results."
+
+      - text: "Which sorting algorithm has the best average-case performance?"
+        choices:
+          A: "Bubble Sort"
+          B: "Merge Sort"
+          C: "Quick Sort"
+          D: "Selection Sort"
+        answer: "C"
+        explanation: "Quick Sort generally has the best average-case performance among common sorting algorithms."
+
+      - text: "Which data structure is used in Depth-First Search (DFS)?"
+        choices:
+          A: "Queue"
+          B: "Stack"
+          C: "Heap"
+          D: "Set"
+        answer: "B"
+        explanation: "DFS uses a stack data structure, either explicitly or via recursion."
+
+      - text: "What is memoization?"
+        choices:
+          A: "Storing data on disk"
+          B: "Caching results of expensive function calls"
+          C: "Encrypting variables"
+          D: "Loop unrolling"
+        answer: "B"
+        explanation: "Memoization is caching results of expensive function calls to avoid redundant computation."
+
+      - text: "Which of the following are characteristics of a good algorithm?"
+        type: "multiple"
+        choices:
+          A: "Unambiguous steps"
+          B: "Finite number of steps"
+          C: "Well-defined inputs and outputs"
+          D: "Efficient in terms of time and space"
+        answer: ["A", "B", "C", "D"]
+        explanation: "A good algorithm is unambiguous, finite, well-defined, and efficient."
+        topic: "Algorithm"
+
+      - text: "Which of the following are valid flowchart symbols?"
+        type: "multiple"
+        choices:
+          A: "Oval for Start/End"
+          B: "Rectangle for Process"
+          C: "Diamond for Decision"
+          D: "Parallelogram for Input/Output"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are standard flowchart symbols."
+        topic: "Flowcharts"
+
+      - text: "Which of the following are valid properties of algorithms?"
+        type: "multiple"
+        choices:
+          A: "Definiteness"
+          B: "Input"
+          C: "Output"
+          D: "Finiteness"
+        answer: ["A", "B", "C", "D"]
+        explanation: "Definiteness, input, output, and finiteness are all properties of algorithms."
+        topic: "Algorithm"
+
+      - text: "Which of the following are valid uses of flowcharts in programming?"
+        type: "multiple"
+        choices:
+          A: "Visualizing program logic"
+          B: "Debugging algorithms"
+          C: "Documenting code structure"
+          D: "Replacing source code"
+        answer: ["A", "B", "C"]
+        explanation: "Flowcharts are for visualization, debugging, and documentation, not for replacing code."
+        topic: "Flowcharts"
+
+      - text: "Which of the following are valid algorithmic problem-solving strategies?"
+        type: "multiple"
+        choices:
+          A: "Divide and Conquer"
+          B: "Greedy Method"
+          C: "Dynamic Programming"
+          D: "Random Guessing"
+        answer: ["A", "B", "C"]
+        explanation: "Divide and conquer, greedy, and dynamic programming are valid; random guessing is not."
+        topic: "Algorithm"
+
+      - text: "Which of the following are valid steps in the problem-solving process?"
+        type: "multiple"
+        choices:
+          A: "Understanding the problem"
+          B: "Designing an algorithm"
+          C: "Implementing the solution"
+          D: "Testing and debugging"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are steps in problem-solving."
+        topic: "Problem Solving"
+
+      - text: "Which of the following are valid types of control structures in algorithms?"
+        type: "multiple"
+        choices:
+          A: "Sequence"
+          B: "Selection"
+          C: "Iteration"
+          D: "Recursion"
+        answer: ["A", "B", "C", "D"]
+        explanation: "Sequence, selection, iteration, and recursion are all control structures."
+        topic: "Algorithm"
+
+      - text: "Which of the following are valid characteristics of recursive algorithms?"
+        type: "multiple"
+        choices:
+          A: "Base case"
+          B: "Recursive case"
+          C: "Infinite loop"
+          D: "Reduction step"
+        answer: ["A", "B", "D"]
+        explanation: "Base case, recursive case, and reduction step are valid; infinite loop is not."
+        topic: "Algorithm"
+
+      - text: "Which of the following are valid uses of pseudocode in programming?"
+        type: "multiple"
+        choices:
+          A: "Expressing algorithms in plain language"
+          B: "Planning program logic before coding"
+          C: "Documenting code for others"
+          D: "Compiling directly to machine code"
+        answer: ["A", "B", "C"]
+        explanation: "Pseudocode is for planning and documentation, not for direct compilation."
+        topic: "Algorithm"
+
+      - text: "Which of the following are valid types of sorting algorithms?"
+        type: "multiple"
+        choices:
+          A: "Bubble Sort"
+          B: "Merge Sort"
+          C: "Quick Sort"
+          D: "Random Sort"
+        answer: ["A", "B", "C"]
+        explanation: "Bubble, merge, and quick sort are valid; random sort is not a standard algorithm."
+        topic: "Algorithm"
+
+  - id: 2
+    name: "Practice Set 2 - Introduction to Python, Operators, Expressions and Python Statements, Sequence data types (30 marks)"
+    duration_minutes: 60
+    questions:
+      - text: "What is Python?"
+        choices:
+          A: "A snake species"
+          B: "A high-level programming language"
+          C: "A database system"
+          D: "An operating system"
+        answer: "B"
+        explanation: "Python is a high-level programming language used for general-purpose programming."
+
+      - text: "Which of the following is a Python data type?"
+        choices:
+          A: "int"
+          B: "variable"
+          C: "function"
+          D: "loop"
+        answer: "A"
+        explanation: "'int' is a built-in data type in Python representing integers."
+
+      - text: "What is the output of print(2 + 3)?"
+        choices:
+          A: "2 + 3"
+          B: "5"
+          C: "23"
+          D: "Error"
+        answer: "B"
+        explanation: "2 + 3 evaluates to 5 in Python."
+
+      - text: "Which operator is used for exponentiation in Python?"
+        choices:
+          A: "^"
+          B: "**"
+          C: "pow"
+          D: "exp"
+        answer: "B"
+        explanation: "'**' is the exponentiation operator in Python."
+
+      - text: "What is the result of 10 // 3?"
+        choices:
+          A: "3.333..."
+          B: "3"
+          C: "3.0"
+          D: "Error"
+        answer: "B"
+        explanation: "'//' is integer division; 10 // 3 gives 3."
+
+      - text: "Which of the following is a valid Python variable name?"
+        choices:
+          A: "2name"
+          B: "name2"
+          C: "my-name"
+          D: "class"
+        answer: "B"
+        explanation: "Variable names cannot start with a digit, contain hyphens, or be reserved keywords. 'name2' is valid."
+
+      - text: "What is the output of print('Hello' * 3)?"
+        choices:
+          A: "HelloHelloHello"
+          B: "Hello 3"
+          C: "Error"
+          D: "Hello Hello Hello"
+        answer: "A"
+        explanation: "Multiplying a string by 3 repeats it three times."
+
+      - text: "Which data structure is mutable in Python?"
+        choices:
+          A: "Tuple"
+          B: "List"
+          C: "String"
+          D: "Integer"
+        answer: "B"
+        explanation: "Lists are mutable, meaning their contents can be changed."
+
+      - text: "What is the output of len([1, 2, 3, 4])?"
+        choices:
+          A: "4"
+          B: "10"
+          C: "Error"
+          D: "1,2,3,4"
+        answer: "A"
+        explanation: "len() returns the number of elements in the list, which is 4."
+
+      - text: "Which method is used to add an element to a list?"
+        choices:
+          A: "add()"
+          B: "append()"
+          C: "insert()"
+          D: "push()"
+        answer: "B"
+        explanation: "The append() method adds an element to the end of a list."
+
+      - text: "What is the output of 'hello'.upper()?"
+        choices:
+          A: "HELLO"
+          B: "Hello"
+          C: "hello"
+          D: "Error"
+        answer: "A"
+        explanation: "The upper() method converts all characters to uppercase."
+
+      - text: "Which operator is used for string concatenation?"
+        choices:
+          A: "+"
+          B: "&"
+          C: "."
+          D: "|"
+        answer: "A"
+        explanation: "The '+' operator joins two strings together."
+
+      - text: "What is the output of print(type(3.14))?"
+        choices:
+          A: "<class 'int'>"
+          B: "<class 'float'>"
+          C: "<class 'number'>"
+          D: "<class 'decimal'>"
+        answer: "B"
+        explanation: "3.14 is a floating-point number, so its type is float."
+
+      - text: "Which function is used to get user input in Python?"
+        choices:
+          A: "input()"
+          B: "get()"
+          C: "read()"
+          D: "scanf()"
+        answer: "A"
+        explanation: "input() reads a line from user input as a string."
+
+      - text: "What is the output of print(bool(0))?"
+        choices:
+          A: "True"
+          B: "False"
+          C: "0"
+          D: "Error"
+        answer: "B"
+        explanation: "0 is considered False in Python."
+
+      - text: "Which method is used to remove an element from a list?"
+        choices:
+          A: "delete()"
+          B: "remove()"
+          C: "pop()"
+          D: "clear()"
+        answer: "B"
+        explanation: "remove() deletes the first occurrence of a value from a list."
+
+      - text: "What is the output of print(2 == '2')?"
+        choices:
+          A: "True"
+          B: "False"
+          C: "Error"
+          D: "2"
+        answer: "B"
+        explanation: "2 is an integer and '2' is a string, so they are not equal."
+
+      - text: "Which operator is used for logical AND?"
+        choices:
+          A: "&&"
+          B: "and"
+          C: "&"
+          D: "AND"
+        answer: "B"
+        explanation: "'and' is the logical AND operator in Python."
+
+      - text: "What is the output of print(not True)?"
+        choices:
+          A: "True"
+          B: "False"
+          C: "None"
+          D: "Error"
+        answer: "B"
+        explanation: "not True evaluates to False."
+
+      - text: "Which data structure stores key-value pairs?"
+        choices:
+          A: "List"
+          B: "Tuple"
+          C: "Dictionary"
+          D: "Set"
+        answer: "C"
+        explanation: "A dictionary stores data as key-value pairs."
+
+      - text: "What is the output of print([1, 2, 3] + [4, 5])?"
+        choices:
+          A: "[1, 2, 3, 4, 5]"
+          B: "[5, 7]"
+          C: "Error"
+          D: "[1, 2, 3][4, 5]"
+        answer: "A"
+        explanation: "Adding two lists with '+' concatenates them."
+
+      - text: "Which method is used to find the index of an element in a list?"
+        choices:
+          A: "find()"
+          B: "index()"
+          C: "search()"
+          D: "locate()"
+        answer: "B"
+        explanation: "index() returns the position of the first occurrence of a value."
+
+      - text: "What is the output of print('hello' in 'hello world')?"
+        choices:
+          A: "True"
+          B: "False"
+          C: "Error"
+          D: "hello"
+        answer: "A"
+        explanation: "'in' checks if a substring exists within a string."
+
+      - text: "Which function is used to convert a string to an integer?"
+        choices:
+          A: "int()"
+          B: "str()"
+          C: "float()"
+          D: "convert()"
+        answer: "A"
+        explanation: "int() converts a string or number to an integer."
+
+      - text: "What is the output of print(round(3.7))?"
+        choices:
+          A: "3"
+          B: "4"
+          C: "3.7"
+          D: "Error"
+        answer: "B"
+        explanation: "round(3.7) rounds the number to the nearest integer, which is 4."
+
+      - text: "Which operator is used for membership testing?"
+        choices:
+          A: "in"
+          B: "contains"
+          C: "member"
+          D: "has"
+        answer: "A"
+        explanation: "The 'in' operator checks if a value exists within a sequence, such as a list or string."
+
+      - text: "What is the output of print(max([1, 5, 3, 9, 2]))?"
+        choices:
+          A: "1"
+          B: "9"
+          C: "20"
+          D: "Error"
+        answer: "B"
+        explanation: "The max() function returns the largest value in the list, which is 9."
+
+      - text: "Which method is used to sort a list in ascending order?"
+        choices:
+          A: "sort()"
+          B: "order()"
+          C: "arrange()"
+          D: "organize()"
+        answer: "A"
+        explanation: "The sort() method arranges the elements of a list in ascending order."
+
+      - text: "What is the output of print('abc' * 2)?"
+        choices:
+          A: "abcabc"
+          B: "abc 2"
+          C: "Error"
+          D: "abc abc"
+        answer: "A"
+        explanation: "Multiplying a string by 2 repeats the string twice, resulting in 'abcabc'."
+
+      - text: "Which data structure is immutable?"
+        choices:
+          A: "List"
+          B: "Dictionary"
+          C: "Tuple"
+          D: "Set"
+        answer: "C"
+        explanation: "A tuple is an immutable data structure, meaning its contents cannot be changed after creation."
+
+      - text: "What is the output of print(len('Python'))?"
+        choices:
+          A: "6"
+          B: "Python"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "The len() function returns the number of characters in the string 'Python', which is 6."
+
+      - text: "Which method is used to convert a string to uppercase?"
+        choices:
+          A: "upper()"
+          B: "uppercase()"
+          C: "toUpper()"
+          D: "capitalize()"
+        answer: "A"
+        explanation: "The upper() method converts all characters in a string to uppercase."
+
+      - text: "What is the output of print(min([5, 2, 8, 1]))?"
+        choices:
+          A: "1"
+          B: "8"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "The min() function returns the smallest value in the list, which is 1."
+
+      - text: "Which of the following are Python data types?"
+        type: "multiple"
+        choices:
+          A: "int"
+          B: "float"
+          C: "str"
+          D: "list"
+        answer: ["A", "B", "C", "D"]
+        explanation: "int, float, str, and list are all built-in data types in Python."
+
+      - text: "Which of the following are valid Python operators?"
+        type: "multiple"
+        choices:
+          A: "+"
+          B: "-"
+          C: "*"
+          D: "/"
+        answer: ["A", "B", "C", "D"]
+        explanation: "+, -, *, and / are all valid arithmetic operators in Python."
+
+      - text: "Which of the following statements about Python's dynamic typing are true in real-world scenarios?"
+        type: "multiple"
+        choices:
+          A: "Variable types can change at runtime"
+          B: "Type errors can occur only at runtime"
+          C: "You must declare variable types explicitly"
+          D: "It allows for rapid prototyping"
+        answer: ["A", "B", "D"]
+        explanation: "Python's dynamic typing allows variable types to change and type errors to occur at runtime, aiding rapid prototyping."
+        topic: "Python Basics"
+
+      - text: "Which of the following are valid ways to create a list in Python?"
+        type: "multiple"
+        choices:
+          A: "list1 = [1, 2, 3]"
+          B: "list2 = list((1, 2, 3))"
+          C: "list3 = 1, 2, 3"
+          D: "list4 = list([1, 2, 3])"
+        answer: ["A", "B", "D"]
+        explanation: "A, B, and D are valid; C creates a tuple, not a list."
+        topic: "Data Types"
+
+      - text: "Which of the following are valid sequence data types in Python?"
+        type: "multiple"
+        choices:
+          A: "List"
+          B: "Tuple"
+          C: "Dictionary"
+          D: "String"
+        answer: ["A", "B", "D"]
+        explanation: "List, tuple, and string are sequence types; dictionary is a mapping type."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following statements about Python's '==' and 'is' operators are correct?"
+        type: "multiple"
+        choices:
+          A: "'==' checks value equality"
+          B: "'is' checks object identity"
+          C: "'==' and 'is' always give the same result"
+          D: "'is' can be used to compare immutable objects"
+        answer: ["A", "B", "D"]
+        explanation: "'==' checks value, 'is' checks identity; 'is' can compare immutables but may not behave as expected."
+        topic: "Operators & Expressions"
+
+      - text: "Which of the following are valid ways to concatenate two lists in Python?"
+        type: "multiple"
+        choices:
+          A: "list1 + list2"
+          B: "list1.extend(list2)"
+          C: "list1.append(list2)"
+          D: "list1 = [*list1, *list2]"
+        answer: ["A", "B", "D"]
+        explanation: "A, B, and D concatenate lists; C nests list2 inside list1."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following are valid uses of the 'in' operator in Python?"
+        type: "multiple"
+        choices:
+          A: "Check if an element exists in a list"
+          B: "Check if a substring exists in a string"
+          C: "Check if a key exists in a dictionary"
+          D: "Check if a value exists in a set"
+        answer: ["A", "B", "C", "D"]
+        explanation: "'in' works for membership testing in all these data structures."
+        topic: "Operators & Expressions"
+
+      - text: "Which of the following are valid ways to create a dictionary in Python?"
+        type: "multiple"
+        choices:
+          A: "d = {'a': 1, 'b': 2}"
+          B: "d = dict(a=1, b=2)"
+          C: "d = dict([('a', 1), ('b', 2)])"
+          D: "d = {}"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid ways to create a dictionary."
+        topic: "Data Types"
+
+      - text: "Which of the following are valid string methods in Python?"
+        type: "multiple"
+        choices:
+          A: "upper()"
+          B: "split()"
+          C: "append()"
+          D: "replace()"
+        answer: ["A", "B", "D"]
+        explanation: "upper, split, and replace are string methods; append is for lists."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following are valid ways to iterate over a list in Python?"
+        type: "multiple"
+        choices:
+          A: "for item in my_list: ..."
+          B: "for i in range(len(my_list)): ..."
+          C: "while my_list: ..."
+          D: "for key in my_list: ..."
+        answer: ["A", "B", "C"]
+        explanation: "A and B are standard; C works if you pop elements; D is misleading unless my_list is a dict."
+        topic: "Python Statements"
+
+      - text: "Which of the following are valid ways to copy a list in Python?"
+        type: "multiple"
+        choices:
+          A: "list2 = list1[:]"
+          B: "list2 = list(list1)"
+          C: "list2 = list1.copy()"
+          D: "list2 = list1"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C create a copy; D creates a reference."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following are valid ways to check if a key exists in a dictionary?"
+        type: "multiple"
+        choices:
+          A: "'key' in my_dict"
+          B: "my_dict.get('key') is not None"
+          C: "my_dict.has_key('key')"
+          D: "'key' == my_dict.keys()"
+        answer: ["A", "B"]
+        explanation: "A and B are valid; has_key is deprecated, D is incorrect."
+        topic: "Data Types"
+
+      - text: "Which of the following are valid ways to remove whitespace from a string in Python?"
+        type: "multiple"
+        choices:
+          A: "strip()"
+          B: "lstrip()"
+          C: "rstrip()"
+          D: "trim()"
+        answer: ["A", "B", "C"]
+        explanation: "strip, lstrip, and rstrip remove whitespace; trim does not exist."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following are valid ways to create a tuple in Python?"
+        type: "multiple"
+        choices:
+          A: "t = (1, 2, 3)"
+          B: "t = tuple([1, 2, 3])"
+          C: "t = 1, 2, 3"
+          D: "t = tuple(1, 2, 3)"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C are valid; D is invalid syntax."
+        topic: "Data Types"
+
+      - text: "Which of the following are valid ways to check if a list is empty in Python?"
+        type: "multiple"
+        choices:
+          A: "if not my_list: ..."
+          B: "if len(my_list) == 0: ..."
+          C: "if my_list == []: ..."
+          D: "if my_list is None: ..."
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C check for emptiness; D checks for None."
+        topic: "Python Statements"
+
+      - text: "Which of the following are valid ways to access elements in a list?"
+        type: "multiple"
+        choices:
+          A: "my_list[0]"
+          B: "my_list[-1]"
+          C: "my_list[1:3]"
+          D: "my_list[0:len(my_list)]"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid ways to access elements or slices."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following are valid ways to update a value in a dictionary?"
+        type: "multiple"
+        choices:
+          A: "my_dict['key'] = value"
+          B: "my_dict.update({'key': value})"
+          C: "my_dict.set('key', value)"
+          D: "my_dict['key'] += 1"
+        answer: ["A", "B", "D"]
+        explanation: "A and B are standard; D works if value is numeric; C is invalid."
+        topic: "Data Types"
+
+      - text: "Which of the following are valid ways to reverse a list in Python?"
+        type: "multiple"
+        choices:
+          A: "my_list.reverse()"
+          B: "reversed(my_list)"
+          C: "my_list[::-1]"
+          D: "my_list = my_list.reverse()"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C reverse a list; D assigns None."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following are valid ways to check if a string is numeric in Python?"
+        type: "multiple"
+        choices:
+          A: "str.isdigit()"
+          B: "str.isnumeric()"
+          C: "str.isdecimal()"
+          D: "str.isalpha()"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C check for numeric; D checks for alphabetic."
+        topic: "Sequence Data Types"
+
+      - text: "Which of the following are valid ways to create a set in Python?"
+        type: "multiple"
+        choices:
+          A: "s = {1, 2, 3}"
+          B: "s = set([1, 2, 3])"
+          C: "s = set((1, 2, 3))"
+          D: "s = {}"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C create sets; D creates a dictionary."
+        topic: "Data Types"
+
+  - id: 3
+    name: "Practice Set 3 - Functions, File Processing, Modules (40 marks)"
+    duration_minutes: 75
+    questions:
+      - text: "What is a function in Python?"
+        choices:
+          A: "A variable"
+          B: "A reusable block of code"
+          C: "A data type"
+          D: "A loop"
+        answer: "B"
+        explanation: "A function is a reusable block of code that performs a specific task."
+
+      - text: "How do you define a function in Python?"
+        choices:
+          A: "function my_function():"
+          B: "def my_function():"
+          C: "create my_function():"
+          D: "func my_function():"
+        answer: "B"
+        explanation: "Functions in Python are defined using the 'def' keyword."
+
+      - text: "What is the purpose of the return statement?"
+        choices:
+          A: "To end the function"
+          B: "To send a value back from the function"
+          C: "To print output"
+          D: "To create a loop"
+        answer: "B"
+        explanation: "The return statement sends a value back to the caller of the function."
+
+      - text: "What is a parameter in a function?"
+        choices:
+          A: "A variable inside the function"
+          B: "A value passed to the function"
+          C: "The function name"
+          D: "The return value"
+        answer: "B"
+        explanation: "A parameter is a value passed to a function when it is called."
+
+      - text: "What is the output of: def add(x, y): return x + y; print(add(3, 4))?"
+        choices:
+          A: "3 + 4"
+          B: "7"
+          C: "Error"
+          D: "None"
+        answer: "B"
+        explanation: "add(3, 4) returns 7, which is printed."
+
+      - text: "What is a default parameter?"
+        choices:
+          A: "A required parameter"
+          B: "A parameter with a predefined value"
+          C: "The first parameter"
+          D: "A return value"
+        answer: "B"
+        explanation: "A default parameter has a value if no argument is provided."
+
+      - text: "What is the output of: def greet(name='World'): return f'Hello {name}'; print(greet())?"
+        choices:
+          A: "Hello"
+          B: "Hello World"
+          C: "Error"
+          D: "None"
+        answer: "B"
+        explanation: "The default value 'World' is used, so it prints 'Hello World'."
+
+      - text: "What is recursion?"
+        choices:
+          A: "A type of loop"
+          B: "A function calling itself"
+          C: "A data structure"
+          D: "A variable type"
+        answer: "B"
+        explanation: "Recursion is when a function calls itself."
+
+      - text: "What is a base case in recursion?"
+        choices:
+          A: "The first function call"
+          B: "The condition that stops recursion"
+          C: "The return value"
+          D: "The function name"
+        answer: "B"
+        explanation: "The base case is the condition that ends the recursive calls."
+
+      - text: "What is the output of: def factorial(n): return 1 if n <= 1 else n * factorial(n-1); print(factorial(5))?"
+        choices:
+          A: "5"
+          B: "120"
+          C: "Error"
+          D: "None"
+        answer: "B"
+        explanation: "factorial(5) computes 5*4*3*2*1 = 120."
+
+      - text: "What is file processing?"
+        choices:
+          A: "Creating files"
+          B: "Reading from and writing to files"
+          C: "Deleting files"
+          D: "Moving files"
+        answer: "B"
+        explanation: "File processing involves reading from and writing to files."
+
+      - text: "Which mode opens a file for reading?"
+        choices:
+          A: "'w'"
+          B: "'r'"
+          C: "'a'"
+          D: "'x'"
+        answer: "B"
+        explanation: "'r' mode opens a file for reading."
+
+      - text: "Which mode opens a file for writing?"
+        choices:
+          A: "'r'"
+          B: "'w'"
+          C: "'a'"
+          D: "'x'"
+        answer: "B"
+        explanation: "'w' mode opens a file for writing, overwriting existing content."
+
+      - text: "What is the correct way to open and read a file?"
+        choices:
+          A: "file = open('test.txt'); content = file.read()"
+          B: "with open('test.txt', 'r') as file: content = file.read()"
+          C: "file.read('test.txt')"
+          D: "read('test.txt')"
+        answer: "B"
+        explanation: "The 'with' statement ensures the file is properly closed after reading."
+
+      - text: "What method is used to read all lines from a file?"
+        choices:
+          A: "read()"
+          B: "readlines()"
+          C: "readline()"
+          D: "getlines()"
+        answer: "B"
+        explanation: "readlines() returns all lines in a file as a list."
+
+      - text: "What method is used to write to a file?"
+        choices:
+          A: "print()"
+          B: "write()"
+          C: "output()"
+          D: "save()"
+        answer: "B"
+        explanation: "The write() method writes data to a file."
+
+      - text: "What is a module in Python?"
+        choices:
+          A: "A function"
+          B: "A file containing Python code"
+          C: "A variable"
+          D: "A loop"
+        answer: "B"
+        explanation: "A module is a file containing Python code that can be imported."
+
+      - text: "How do you import a module?"
+        choices:
+          A: "include module_name"
+          B: "import module_name"
+          C: "load module_name"
+          D: "use module_name"
+        answer: "B"
+        explanation: "Modules are imported using the 'import' statement."
+
+      - text: "What is the output of: import math; print(math.pi)?"
+        choices:
+          A: "3"
+          B: "3.141592653589793"
+          C: "Error"
+          D: "None"
+        answer: "B"
+        explanation: "math.pi gives the value of pi, approximately 3.141592653589793."
+
+      - text: "How do you import a specific function from a module?"
+        choices:
+          A: "import function from module"
+          B: "from module import function"
+          C: "load function from module"
+          D: "use function from module"
+        answer: "B"
+        explanation: "'from module import function' imports a specific function."
+
+      - text: "What is the output of: from random import randint; print(randint(1, 10))?"
+        choices:
+          A: "1"
+          B: "A random number between 1 and 10"
+          C: "Error"
+          D: "10"
+        answer: "B"
+        explanation: "randint(1, 10) returns a random integer between 1 and 10."
+
+      - text: "What is a built-in function?"
+        choices:
+          A: "A function you create"
+          B: "A function that comes with Python"
+          C: "A function in a module"
+          D: "A function that returns a value"
+        answer: "B"
+        explanation: "Built-in functions are provided by Python and available by default."
+
+      - text: "What is the output of: print(len('hello'))?"
+        choices:
+          A: "5"
+          B: "hello"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "len('hello') returns the number of characters, which is 5."
+
+      - text: "What is the output of: print(str(123))?"
+        choices:
+          A: "123"
+          B: "Error"
+          C: "None"
+          D: "int"
+        answer: "A"
+        explanation: "str(123) converts the integer 123 to the string '123'."
+
+      - text: "What is the output of: print(int('456'))?"
+        choices:
+          A: "456"
+          B: "Error"
+          C: "None"
+          D: "str"
+        answer: "A"
+        explanation: "int('456') converts the string '456' to the integer 456."
+
+      - text: "What is the output of: print(float('3.14'))?"
+        choices:
+          A: "3.14"
+          B: "Error"
+          C: "None"
+          D: "str"
+        answer: "A"
+        explanation: "float('3.14') converts the string '3.14' to the float 3.14."
+
+      - text: "What is the output of: print(list('abc'))?"
+        choices:
+          A: "['a', 'b', 'c']"
+          B: "abc"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "list('abc') converts the string into a list of characters."
+
+      - text: "What is the output of: print(tuple([1, 2, 3]))?"
+        choices:
+          A: "(1, 2, 3)"
+          B: "[1, 2, 3]"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "tuple([1, 2, 3]) converts the list to a tuple."
+
+      - text: "What is the output of: print(dict([('a', 1), ('b', 2)]))?"
+        choices:
+          A: "{'a': 1, 'b': 2}"
+          B: "[('a', 1), ('b', 2)]"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "dict([('a', 1), ('b', 2)]) creates a dictionary from a list of tuples."
+
+      - text: "What is the output of: print(set([1, 2, 2, 3]))?"
+        choices:
+          A: "{1, 2, 3}"
+          B: "[1, 2, 2, 3]"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "set([1, 2, 2, 3]) creates a set with unique elements."
+
+      - text: "What is the output of: print(abs(-5))?"
+        choices:
+          A: "5"
+          B: "-5"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "abs(-5) returns the absolute value, which is 5."
+
+      - text: "What is the output of: print(pow(2, 3))?"
+        choices:
+          A: "8"
+          B: "6"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "pow(2, 3) computes 2 to the power of 3, which is 8."
+
+      - text: "What is the output of: print(sum([1, 2, 3, 4]))?"
+        choices:
+          A: "10"
+          B: "4"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "sum([1, 2, 3, 4]) adds all the numbers in the list."
+
+      - text: "What is the output of: print(min([5, 2, 8, 1]))?"
+        choices:
+          A: "1"
+          B: "8"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "min([5, 2, 8, 1]) returns the smallest value, which is 1."
+
+      - text: "What is the output of: print(max([5, 2, 8, 1]))?"
+        choices:
+          A: "8"
+          B: "1"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "max([5, 2, 8, 1]) returns the largest value, which is 8."
+
+      - text: "What is the output of: print(sorted([3, 1, 4, 1, 5]))?"
+        choices:
+          A: "[1, 1, 3, 4, 5]"
+          B: "[3, 1, 4, 1, 5]"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "sorted([3, 1, 4, 1, 5]) returns a sorted list."
+
+      - text: "What is the output of: print(reversed([1, 2, 3]))?"
+        choices:
+          A: "<list_reverseiterator object>"
+          B: "[3, 2, 1]"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "reversed() returns an iterator, not a list."
+
+      - text: "What is the output of: print(enumerate(['a', 'b', 'c']))?"
+        choices:
+          A: "<enumerate object>"
+          B: "[(0, 'a'), (1, 'b'), (2, 'c')]"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "enumerate() returns an enumerate object, which can be converted to a list."
+
+      - text: "What is the output of: print(zip([1, 2], ['a', 'b']))?"
+        choices:
+          A: "<zip object>"
+          B: "[(1, 'a'), (2, 'b')]"
+          C: "Error"
+          D: "None"
+        answer: "A"
+        explanation: "zip() returns a zip object, which can be converted to a list."
+
+      - text: "What is the purpose of command line arguments?"
+        choices:
+          A: "To pass arguments to a program when it starts"
+          B: "To create command line interfaces"
+          C: "To handle user input"
+          D: "To process files"
+        answer: "A"
+        explanation: "Command line arguments allow users to pass information to a program at startup."
+
+      - text: "What is the LEGB rule in Python?"
+        choices:
+          A: "A rule for variable scope resolution"
+          B: "A rule for function naming"
+          C: "A rule for module imports"
+          D: "A rule for file handling"
+        answer: "A"
+        explanation: "LEGB stands for Local, Enclosing, Global, Built-in scopes for variable resolution."
+
+      - text: "What is a namespace in Python?"
+        choices:
+          A: "A container for names"
+          B: "A mapping from names to objects"
+          C: "A type of variable"
+          D: "A function scope"
+        answer: "B"
+        explanation: "A namespace is a mapping from names to objects."
+
+      - text: "What is the purpose of the __init__.py file?"
+        choices:
+          A: "To initialize variables"
+          B: "To mark a directory as a Python package"
+          C: "To create functions"
+          D: "To handle imports"
+        answer: "B"
+        explanation: "__init__.py marks a directory as a Python package."
+
+      - text: "Which of the following are built-in Python functions?"
+        type: "multiple"
+        choices:
+          A: "print()"
+          B: "len()"
+          C: "type()"
+          D: "input()"
+        answer: ["A", "B", "C", "D"]
+        explanation: "print(), len(), type(), and input() are all built-in Python functions."
+
+      - text: "Which of the following are valid file modes in Python?"
+        type: "multiple"
+        choices:
+          A: "r"
+          B: "w"
+          C: "a"
+          D: "x"
+        answer: ["A", "B", "C", "D"]
+        explanation: "'r', 'w', 'a', and 'x' are valid file modes for opening files in Python."
+
+      - text: "Which of the following are valid ways to define a function in Python that takes variable numbers of arguments?"
+        type: "multiple"
+        choices:
+          A: "def func(*args): ..."
+          B: "def func(arg1, arg2=None): ..."
+          C: "def func(**kwargs): ..."
+          D: "def func(args...): ..."
+        answer: ["A", "B", "C"]
+        explanation: "A and C use *args and **kwargs for variable arguments; B uses a default argument. D is invalid syntax."
+        topic: "Functions"
+
+      - text: "Which of the following are valid ways to return multiple values from a Python function?"
+        type: "multiple"
+        choices:
+          A: "Return a tuple"
+          B: "Return a list"
+          C: "Return a dictionary"
+          D: "Return multiple comma-separated values"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid; Python allows returning tuples, lists, dicts, or multiple values (as a tuple)."
+        topic: "Functions"
+
+      - text: "Which of the following are valid uses of recursion in Python?"
+        type: "multiple"
+        choices:
+          A: "Calculating factorials"
+          B: "Traversing a directory tree"
+          C: "Implementing quicksort"
+          D: "Infinite loops without base case"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C are valid; D is a recursion error."
+        topic: "Recursion"
+
+      - text: "Which of the following are valid ways to open a file for writing in Python?"
+        type: "multiple"
+        choices:
+          A: "open('file.txt', 'w')"
+          B: "open('file.txt', 'a')"
+          C: "open('file.txt', 'x')"
+          D: "open('file.txt', 'r')"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C open for writing; D is for reading."
+        topic: "File Processing"
+
+      - text: "Which of the following are valid ways to read all lines from a file in Python?"
+        type: "multiple"
+        choices:
+          A: "file.readlines()"
+          B: "list(file)"
+          C: "for line in file: ..."
+          D: "file.read()"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid ways to read lines from a file."
+        topic: "File Processing"
+
+      - text: "Which of the following are valid ways to import a module in Python?"
+        type: "multiple"
+        choices:
+          A: "import math"
+          B: "from math import sqrt"
+          C: "import math as m"
+          D: "from math import *"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid import statements."
+        topic: "Modules & Imports"
+
+      - text: "Which of the following are valid ways to handle exceptions in Python file operations?"
+        type: "multiple"
+        choices:
+          A: "try...except"
+          B: "try...finally"
+          C: "with open() as file: ..."
+          D: "if file.exists(): ..."
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C are valid; D is not a standard exception handling method."
+        topic: "File Processing"
+
+      - text: "Which of the following are valid ways to create a lambda function in Python?"
+        type: "multiple"
+        choices:
+          A: "lambda x: x + 1"
+          B: "lambda x, y: x * y"
+          C: "def lambda(x): return x + 1"
+          D: "lambda: 42"
+        answer: ["A", "B", "D"]
+        explanation: "A, B, and D are valid; C is invalid syntax."
+        topic: "Functions"
+
+      - text: "Which of the following are valid ways to use built-in functions in Python?"
+        type: "multiple"
+        choices:
+          A: "len([1, 2, 3])"
+          B: "sum([1, 2, 3])"
+          C: "max([1, 2, 3])"
+          D: "min([1, 2, 3])"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid uses of built-in functions."
+        topic: "Built-in Functions"
+
+      - text: "Which of the following are valid ways to pass arguments to a function in Python?"
+        type: "multiple"
+        choices:
+          A: "Positional arguments"
+          B: "Keyword arguments"
+          C: "*args"
+          D: "**kwargs"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid ways to pass arguments."
+        topic: "Functions"
+
+      - text: "Which of the following are valid ways to close a file in Python?"
+        type: "multiple"
+        choices:
+          A: "file.close()"
+          B: "with open() as file: ..."
+          C: "os.close(file)"
+          D: "del file"
+        answer: ["A", "B"]
+        explanation: "A and B are valid; C is for file descriptors, D does not guarantee closing."
+        topic: "File Processing"
+
+      - text: "Which of the following are valid ways to use the map() function in Python?"
+        type: "multiple"
+        choices:
+          A: "map(str, [1, 2, 3])"
+          B: "map(lambda x: x*2, [1, 2, 3])"
+          C: "list(map(abs, [-1, -2, -3]))"
+          D: "map([1, 2, 3], str)"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C are valid; D is invalid argument order."
+        topic: "Built-in Functions"
+
+      - text: "Which of the following are valid ways to use the filter() function in Python?"
+        type: "multiple"
+        choices:
+          A: "filter(lambda x: x > 0, [1, -2, 3])"
+          B: "list(filter(str.isalpha, ['a', '1', 'b']))"
+          C: "filter([1, 2, 3], lambda x: x > 1)"
+          D: "filter(None, [0, 1, 2])"
+        answer: ["A", "B", "D"]
+        explanation: "A, B, and D are valid; C is invalid argument order."
+        topic: "Built-in Functions"
+
+      - text: "Which of the following are valid ways to use the zip() function in Python?"
+        type: "multiple"
+        choices:
+          A: "zip([1, 2], ['a', 'b'])"
+          B: "list(zip([1, 2], [3, 4]))"
+          C: "zip([1, 2, 3])"
+          D: "zip(*[[1, 2], [3, 4]])"
+        answer: ["A", "B", "D"]
+        explanation: "A, B, and D are valid; C requires at least two iterables."
+        topic: "Built-in Functions"
+
+      - text: "Which of the following are valid ways to use the enumerate() function in Python?"
+        type: "multiple"
+        choices:
+          A: "enumerate(['a', 'b', 'c'])"
+          B: "list(enumerate(['a', 'b', 'c']))"
+          C: "enumerate(['a', 'b', 'c'], 1)"
+          D: "enumerate(['a', 'b', 'c'], start=1)"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid uses of enumerate."
+        topic: "Built-in Functions"
+
+      - text: "Which of the following are valid ways to use the sorted() function in Python?"
+        type: "multiple"
+        choices:
+          A: "sorted([3, 1, 2])"
+          B: "sorted([3, 1, 2], reverse=True)"
+          C: "sorted([3, 1, 2], key=lambda x: -x)"
+          D: "sorted([3, 1, 2], cmp=lambda x, y: x-y)"
+        answer: ["A", "B", "C"]
+        explanation: "A, B, and C are valid; D is not supported in Python 3."
+        topic: "Built-in Functions"
+
+      - text: "Which of the following are valid ways to use the os module for file operations in Python?"
+        type: "multiple"
+        choices:
+          A: "os.remove('file.txt')"
+          B: "os.rename('old.txt', 'new.txt')"
+          C: "os.path.exists('file.txt')"
+          D: "os.mkdir('folder')"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid uses of the os module for file and directory operations."
+        topic: "File Processing"
+
+      - text: "Which of the following are valid ways to use the sys module in Python?"
+        type: "multiple"
+        choices:
+          A: "sys.argv"
+          B: "sys.exit()"
+          C: "sys.path"
+          D: "sys.stdin"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid uses of the sys module."
+        topic: "Modules & Imports"
+
+  - id: 4
+    name: "Practice Set 4 - NumPy Basics (10 marks)"
+    duration_minutes: 25
+    questions:
+      - text: "What is NumPy?"
+        choices:
+          A: "A programming language"
+          B: "A library for numerical computing in Python"
+          C: "A database system"
+          D: "An operating system"
+        answer: "B"
+        explanation: "NumPy is a Python library for numerical and scientific computing."
+
+      - text: "How do you import NumPy?"
+        choices:
+          A: "import numpy"
+          B: "import numpy as np"
+          C: "from numpy import *"
+          D: "All of the above"
+        answer: "D"
+        explanation: "All these statements are valid ways to import NumPy."
+
+      - text: "What is an ndarray?"
+        choices:
+          A: "A normal Python list"
+          B: "A multi-dimensional array object"
+          C: "A function"
+          D: "A variable"
+        answer: "B"
+        explanation: "An ndarray is a multi-dimensional array object in NumPy."
+
+      - text: "How do you create a NumPy array from a list?"
+        choices:
+          A: "array([1, 2, 3])"
+          B: "np.array([1, 2, 3])"
+          C: "numpy.array([1, 2, 3])"
+          D: "All of the above"
+        answer: "D"
+        explanation: "All these methods can create a NumPy array from a list."
+
+      - text: "What is the output of: import numpy as np; arr = np.array([1, 2, 3]); print(arr.shape)?"
+        choices:
+          A: "(3,)"
+          B: "(1, 3)"
+          C: "3"
+          D: "Error"
+        answer: "A"
+        explanation: "arr.shape returns the dimensions of the array; (3,) means a 1D array with 3 elements."
+
+      - text: "What is the output of: import numpy as np; arr = np.array([1, 2, 3]); print(arr.dtype)?"
+        choices:
+          A: "int64"
+          B: "int32"
+          C: "integer"
+          D: "number"
+        answer: "A"
+        explanation: "arr.dtype shows the data type of the array elements, commonly int64."
+
+      - text: "How do you create a 2D array in NumPy?"
+        choices:
+          A: "np.array([1, 2, 3, 4])"
+          B: "np.array([[1, 2], [3, 4]])"
+          C: "np.array(2, 2)"
+          D: "np.2darray([1, 2, 3, 4])"
+        answer: "B"
+        explanation: "A 2D array is created by passing a list of lists to np.array()."
+
+      - text: "What is the output of: import numpy as np; arr = np.zeros(3); print(arr)?"
+        choices:
+          A: "[0 0 0]"
+          B: "[0, 0, 0]"
+          C: "0"
+          D: "Error"
+        answer: "A"
+        explanation: "np.zeros(3) creates an array of three zeros."
+
+      - text: "What is the output of: import numpy as np; arr = np.ones((2, 2)); print(arr)?"
+        choices:
+          A: "[[1. 1.] [1. 1.]]"
+          B: "[1, 1, 1, 1]"
+          C: "1"
+          D: "Error"
+        answer: "A"
+        explanation: "np.ones((2, 2)) creates a 2x2 array filled with 1.0."
+
+      - text: "What is the output of: import numpy as np; arr = np.arange(5); print(arr)?"
+        choices:
+          A: "[0 1 2 3 4]"
+          B: "[1 2 3 4 5]"
+          C: "[0, 1, 2, 3, 4]"
+          D: "Error"
+        answer: "A"
+        explanation: "np.arange(5) creates an array with values from 0 to 4."
+
+      - text: "Which of the following are valid ways to create a NumPy array?"
+        type: "multiple"
+        choices:
+          A: "np.array([1, 2, 3])"
+          B: "numpy.array([1, 2, 3])"
+          C: "array([1, 2, 3])"
+          D: "All of the above"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All these are valid ways to create a NumPy array from data."
+
+      - text: "Which of the following are NumPy functions for creating arrays?"
+        type: "multiple"
+        choices:
+          A: "np.zeros()"
+          B: "np.ones()"
+          C: "np.arange()"
+          D: "np.linspace()"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All these functions are used in NumPy to create arrays with different initial values or ranges."
+
+      - text: "Match the following Python operators with their description."
+        type: "match"
+        choices:
+          - left: "**"
+            right: "Exponentiation"
+          - left: "//"
+            right: "Integer Division"
+          - left: "%"
+            right: "Modulus (remainder)"
+          - left: "!="
+            right: "Not equal to"
+        answer: ["Exponentiation", "Integer Division", "Modulus (remainder)", "Not equal to"]
+        explanation: "** is for exponentiation, // for integer division, % for modulus, and != for not equal to."
+        topic: "Operators, Expressions and Python Statements"
+
+      - text: "Match the following Python data types with their key characteristic."
+        type: "match"
+        choices:
+          - left: "List"
+            right: "Mutable sequence of elements"
+          - left: "Tuple"
+            right: "Immutable sequence of elements"
+          - left: "Dictionary"
+            right: "Mutable collection of key-value pairs"
+          - left: "Set"
+            right: "Unordered collection of unique elements"
+        answer: ["Mutable sequence of elements", "Immutable sequence of elements", "Mutable collection of key-value pairs", "Unordered collection of unique elements"]
+        explanation: "Lists are mutable sequences, Tuples are immutable sequences, Dictionaries are key-value mappings, and Sets contain unique unordered items."
+        topic: "Sequence data types"

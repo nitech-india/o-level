@@ -1,0 +1,113 @@
+---
+layout: default
+title: "Module 1 - R5 Practice Sets"
+permalink: /m1r5-practice/
+---
+<div class="practice-set-list">
+  <h1>{{ page.title }}</h1>
+  <p>This page contains practice sets for Module 1 (M1-R5) - IT Tools and Network Basics.</p>
+  
+  <p>Please choose a practice set to start the quiz.</p>
+
+  <h2>Topic-Specific Practice Sets</h2>
+  <ul>
+    {% for set in site.data.m1r5_practice.sets %}
+      {% if set.id <= 6 %}
+        <li>
+          <a href="{{ site.baseurl }}/practice-sets/m1r5-practice-{{ set.id }}/">
+            {{ set.name }}
+          </a>
+          <span>({{ set.questions | size }} questions)</span>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h2>Comprehensive Practice Sets (100 Marks Each)</h2>
+  <p class="comprehensive-description">Full-length practice sets simulating actual exam conditions with 50 questions covering all topics.</p>
+  <ul class="comprehensive-sets">
+    {% for set in site.data.m1r5_comprehensive.sets %}
+      <li class="comprehensive-set">
+        <a href="{{ site.baseurl }}/practice-sets/m1r5-comprehensive-{{ set.id }}/">
+          {{ set.name }}
+        </a>
+        <span>({{ set.questions | size }} questions, {{ set.duration_minutes }} minutes)</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<style>
+  .practice-set-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .practice-set-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--md-on-surface, #333);
+    transition: color 0.3s;
+  }
+  .practice-set-list h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--md-on-surface, #333);
+    border-bottom: 2px solid var(--md-primary, #007bff);
+    padding-bottom: 5px;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  .comprehensive-description {
+    background: var(--md-primary-container, #e3f2fd);
+    color: var(--md-on-primary-container, #000);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--md-primary, #2196f3);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  .practice-set-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .practice-set-list li {
+    background: var(--md-surface-container, #f8f9fa);
+    color: var(--md-on-surface, #333);
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .practice-set-list li:hover {
+    background-color: var(--md-surface-container-high, #e9ecef);
+  }
+  .comprehensive-sets li {
+    background: var(--md-tertiary-container, #fff3cd);
+    border-left: 4px solid var(--md-tertiary, #ffc107);
+    color: var(--md-on-tertiary-container, #856404);
+  }
+  .comprehensive-sets li:hover {
+    background-color: var(--md-tertiary-container-high, #ffeaa7);
+  }
+  .practice-set-list a {
+    text-decoration: none;
+    color: var(--md-primary, #007bff);
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  .comprehensive-sets a {
+    color: var(--md-on-tertiary-container, #856404);
+  }
+  .practice-set-list span {
+    color: var(--md-on-surface-variant, #6c757d);
+    font-size: 0.9em;
+    transition: color 0.3s;
+  }
+  .comprehensive-sets span {
+    color: var(--md-on-tertiary-container, #856404);
+  }
+</style>

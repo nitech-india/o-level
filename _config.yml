@@ -1,0 +1,48 @@
+title: NIELIT O Level Preparation @ NITECH
+short_title: NIELIT O Level
+description: NIELIT O Level Exam Resources and Study Materials
+baseurl: "/o-level"
+url: "https://amitpuri.github.io"
+institute: "NITECH"
+version: "1.0"
+# Social media profiles
+github_username: amitpuri
+youtube_username: amitpuri
+twitter_username: iamamitpuri
+unique_questions: 926
+single_answer_questions: 653
+multiple_answer_questions: 254
+match_together_questions: 19
+# Google OAuth Configuration
+google_login: false
+google_client_id: "418717365642-ui85inftl59bj0gvcd3dqggukque4b7q.apps.googleusercontent.com"
+# Build settings
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - jekyll-github-metadata
+
+# Plugin settings
+safe: false
+plugins_dir: _plugins
+
+# Include pages directory
+include:
+  - pages
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/ 
+  - scripts/

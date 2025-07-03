@@ -1,0 +1,658 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Add Material Icons CDN -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+<div class="home">
+  <h1>NIELIT O Level Exam Preparation Resources</h1>
+  
+  <p>Aims to help you prepare for the NIELIT O Level examination.</p>
+
+  <h2>Practice Sets Available</h2>
+  <div class="practice-stats">
+    <div class="stats-grid">
+      <div class="stat-card card-m1">
+        <div class="stat-icon-circle card-m1"><span class="material-icons-outlined stat-icon">computer</span></div>
+        <div class="stat-title">M1-R5: IT Tools and Business Systems</div>
+        <div class="stat-numbers-row">
+          <div>
+            <span class="stat-number">{{ site.data.m1r5_practice.sets.size | plus: site.data.m1r5_comprehensive.sets.size }}</span>
+            <span class="stat-label">Sets</span>
+          </div>
+          <div>
+            <span class="stat-number">
+              {% assign total_questions = 0 %}
+              {% for set in site.data.m1r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {% for set in site.data.m1r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {{ total_questions }}
+            </span>
+            <span class="stat-label">Questions</span>
+          </div>
+        </div>
+        <a href="{{ site.baseurl }}/m1r5-practice/" class="practice-link prominent">Start Practice</a>
+      </div>
+      <div class="stat-card card-m2">
+        <div class="stat-icon-circle card-m2"><span class="material-icons-outlined stat-icon">view_sidebar</span></div>
+        <div class="stat-title">M2-R5: Web Designing and Publishing</div>
+        <div class="stat-numbers-row">
+          <div>
+            <span class="stat-number">{{ site.data.m2r5_practice.sets.size | plus: site.data.m2r5_comprehensive.sets.size }}</span>
+            <span class="stat-label">Sets</span>
+          </div>
+          <div>
+            <span class="stat-number">
+              {% assign total_questions = 0 %}
+              {% for set in site.data.m2r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {% for set in site.data.m2r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {{ total_questions }}
+            </span>
+            <span class="stat-label">Questions</span>
+          </div>
+        </div>
+        <a href="{{ site.baseurl }}/m2r5-practice/" class="practice-link prominent">Start Practice</a>
+      </div>
+      <div class="stat-card card-m3">
+        <div class="stat-icon-circle card-m3"><span class="material-icons-outlined stat-icon">code</span></div>
+        <div class="stat-title">M3-R5: Programming and Problem Solving Through Python</div>
+        <div class="stat-numbers-row">
+          <div>
+            <span class="stat-number">{{ site.data.m3r5_practice.sets.size | plus: site.data.m3r5_comprehensive.sets.size }}</span>
+            <span class="stat-label">Sets</span>
+          </div>
+          <div>
+            <span class="stat-number">
+              {% assign total_questions = 0 %}
+              {% for set in site.data.m3r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {% for set in site.data.m3r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {{ total_questions }}
+            </span>
+            <span class="stat-label">Questions</span>
+          </div>
+        </div>
+        <a href="{{ site.baseurl }}/m3r5-practice/" class="practice-link prominent">Start Practice</a>
+      </div>
+      <div class="stat-card card-m4">
+        <div class="stat-icon-circle card-m4"><span class="material-icons-outlined stat-icon">sensors</span></div>
+        <div class="stat-title">M4-R5: Internet of Things and Its Applications</div>
+        <div class="stat-numbers-row">
+          <div>
+            <span class="stat-number">{{ site.data.m4r5_practice.sets.size | plus: site.data.m4r5_comprehensive.sets.size }}</span>
+            <span class="stat-label">Sets</span>
+          </div>
+          <div>
+            <span class="stat-number">
+              {% assign total_questions = 0 %}
+              {% for set in site.data.m4r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {% for set in site.data.m4r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+              {{ total_questions }}
+            </span>
+            <span class="stat-label">Questions</span>
+          </div>
+        </div>
+        <a href="{{ site.baseurl }}/m4r5-practice/" class="practice-link prominent">Start Practice</a>
+      </div>
+    </div>
+    
+    <div class="total-card centered">
+      <div class="total-line">
+        <span class="total-number">
+          {{ site.data.m1r5_practice.sets.size | plus: site.data.m1r5_comprehensive.sets.size | plus: site.data.m2r5_practice.sets.size | plus: site.data.m2r5_comprehensive.sets.size | plus: site.data.m3r5_practice.sets.size | plus: site.data.m3r5_comprehensive.sets.size | plus: site.data.m4r5_practice.sets.size | plus: site.data.m4r5_comprehensive.sets.size }}
+        </span>
+        <span class="total-label">Practice Sets</span>
+        <span class="total-sep">|</span>
+        <span class="total-number">
+          {% assign grand_total_questions = 0 %}
+          {% for set in site.data.m1r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {% for set in site.data.m1r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {% for set in site.data.m2r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {% for set in site.data.m2r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {% for set in site.data.m3r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {% for set in site.data.m3r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {% for set in site.data.m4r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {% for set in site.data.m4r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
+          {{ grand_total_questions }}
+        </span>
+        <span class="total-label">Total Questions</span>
+        <span class="total-sep">|</span>
+        <span class="total-number">{{ site.unique_questions }}</span>
+        <span class="total-label">Unique Questions</span>
+      </div>
+    </div>
+    
+    <div class="question-types-card centered">
+      <div class="question-types-title">Question Types Breakdown</div>
+      <div class="question-types-grid">
+        <div class="question-type-item">
+          <span class="question-type-number">{{ site.single_answer_questions }}</span>
+          <span class="question-type-label">Single Answer</span>
+        </div>
+        <div class="question-type-item">
+          <span class="question-type-number">{{ site.multiple_answer_questions }}</span>
+          <span class="question-type-label">Multiple Answer</span>
+        </div>
+        <div class="question-type-item">
+          <span class="question-type-number">{{ site.match_together_questions }}</span>
+          <span class="question-type-label">Match Together</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Exam Syllabus and Marking Scheme</h2>
+
+  <div class="course-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Module Code</th>
+          <th>Module</th>
+          <th>Theory Hours</th>
+          <th>Practical Hours</th>
+          <th>Total Hours</th>
+          <th>Theory Marks (Min-Max)</th>
+          <th>Practical Marks (Min-Max)</th>
+          <th>Total Marks (Min-Max)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for module in site.data.course_modules.modules %}
+        <tr>
+          {% if module.url %}
+          <td data-label="Module Code"><a href="{{ site.baseurl }}{{ module.url }}">{{ module.code }}</a></td>
+          {% else %}
+          <td data-label="Module Code">{{ module.code }}</td>
+          {% endif %}
+          {% if module.url %}
+          <td data-label="Module Name"><a href="{{ site.baseurl }}{{ module.url }}">{{ module.name }}</a></td>
+          {% else %}
+          <td data-label="Module Name">{{ module.name }}</td>
+          {% endif %}
+          <td data-label="Theory Hours">{{ module.theory_hours }}</td>
+          <td data-label="Practical Hours">{{ module.practical_hours }}</td>
+          <td data-label="Total Hours">{{ module.total_hours }}</td>
+          {% if module.theory_marks %}
+          <td data-label="Theory Marks">{{ module.theory_marks.min }}-{{ module.theory_marks.max }}</td>
+          <td data-label="Practical Marks">{{ module.practical_marks.min }}-{{ module.practical_marks.max }}</td>
+          <td data-label="Total Marks">{{ module.total_marks.min }}-{{ module.total_marks.max }}</td>
+          {% else %}
+          <td data-label="Theory Marks" colspan="3">{% if module.note %}{{ module.note }}{% else %}-{% endif %}</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+        <tr class="total-row">
+          <td colspan="2" data-label="">Total</td>
+          <td data-label="Theory Hours">{{ site.data.course_modules.totals.theory_hours }}</td>
+          <td data-label="Practical Hours">{{ site.data.course_modules.totals.practical_hours }}</td>
+          <td data-label="Total Hours">{{ site.data.course_modules.totals.total_hours }}</td>
+          <td colspan="3" data-label="Maximum Marks">Maximum Marks in the level: {{ site.data.course_modules.totals.max_marks }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="marking-note">
+    <h3>Note on Marking Scheme:</h3>
+    <ul>
+      <li>Module Marks = 60% of Theory Marks + 40% of Practical Marks</li>
+      <li>Minimum passing marks are required in both theory and practical components</li>
+      <li>Project completion certificate is required to qualify for 'O' Level-IT</li>
+    </ul>
+  </div>
+
+  {% if site.posts.size > 0 %}
+    <h2>Latest Updates</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h3><a class="post-link" href="{{ post.url | absolute_url }}">{{ post.title | escape }}</a></h3>
+        {% if post.excerpt %}
+          {{ post.excerpt }}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+
+<style>
+:root {
+  --stat-m1: #2196f3;
+  --stat-m2: #43a047;
+  --stat-m3: #ffb300;
+  --stat-m4: #8e24aa;
+  --stat-m1-text: #2196f3;
+  --stat-m2-text: #43a047;
+  --stat-m3-text: #ffb300;
+  --stat-m4-text: #8e24aa;
+  --stat-m3-link-text: #222;
+  --practice-link-bg: #3498db;
+  --practice-link-text: #fff;
+  --practice-link-shadow: 0 2px 8px rgba(52, 152, 219, 0.10);
+  --stat-card-bg: var(--md-surface-variant, #f7fafc);
+  --stat-card-shadow: var(--md-elevation-1, 0 2px 12px rgba(52, 152, 219, 0.10));
+  --stat-title: var(--md-on-surface, #222);
+  --stat-label: var(--md-on-surface-variant, #888);
+  --total-card-bg: var(--md-surface-variant, #f7fafc);
+  --total-card-border: var(--stat-m1, #2196f3);
+  --total-line: var(--md-on-surface, #222);
+  --total-label: var(--md-on-surface-variant, #888);
+  --total-sep: #bbb;
+  --question-types-bg: var(--md-surface-variant, #f7fafc);
+  --question-types-border: var(--stat-m2, #43a047);
+  --question-types-title: var(--md-on-surface, #222);
+  --question-types-number: var(--stat-m2, #43a047);
+  --question-types-label: var(--md-on-surface-variant, #888);
+  --course-table-bg: #fff;
+  --course-table-th-bg: #f8f9fa;
+  --course-table-th-color: #2c3e50;
+  --course-table-td-color: #34495e;
+  --course-table-border: #eee;
+  --course-table-hover: #f8f9fa;
+  --course-table-link: #3498db;
+  --course-table-link-hover: #2980b9;
+  --marking-note-bg: #f8f9fa;
+  --marking-note-border: #3498db;
+  --marking-note-title: #2c3e50;
+  --marking-note-li: #34495e;
+}
+[data-theme="dark"] {
+  --stat-card-bg: #23272e;
+  --stat-card-shadow: 0 2px 12px rgba(33, 150, 243, 0.10);
+  --stat-title: #fff;
+  --stat-label: #b3b3b3;
+  --practice-link-bg: #1976d2;
+  --practice-link-text: #fff;
+  --practice-link-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+  --stat-m3-link-text: #222;
+  --total-card-bg: #23272e;
+  --total-card-border: #2196f3;
+  --total-line: #fff;
+  --total-label: #b3b3b3;
+  --total-sep: #888;
+  --question-types-bg: #23272e;
+  --question-types-border: #43a047;
+  --question-types-title: #fff;
+  --question-types-number: #43a047;
+  --question-types-label: #b3b3b3;
+  --course-table-bg: #181a1b;
+  --course-table-th-bg: #23272e;
+  --course-table-th-color: #fff;
+  --course-table-td-color: #e0e0e0;
+  --course-table-border: #333;
+  --course-table-hover: #23272e;
+  --course-table-link: #90caf9;
+  --course-table-link-hover: #42a5f5;
+  --marking-note-bg: #23272e;
+  --marking-note-border: #2196f3;
+  --marking-note-title: #fff;
+  --marking-note-li: #e0e0e0;
+}
+
+.practice-stats {
+  margin: 3rem 0;
+}
+.stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.3rem 1.2rem 1.5rem 1.2rem;
+  border-radius: 14px;
+  min-width: 220px;
+  max-width: 260px;
+  margin: 0 auto;
+  background: var(--stat-card-bg);
+  box-shadow: var(--stat-card-shadow);
+  border: none;
+  position: relative;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+.stat-icon-circle {
+  width: 54px;
+  height: 54px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+  border: 2.5px solid var(--stat-m1);
+  transition: border-color 0.3s;
+}
+.card-m1 .stat-icon-circle { border-color: var(--stat-m1); }
+.card-m2 .stat-icon-circle { border-color: var(--stat-m2); }
+.card-m3 .stat-icon-circle { border-color: var(--stat-m3); }
+.card-m4 .stat-icon-circle { border-color: var(--stat-m4); }
+.stat-icon {
+  font-family: 'Material Icons Outlined';
+  font-size: 2.1rem;
+  color: var(--stat-m1);
+  transition: color 0.3s;
+}
+.card-m1 .stat-icon { color: var(--stat-m1); }
+.card-m2 .stat-icon { color: var(--stat-m2); }
+.card-m3 .stat-icon { color: var(--stat-m3); }
+.card-m4 .stat-icon { color: var(--stat-m4); }
+.stat-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--stat-title);
+  text-align: center;
+  margin-bottom: 1.1rem;
+  margin-top: 0.1rem;
+  transition: color 0.3s;
+}
+.stat-numbers-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.2rem;
+  width: 100%;
+  margin-bottom: 1.1rem;
+}
+.stat-numbers-row > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--stat-m1);
+  margin-bottom: 0.1rem;
+  transition: color 0.3s;
+}
+.card-m1 .stat-number { color: var(--stat-m1); }
+.card-m2 .stat-number { color: var(--stat-m2); }
+.card-m3 .stat-number { color: var(--stat-m3); }
+.card-m4 .stat-number { color: var(--stat-m4); }
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--stat-label);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.practice-link.prominent {
+  display: inline-block;
+  margin-top: 0.7rem;
+  padding: 0.6rem 1.5rem;
+  background: var(--practice-link-bg);
+  color: var(--practice-link-text) !important;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: var(--practice-link-shadow);
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+.card-m1 .practice-link.prominent { background: var(--stat-m1); }
+.card-m2 .practice-link.prominent { background: var(--stat-m2); }
+.card-m3 .practice-link.prominent { background: var(--stat-m3); color: var(--stat-m3-link-text) !important; }
+.card-m4 .practice-link.prominent { background: var(--stat-m4); }
+.practice-link.prominent:hover {
+  filter: brightness(0.95);
+  text-decoration: none;
+}
+.total-card.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--total-card-bg);
+  box-shadow: var(--stat-card-shadow);
+  border-radius: 14px;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 3rem;
+  max-width: 900px;
+  min-width: 600px;
+  border: 2.5px solid var(--total-card-border);
+  transition: background 0.3s, border-color 0.3s;
+}
+.total-line {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--total-line);
+  transition: color 0.3s;
+}
+.total-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0.4rem;
+}
+.total-label {
+  font-size: 1.3rem;
+  color: var(--total-label);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.total-sep {
+  font-size: 2rem;
+  color: var(--total-sep);
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+.question-types-card.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--question-types-bg);
+  box-shadow: var(--stat-card-shadow);
+  border-radius: 14px;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 3rem;
+  max-width: 900px;
+  min-width: 600px;
+  border: 2.5px solid var(--question-types-border);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.question-types-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--question-types-title);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.question-types-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+}
+
+.question-type-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.question-type-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--question-types-number);
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.question-type-label {
+  font-size: 1.1rem;
+  color: var(--question-types-label);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+@media (max-width: 900px) {
+  .stats-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .total-card.centered {
+    padding: 1.2rem 0.5rem;
+    max-width: 95vw;
+    min-width: unset;
+  }
+  .total-line {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+  }
+  .total-number {
+    font-size: 1.5rem;
+  }
+  .question-types-card.centered {
+    padding: 1.2rem 0.5rem;
+    max-width: 95vw;
+    min-width: unset;
+  }
+  .question-types-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .question-type-number {
+    font-size: 1.8rem;
+  }
+  .question-type-label {
+    font-size: 1rem;
+  }
+}
+
+/* Table and note styles for dark/light mode */
+.course-table {
+  overflow-x: auto;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.course-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--course-table-bg);
+  margin: 0;
+}
+.course-table th,
+.course-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--course-table-border);
+}
+.course-table th {
+  background-color: var(--course-table-th-bg);
+  font-weight: 600;
+  color: var(--course-table-th-color);
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.course-table td {
+  color: var(--course-table-td-color);
+}
+.course-table tr:last-child td {
+  border-bottom: none;
+}
+.course-table tr:hover td {
+  background-color: var(--course-table-hover);
+}
+.course-table a {
+  color: var(--course-table-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.course-table a:hover {
+  color: var(--course-table-link-hover);
+  text-decoration: underline;
+}
+.marking-note {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--marking-note-bg);
+  border-radius: 8px;
+  border-left: 4px solid var(--marking-note-border);
+  transition: background 0.3s, border-color 0.3s;
+}
+.marking-note h3 {
+  margin-top: 0;
+  color: var(--marking-note-title);
+  transition: color 0.3s;
+}
+.marking-note ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+}
+.marking-note li {
+  margin: 0.5rem 0;
+  color: var(--marking-note-li);
+  transition: color 0.3s;
+}
+.total-row {
+  font-weight: 600;
+  background-color: var(--course-table-th-bg);
+  transition: background 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .course-table {
+    margin: 1rem -1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .course-table table {
+    display: block;
+  }
+  .course-table thead {
+    display: none;
+  }
+  .course-table tbody {
+    display: block;
+  }
+  .course-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid var(--course-table-border);
+    border-radius: 8px;
+    background: var(--course-table-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  .course-table td {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: right;
+    border-bottom: 1px solid var(--course-table-border);
+  }
+  .course-table td:last-child {
+    border-bottom: none;
+  }
+  .course-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    color: var(--course-table-th-color);
+  }
+  .total-row {
+    background-color: var(--course-table-th-bg);
+  }
+}
+.updates {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e8e8e8;
+}
+</style> 

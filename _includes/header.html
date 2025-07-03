@@ -1,0 +1,76 @@
+<header class="site-header">
+  <div class="header-bar">
+    <div class="header-left">
+      <span class="material-symbols-outlined header-icon">school</span>
+      <span class="site-title">NIELIT O Level Preparation @ NITECH</span>
+    </div>
+    {% if site.google_login %}
+    <div id="auth-section" class="header-auth"></div>
+    {% endif %}
+  </div>
+</header>
+
+<style>
+.site-header {
+  background: #1976d2;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  min-height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.header-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.site-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-auth {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .header-bar {
+    padding: 0 0.5rem;
+    min-height: 44px;
+  }
+  .site-title {
+    font-size: 0.98rem;
+    max-width: 60vw;
+  }
+  .header-auth {
+    min-width: 90px;
+  }
+}
+</style> 

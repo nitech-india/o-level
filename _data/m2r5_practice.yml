@@ -1,0 +1,1601 @@
+sets:
+  - id: 1
+    name: "Practice Set 1 - Web Design Fundamentals & HTML Basics (25 marks)"
+    duration_minutes: 60
+    questions:
+      - text: "What does HTML stand for?"
+        choices:
+          A: "Hyper Text Markup Language"
+          B: "High Tech Modern Language"
+          C: "Hyperlink and Text Management Language"
+          D: "Home Tool Markup Language"
+        answer: "A"
+        explanation: "HTML stands for Hyper Text Markup Language."
+        topic: "Introduction to Web Design and Editors, HTML Basics"
+
+      - text: "Which HTML tag is used to create a hyperlink?"
+        choices:
+          A: "<link>"
+          B: "<a>"
+          C: "<href>"
+          D: "<p>"
+        answer: "B"
+        explanation: "The <a> tag is used to create hyperlinks in HTML."
+
+      - text: "Which HTML element is used to define the title of a document?"
+        choices:
+          A: "<head>"
+          B: "<title>"
+          C: "<meta>"
+          D: "<body>"
+        answer: "B"
+        explanation: "The <title> element defines the title of the HTML document, which appears in the browser tab."
+
+      - text: "Which HTML tag is used to define an unordered list?"
+        choices:
+          A: "<ol>"
+          B: "<li>"
+          C: "<list>"
+          D: "<ul>"
+        answer: "D"
+        explanation: "The <ul> tag is used to create an unordered list with bullet points."
+
+      - text: "Which HTML element is used to specify a footer for a document or section?"
+        choices:
+          A: "<bottom>"
+          B: "<footer>"
+          C: "<section>"
+          D: "<end>"
+        answer: "B"
+        explanation: "The <footer> element defines a footer for a document or section."
+
+      - text: "Which input type defines a slider control in HTML5?"
+        choices:
+          A: "range"
+          B: "slider"
+          C: "controls"
+          D: "search"
+        answer: "A"
+        explanation: "The 'range' input type creates a slider control for selecting values within a range."
+
+      - text: "In HTML, which element is used to display an image?"
+        choices:
+          A: "<image>"
+          B: "<img>"
+          C: "<pic>"
+          D: "<src>"
+        answer: "B"
+        explanation: "The <img> element is used to display images in HTML documents."
+
+      - text: "Which HTML5 element is best for embedding a video?"
+        choices:
+          A: "<media>"
+          B: "<movie>"
+          C: "<video>"
+          D: "<embed>"
+        answer: "C"
+        explanation: "The <video> element is the standard HTML5 element for embedding video content."
+
+      - text: "Which HTML element provides metadata about the HTML document, such as character set and viewport settings?"
+        choices:
+          A: "<head>"
+          B: "<meta>"
+          C: "<style>"
+          D: "<script>"
+        answer: "B"
+        explanation: "The <meta> element provides metadata about the HTML document including character set and viewport settings."
+
+      - text: "Which HTML tag is used to define a table row?"
+        choices:
+          A: "<table>"
+          B: "<td>"
+          C: "<th>"
+          D: "<tr>"
+        answer: "D"
+        explanation: "The <tr> tag defines a table row in HTML tables."
+
+      - text: "Which HTML input type is used for fields that should contain an e-mail address?"
+        choices:
+          A: "type='text'"
+          B: "type='email'"
+          C: "type='url'"
+          D: "type='mail'"
+        answer: "B"
+        explanation: "The 'email' input type is specifically designed for email address fields with built-in validation."
+
+      - text: "Which HTML element is used for the most important heading?"
+        choices:
+          A: "<heading>"
+          B: "<h6>"
+          C: "<h1>"
+          D: "<head>"
+        answer: "C"
+        explanation: "The <h1> element represents the most important heading in the document hierarchy."
+
+      - text: "Which tag is used to create a numbered list in HTML?"
+        choices:
+          A: "<ul>"
+          B: "<ol>"
+          C: "<list>"
+          D: "<dl>"
+        answer: "B"
+        explanation: "The <ol> tag creates an ordered (numbered) list in HTML."
+
+      - text: "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?"
+        choices:
+          A: "src"
+          B: "title"
+          C: "alt"
+          D: "longdesc"
+        answer: "C"
+        explanation: "The 'alt' attribute provides alternative text for images when they cannot be displayed."
+
+      - text: "How do you create a comment in an HTML file?"
+        choices:
+          A: "/* comment */"
+          B: "// comment"
+          C: "<!-- comment -->"
+          D: "' comment"
+        answer: "C"
+        explanation: "HTML comments are created using <!-- comment --> syntax."
+
+      - text: "Which HTML5 element is used to define navigation links?"
+        choices:
+          A: "<navigate>"
+          B: "<nav>"
+          C: "<navigation>"
+          D: "<menu>"
+        answer: "B"
+        explanation: "The <nav> element defines a section of navigation links."
+
+      - text: "Which HTML element is used to define a paragraph?"
+        choices:
+          A: "<para>"
+          B: "<p>"
+          C: "<text>"
+          D: "<paragraph>"
+        answer: "B"
+        explanation: "The <p> element defines a paragraph in HTML."
+
+      - text: "Which HTML element is used to define a table cell?"
+        choices:
+          A: "<table>"
+          B: "<td>"
+          C: "<th>"
+          D: "<tr>"
+        answer: "B"
+        explanation: "The <td> element defines a standard table cell in HTML tables."
+
+      - text: "Which HTML element is used for the least important heading?"
+        choices:
+          A: "<h1>"
+          B: "<h6>"
+          C: "<heading>"
+          D: "<head>"
+        answer: "B"
+        explanation: "The <h6> element represents the least important heading in the document hierarchy."
+
+      - text: "Which HTML element is used to define a line break?"
+        choices:
+          A: "<break>"
+          B: "<br>"
+          C: "<line>"
+          D: "<newline>"
+        answer: "B"
+        explanation: "The <br> element creates a line break in HTML."
+
+      - text: "Which HTML element represents the main content of a document?"
+        choices:
+          A: "<section>"
+          B: "<article>"
+          C: "<main>"
+          D: "<body>"
+        answer: "C"
+        explanation: "The <main> element represents the main content of the document."
+
+      - text: "Which HTML element is used to embed audio content?"
+        choices:
+          A: "<sound>"
+          B: "<music>"
+          C: "<mp3>"
+          D: "<audio>"
+        answer: "D"
+        explanation: "The <audio> element is used to embed audio content in HTML5."
+
+      - text: "Which HTML element is used to embed external content?"
+        choices:
+          A: "<embed>"
+          B: "<iframe>"
+          C: "<object>"
+          D: "<external>"
+        answer: "B"
+        explanation: "The <iframe> element is commonly used to embed external content like maps or videos."
+
+      - text: "Which HTML element represents a self-contained composition?"
+        choices:
+          A: "<section>"
+          B: "<article>"
+          C: "<main>"
+          D: "<body>"
+        answer: "B"
+        explanation: "The <article> element represents a self-contained composition that could be independently distributable."
+
+      - text: "Which HTML element is used to define a thematic break (often a horizontal rule)?"
+        choices:
+          A: "<break>"
+          B: "<hr>"
+          C: "<line>"
+          D: "<divider>"
+        answer: "B"
+        explanation: "The <hr> element defines a thematic break, typically displayed as a horizontal rule."
+
+      - text: "What is the purpose of the 'viewport' meta tag?"
+        choices:
+          A: "To set the website's title"
+          B: "To control the page's dimensions and scaling on different devices"
+          C: "To link to an external stylesheet"
+          D: "To improve the website's SEO"
+        answer: "B"
+        explanation: "The viewport meta tag controls how the page is displayed on different devices, especially mobile."
+
+      - text: "Which of the following are valid HTML elements?"
+        type: "multiple"
+        choices:
+          A: "<div>"
+          B: "<span>"
+          C: "<section>"
+          D: "<main>"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid HTML elements used for different purposes in web development."
+
+      - text: "Which of the following HTML tags are used for lists?"
+        type: "multiple"
+        choices:
+          A: "<ul>"
+          B: "<ol>"
+          C: "<li>"
+          D: "<dl>"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid HTML list tags for creating different types of lists."
+
+      - text: "Which of the following are valid HTML5 semantic elements?"
+        type: "multiple"
+        choices:
+          A: "<header>"
+          B: "<footer>"
+          C: "<section>"
+          D: "<font>"
+        answer: ["A", "B", "C"]
+        explanation: "<header>, <footer>, and <section> are semantic; <font> is deprecated."
+        topic: "HTML5"
+
+      - text: "Which of the following are valid attributes for the <img> tag?"
+        type: "multiple"
+        choices:
+          A: "src"
+          B: "alt"
+          C: "href"
+          D: "width"
+        answer: ["A", "B", "D"]
+        explanation: "src, alt, and width are valid; href is not for <img>."
+        topic: "HTML Basics"
+
+      - text: "Which of the following are valid HTML input types?"
+        type: "multiple"
+        choices:
+          A: "text"
+          B: "email"
+          C: "date"
+          D: "slider"
+        answer: ["A", "B", "C"]
+        explanation: "text, email, and date are valid input types; slider is not."
+        topic: "HTML5"
+
+      - text: "Which of the following are valid ways to include CSS in an HTML document?"
+        type: "multiple"
+        choices:
+          A: "Inline styles using the style attribute"
+          B: "External CSS file using the <link> tag"
+          C: "Embedded CSS using the <style> tag in the <head>"
+          D: "Using the <css> tag in the body"
+        answer: ["A", "B", "C"]
+        explanation: "Inline, external, and embedded are valid; <css> is not a tag."
+        topic: "CSS Basics"
+
+      - text: "Which of the following are valid HTML list types?"
+        type: "multiple"
+        choices:
+          A: "Ordered list (<ol>)"
+          B: "Unordered list (<ul>)"
+          C: "Definition list (<dl>)"
+          D: "Numbered list (<nl>)"
+        answer: ["A", "B", "C"]
+        explanation: "<ol>, <ul>, and <dl> are valid; <nl> is not."
+        topic: "HTML Basics"
+
+      - text: "Which of the following are valid HTML5 form input validation attributes?"
+        type: "multiple"
+        choices:
+          A: "required"
+          B: "pattern"
+          C: "minlength"
+          D: "readonly"
+        answer: ["A", "B", "C"]
+        explanation: "required, pattern, and minlength are for validation; readonly is for state."
+        topic: "HTML5"
+
+      - text: "Which of the following are valid HTML table elements?"
+        type: "multiple"
+        choices:
+          A: "<thead>"
+          B: "<tbody>"
+          C: "<tfoot>"
+          D: "<trow>"
+        answer: ["A", "B", "C"]
+        explanation: "<thead>, <tbody>, and <tfoot> are valid; <trow> is not."
+        topic: "HTML Basics"
+
+      - text: "Which of the following are valid HTML5 multimedia elements?"
+        type: "multiple"
+        choices:
+          A: "<audio>"
+          B: "<video>"
+          C: "<canvas>"
+          D: "<sound>"
+        answer: ["A", "B", "C"]
+        explanation: "<audio>, <video>, and <canvas> are valid; <sound> is not."
+        topic: "HTML5"
+
+      - text: "Which of the following are valid HTML attributes for accessibility?"
+        type: "multiple"
+        choices:
+          A: "aria-label"
+          B: "tabindex"
+          C: "alt"
+          D: "srcdoc"
+        answer: ["A", "B", "C"]
+        explanation: "aria-label, tabindex, and alt improve accessibility; srcdoc is for iframes."
+        topic: "HTML5"
+
+      - text: "Which of the following are valid HTML5 structural elements?"
+        type: "multiple"
+        choices:
+          A: "<article>"
+          B: "<aside>"
+          C: "<main>"
+          D: "<font>"
+        answer: ["A", "B", "C"]
+        explanation: "<article>, <aside>, and <main> are valid; <font> is deprecated."
+        topic: "HTML5"
+
+  - id: 2
+    name: "Practice Set 2 - Cascading Style Sheets (CSS) (20 marks)"
+    duration_minutes: 45
+    questions:
+      - text: "What does CSS stand for?"
+        choices:
+          A: "Creative Style Sheets"
+          B: "Cascading Style Sheets"
+          C: "Computer Style Sheets"
+          D: "Colorful Style Sheets"
+        answer: "B"
+        explanation: "CSS stands for Cascading Style Sheets, used for styling web pages."
+
+      - text: "Which CSS property is used to change the text color of an element?"
+        choices:
+          A: "font-color"
+          B: "text-color"
+          C: "color"
+          D: "font-style"
+        answer: "C"
+        explanation: "The 'color' property is used to change the text color of an element."
+
+      - text: "How do you insert a comment in a CSS file?"
+        choices:
+          A: "// this is a comment"
+          B: "<!-- this is a comment -->"
+          C: "/* this is a comment */"
+          D: "' this is a comment"
+        answer: "C"
+        explanation: "CSS comments are created using /* comment */ syntax."
+
+      - text: "Which CSS property controls the spacing between elements?"
+        choices:
+          A: "padding"
+          B: "margin"
+          C: "border"
+          D: "spacing"
+        answer: "B"
+        explanation: "The 'margin' property controls the spacing between elements."
+
+      - text: "What is the correct way to link an external stylesheet named 'style.css'?"
+        choices:
+          A: "<style src='style.css'>"
+          B: "<stylesheet>style.css</stylesheet>"
+          C: "<link rel='stylesheet' type='text/css' href='style.css'>"
+          D: "<style link='style.css'>"
+        answer: "C"
+        explanation: "The <link> tag with rel='stylesheet' and href attributes is the correct way to link external CSS."
+
+      - text: "Which CSS property is used to set the background color of an element?"
+        choices:
+          A: "color"
+          B: "bgcolor"
+          C: "background-color"
+          D: "background"
+        answer: "C"
+        explanation: "The 'background-color' property is used to set the background color of an element."
+
+      - text: "What is the purpose of a 'class' selector in CSS?"
+        choices:
+          A: "To select a unique element"
+          B: "To select all elements of a certain type"
+          C: "To select and style one or more elements with a specific class"
+          D: "To select the main body of the document"
+        answer: "C"
+        explanation: "Class selectors allow styling multiple elements that share the same class name."
+
+      - text: "What CSS property is used to create space around an element's content, inside of any defined borders?"
+        choices:
+          A: "margin"
+          B: "padding"
+          C: "border"
+          D: "outline"
+        answer: "B"
+        explanation: "The 'padding' property creates space inside the element's borders."
+
+      - text: "Which CSS selector selects an element based on its 'id'?"
+        choices:
+          A: "."
+          B: "#"
+          C: "*"
+          D: " "
+        answer: "B"
+        explanation: "The '#' symbol is used to select elements by their ID attribute."
+
+      - text: "What is the purpose of the CSS 'float' property?"
+        choices:
+          A: "To make an element transparent"
+          B: "To place an element on the left or right of its container, allowing text and inline elements to wrap around it"
+          C: "To animate an element's position"
+          D: "To change the font size"
+        answer: "B"
+        explanation: "The 'float' property allows elements to be positioned to the left or right with text wrapping around them."
+
+      - text: "What does the CSS 'display: none;' property do?"
+        choices:
+          A: "Makes the element transparent"
+          B: "Hides the element, and it does not take up any space"
+          C: "Makes the element invisible, but it still takes up space"
+          D: "Displays the element as a block-level element"
+        answer: "B"
+        explanation: "'display: none' completely hides the element and removes it from the layout flow."
+
+      - text: "What is the CSS 'box-sizing: border-box;' used for?"
+        choices:
+          A: "To include padding and border in the element's total width and height"
+          B: "To create a box with a dotted border"
+          C: "To change the shape of the element to a box"
+          D: "To add a shadow to the box"
+        answer: "A"
+        explanation: "'box-sizing: border-box' includes padding and border in the element's total dimensions."
+
+      - text: "Which CSS property is used to change the font of an element?"
+        choices:
+          A: "font-style"
+          B: "font-family"
+          C: "font-weight"
+          D: "text-font"
+        answer: "B"
+        explanation: "The 'font-family' property specifies which font to use for text."
+
+      - text: "Which CSS layout model is designed for one-dimensional layouts (either a row or a column)?"
+        choices:
+          A: "Grid"
+          B: "Float"
+          C: "Flexbox"
+          D: "Position"
+        answer: "C"
+        explanation: "Flexbox is designed for one-dimensional layouts, either in rows or columns."
+
+      - text: "What is the default value of the 'position' property in CSS?"
+        choices:
+          A: "static"
+          B: "relative"
+          C: "fixed"
+          D: "absolute"
+        answer: "A"
+        explanation: "'static' is the default position value, where elements follow normal document flow."
+
+      - text: "What CSS property is used to create space around an element's content, outside of any defined borders?"
+        choices:
+          A: "padding"
+          B: "margin"
+          C: "border"
+          D: "outline"
+        answer: "B"
+        explanation: "The 'margin' property creates space outside the element's borders."
+
+      - text: "In CSS, what does 'specificity' refer to?"
+        choices:
+          A: "The speed at which a style is applied"
+          B: "The algorithm used by browsers to determine which CSS rule is applied to an element"
+          C: "A property to make text more specific"
+          D: "A type of CSS selector"
+        answer: "B"
+        explanation: "Specificity determines which CSS rules take precedence when multiple rules apply to the same element."
+
+      - text: "Which CSS pseudo-class is used to select and style a link that is being hovered over?"
+        choices:
+          A: ":active"
+          B: ":visited"
+          C: ":hover"
+          D: ":link"
+        answer: "C"
+        explanation: "The ':hover' pseudo-class applies styles when the user hovers over an element."
+
+      - text: "What is the 'z-index' property in CSS used for?"
+        choices:
+          A: "To set the zoom level of an element"
+          B: "To specify the stack order of an element"
+          C: "To create a 3D effect"
+          D: "To define the font size"
+        answer: "B"
+        explanation: "The 'z-index' property controls the stacking order of positioned elements."
+
+      - text: "Which CSS property is used to create rounded corners?"
+        choices:
+          A: "border-radius"
+          B: "corner-radius"
+          C: "round-corners"
+          D: "border-round"
+        answer: "A"
+        explanation: "The 'border-radius' property creates rounded corners on elements."
+
+      - text: "Which of the following are CSS selectors?"
+        type: "multiple"
+        choices:
+          A: "Class selector"
+          B: "ID selector"
+          C: "Element selector"
+          D: "Universal selector"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid CSS selectors used to target different types of elements."
+
+      - text: "Which of the following are CSS properties for layout?"
+        type: "multiple"
+        choices:
+          A: "display"
+          B: "position"
+          C: "float"
+          D: "flex-direction"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are CSS properties used for controlling element layout and positioning."
+
+      - text: "Which of the following are valid CSS selectors?"
+        type: "multiple"
+        choices:
+          A: ".classSelector"
+          B: "#idSelector"
+          C: "elementSelector"
+          D: "@mediaSelector"
+        answer: ["A", "B", "C"]
+        explanation: "Class, ID, and element selectors are valid; @media is an at-rule, not a selector."
+        topic: "CSS Basics"
+
+      - text: "Which of the following are valid CSS properties for box model manipulation?"
+        type: "multiple"
+        choices:
+          A: "margin"
+          B: "padding"
+          C: "border"
+          D: "outline-style"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid for box model manipulation."
+        topic: "Box Model"
+
+      - text: "Which of the following are valid CSS units for length?"
+        type: "multiple"
+        choices:
+          A: "px"
+          B: "em"
+          C: "%"
+          D: "pt"
+        answer: ["A", "B", "C", "D"]
+        explanation: "px, em, %, and pt are all valid CSS length units."
+        topic: "CSS Properties"
+
+      - text: "Which of the following are valid ways to apply CSS to an HTML document?"
+        type: "multiple"
+        choices:
+          A: "Inline styles"
+          B: "Internal stylesheet"
+          C: "External stylesheet"
+          D: "HTML <css> tag"
+        answer: ["A", "B", "C"]
+        explanation: "Inline, internal, and external are valid; <css> is not a tag."
+        topic: "CSS Basics"
+
+      - text: "Which of the following are valid CSS pseudo-classes?"
+        type: "multiple"
+        choices:
+          A: ":hover"
+          B: ":active"
+          C: ":visited"
+          D: ":clicked"
+        answer: ["A", "B", "C"]
+        explanation: ":hover, :active, and :visited are valid; :clicked is not."
+        topic: "CSS Selectors"
+
+      - text: "Which of the following are valid CSS display property values?"
+        type: "multiple"
+        choices:
+          A: "block"
+          B: "inline"
+          C: "flex"
+          D: "hidden"
+        answer: ["A", "B", "C"]
+        explanation: "block, inline, and flex are valid; hidden is not a display value."
+        topic: "CSS Properties"
+
+      - text: "Which of the following are valid CSS color value formats?"
+        type: "multiple"
+        choices:
+          A: "hexadecimal (#RRGGBB)"
+          B: "rgb(…)"
+          C: "hsl(…)"
+          D: "cmyk(…)"
+        answer: ["A", "B", "C"]
+        explanation: "hex, rgb, and hsl are valid; cmyk is not supported in CSS."
+        topic: "CSS Properties"
+
+      - text: "Which of the following are valid CSS properties for font styling?"
+        type: "multiple"
+        choices:
+          A: "font-family"
+          B: "font-size"
+          C: "font-weight"
+          D: "font-style"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid for font styling."
+        topic: "CSS Properties"
+
+      - text: "Which of the following are valid CSS properties for positioning elements?"
+        type: "multiple"
+        choices:
+          A: "position"
+          B: "top"
+          C: "left"
+          D: "float"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid for positioning elements."
+        topic: "CSS Properties"
+
+      - text: "Which of the following are valid CSS properties for background styling?"
+        type: "multiple"
+        choices:
+          A: "background-color"
+          B: "background-image"
+          C: "background-repeat"
+          D: "background-size"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid for background styling."
+        topic: "CSS Properties"
+
+  - id: 3
+    name: "Practice Set 3 - CSS Framework (15 marks)"
+    duration_minutes: 35
+    questions:
+      - text: "What is a CSS framework?"
+        choices:
+          A: "A programming language"
+          B: "A pre-prepared library of CSS code that provides ready-to-use styling"
+          C: "A type of HTML element"
+          D: "A JavaScript library"
+        answer: "B"
+        explanation: "A CSS framework is a pre-prepared library of CSS code that provides ready-to-use styling and components."
+
+      - text: "Which of the following are popular CSS frameworks?"
+        type: "multiple"
+        choices:
+          A: "Bootstrap"
+          B: "Foundation"
+          C: "Bulma"
+          D: "Tailwind CSS"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are popular CSS frameworks used for rapid web development."
+
+      - text: "What is the main advantage of using a CSS framework?"
+        choices:
+          A: "It makes websites load faster"
+          B: "It provides pre-built components and responsive design"
+          C: "It reduces the need for HTML"
+          D: "It eliminates the need for JavaScript"
+        answer: "B"
+        explanation: "CSS frameworks provide pre-built components and responsive design, speeding up development."
+
+      - text: "What is a 'grid system' in CSS frameworks?"
+        choices:
+          A: "A way to create tables"
+          B: "A system for creating responsive layouts using columns and rows"
+          C: "A method for organizing images"
+          D: "A type of navigation menu"
+        answer: "B"
+        explanation: "A grid system uses columns and rows to create responsive layouts that adapt to different screen sizes."
+
+      - text: "What is 'responsive design' in the context of CSS frameworks?"
+        choices:
+          A: "A design that responds quickly to user clicks"
+          B: "A design approach that makes web pages render well on a variety of devices and screen sizes"
+          C: "A design that has a lot of animations"
+          D: "A design that focuses only on desktop browsers"
+        answer: "B"
+        explanation: "Responsive design ensures web pages work well across different devices and screen sizes."
+
+      - text: "What is a 'container' in CSS frameworks?"
+        choices:
+          A: "A type of HTML tag"
+          B: "A wrapper element that centers content and provides consistent spacing"
+          C: "A way to store data"
+          D: "A type of button"
+        answer: "B"
+        explanation: "A container is a wrapper element that centers content and provides consistent spacing across different screen sizes."
+
+      - text: "What is the purpose of 'utility classes' in CSS frameworks?"
+        choices:
+          A: "To create animations"
+          B: "To provide single-purpose classes for common styling needs"
+          C: "To handle JavaScript functionality"
+          D: "To create complex layouts"
+        answer: "B"
+        explanation: "Utility classes provide single-purpose styling for common needs like spacing, colors, and typography."
+
+      - text: "What is 'mobile-first' design in CSS frameworks?"
+        choices:
+          A: "Designing only for mobile devices"
+          B: "Designing for mobile devices first, then scaling up for larger screens"
+          C: "Making websites mobile-only"
+          D: "Using mobile-specific features"
+        answer: "B"
+        explanation: "Mobile-first design starts with mobile layouts and progressively enhances for larger screens."
+
+      - text: "What is a 'breakpoint' in responsive design?"
+        choices:
+          A: "A point where the website breaks"
+          B: "A specific screen width where the layout changes"
+          C: "A type of error"
+          D: "A loading screen"
+        answer: "B"
+        explanation: "A breakpoint is a specific screen width where the layout changes to adapt to different device sizes."
+
+      - text: "What is the purpose of 'normalize.css'?"
+        choices:
+          A: "To make all browsers look the same"
+          B: "To provide consistent base styles across different browsers"
+          C: "To speed up website loading"
+          D: "To add animations"
+        answer: "B"
+        explanation: "Normalize.css provides consistent base styles across different browsers by normalizing default styles."
+
+      - text: "What is a 'component' in CSS frameworks?"
+        choices:
+          A: "A piece of hardware"
+          B: "A reusable UI element with predefined styling"
+          C: "A JavaScript function"
+          D: "A type of database"
+        answer: "B"
+        explanation: "A component is a reusable UI element with predefined styling, like buttons, cards, or navigation bars."
+
+      - text: "What is 'Sass' in relation to CSS frameworks?"
+        choices:
+          A: "A JavaScript library"
+          B: "A CSS preprocessor that extends CSS functionality"
+          C: "A type of HTML element"
+          D: "A database system"
+        answer: "B"
+        explanation: "Sass is a CSS preprocessor that extends CSS with features like variables, nesting, and mixins."
+
+      - text: "What is the purpose of 'variables' in CSS frameworks?"
+        choices:
+          A: "To store JavaScript data"
+          B: "To define reusable values for colors, fonts, and other properties"
+          C: "To create animations"
+          D: "To handle user input"
+        answer: "B"
+        explanation: "Variables allow defining reusable values for colors, fonts, and other properties throughout a project."
+
+      - text: "What is 'flexbox' in CSS frameworks?"
+        choices:
+          A: "A type of box model"
+          B: "A layout model for creating flexible responsive layouts"
+          C: "A way to create animations"
+          D: "A type of grid system"
+        answer: "B"
+        explanation: "Flexbox is a CSS layout model for creating flexible, responsive layouts that adapt to different screen sizes."
+
+      - text: "What is the purpose of 'media queries' in CSS frameworks?"
+        choices:
+          A: "To query and play media files"
+          B: "To apply different styles for different screen sizes and devices"
+          C: "To connect to social media APIs"
+          D: "To animate media elements"
+        answer: "B"
+        explanation: "Media queries allow applying different styles for different screen sizes and devices."
+
+      - text: "Which of the following are features of CSS frameworks?"
+        type: "multiple"
+        choices:
+          A: "Grid system"
+          B: "Responsive design"
+          C: "Predefined components"
+          D: "Utility classes"
+        answer: ["A", "B", "C", "D"]
+        explanation: "Grid system, responsive design, predefined components, and utility classes are common features of CSS frameworks."
+
+      - text: "Which of the following are valid features of CSS frameworks like Bootstrap or W3.CSS?"
+        type: "multiple"
+        choices:
+          A: "Predefined grid systems"
+          B: "Ready-to-use UI components"
+          C: "Automatic JavaScript minification"
+          D: "Responsive design utilities"
+        answer: ["A", "B", "D"]
+        explanation: "Grid, UI components, and responsive utilities are features; JS minification is not."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid ways to include a CSS framework in a project?"
+        type: "multiple"
+        choices:
+          A: "Linking to a CDN in the <head>"
+          B: "Downloading and hosting the CSS file locally"
+          C: "Importing via npm or yarn in a build process"
+          D: "Using a <framework> HTML tag"
+        answer: ["A", "B", "C"]
+        explanation: "CDN, local, and npm/yarn are valid; <framework> is not a tag."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid Bootstrap utility classes?"
+        type: "multiple"
+        choices:
+          A: ".text-center"
+          B: ".d-flex"
+          C: ".bg-primary"
+          D: ".font-bolded"
+        answer: ["A", "B", "C"]
+        explanation: ".text-center, .d-flex, and .bg-primary are valid; .font-bolded is not."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid W3.CSS color classes?"
+        type: "multiple"
+        choices:
+          A: ".w3-red"
+          B: ".w3-blue"
+          C: ".w3-green"
+          D: ".w3-yellowed"
+        answer: ["A", "B", "C"]
+        explanation: ".w3-red, .w3-blue, and .w3-green are valid; .w3-yellowed is not."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid uses of a CSS framework's grid system?"
+        type: "multiple"
+        choices:
+          A: "Creating responsive layouts"
+          B: "Aligning content in columns and rows"
+          C: "Automatically generating JavaScript code"
+          D: "Controlling layout on different screen sizes"
+        answer: ["A", "B", "D"]
+        explanation: "Grid systems are for layout and responsiveness, not JS generation."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid W3.CSS container classes?"
+        type: "multiple"
+        choices:
+          A: ".w3-container"
+          B: ".w3-content"
+          C: ".w3-section"
+          D: ".w3-boxed"
+        answer: ["A", "B", "C"]
+        explanation: ".w3-container, .w3-content, and .w3-section are valid; .w3-boxed is not."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid Bootstrap button classes?"
+        type: "multiple"
+        choices:
+          A: ".btn"
+          B: ".btn-primary"
+          C: ".btn-success"
+          D: ".btn-rounded"
+        answer: ["A", "B", "C"]
+        explanation: ".btn, .btn-primary, and .btn-success are valid; .btn-rounded is not."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid ways to customize a CSS framework?"
+        type: "multiple"
+        choices:
+          A: "Overriding framework classes with custom CSS"
+          B: "Using SASS/LESS variables if supported"
+          C: "Editing the CDN file directly"
+          D: "Adding your own utility classes"
+        answer: ["A", "B", "D"]
+        explanation: "Override, variables, and custom classes are valid; editing CDN files is not."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid responsive utilities in Bootstrap?"
+        type: "multiple"
+        choices:
+          A: ".d-none"
+          B: ".d-md-block"
+          C: ".d-lg-inline"
+          D: ".d-xxl-flexed"
+        answer: ["A", "B", "C"]
+        explanation: ".d-none, .d-md-block, and .d-lg-inline are valid; .d-xxl-flexed is not."
+        topic: "CSS Framework"
+
+      - text: "Which of the following are valid W3.CSS typography classes?"
+        type: "multiple"
+        choices:
+          A: ".w3-serif"
+          B: ".w3-sans-serif"
+          C: ".w3-monospace"
+          D: ".w3-italic"
+        answer: ["A", "C", "D"]
+        explanation: ".w3-serif, .w3-monospace, and .w3-italic are valid; .w3-sans-serif is not."
+        topic: "CSS Framework"
+
+  - id: 4
+    name: "Practice Set 4 - JavaScript and Angular JS (20 marks)"
+    duration_minutes: 45
+    questions:
+      - text: "What is the purpose of JavaScript in web development?"
+        choices:
+          A: "To style web pages"
+          B: "To add interactivity and dynamic behavior"
+          C: "To create databases"
+          D: "To manage servers"
+        answer: "B"
+        explanation: "JavaScript is used to add interactivity and dynamic features to web pages."
+
+      - text: "Which JavaScript keyword is used to declare a variable that cannot be reassigned?"
+        choices:
+          A: "var"
+          B: "let"
+          C: "const"
+          D: "static"
+        answer: "C"
+        explanation: "'const' is used to declare variables that cannot be reassigned."
+
+      - text: "How do you write 'Hello World' in an alert box using JavaScript?"
+        choices:
+          A: "msgBox('Hello World');"
+          B: "alertBox('Hello World');"
+          C: "alert('Hello World');"
+          D: "msg('Hello World');"
+        answer: "C"
+        explanation: "The alert('Hello World'); statement displays a popup alert box with the message."
+
+      - text: "Which JavaScript method is used to write to an HTML element?"
+        choices:
+          A: "document.write()"
+          B: "console.log()"
+          C: "window.alert()"
+          D: "innerHTML"
+        answer: "D"
+        explanation: "The innerHTML property is used to write or change the content of an HTML element."
+
+      - text: "What is the correct syntax for referring to an external script called 'app.js'?"
+        choices:
+          A: "<script src='app.js'>"
+          B: "<script href='app.js'>"
+          C: "<script name='app.js'>"
+          D: "<script file='app.js'>"
+        answer: "A"
+        explanation: "The correct syntax is <script src='app.js'> to include an external JavaScript file."
+
+      - text: "How do you declare a JavaScript function?"
+        choices:
+          A: "function myFunction()"
+          B: "function: myFunction()"
+          C: "function = myFunction()"
+          D: "declare function myFunction()"
+        answer: "A"
+        explanation: "A JavaScript function is declared using the function keyword followed by the function name and parentheses."
+
+      - text: "Which JavaScript event occurs when the user clicks on an HTML element?"
+        choices:
+          A: "onclick"
+          B: "onchange"
+          C: "onmouseover"
+          D: "onmouseclick"
+        answer: "A"
+        explanation: "The 'onclick' event is triggered when an HTML element is clicked."
+
+      - text: "What is JSON?"
+        choices:
+          A: "A lightweight data-interchange format"
+          B: "A JavaScript function"
+          C: "A CSS framework"
+          D: "A type of web server"
+        answer: "A"
+        explanation: "JSON (JavaScript Object Notation) is a lightweight format for exchanging data."
+
+      - text: "Which of these is a JavaScript framework/library?"
+        choices:
+          A: "React"
+          B: "Bootstrap"
+          C: "Sass"
+          D: "HTML5"
+        answer: "A"
+        explanation: "React is a popular JavaScript library for building user interfaces."
+
+      - text: "Which method converts a JSON string into a JavaScript object?"
+        choices:
+          A: "JSON.parse()"
+          B: "JSON.stringify()"
+          C: "JSON.objectify()"
+          D: "JSON.toObject()"
+        answer: "A"
+        explanation: "JSON.parse() converts a JSON string into a JavaScript object."
+
+      - text: "What is the correct way to write a JavaScript array?"
+        choices:
+          A: "var arr = [1,2,3];"
+          B: "var arr = (1,2,3);"
+          C: "var arr = {1,2,3};"
+          D: "var arr = <1,2,3>;"
+        answer: "A"
+        explanation: "The correct syntax for a JavaScript array is var arr = [1,2,3];."
+
+      - text: "What does 'DOM' stand for?"
+        choices:
+          A: "Document Object Model"
+          B: "Data Object Model"
+          C: "Document Oriented Model"
+          D: "Data Oriented Model"
+        answer: "A"
+        explanation: "DOM stands for Document Object Model, which represents the structure of an HTML document."
+
+      - text: "What is the purpose of the 'defer' attribute in a <script> tag?"
+        choices:
+          A: "To delay script execution until after the page has loaded"
+          B: "To execute the script immediately"
+          C: "To prevent the script from running"
+          D: "To run the script only once"
+        answer: "A"
+        explanation: "The 'defer' attribute delays script execution until the HTML document has been fully parsed."
+
+      - text: "Which JavaScript function is used to select an element by its ID?"
+        choices:
+          A: "getElementById()"
+          B: "getElementsByClassName()"
+          C: "querySelectorAll()"
+          D: "getElementByTagName()"
+        answer: "A"
+        explanation: "getElementById() selects an element by its ID in JavaScript."
+
+      - text: "What is a 'callback function' in JavaScript?"
+        choices:
+          A: "A function passed as an argument to another function"
+          B: "A function that calls itself"
+          C: "A function that returns a value"
+          D: "A function that is never called"
+        answer: "A"
+        explanation: "A callback function is a function passed as an argument to another function and executed later."
+
+      - text: "What is the purpose of the 'async' attribute in a <script> tag?"
+        choices:
+          A: "To execute the script asynchronously with the page"
+          B: "To execute the script after the page loads"
+          C: "To prevent the script from running"
+          D: "To run the script only once"
+        answer: "A"
+        explanation: "The 'async' attribute allows the script to be executed asynchronously as the page loads."
+
+      - text: "Which JavaScript function is used to select elements by their class name?"
+        choices:
+          A: "getElementsByClassName()"
+          B: "getElementById()"
+          C: "querySelector()"
+          D: "getElementByTagName()"
+        answer: "A"
+        explanation: "getElementsByClassName() selects elements by their class name in JavaScript."
+
+      - text: "What does 'SEO' stand for in web development?"
+        choices:
+          A: "Search Engine Optimization"
+          B: "Simple Engine Optimization"
+          C: "Search Engine Operation"
+          D: "Site Engine Optimization"
+        answer: "A"
+        explanation: "SEO stands for Search Engine Optimization, which is the process of improving website visibility in search engines."
+
+      - text: "What is Angular JS?"
+        choices:
+          A: "A JavaScript framework for building web applications"
+          B: "A CSS framework"
+          C: "A database management system"
+          D: "A web server"
+        answer: "A"
+        explanation: "AngularJS is a JavaScript framework for building dynamic web applications."
+
+      - text: "What is a 'directive' in Angular JS?"
+        choices:
+          A: "A marker on a DOM element that tells AngularJS to attach a behavior"
+          B: "A CSS property"
+          C: "A database query"
+          D: "A server command"
+        answer: "A"
+        explanation: "A directive in AngularJS is a marker on a DOM element that tells AngularJS to attach a specific behavior."
+
+      - text: "Which of the following are JavaScript data types?"
+        type: "multiple"
+        choices:
+          A: "String"
+          B: "Number"
+          C: "Boolean"
+          D: "Object"
+        answer: ["A", "B", "C", "D"]
+        explanation: "String, Number, Boolean, and Object are all JavaScript data types."
+
+      - text: "Which of the following are JavaScript array methods?"
+        type: "multiple"
+        choices:
+          A: "push()"
+          B: "pop()"
+          C: "map()"
+          D: "filter()"
+        answer: ["A", "B", "C", "D"]
+        explanation: "push(), pop(), map(), and filter() are common JavaScript array methods."
+
+      - text: "Which of the following are valid JavaScript loop constructs?"
+        type: "multiple"
+        choices:
+          A: "for"
+          B: "while"
+          C: "do...while"
+          D: "foreach"
+        answer: ["A", "B", "C"]
+        explanation: "for, while, and do...while are valid; foreach is not a native JS loop (forEach is an array method)."
+        topic: "JavaScript"
+
+      - text: "Which of the following are valid JavaScript string methods?"
+        type: "multiple"
+        choices:
+          A: "toLowerCase()"
+          B: "charAt()"
+          C: "split()"
+          D: "append()"
+        answer: ["A", "B", "C"]
+        explanation: "toLowerCase, charAt, and split are valid; append is not a JS string method."
+        topic: "JavaScript"
+
+      - text: "Which of the following are valid JavaScript event types?"
+        type: "multiple"
+        choices:
+          A: "click"
+          B: "keyup"
+          C: "load"
+          D: "hover"
+        answer: ["A", "B", "C"]
+        explanation: "click, keyup, and load are valid; hover is a CSS pseudo-class."
+        topic: "JavaScript"
+
+      - text: "Which of the following are valid ways to create an object in JavaScript?"
+        type: "multiple"
+        choices:
+          A: "Object literal syntax"
+          B: "Using the new Object() constructor"
+          C: "Using Object.create()"
+          D: "Using the class keyword (ES6)"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid ways to create objects in JS."
+        topic: "JavaScript"
+
+      - text: "Which of the following are valid AngularJS expressions?"
+        type: "multiple"
+        choices:
+          A: "{{ 1 + 2 }}"
+          B: "{{ user.name }}"
+          C: "{{ myFunction() }}"
+          D: "{{ let x = 5 }}"
+        answer: ["A", "B", "C"]
+        explanation: "Expressions can do math, access properties, and call functions; variable declaration is not allowed."
+        topic: "AngularJS"
+
+      - text: "Which of the following are valid JavaScript array methods?"
+        type: "multiple"
+        choices:
+          A: "map()"
+          B: "filter()"
+          C: "reduce()"
+          D: "concat()"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid array methods in JS."
+        topic: "JavaScript"
+
+      - text: "Which of the following are valid ways to handle errors in JavaScript?"
+        type: "multiple"
+        choices:
+          A: "try...catch block"
+          B: "window.onerror handler"
+          C: "throw statement"
+          D: "console.error()"
+        answer: ["A", "B", "C"]
+        explanation: "try...catch, window.onerror, and throw are for error handling; console.error logs errors."
+        topic: "JavaScript"
+
+      - text: "Which of the following are valid AngularJS built-in directives?"
+        type: "multiple"
+        choices:
+          A: "ng-show"
+          B: "ng-hide"
+          C: "ng-repeat"
+          D: "ng-class"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid built-in AngularJS directives."
+        topic: "AngularJS"
+
+      - text: "Which of the following are valid JavaScript function invocation patterns?"
+        type: "multiple"
+        choices:
+          A: "Function as a method"
+          B: "Function as a constructor"
+          C: "Function as a callback"
+          D: "Function as a property"
+        answer: ["A", "B", "C"]
+        explanation: "Method, constructor, and callback are invocation patterns; property is not."
+        topic: "JavaScript"
+
+      - text: "Which of the following are valid uses of AngularJS controllers?"
+        type: "multiple"
+        choices:
+          A: "Defining application logic"
+          B: "Managing scope variables"
+          C: "Handling DOM manipulation directly"
+          D: "Responding to user input"
+        answer: ["A", "B", "D"]
+        explanation: "Controllers define logic, manage scope, and handle input; direct DOM manipulation is discouraged."
+        topic: "AngularJS"
+
+  - id: 5
+    name: "Practice Set 5 - Photo Editor, Web Publishing and Browsing (20 marks)"
+    duration_minutes: 45
+    questions:
+      - text: "What is a 'web hosting' service?"
+        choices:
+          A: "A service that provides the technologies and services needed for a website to be viewed on the Internet"
+          B: "A service that designs websites"
+          C: "A service that markets websites"
+          D: "A service that writes website content"
+        answer: "A"
+        explanation: "A web hosting service stores website files and makes them accessible on the Internet."
+
+      - text: "What does 'FTP' stand for in the context of web publishing?"
+        choices:
+          A: "File Transfer Protocol"
+          B: "Fast Text Protocol"
+          C: "File Transaction Process"
+          D: "Folder Transfer Procedure"
+        answer: "A"
+        explanation: "FTP stands for File Transfer Protocol, used for transferring files over a network."
+
+      - text: "What is the purpose of a photo editor in web development?"
+        choices:
+          A: "To create and edit images for websites"
+          B: "To write code"
+          C: "To design layouts"
+          D: "To manage databases"
+        answer: "A"
+        explanation: "A photo editor is used to create and edit images for use on websites."
+
+      - text: "What is 'responsive web design'?"
+        choices:
+          A: "A design that adapts to different screen sizes and devices"
+          B: "A design that uses only fixed layouts"
+          C: "A design that ignores mobile devices"
+          D: "A design that uses only tables"
+        answer: "A"
+        explanation: "Responsive web design ensures web pages look good on all devices by adapting layout and content."
+
+      - text: "What is progressive web app (PWA)?"
+        choices:
+          A: "A web app that uses modern web capabilities to deliver an app-like experience"
+          B: "A static website"
+          C: "A desktop application"
+          D: "A mobile-only app"
+        answer: "A"
+        explanation: "A PWA is a web application that behaves like a native app using modern web features."
+
+      - text: "What is 'AJAX' stand for in web development?"
+        choices:
+          A: "Asynchronous JavaScript and XML"
+          B: "Advanced JavaScript and XHTML"
+          C: "Automated JavaScript and XML"
+          D: "Asynchronous JavaScript and XHTML"
+        answer: "A"
+        explanation: "AJAX stands for Asynchronous JavaScript and XML, used for making asynchronous web requests."
+
+      - text: "What is a 'CDN' service?"
+        choices:
+          A: "Content Delivery Network"
+          B: "Central Data Network"
+          C: "Content Data Node"
+          D: "Central Delivery Node"
+        answer: "A"
+        explanation: "A CDN (Content Delivery Network) distributes website content across multiple servers for faster delivery."
+
+      - text: "What does 'UX' stand for in web development?"
+        choices:
+          A: "User Experience"
+          B: "Universal XML"
+          C: "User Extension"
+          D: "Unified Experience"
+        answer: "A"
+        explanation: "UX stands for User Experience, which refers to the overall experience a user has with a website or app."
+
+      - text: "What is 'API' stand for?"
+        choices:
+          A: "Application Programming Interface"
+          B: "Advanced Programming Interface"
+          C: "Application Program Integration"
+          D: "Automated Programming Interface"
+        answer: "A"
+        explanation: "API stands for Application Programming Interface, which allows different software to communicate."
+
+      - text: "What is 'REST' stand for in web development?"
+        choices:
+          A: "Representational State Transfer"
+          B: "Remote Execution Service Technology"
+          C: "Rapid Execution and Service Transfer"
+          D: "Resource Execution and Service Transfer"
+        answer: "A"
+        explanation: "REST stands for Representational State Transfer, an architectural style for designing networked applications."
+
+      - text: "What is 'Web Accessibility'?"
+        choices:
+          A: "Designing websites usable by people with disabilities"
+          B: "Making websites load faster"
+          C: "Improving website security"
+          D: "Optimizing for search engines"
+        answer: "A"
+        explanation: "Web accessibility means designing websites that can be used by people with disabilities."
+
+      - text: "What is 'Cross-browser compatibility'?"
+        choices:
+          A: "Ensuring websites work across different browsers"
+          B: "Making websites mobile-friendly only"
+          C: "Using only one browser for testing"
+          D: "Optimizing for search engines"
+        answer: "A"
+        explanation: "Cross-browser compatibility ensures websites function correctly on all major browsers."
+
+      - text: "What is 'Web Performance Optimization'?"
+        choices:
+          A: "Improving website speed and efficiency"
+          B: "Adding more images to a website"
+          C: "Using only one color scheme"
+          D: "Making websites less interactive"
+        answer: "A"
+        explanation: "Web performance optimization is the process of improving website speed and efficiency."
+
+      - text: "What is 'Web Analytics'?"
+        choices:
+          A: "Measuring and analyzing website traffic and user behavior"
+          B: "Designing website layouts"
+          C: "Writing website content"
+          D: "Managing web servers"
+        answer: "A"
+        explanation: "Web analytics involves measuring and analyzing website traffic and user behavior."
+
+      - text: "What is 'Web Security'?"
+        choices:
+          A: "Protecting websites from threats and attacks"
+          B: "Making websites load faster"
+          C: "Improving website design"
+          D: "Optimizing for search engines"
+        answer: "A"
+        explanation: "Web security is about protecting websites from threats and attacks."
+
+      - text: "What is 'Web Standards'?"
+        choices:
+          A: "Guidelines and specifications for web technologies"
+          B: "A type of web server"
+          C: "A programming language"
+          D: "A web browser"
+        answer: "A"
+        explanation: "Web standards are guidelines and specifications for web technologies."
+
+      - text: "What is 'Web Semantics'?"
+        choices:
+          A: "Giving meaning to web content for better understanding by computers"
+          B: "Making websites load faster"
+          C: "Improving website design"
+          D: "Optimizing for search engines"
+        answer: "A"
+        explanation: "Web semantics is about giving meaning to web content for better understanding by computers."
+
+      - text: "What is 'Web Crawling'?"
+        choices:
+          A: "Automated process of browsing the web to index content"
+          B: "Designing website layouts"
+          C: "Writing website content"
+          D: "Managing web servers"
+        answer: "A"
+        explanation: "Web crawling is the automated process of browsing the web to index content for search engines."
+
+      - text: "What is 'Web Indexing'?"
+        choices:
+          A: "Organizing and storing web content for quick retrieval"
+          B: "Designing website layouts"
+          C: "Writing website content"
+          D: "Managing web servers"
+        answer: "A"
+        explanation: "Web indexing is organizing and storing web content for quick retrieval by search engines."
+
+      - text: "What is 'Web Caching'?"
+        choices:
+          A: "Storing copies of web pages for faster access"
+          B: "Designing website layouts"
+          C: "Writing website content"
+          D: "Managing web servers"
+        answer: "A"
+        explanation: "Web caching stores copies of web pages for faster access and reduced server load."
+
+      - text: "Which of the following are web publishing protocols?"
+        type: "multiple"
+        choices:
+          A: "FTP"
+          B: "SFTP"
+          C: "HTTP"
+          D: "HTTPS"
+        answer: ["A", "B", "C", "D"]
+        explanation: "FTP, SFTP, HTTP, and HTTPS are common protocols used for web publishing."
+
+      - text: "Which of the following are web accessibility features?"
+        type: "multiple"
+        choices:
+          A: "Alt text for images"
+          B: "Keyboard navigation"
+          C: "Screen reader support"
+          D: "High contrast mode"
+        answer: ["A", "B", "C", "D"]
+        explanation: "Alt text, keyboard navigation, screen reader support, and high contrast mode are important web accessibility features."
+
+      - text: "Which of the following are valid image file formats for web publishing?"
+        type: "multiple"
+        choices:
+          A: "JPEG"
+          B: "PNG"
+          C: "SVG"
+          D: "DOCX"
+        answer: ["A", "B", "C"]
+        explanation: "JPEG, PNG, and SVG are image formats; DOCX is a document format."
+        topic: "Photo Editor"
+
+      - text: "Which of the following are valid uses of a photo editor in web development?"
+        type: "multiple"
+        choices:
+          A: "Cropping images"
+          B: "Adjusting brightness and contrast"
+          C: "Adding text overlays"
+          D: "Compiling JavaScript code"
+        answer: ["A", "B", "C"]
+        explanation: "Photo editors crop, adjust, and add text; not for JS compilation."
+        topic: "Photo Editor"
+
+      - text: "Which of the following are valid web publishing protocols?"
+        type: "multiple"
+        choices:
+          A: "FTP"
+          B: "SFTP"
+          C: "HTTP"
+          D: "SMTP"
+        answer: ["A", "B", "C"]
+        explanation: "FTP, SFTP, and HTTP are for publishing; SMTP is for email."
+        topic: "Web Publishing"
+
+      - text: "Which of the following are valid web hosting types?"
+        type: "multiple"
+        choices:
+          A: "Shared hosting"
+          B: "VPS hosting"
+          C: "Dedicated hosting"
+          D: "Cloud hosting"
+        answer: ["A", "B", "C", "D"]
+        explanation: "All are valid web hosting types."
+        topic: "Web Publishing"
+
+      - text: "Which of the following are valid uses of meta tags in web publishing?"
+        type: "multiple"
+        choices:
+          A: "Specifying page description"
+          B: "Defining keywords for search engines"
+          C: "Setting viewport for responsive design"
+          D: "Styling page elements"
+        answer: ["A", "B", "C"]
+        explanation: "Meta tags are for description, keywords, and viewport; not for styling."
+        topic: "Web Publishing"
+
+      - text: "Which of the following are valid web browsers?"
+        type: "multiple"
+        choices:
+          A: "Google Chrome"
+          B: "Mozilla Firefox"
+          C: "Safari"
+          D: "Notepad++"
+        answer: ["A", "B", "C"]
+        explanation: "Chrome, Firefox, and Safari are browsers; Notepad++ is a text editor."
+        topic: "Web Browsing"
+
+      - text: "Which of the following are valid uses of alt text in images for web publishing?"
+        type: "multiple"
+        choices:
+          A: "Improving accessibility for screen readers"
+          B: "Providing image descriptions for SEO"
+          C: "Displaying text if the image fails to load"
+          D: "Changing the image color"
+        answer: ["A", "B", "C"]
+        explanation: "Alt text is for accessibility, SEO, and fallback; not for color changes."
+        topic: "Web Publishing"
+
+      - text: "Which of the following are valid web publishing tools?"
+        type: "multiple"
+        choices:
+          A: "WordPress"
+          B: "Jekyll"
+          C: "Dreamweaver"
+          D: "Excel"
+        answer: ["A", "B", "C"]
+        explanation: "WordPress, Jekyll, and Dreamweaver are web tools; Excel is not."
+        topic: "Web Publishing"
+
+      - text: "Which of the following are valid uses of responsive web design?"
+        type: "multiple"
+        choices:
+          A: "Adapting layout to different screen sizes"
+          B: "Improving mobile usability"
+          C: "Reducing page load times"
+          D: "Ensuring consistent user experience"
+        answer: ["A", "B", "D"]
+        explanation: "Responsive design adapts layout, improves mobile, and ensures consistency; load time is not direct."
+        topic: "Web Publishing"
+
+      - text: "Which of the following are valid web publishing standards?"
+        type: "multiple"
+        choices:
+          A: "HTML5"
+          B: "CSS3"
+          C: "W3C compliance"
+          D: "PDF/A"
+        answer: ["A", "B", "C"]
+        explanation: "HTML5, CSS3, and W3C are web standards; PDF/A is for documents."
+        topic: "Web Publishing"
+
+      - text: "Match the following HTML tags with their primary purpose."
+        type: "match"
+        choices:
+          - left: "<h1>"
+            right: "Defines the most important heading"
+          - left: "<p>"
+            right: "Defines a paragraph"
+          - left: "<a>"
+            right: "Defines a hyperlink"
+          - left: "<img>"
+            right: "Embeds an image"
+        answer: ["Defines the most important heading", "Defines a paragraph", "Defines a hyperlink", "Embeds an image"]
+        explanation: "<h1> is for main headings, <p> for paragraphs, <a> for links, and <img> for images."
+        topic: "HTML Basics"
+
+      - text: "Match the following CSS properties with their function."
+        type: "match"
+        choices:
+          - left: "color"
+            right: "Sets the color of text"
+          - left: "font-size"
+            right: "Sets the size of the font"
+          - left: "background-color"
+            right: "Sets the background color of an element"
+          - left: "margin"
+            right: "Sets the outer space of an element"
+        answer: ["Sets the color of text", "Sets the size of the font", "Sets the background color of an element", "Sets the outer space of an element"]
+        explanation: "color for text color, font-size for text size, background-color for element background, and margin for outer space."
+        topic: "CSS Basics"

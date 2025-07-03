@@ -1,0 +1,117 @@
+---
+layout: default
+title: "M4-R5: IoT and its Applications"
+permalink: /M4-R5/
+---
+
+{% assign module = site.data.course_modules.modules | where: "code", "M4-R5" | first %}
+
+<div class="module-page">
+  <div class="module-title-container">
+    <h1>{{ module.code }}: {{ module.name }}</h1>
+    <a href="{{ site.baseurl }}/m4r5-practice" class="practice-link-icon" title="Practice Questions">
+      <span class="material-symbols-outlined">assignment_turned_in</span>
+    </a>
+  </div>
+  
+  <div class="module-content">
+    <section class="module-description">
+      <h2>Overview</h2>
+      <p>{{ module.description }}</p>
+      <p class="syllabus-ref">For detailed syllabus, refer to the official NIELIT document: 
+        <a href="https://www.nielit.gov.in/sites/default/files/headquarter/pdf/20220905_5_1_revised_O_Level_IT.pdf" target="_blank">O Level (IT) Syllabus [PDF]</a>
+      </p>
+    </section>
+
+    <section class="practice-cta">
+      <div class="practice-card">
+        <div class="practice-icon">
+          <span class="material-symbols-outlined">quiz</span>
+        </div>
+        <div class="practice-content">
+          <h3>Ready to Test Your Knowledge?</h3>
+          <p>Practice with our comprehensive question sets designed to help you master {{ module.name }} concepts.</p>
+          <ul class="practice-features">
+            <li><span class="material-symbols-outlined">check_circle</span> Topic-specific practice sets (10-20 marks each)</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Full-length comprehensive sets (100 marks each)</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Simulated exam conditions with time limits</li>
+          </ul>
+          <a href="{{ site.baseurl }}/m4r5-practice" class="practice-btn">
+            <span class="material-symbols-outlined">play_arrow</span>
+            Start Practice Sets
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-outline">
+      <h2>Module Outline</h2>
+      <table class="outline-table">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Topic</th>
+            <th>Written Marks (Max.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for topic in module.topics %}
+          <tr>
+            <td>{{ forloop.index }}.</td>
+            <td>{{ topic.name }}</td>
+            <td>{{ topic.marks }}</td>
+          </tr>
+          {% endfor %}
+          <tr class="total-row">
+            <td></td>
+            <td>Total</td>
+            <td>{{ module.theory_marks.max }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="detailed-topics">
+      <h2>Detailed Topics</h2>
+      <div class="topics-grid">
+        {% for topic in module.key_topics %}
+        <div class="topic-card">
+          <h3>{{ topic.name }}</h3>
+          <ul>
+            {% for subtopic in topic.subtopics %}
+            <li>{{ subtopic }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="study-resources">
+      <h2>Study Resources</h2>
+      <p>Coming soon...</p>
+    </section>
+  </div>
+</div>
+
+<style>
+  .practice-features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+  .practice-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: var(--md-on-surface-variant, #666);
+    font-size: 0.9em;
+    transition: color 0.3s;
+  }
+  .practice-features .material-symbols-outlined {
+    color: var(--md-success, #28a745);
+    font-size: 16px;
+    margin-right: 8px;
+    transition: color 0.3s;
+  }
+</style> 

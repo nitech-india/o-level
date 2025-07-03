@@ -1,0 +1,531 @@
+modules:
+  - code: M1-R5
+    name: Information Technology Tools and Network Basics
+    theory_hours: 48
+    practical_hours: 72
+    total_hours: 120
+    theory_marks:
+      min: 33
+      max: 100
+    practical_marks:
+      min: 33
+      max: 100
+    total_marks:
+      min: 50
+      max: 100
+    url: /M1-R5/
+    description: This module covers the fundamental concepts of Information Technology, computer hardware, software, and networking basics.
+    topics:
+      - name: Introduction to Computer, Introduction to Operating System
+        marks: 10
+      - name: Word Processing
+        marks: 20
+      - name: Spreadsheet
+        marks: 20
+      - name: Presentation
+        marks: 20
+      - name: Introduction to Internet and WWW, E-mail, Social Networking and e-Governance Services
+        marks: 20
+      - name: Digital Financial Tools and Applications, Overview of FutureSkills & Cyber Security
+        marks: 10
+    key_topics:
+      - name: Computer Fundamentals
+        subtopics:
+          - Computer and Latest IT gadgets
+          - Evolution of Computers & applications
+          - IT gadgets and applications
+          - Hardware and Software basics
+          - Central Processing Unit
+          - Input and Output devices
+          - Computer Memory & storage
+          - Application Software
+          - Systems Software
+          - Utility Software
+          - Open source vs Proprietary Software
+          - Mobile Apps
+      - name: Operating System Basics
+        subtopics:
+          - Operating System fundamentals
+          - Desktop and Laptop OS
+          - Mobile and Tablet OS
+          - User Interface elements
+          - Task Bar and Icons
+          - System settings
+          - Mouse properties
+          - Date and time settings
+          - Display properties
+          - Program management
+          - Printer management
+          - File and Folder management
+          - File extensions
+      - name: Word Processing
+        subtopics:
+          - Word Processing basics
+          - Interface elements
+          - Document management
+          - Page Setup and Layout
+          - Text formatting
+          - Document editing
+          - Styles and formatting
+          - Paragraph formatting
+          - Headers and Footers
+          - Tables
+          - Mail Merge
+          - Table of Contents
+          - Comments and Track changes
+          - Macros
+      - name: Spreadsheet
+        subtopics:
+          - Spreadsheet elements
+          - Cell concepts
+          - Data entry
+          - Cell formatting
+          - Sheet manipulation
+          - Formulas
+          - Functions
+          - Sorting and Filtering
+          - Database functions
+          - What-if Analysis
+          - Pivot tables
+          - Charts
+          - Data Validation
+      - name: Presentation
+        subtopics:
+          - Creating presentations
+          - Templates
+          - Slide management
+          - Text and objects
+          - Tables and pictures
+          - Master slides
+          - Slide shows
+          - Transitions
+          - Animations
+          - Multimedia
+          - Printing
+      - name: Internet and WWW
+        subtopics:
+          - Computer Networks basics
+          - LAN and WAN
+          - Network Topology
+          - Internet concepts
+          - IP addressing
+          - ISP roles
+          - Connection methods
+          - Device identification
+          - Web browsers
+          - Search engines
+      - name: Digital Communication
+        subtopics:
+          - Email structure
+          - Email management
+          - Social networking
+          - Instant messaging
+          - Blogs
+          - E-commerce basics
+          - Netiquettes
+          - E-governance services
+          - Mobile apps
+      - name: Digital Finance
+        subtopics:
+          - OTP and QR codes
+          - UPI
+          - AEPS
+          - USSD
+          - Cards
+          - eWallets
+          - PoS
+          - Internet Banking
+          - NEFT/RTGS/IMPS
+          - Online payments
+      - name: Future Technologies
+        subtopics:
+          - Internet of Things
+          - Big Data Analytics
+          - Cloud Computing
+          - Virtual Reality
+          - Artificial Intelligence
+          - Social & Mobile
+          - Blockchain
+          - 3D Printing
+          - Robotics
+      - name: Cyber Security
+        subtopics:
+          - Security basics
+          - PC security
+          - Smartphone security
+          - Data protection
+          - Online safety
+
+  - code: M2-R5
+    name: Web Designing & Publishing
+    theory_hours: 48
+    practical_hours: 72
+    total_hours: 120
+    theory_marks:
+      min: 33
+      max: 100
+    practical_marks:
+      min: 33
+      max: 100
+    total_marks:
+      min: 50
+      max: 100
+    url: /M2-R5/
+    description: This module covers web design fundamentals, HTML5, CSS3, JavaScript, and web publishing concepts.
+    topics:
+      - name: Introduction to Web Design and Editors, HTML Basics
+        marks: 25
+      - name: Cascading Style Sheets (CSS)
+        marks: 20
+      - name: CSS Framework
+        marks: 15
+      - name: JavaScript and Angular JS
+        marks: 20
+      - name: Photo Editor, Web Publishing and Browsing
+        marks: 20
+    key_topics:
+      - name: Web Design Fundamentals
+        subtopics:
+          - Introduction to Internet and WWW
+          - Understanding Websites and Webpages
+          - Front End vs Back End Development
+          - Client and Server Scripting Languages
+          - Responsive Web Design
+          - Types of Websites (Static and Dynamic)
+      - name: Web Editors
+        subtopics:
+          - Introduction to Code Editors
+          - Notepad++ usage
+          - Sublime Text Editor
+          - File creation and management
+          - Basic editing operations
+      - name: HTML Fundamentals
+        subtopics:
+          - Basic HTML Structure
+          - Head Section Elements
+          - Formatting Tags
+          - Text Formatting (Bold, Italic, Underline)
+          - Div and Pre Tags
+          - Anchor Links and Navigation
+          - Image Handling
+          - Comments
+          - Tables and Attributes
+          - Lists (Ordered, Unordered, Definition)
+          - Forms and Form Elements
+          - Input Types and Validation
+          - Frames and Framesets
+      - name: HTML5 Features
+        subtopics:
+          - New Semantic Elements
+          - Section, Nav, Article, Aside
+          - Audio and Video Tags
+          - Form Validations
+          - Pattern Attributes
+          - Input Types
+          - Multimedia Integration
+          - Layout Elements
+          - IFrames
+      - name: CSS Basics
+        subtopics:
+          - CSS Introduction
+          - Types of CSS
+          - Selectors (Universal, ID, Tag, Class)
+          - Sub Selectors
+          - Attribute Selectors
+          - Group Selectors
+      - name: CSS Properties
+        subtopics:
+          - Background Properties
+          - Block Properties
+          - Box Model
+          - List Properties
+          - Border Properties
+          - Positioning
+          - Table Styling
+          - Menu Design
+          - Image Gallery
+      - name: CSS Framework (W3.CSS)
+        subtopics:
+          - Framework Introduction
+          - Colors and Containers
+          - Panels and Borders
+          - Typography (Fonts and Text)
+          - Tables and Lists
+          - Image Handling
+          - Grid System
+      - name: JavaScript
+        subtopics:
+          - Client-Side Scripting Basics
+          - Variables and Data Types
+          - Operators
+          - Conditional Statements
+          - Popup Boxes
+          - Event Handling
+          - Form Validation
+      - name: Angular JS
+        subtopics:
+          - Introduction
+          - Expressions
+          - Modules
+          - Directives
+      - name: Photo Editing
+        subtopics:
+          - Selection Tools
+          - Paint Tools
+          - Transform Tools
+          - Text Tools
+          - Layer Management
+          - Color and Tone Adjustment
+          - Brightness and Contrast
+          - Filters
+      - name: Web Publishing
+        subtopics:
+          - SGML Overview
+          - Web Hosting Basics
+          - Document Standards
+          - Publishing Components
+          - Document Management
+          - Design Principles
+          - Search Engines
+          - Browser and HTTP
+          - Publishing Tools
+
+  - code: M3-R5
+    name: Programming and Problem Solving through Python
+    theory_hours: 48
+    practical_hours: 72
+    total_hours: 120
+    theory_marks:
+      min: 33
+      max: 100
+    practical_marks:
+      min: 33
+      max: 100
+    total_marks:
+      min: 50
+      max: 100
+    url: /M3-R5/
+    description: This module introduces programming concepts and problem-solving techniques using the Python programming language.
+    topics:
+      - name: Introduction to Programming, Algorithm and Flowcharts to solve problems
+        marks: 20
+      - name: Introduction to Python, Operators, Expressions and Python Statements, Sequence data types
+        marks: 30
+      - name: Functions, File Processing, Modules
+        marks: 40
+      - name: NumPy Basics
+        marks: 10
+    key_topics:
+      - name: Introduction to Programming
+        subtopics:
+          - Basic Model of computation
+          - Algorithms and flowcharts
+          - Programming Languages
+          - Compilation, testing & debugging
+          - Documentation
+      - name: Algorithms and Flowcharts
+        subtopics:
+          - Flow Chart Symbols
+          - Sequential processing
+          - Decision-based processing
+          - Iterative processing
+          - Basic algorithms including
+          - Variable exchange
+          - Number summation
+          - Base conversion
+          - Integer manipulation
+          - GCD calculation
+          - Prime number testing
+          - Factorial computation
+          - Fibonacci sequence
+          - Series evaluation
+          - Array operations
+          - Matrix operations
+      - name: Python Fundamentals
+        subtopics:
+          - Python Introduction
+          - Technical Strengths
+          - Interpreter and execution
+          - Comments and Literals
+          - Built-in Data types
+          - Numbers (Integer, Float, Complex)
+          - Strings operations
+          - Console I/O
+      - name: Control Structures
+        subtopics:
+          - Assignment and expressions
+          - Operators (Arithmetic, Relational, Logical, Bitwise)
+          - Operator precedence
+          - Conditional statements
+          - Iterative computation
+          - Loop control statements
+      - name: Sequence Data Types
+        subtopics:
+          - Lists and operations
+          - Tuples and operations
+          - Dictionaries and operations
+          - Mutability concept
+          - Practical applications
+      - name: Functions
+        subtopics:
+          - Top-down problem solving
+          - Modular programming
+          - Function parameters
+          - Variable scope
+          - Documentation
+          - Library functions
+          - String manipulation
+          - Numeric functions
+          - Date & Time functions
+          - Recursion
+      - name: File Processing
+        subtopics:
+          - File concepts
+          - File modes
+          - File operations
+          - Command Line arguments
+      - name: Modules
+        subtopics:
+          - Scope and LEGB Rule
+          - Module basics
+          - Namespaces
+          - Import system
+      - name: NumPy Basics
+        subtopics:
+          - ndarray introduction
+          - Data types
+          - Array attributes
+          - Array creation
+          - Array operations
+          - Indexing and Slicing
+
+  - code: M4-R5
+    name: Internet of Things and its Applications
+    theory_hours: 48
+    practical_hours: 72
+    total_hours: 120
+    theory_marks:
+      min: 33
+      max: 100
+    practical_marks:
+      min: 33
+      max: 100
+    total_marks:
+      min: 50
+      max: 100
+    url: /M4-R5/
+    description: This module covers the Internet of Things (IoT) technology, its architecture, and various applications in the modern world.
+    topics:
+      - name: Introduction to IoT – Applications/Devices, Protocols and Communication Model
+        marks: 10
+      - name: Things and Connections
+        marks: 10
+      - name: Sensors, Actuators and Microcontrollers
+        marks: 15
+      - name: Building IoT Applications
+        marks: 40
+      - name: Security and Future of IoT Ecosystem
+        marks: 5
+      - name: Soft skills-Personality Development
+        marks: 20
+    key_topics:
+      - name: Introduction to IoT
+        subtopics:
+          - Overview of Internet of Things (IoT)
+          - Characteristics of IoT devices and applications
+          - Building blocks of IoT
+          - Technologies in IoT ecosystem
+          - IoT levels and design methodology
+          - Physical Design/Logical Design of IoT
+          - Functional blocks and Communication Models
+          - Development Tools in IoT
+      - name: Things and Connections
+        subtopics:
+          - Working of Controlled Systems
+          - Real-time systems with feedback loop
+          - Connectivity models (TCP/IP vs OSI)
+          - Wired and wireless methodologies
+          - Process flow of IoT applications
+      - name: Sensors and Actuators
+        subtopics:
+          - Sensors for physical measurements
+          - Light sensors
+          - Moisture sensors
+          - Temperature sensors
+          - Actuators and control systems
+          - DC motors
+          - Types of actuators
+      - name: Microcontrollers
+        subtopics:
+          - Role of microcontrollers as gateway
+          - Microcontroller vs microprocessor
+          - Types of microcontrollers
+          - Embedded system integration
+      - name: IoT Application Development
+        subtopics:
+          - Arduino IDE basics
+          - Sketch writing and compilation
+          - Debugging techniques
+          - Serial monitor usage
+          - Embedded C Language fundamentals
+          - Variables and Data Types
+          - Control structures
+          - Arrays and Functions
+          - Sensor interfacing
+          - Digital vs analog pins
+          - LED and Button interfacing
+          - Various sensor interfaces (DHT, LDR, MQ135, IR)
+          - LCD Display integration
+          - Keypad interfacing
+          - Bluetooth module (HC-05)
+          - Relay module for AC supply
+      - name: IoT Security
+        subtopics:
+          - Need for IoT security
+          - Privacy in IoT devices
+          - Consumer device security
+          - Security levels
+          - Device protection strategies
+      - name: Future of IoT
+        subtopics:
+          - Secure algorithm requirements
+          - New trends in IoT
+          - AI integration
+          - Machine Learning applications
+      - name: Personality Development
+        subtopics:
+          - Personality determinants
+          - Self-awareness
+          - Motivation
+          - Self-discipline
+          - Positive personality building
+          - Gestures and body language
+      - name: Professional Skills
+        subtopics:
+          - Self-esteem development
+          - Time management
+          - Stress management
+          - Professional etiquettes
+          - Communication skills
+          - Writing skills (Resume, Letters, Reports)
+          - Presentation skills
+          - Interview preparation
+
+  - code: PR1-R5
+    name: Practical based on M1-R5, M2-R5, M3-R5 and M4-R5
+    theory_hours: 
+    practical_hours: 
+    total_hours: 
+
+  - code: PJ1-R5
+    name: Project
+    theory_hours: 
+    practical_hours: 40
+    total_hours: 40
+    note: Project completion certificate is required to qualify 'O' Level-IT
+
+totals:
+  theory_hours: 192
+  practical_hours: 328
+  total_hours: 520
+  max_marks: 400 

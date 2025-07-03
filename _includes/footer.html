@@ -1,0 +1,106 @@
+<div class="nav-footer">
+  <div class="footer-content">
+    <div class="footer-info">
+      {{ site.short_title }} v{{ site.version }} @ {{ site.institute }}
+    </div>
+    <div class="footer-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+        <span class="material-symbols-outlined theme-icon-light">light_mode</span>
+        <span class="material-symbols-outlined theme-icon-dark">dark_mode</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+.nav-footer {
+  padding: 16px 24px;
+  background: var(--md-surface);
+  border-top: 1px solid var(--md-outline);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  color: var(--md-on-surface-variant);
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle-btn {
+  background: var(--md-surface-container);
+  border: 1px solid var(--md-outline);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--md-surface-container-high);
+  transform: scale(1.05);
+}
+
+.theme-toggle-btn:focus {
+  outline: 2px solid var(--md-primary);
+  outline-offset: 2px;
+}
+
+.theme-icon-light,
+.theme-icon-dark {
+  font-size: 20px;
+  color: var(--md-on-surface);
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.theme-icon-light {
+  opacity: 1;
+}
+
+.theme-icon-dark {
+  opacity: 0;
+}
+
+[data-theme="dark"] .theme-icon-light {
+  opacity: 0;
+}
+
+[data-theme="dark"] .theme-icon-dark {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .footer-actions {
+    justify-content: center;
+  }
+}
+</style>

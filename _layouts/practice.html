@@ -1,0 +1,646 @@
+---
+layout: default
+---
+<div class="practice-page">
+    {% assign practice_data = page.practice_set %}
+    <div class="main-content">
+        <h1>{{ page.title }}</h1>
+        
+        <div class="instructions collapsible-section">
+            <button class="collapsible-toggle" type="button" onclick="toggleSection('instructions-content', this)">Instructions & Exam Info ▼</button>
+            <div id="instructions-content" class="collapsible-content" style="display: none;">
+                {{ content | split: "<div class='exam-tips'>" | first }}
+                <div class="hint-info" style="margin-top:10px;color:#007bff;font-weight:500;">
+                  For questions with multiple correct answers, a hint will show how many choices to select.
+                </div>
+            </div>
+        </div>
+        {% assign exam_tips_html = content | split: "<div class='exam-tips'>" | last %}
+        {% if exam_tips_html contains '</div>' %}
+            <div class="exam-tips collapsible-section">
+                <button class="collapsible-toggle" type="button" onclick="toggleSection('exam-tips-content', this)">Exam Tips ▼</button>
+                <div id="exam-tips-content" class="collapsible-content" style="display: none;">
+                    <div class='exam-tips'>
+                        {{ exam_tips_html | split: '</div>' | first }}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        <script>
+        const questionsData = [
+        {% for question in practice_data.questions %}
+            {
+                number: {{ forloop.index }},
+                text: {{ question.text | jsonify }},
+                answer: {{ question.answer | jsonify }},
+                type: {{ question.type | jsonify }},
+                explanation: {{ question.explanation | jsonify }},
+                choices: {{ question.choices | jsonify }},
+                indicator: {{ question.indicator | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        ];
+        </script>
+        {% assign total_questions = practice_data.questions | size %}
+        <form id="quizForm" data-total-questions="{{ total_questions }}">
+            <div id="question-area"></div>
+
+            <div class="pagination">
+                <button type="button" onclick="previousPage()" id="prevBtn" disabled>Previous</button>
+                <span id="pageInfo">Question <span id="currentPage">1</span> of <span id="totalPages">{{ total_questions }}</span></span>
+                <button type="button" onclick="nextPage()" id="nextBtn">Next</button>
+            </div>
+
+            <div class="controls">
+                <button type="button" onclick="resetQuiz()">Reset</button>
+            </div>
+        </form>
+        
+        <!-- Include the reusable question component -->
+    </div>
+
+    <div class="progress-sidebar">
+        <div class="progress-header">
+            <div class="progress-title">
+                <h2>Progress</h2>
+                <button type="button" onclick="resetQuiz()" class="reset-btn">Reset Quiz</button>
+            </div>
+            <div class="progress-stats">
+                <p>Score: <span id="score">0</span> / {{ total_questions }}</p>
+                <p>Completed: <span id="completed">0</span> / {{ total_questions }}</p>
+                {% if practice_data.duration_minutes %}
+                <p>Time Left: <span id="timer">--:--</span></p>
+                {% endif %}
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%"></div>
+            </div>
+        </div>
+        <div class="question-grid">
+            {% for i in (1..total_questions) %}
+            <div class="question-status" data-question="{{ i }}">
+                {{ i }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+.practice-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    background: var(--md-background, #f4f6fa);
+    color: var(--md-on-background, #212121);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body[data-theme="dark"] .practice-page {
+    background: var(--md-background, #0a0a0a);
+    color: var(--md-on-background, #ffffff);
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.progress-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    background: var(--md-surface-container, #f8f9fa);
+    color: var(--md-on-surface, #333);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--md-elevation-1, 0 2px 4px rgba(0,0,0,0.1));
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+body[data-theme="dark"] .progress-sidebar {
+    background: var(--md-surface-container, #1e1e1e);
+    color: var(--md-on-surface, #ffffff);
+    box-shadow: var(--md-elevation-1, 0 2px 4px rgba(0,0,0,0.3));
+}
+
+.progress-header {
+    margin-bottom: 20px;
+}
+
+.progress-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.progress-title h2 {
+    margin: 0;
+}
+
+.reset-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: var(--md-error, #dc3545);
+    color: var(--md-on-error, white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+    background-color: var(--md-error-dark, #c82333);
+}
+
+.progress-stats {
+    margin: 15px 0;
+}
+
+.progress-bar {
+    height: 10px;
+    background: var(--md-surface-container-high, #e9ecef);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--md-success, #28a745);
+    transition: width 0.3s ease, background-color 0.3s;
+}
+
+.question-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.question-status {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--md-surface-container-high, #e9ecef);
+    color: var(--md-on-surface, #333);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body[data-theme="dark"] .question-status {
+    background: var(--md-surface-container-high, #2d2d2d);
+    color: var(--md-on-surface, #ffffff);
+}
+
+.question-status.correct {
+    background: var(--md-success-container, #d4edda);
+    color: var(--md-on-success-container, #155724);
+}
+
+body[data-theme="dark"] .question-status.correct {
+    background: var(--md-success-container, #1b5e20);
+    color: var(--md-on-success-container, #a5d6a7);
+}
+
+.question-status.incorrect {
+    background: var(--md-error-container, #f8d7da);
+    color: var(--md-on-error-container, #721c24);
+}
+
+body[data-theme="dark"] .question-status.incorrect {
+    background: var(--md-error-container, #b71c1c);
+    color: var(--md-on-error-container, #ef9a9a);
+}
+
+.question-status.current {
+    border: 2px solid var(--md-primary, #007bff);
+}
+
+.instructions {
+    background-color: var(--md-surface-container, #f5f5f5);
+    color: var(--md-on-surface, #333);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body[data-theme="dark"] .instructions {
+    background-color: var(--md-surface-container, #1e1e1e);
+    color: var(--md-on-surface, #ffffff);
+}
+
+.controls {
+    display: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: var(--md-primary, #007bff);
+    color: var(--md-on-primary, white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 100px;
+    transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+    background-color: var(--md-outline, #ccc);
+    cursor: not-allowed;
+}
+
+#pageInfo {
+    font-size: 16px;
+    color: var(--md-on-surface-variant, #666);
+    min-width: 120px;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+body[data-theme="dark"] #pageInfo {
+    color: var(--md-on-surface-variant, #b3b3b3);
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: var(--md-primary, #007bff);
+    color: var(--md-on-primary, white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background-color: var(--md-primary-dark, #0056b3);
+}
+
+.correct {
+    background-color: var(--md-success-container, #d4edda) !important;
+    transition: background-color 0.3s;
+}
+
+body[data-theme="dark"] .correct {
+    background-color: var(--md-success-container, #1b5e20) !important;
+}
+
+.incorrect {
+    background-color: var(--md-error-container, #f8d7da) !important;
+    transition: background-color 0.3s;
+}
+
+body[data-theme="dark"] .incorrect {
+    background-color: var(--md-error-container, #b71c1c) !important;
+}
+
+@media (max-width: 1200px) {
+    .practice-page {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .progress-sidebar {
+        width: 100%;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
+
+.collapsible-toggle {
+    background: var(--md-primary, #007bff);
+    color: var(--md-on-primary, #fff);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
+.collapsible-toggle:focus {
+    outline: 2px solid var(--md-primary-dark, #0056b3);
+}
+.collapsible-content {
+    transition: max-height 0.3s ease;
+}
+
+.comprehensive-banner {
+    background: var(--md-primary-container, #e3f2fd);
+    color: var(--md-on-primary-container, #000);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--md-elevation-1, 0 2px 4px rgba(0,0,0,0.08));
+    border-left: 5px solid var(--md-primary, #1976d2);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body[data-theme="dark"] .comprehensive-banner {
+    background: var(--md-primary-container, #1a237e);
+    color: var(--md-on-primary-container, #ffffff);
+    border-left-color: var(--md-primary, #90caf9);
+}
+
+.comprehensive-banner h2 {
+    margin-top: 0;
+    color: var(--md-primary, #1976d2);
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+body[data-theme="dark"] .comprehensive-banner h2 {
+    color: var(--md-primary, #90caf9);
+}
+
+.comprehensive-banner ul {
+    margin: 10px 0 0 0;
+    padding-left: 18px;
+    color: var(--md-on-primary-container, #000);
+    font-size: 1em;
+}
+
+body[data-theme="dark"] .comprehensive-banner ul {
+    color: var(--md-on-primary-container, #ffffff);
+}
+
+.exam-tips {
+    background: var(--md-tertiary-container, #fff3cd);
+    color: var(--md-on-tertiary-container, #856404);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--md-tertiary, #ffc107);
+    box-shadow: var(--md-elevation-1, 0 2px 4px rgba(0,0,0,0.06));
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+body[data-theme="dark"] .exam-tips {
+    background: var(--md-tertiary-container, #3e2723);
+    color: var(--md-on-tertiary-container, #ffcc02);
+    border-left-color: var(--md-tertiary, #ffb74d);
+}
+
+.exam-tips h3 {
+    margin-top: 0;
+    color: var(--md-tertiary, #ffc107);
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+body[data-theme="dark"] .exam-tips h3 {
+    color: var(--md-tertiary, #ffb74d);
+}
+
+.exam-tips ul {
+    margin: 10px 0 0 0;
+    padding-left: 18px;
+    color: var(--md-on-tertiary-container, #856404);
+    font-size: 1em;
+}
+
+body[data-theme="dark"] .exam-tips ul {
+    color: var(--md-on-tertiary-container, #ffcc02);
+}
+</style>
+
+<!-- Load the reusable question JS -->
+<script src="{{ site.baseurl }}/assets/js/one-answer-question.js"></script>
+<script src="{{ site.baseurl }}/assets/js/multiple-answer-question.js"></script>
+<script src="{{ site.baseurl }}/assets/js/match-together-question.js"></script>
+
+<script>
+let currentPage = 1;
+let score = 0;
+let completed = 0;
+let timerInterval;
+
+const quizData = {
+    totalQuestions: parseInt(document.getElementById('quizForm').dataset.totalQuestions),
+    duration: {% if practice_data.duration_minutes %} {{ practice_data.duration_minutes }} * 60 {% else %} null {% endif %},
+    questions: questionsData
+};
+
+function renderQuestionPage(pageNum) {
+    const totalQuestions = questionsData.length;
+    pageNum = Math.max(1, Math.min(pageNum, totalQuestions));
+    const q = questionsData[pageNum - 1];
+    // Auto-detect question type
+    if (q.type === 'match') {
+        renderMatchTogetherQuestion(q, totalQuestions);
+    } else if (q.type === 'multiple' || Array.isArray(q.answer)) {
+        renderMultipleAnswerQuestion(q, totalQuestions);
+    } else {
+        renderQuestion(q, totalQuestions);
+    }
+    currentPage = pageNum;
+    document.getElementById('currentPage').textContent = pageNum;
+    document.getElementById('prevBtn').disabled = pageNum <= 1;
+    document.getElementById('nextBtn').disabled = pageNum >= totalQuestions;
+    updateCurrentQuestionIndicator();
+    updateProgress();
+}
+
+function nextPage() {
+    renderQuestionPage(currentPage + 1);
+    window.scrollTo(0, 0);
+}
+
+function previousPage() {
+    renderQuestionPage(currentPage - 1);
+    window.scrollTo(0, 0);
+}
+
+function updateCurrentQuestionIndicator() {
+    document.querySelectorAll('.question-status').forEach(q => {
+        q.classList.remove('current');
+    });
+
+    const indicator = document.querySelector(`.question-status[data-question="${currentPage}"]`);
+    if (indicator) {
+        indicator.classList.add('current');
+    }
+}
+
+function startTimer(duration, display) {
+    if (!duration) return;
+    let timer = duration;
+    const timerDisplay = display;
+    if (!timerDisplay) return;
+
+    clearInterval(timerInterval);
+
+    timerInterval = setInterval(function () {
+        const minutes = String(Math.floor(timer / 60)).padStart(2, '0');
+        const seconds = String(timer % 60).padStart(2, '0');
+
+        timerDisplay.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            clearInterval(timerInterval);
+            timerDisplay.textContent = "Time's up!";
+            const questionArea = document.getElementById('question-area');
+            const pagination = document.querySelector('.pagination');
+            if (questionArea) {
+                questionArea.style.opacity = '0.6';
+                const allInputs = questionArea.querySelectorAll('input');
+                allInputs.forEach(input => input.disabled = true);
+            }
+            if (pagination) {
+                const allButtons = pagination.querySelectorAll('button');
+                allButtons.forEach(button => button.disabled = true);
+            }
+        }
+    }, 1000);
+}
+
+function resetQuiz() {
+    document.getElementById('quizForm').reset();
+    
+    // Use the reset function from the include
+    resetQuestionState();
+    
+    document.querySelectorAll('.question-status').forEach(q => {
+        q.classList.remove('correct', 'incorrect', 'current');
+    });
+    
+    score = 0;
+    completed = 0;
+    updateProgress();
+    
+    currentPage = 1;
+    renderQuestionPage(currentPage);
+    
+    {% if practice_data.duration_minutes %}
+    startTimer({{ practice_data.duration_minutes }} * 60, document.getElementById('timer'));
+    {% endif %}
+}
+
+function updateProgress() {
+    const totalQuestions = questionsData.length;
+    // Recalculate completed and score from DOM state
+    let newCompleted = 0;
+    let newScore = 0;
+    document.querySelectorAll('.question-status').forEach(q => {
+        if (q.dataset.answered === 'true') {
+            newCompleted++;
+            if (q.dataset.wasCorrect === 'true') {
+                newScore++;
+            }
+        }
+    });
+    completed = newCompleted;
+    score = newScore;
+    const progressPercent = (completed / totalQuestions) * 100;
+    document.querySelector('.progress-fill').style.width = `${progressPercent}%`;
+    document.getElementById('score').textContent = score;
+    document.getElementById('completed').textContent = completed;
+}
+
+// Initialize the page when the DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // a graceful check if questionsData is not empty
+    if (typeof questionsData !== 'undefined' && questionsData.length > 0) {
+        document.querySelectorAll('.question-status').forEach(indicator => {
+            indicator.addEventListener('click', () => {
+                const questionNumber = parseInt(indicator.dataset.question);
+                renderQuestionPage(questionNumber);
+            });
+        });
+        
+        // Listen for question answered events from the include
+        document.addEventListener('questionAnswered', function(event) {
+            const { questionNumber, isCorrect } = event.detail;
+            const statusIndicator = document.querySelector(`.question-status[data-question="${questionNumber}"]`);
+            
+            if (statusIndicator) {
+                // Update indicator color
+                statusIndicator.classList.remove('correct', 'incorrect');
+                if (isCorrect) {
+                    statusIndicator.classList.add('correct');
+                } else {
+                    statusIndicator.classList.add('incorrect');
+                }
+
+                // Always set wasCorrect immediately
+                statusIndicator.dataset.wasCorrect = isCorrect;
+
+                // Only count as completed the first time
+                if (!statusIndicator.dataset.answered) {
+                    statusIndicator.dataset.answered = 'true';
+                    updateProgress();
+                } else {
+                    updateProgress();
+                }
+            }
+        });
+
+        // Listen for question reset events from the include
+        document.addEventListener('questionReset', function(event) {
+            const { questionNumber } = event.detail;
+            const statusIndicator = document.querySelector(`.question-status[data-question="${questionNumber}"]`);
+            
+            if (statusIndicator) {
+                // Reset indicator state
+                statusIndicator.classList.remove('correct', 'incorrect');
+                statusIndicator.removeAttribute('data-answered');
+                statusIndicator.removeAttribute('data-was-correct');
+                updateProgress();
+            }
+        });
+        
+        renderQuestionPage(1);
+        updateProgress();
+        
+        {% if practice_data.duration_minutes %}
+        startTimer({{ practice_data.duration_minutes }} * 60, document.getElementById('timer'));
+        {% endif %}
+    } else {
+        // Handle case where there are no questions
+        document.getElementById('question-area').innerHTML = '<p>No questions found for this module.</p>';
+        document.querySelector('.pagination').style.display = 'none';
+        document.querySelector('.progress-sidebar').style.display = 'none';
+    }
+});
+
+function toggleSection(id, btn) {
+    var content = document.getElementById(id);
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+        if (btn.innerText.includes('▲')) btn.innerText = btn.innerText.replace('▲', '▼');
+    } else {
+        content.style.display = 'none';
+        if (btn.innerText.includes('▼')) btn.innerText = btn.innerText.replace('▼', '▲');
+    }
+}
+</script> 
