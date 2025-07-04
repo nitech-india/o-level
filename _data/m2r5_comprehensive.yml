@@ -1,1157 +1,1331 @@
 sets:
-  - id: 1
-    name: "Comprehensive Practice Set 1 - Full Module M2-R5 (100 marks)"
-    duration_minutes: 120
-    questions:
-      # Web Design Fundamentals & HTML Basics (25 marks, 13 questions)
-      - text: "What does HTML stand for?"
-        choices:
-          A: "Hyper Text Markup Language"
-          B: "High Tech Modern Language"
-          C: "Hyperlink and Text Management Language"
-          D: "Home Tool Markup Language"
-        answer: "A"
-        explanation: "HTML stands for Hyper Text Markup Language, which is the standard language for creating web pages."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML tag is used to create a hyperlink?"
-        choices:
-          A: "<link>"
-          B: "<a>"
-          C: "<href>"
-          D: "<p>"
-        answer: "B"
-        explanation: "The <a> tag is used to create hyperlinks in HTML."
-      - text: "Which HTML element is used to define the title of a document?"
-        choices:
-          A: "<head>"
-          B: "<title>"
-          C: "<meta>"
-          D: "<body>"
-        answer: "B"
-        explanation: "The <title> element defines the title of the document, shown in the browser's title bar or tab."
-      - text: "Which HTML tag is used to define an unordered list?"
-        choices:
-          A: "<ol>"
-          B: "<li>"
-          C: "<list>"
-          D: "<ul>"
-        answer: "D"
-        explanation: "The <ul> tag defines an unordered (bulleted) list in HTML."
-      - text: "Which HTML element is used to specify a footer for a document or section?"
-        choices:
-          A: "<bottom>"
-          B: "<footer>"
-          C: "<section>"
-          D: "<end>"
-        answer: "B"
-        explanation: "The <footer> element specifies a footer for a document or section in HTML5."
-      - text: "Which input type defines a slider control in HTML5?"
-        choices:
-          A: "range"
-          B: "slider"
-          C: "controls"
-          D: "search"
-        answer: "A"
-        explanation: "The 'range' input type creates a slider control in HTML5."
-      - text: "In HTML, which element is used to display an image?"
-        choices:
-          A: "<image>"
-          B: "<img>"
-          C: "<pic>"
-          D: "<src>"
-        answer: "B"
-        explanation: "The <img> tag is used to display images in HTML."
-      - text: "Which HTML5 element is best for embedding a video?"
-        choices:
-          A: "<media>"
-          B: "<movie>"
-          C: "<video>"
-          D: "<embed>"
-        answer: "C"
-        explanation: "The <video> element is used to embed video content in HTML5."
-      - text: "Which HTML element provides metadata about the HTML document, such as character set and viewport settings?"
-        choices:
-          A: "<head>"
-          B: "<meta>"
-          C: "<style>"
-          D: "<script>"
-        answer: "B"
-        explanation: "The <meta> element provides metadata about the HTML document."
-      - text: "Which HTML tag is used to define a table row?"
-        choices:
-          A: "<table>"
-          B: "<td>"
-          C: "<th>"
-          D: "<tr>"
-        answer: "D"
-        explanation: "The <tr> tag defines a row in an HTML table."
-      - text: "Which HTML input type is used for fields that should contain an e-mail address?"
-        choices:
-          A: "type='text'"
-          B: "type='email'"
-          C: "type='url'"
-          D: "type='mail'"
-        answer: "B"
-        explanation: "The 'email' input type is used for fields that should contain an e-mail address."
-      - text: "Which HTML element is used for the most important heading?"
-        choices:
-          A: "<heading>"
-          B: "<h6>"
-          C: "<h1>"
-          D: "<head>"
-        answer: "C"
-        explanation: "<h1> is the most important heading in HTML, used for main titles."
-      - text: "Which tag is used to create a numbered list in HTML?"
-        choices:
-          A: "<ul>"
-          B: "<ol>"
-          C: "<list>"
-          D: "<dl>"
-        answer: "B"
-        explanation: "The <ol> tag creates a numbered (ordered) list in HTML."
-      - text: "Which of the following are valid HTML5 elements?"
-        type: "multiple"
-        choices:
-          A: "<header>"
-          B: "<footer>"
-          C: "<section>"
-          D: "<article>"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are valid HTML5 elements."
-      - text: "Which of the following HTML tags are used for lists?"
-        type: "multiple"
-        choices:
-          A: "<ul>"
-          B: "<ol>"
-          C: "<li>"
-          D: "<dl>"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed tags are used for lists in HTML."
-      - text: "Which of the following best describes proprietary software?"
-        choices:
-          A: "Software that is free to use, modify, and distribute"
-          B: "Software whose source code is publicly available"
-          C: "Software that is owned by an individual or company and has restrictions on use and modification"
-          D: "Software that is always open source"
-        answer: "C"
-        explanation: "Proprietary software is owned by an individual or company and usually has restrictions on use, modification, and distribution."
-        topic: "Software Types and Licensing"
-      - text: "Which of the following is an example of proprietary software?"
-        choices:
-          A: "Linux"
-          B: "Microsoft Windows"
-          C: "LibreOffice"
-          D: "GIMP"
-        answer: "B"
-        explanation: "Microsoft Windows is proprietary software, while Linux, LibreOffice, and GIMP are open source."
-        topic: "Software Types and Licensing"
-      - text: "Which statement is true about open source software?"
-        choices:
-          A: "It cannot be modified by users"
-          B: "It is always paid"
-          C: "Its source code is available for anyone to view, modify, and distribute"
-          D: "It is owned by a single company"
-        answer: "C"
-        explanation: "Open source software allows anyone to view, modify, and distribute its source code."
-        topic: "Software Types and Licensing"
-
-      # CSS & CSS Framework (35 marks, 17 questions)
-      - text: "What does CSS stand for?"
-        choices:
-          A: "Cascading Style Sheets"
-          B: "Creative Style Sheets"
-          C: "Computer Style Sheets"
-          D: "Colorful Style Sheets"
-        answer: "A"
-        explanation: "CSS stands for Cascading Style Sheets, which is used to style and layout web pages."
-      - text: "Which property is used to change the background color in CSS?"
-        choices:
-          A: "background-color"
-          B: "color"
-          C: "bgcolor"
-          D: "background"
-        answer: "A"
-        explanation: "The 'background-color' property sets the background color of an element in CSS."
-      - text: "Which selector is used to select an element with id 'header'?"
-        choices:
-          A: "#header"
-          B: ".header"
-          C: "header"
-          D: "*header"
-        answer: "A"
-        explanation: "The '#' symbol is used to select elements by their id in CSS."
-      - text: "Which property is used to change the font size?"
-        choices:
-          A: "font-size"
-          B: "font-weight"
-          C: "font-style"
-          D: "font-family"
-        answer: "A"
-        explanation: "The 'font-size' property changes the size of the text."
-      - text: "Which CSS property is used to make text bold?"
-        choices:
-          A: "font-weight"
-          B: "font-style"
-          C: "font-size"
-          D: "font-family"
-        answer: "A"
-        explanation: "The 'font-weight' property is used to make text bold in CSS."
-      - text: "Which CSS property is used to change the text color?"
-        choices:
-          A: "color"
-          B: "background-color"
-          C: "text-color"
-          D: "font-color"
-        answer: "A"
-        explanation: "The 'color' property sets the color of the text in CSS."
-      - text: "Which CSS property is used to set the spacing between lines of text?"
-        choices:
-          A: "line-height"
-          B: "letter-spacing"
-          C: "word-spacing"
-          D: "text-spacing"
-        answer: "A"
-        explanation: "The 'line-height' property sets the space between lines of text."
-      - text: "Which CSS property is used to set the width of an element?"
-        choices:
-          A: "width"
-          B: "height"
-          C: "size"
-          D: "max-width"
-        answer: "A"
-        explanation: "The 'width' property sets the width of an element."
-      - text: "Which CSS property is used to set the border of an element?"
-        choices:
-          A: "border"
-          B: "outline"
-          C: "border-style"
-          D: "border-width"
-        answer: "A"
-        explanation: "The 'border' property defines the border of an element in CSS."
-      - text: "Which CSS property is used to set the margin of an element?"
-        choices:
-          A: "margin"
-          B: "padding"
-          C: "border"
-          D: "outline"
-        answer: "A"
-        explanation: "The 'margin' property sets the outer space around an element."
-      - text: "Which CSS property is used to set the padding of an element?"
-        choices:
-          A: "padding"
-          B: "margin"
-          C: "border"
-          D: "outline"
-        answer: "A"
-        explanation: "The 'padding' property sets the inner space between the content and the border of an element."
-      - text: "Which CSS property is used to set the display of an element?"
-        choices:
-          A: "display"
-          B: "position"
-          C: "float"
-          D: "visibility"
-        answer: "A"
-        explanation: "The 'display' property specifies how an element is displayed on the page."
-      - text: "Which CSS property is used to set the position of an element?"
-        choices:
-          A: "position"
-          B: "display"
-          C: "float"
-          D: "top"
-        answer: "A"
-        explanation: "The 'position' property specifies the positioning method for an element."
-      - text: "Which CSS property is used to set the float of an element?"
-        choices:
-          A: "float"
-          B: "position"
-          C: "display"
-          D: "clear"
-        answer: "A"
-        explanation: "The 'float' property is used to float elements to the left or right."
-      - text: "Which CSS property is used to set the clear of an element?"
-        choices:
-          A: "clear"
-          B: "float"
-          C: "position"
-          D: "display"
-        answer: "A"
-        explanation: "The 'clear' property specifies what elements can float beside the cleared element."
-      - text: "Which CSS property is used to set the z-index of an element?"
-        choices:
-          A: "z-index"
-          B: "index"
-          C: "layer"
-          D: "order"
-        answer: "A"
-        explanation: "The 'z-index' property sets the stack order of an element."
-      - text: "Which CSS property is used to set the overflow of an element?"
-        choices:
-          A: "overflow"
-          B: "visible"
-          C: "hidden"
-          D: "scroll"
-        answer: "A"
-        explanation: "The 'overflow' property controls what happens to content that overflows an element's box."
-      - text: "Which of the following are CSS selectors?"
-        type: "multiple"
-        choices:
-          A: "Class selector"
-          B: "ID selector"
-          C: "Element selector"
-          D: "Universal selector"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are CSS selectors."
-      - text: "Which of the following are features of CSS frameworks?"
-        type: "multiple"
-        choices:
-          A: "Grid system"
-          B: "Utility classes"
-          C: "Responsive design"
-          D: "Predefined components"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are features of CSS frameworks."
-
-      # JavaScript and Angular JS (20 marks, 10 questions)
-      - text: "What is the purpose of JavaScript in web development?"
-        choices:
-          A: "To style the structure of web pages"
-          B: "To create the main content and structure of a page"
-          C: "To add interactivity and dynamic behavior to web pages"
-          D: "To manage and query databases"
-        answer: "C"
-        explanation: "JavaScript is used to add interactivity and dynamic features to web pages."
-      - text: "Which JavaScript keyword is used to declare a variable that cannot be reassigned?"
-        choices:
-          A: "var"
-          B: "let"
-          C: "const"
-          D: "static"
-        answer: "C"
-        explanation: "'const' is used to declare variables that cannot be reassigned."
-      - text: "How do you write 'Hello World' in an alert box using JavaScript?"
-        choices:
-          A: "msgBox('Hello World');"
-          B: "alertBox('Hello World');"
-          C: "alert('Hello World');"
-          D: "msg('Hello World');"
-        answer: "C"
-        explanation: "The alert('Hello World'); statement displays a popup alert box with the message."
-      - text: "Which JavaScript method is used to write to an HTML element?"
-        choices:
-          A: "document.write()"
-          B: "console.log()"
-          C: "window.alert()"
-          D: "innerHTML"
-        answer: "D"
-        explanation: "The innerHTML property is used to write or change the content of an HTML element."
-      - text: "What is the correct syntax for referring to an external script called 'app.js'?"
-        choices:
-          A: "<script src='app.js'>"
-          B: "<script href='app.js'>"
-          C: "<script name='app.js'>"
-          D: "<script file='app.js'>"
-        answer: "A"
-        explanation: "The correct syntax is <script src='app.js'> to include an external JavaScript file."
-      - text: "How do you declare a JavaScript function?"
-        choices:
-          A: "function myFunction()"
-          B: "function: myFunction()"
-          C: "function = myFunction()"
-          D: "declare function myFunction()"
-        answer: "A"
-        explanation: "A JavaScript function is declared using the function keyword followed by the function name and parentheses."
-      - text: "Which JavaScript event occurs when the user clicks on an HTML element?"
-        choices:
-          A: "onclick"
-          B: "onchange"
-          C: "onmouseover"
-          D: "onmouseclick"
-        answer: "A"
-        explanation: "The 'onclick' event is triggered when an HTML element is clicked."
-      - text: "What is JSON?"
-        choices:
-          A: "A lightweight data-interchange format"
-          B: "A JavaScript function"
-          C: "A CSS framework"
-          D: "A type of web server"
-        answer: "A"
-        explanation: "JSON (JavaScript Object Notation) is a lightweight format for exchanging data."
-      - text: "Which of these is a JavaScript framework/library?"
-        choices:
-          A: "React"
-          B: "Bootstrap"
-          C: "Sass"
-          D: "HTML5"
-        answer: "A"
-        explanation: "React is a popular JavaScript library for building user interfaces."
-      - text: "Which method converts a JSON string into a JavaScript object?"
-        choices:
-          A: "JSON.parse()"
-          B: "JSON.stringify()"
-          C: "JSON.objectify()"
-          D: "JSON.toObject()"
-        answer: "A"
-        explanation: "JSON.parse() converts a JSON string into a JavaScript object."
-      - text: "Which of the following are JavaScript data types?"
-        type: "multiple"
-        choices:
-          A: "String"
-          B: "Number"
-          C: "Boolean"
-          D: "Object"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are JavaScript data types."
-      - text: "Which of the following are JavaScript array methods?"
-        type: "multiple"
-        choices:
-          A: "push()"
-          B: "pop()"
-          C: "map()"
-          D: "filter()"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are JavaScript array methods."
-
-      # Photo Editor, Web Publishing and Browsing (20 marks, 10 questions)
-      - text: "What is a 'web hosting' service?"
-        choices:
-          A: "A service that provides the technologies and services needed for a website to be viewed on the Internet"
-          B: "A service that designs websites"
-          C: "A service that markets websites"
-          D: "A service that writes website content"
-        answer: "A"
-        explanation: "A web hosting service stores website files and makes them accessible on the Internet."
-      - text: "What does 'FTP' stand for in the context of web publishing?"
-        choices:
-          A: "File Transfer Protocol"
-          B: "Fast Text Protocol"
-          C: "File Transaction Process"
-          D: "Folder Transfer Procedure"
-        answer: "A"
-        explanation: "'FTP' stands for File Transfer Protocol, which is a standard protocol used for transferring files between computers over a network."
-      - text: "What is the purpose of a photo editor in web development?"
-        choices:
-          A: "To create and edit images for websites"
-          B: "To write code"
-          C: "To design layouts"
-          D: "To manage databases"
-        answer: "A"
-        explanation: "A photo editor is used to create and edit images for use on websites."
-      - text: "What is 'responsive web design'?"
-        choices:
-          A: "A design that adapts to different screen sizes and devices"
-          B: "A design that uses only fixed layouts"
-          C: "A design that ignores mobile devices"
-          D: "A design that uses only tables"
-        answer: "A"
-        explanation: "Responsive web design ensures web pages look good on all devices by adapting layout and content."
-      - text: "What is progressive web app (PWA)?"
-        choices:
-          A: "A web app that uses modern web capabilities to deliver an app-like experience"
-          B: "A static website"
-          C: "A desktop application"
-          D: "A mobile-only app"
-        answer: "A"
-        explanation: "A PWA is a web application that behaves like a native app using modern web features."
-      - text: "What does 'AJAX' stand for in web development?"
-        choices:
-          A: "Asynchronous JavaScript and XML"
-          B: "Advanced JavaScript and XHTML"
-          C: "Automated JavaScript and XML"
-          D: "Asynchronous JavaScript and XHTML"
-        answer: "A"
-        explanation: "AJAX stands for Asynchronous JavaScript and XML, used for making asynchronous web requests."
-      - text: "What is a 'CDN' service?"
-        choices:
-          A: "Content Delivery Network"
-          B: "Central Data Network"
-          C: "Content Data Node"
-          D: "Central Delivery Node"
-        answer: "A"
-        explanation: "A CDN (Content Delivery Network) distributes website content across multiple servers for faster delivery."
-      - text: "What does 'UX' stand for in web development?"
-        choices:
-          A: "User Experience"
-          B: "Universal XML"
-          C: "User Extension"
-          D: "Unified Experience"
-        answer: "A"
-        explanation: "UX stands for User Experience, which refers to the overall experience a user has with a website or app."
-      - text: "What does 'API' stand for?"
-        choices:
-          A: "Application Programming Interface"
-          B: "Advanced Programming Interface"
-          C: "Application Program Integration"
-          D: "Automated Programming Interface"
-        answer: "A"
-        explanation: "API stands for Application Programming Interface, which allows different software to communicate."
-      - text: "What does 'REST' stand for in web development?"
-        choices:
-          A: "Representational State Transfer"
-          B: "Remote Execution Service Technology"
-          C: "Rapid Execution and Service Transfer"
-          D: "Resource Execution and Service Transfer"
-        answer: "A"
-        explanation: "REST stands for Representational State Transfer, an architectural style for designing networked applications."
-      - text: "Which of the following are web publishing protocols?"
-        type: "multiple"
-        choices:
-          A: "FTP"
-          B: "HTTP"
-          C: "HTTPS"
-          D: "SFTP"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are web publishing protocols."
-      - text: "Which of the following are web accessibility features?"
-        type: "multiple"
-        choices:
-          A: "Alt text for images"
-          B: "Keyboard navigation"
-          C: "Screen reader support"
-          D: "Semantic HTML"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are web accessibility features."
-
-      # Additional tough questions
-      - text: "Which of the following are valid HTML5 semantic elements for structuring a web page?"
-        type: "multiple"
-        choices:
-          A: "<header>"
-          B: "<footer>"
-          C: "<section>"
-          D: "<aside>"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are semantic elements for structuring HTML5 pages."
-        topic: "HTML"
-
-      - text: "Which of the following are valid CSS layout techniques for responsive design?"
-        type: "multiple"
-        choices:
-          A: "Flexbox"
-          B: "Grid"
-          C: "Media queries"
-          D: "Table layouts"
-        answer: ["A", "B", "C"]
-        explanation: "Flexbox, Grid, and media queries are modern responsive techniques; tables are outdated."
-        topic: "CSS"
-
-      - text: "Which of the following are valid ways to include CSS in an HTML document?"
-        type: "multiple"
-        choices:
-          A: "Inline styles"
-          B: "Internal <style> tag"
-          C: "External stylesheet"
-          D: "<css> tag"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are valid; <css> is not a real tag."
-        topic: "CSS"
-
-      - text: "Which of the following are valid JavaScript data types?"
-        type: "multiple"
-        choices:
-          A: "String"
-          B: "Number"
-          C: "Boolean"
-          D: "Object"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are JavaScript data types."
-        topic: "JavaScript"
-
-      - text: "Which of the following are valid ways to declare a variable in JavaScript (ES6+)?"
-        type: "multiple"
-        choices:
-          A: "var"
-          B: "let"
-          C: "const"
-          D: "define"
-        answer: ["A", "B", "C"]
-        explanation: "var, let, and const are valid; define is not."
-        topic: "JavaScript"
-
-      - text: "Which of the following are valid Bootstrap CSS classes for layout?"
-        type: "multiple"
-        choices:
-          A: ".container"
-          B: ".row"
-          C: ".col"
-          D: ".grid"
-        answer: ["A", "B", "C"]
-        explanation: ".container, .row, and .col are Bootstrap layout classes; .grid is not."
-        topic: "CSS Framework"
-
-      - text: "Which of the following are valid HTML input types for forms?"
-        type: "multiple"
-        choices:
-          A: "text"
-          B: "email"
-          C: "number"
-          D: "date"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid HTML input types."
-        topic: "HTML"
-
-      - text: "Which of the following are valid JavaScript array methods?"
-        type: "multiple"
-        choices:
-          A: "push()"
-          B: "pop()"
-          C: "map()"
-          D: "filter()"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid array methods."
-        topic: "JavaScript"
-
-      - text: "Which of the following are valid CSS units for sizing elements?"
-        type: "multiple"
-        choices:
-          A: "px"
-          B: "em"
-          C: "%"
-          D: "rem"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid CSS units."
-        topic: "CSS"
-
-      - text: "Which of the following are valid ways to optimize website performance?"
-        type: "multiple"
-        choices:
-          A: "Minifying CSS and JS"
-          B: "Image compression"
-          C: "Lazy loading images"
-          D: "Using large, uncompressed videos"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are optimizations; D is not."
-        topic: "Web Publishing"
-
-      - text: "Which of the following are valid HTML5 APIs for web development?"
-        type: "multiple"
-        choices:
-          A: "Geolocation API"
-          B: "Canvas API"
-          C: "Web Storage API"
-          D: "Clipboard API"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid HTML5 APIs."
-        topic: "HTML"
-
-      - text: "Which of the following are valid CSS pseudo-classes?"
-        type: "multiple"
-        choices:
-          A: ":hover"
-          B: ":active"
-          C: ":focus"
-          D: ":checked"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid CSS pseudo-classes."
-        topic: "CSS"
-
-      - text: "Which of the following are valid JavaScript event types?"
-        type: "multiple"
-        choices:
-          A: "click"
-          B: "mouseover"
-          C: "keydown"
-          D: "submit"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid JavaScript event types."
-        topic: "JavaScript"
-
-      - text: "Which of the following are valid ways to secure a web application?"
-        type: "multiple"
-        choices:
-          A: "Input validation"
-          B: "Using HTTPS"
-          C: "Sanitizing user input"
-          D: "Disabling all security features"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are security measures; D is not."
-        topic: "Web Publishing"
-
-      - text: "Which of the following are valid CSS properties for controlling layout?"
-        type: "multiple"
-        choices:
-          A: "display"
-          B: "position"
-          C: "float"
-          D: "z-index"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid CSS layout properties."
-        topic: "CSS"
-
-  - id: 2
-    name: "Comprehensive Practice Set 2 - Full Module M2-R5 (100 marks)"
-    duration_minutes: 105
-    questions:
-      # Web Design Fundamentals & HTML Basics (25 marks, 13 questions)
-      - text: "Which tag is used to create a hyperlink in HTML?"
-        choices:
-          A: "<link>"
-          B: "<a>"
-          C: "<href>"
-          D: "<p>"
-        answer: "B"
-        explanation: "The <a> tag is used to create hyperlinks in HTML."
-      - text: "Which HTML tag is used to display an image?"
-        choices:
-          A: "<img>"
-          B: "<image>"
-          C: "<src>"
-          D: "<pic>"
-        answer: "A"
-        explanation: "The <img> tag is used to display images in HTML."
-      - text: "What does HTML stand for?"
-        choices:
-          A: "Hyper Text Markup Language"
-          B: "Home Tool Markup Language"
-          C: "Hyperlinks and Text Markup Language"
-          D: "Hyperlinking Text Markup Language"
-        answer: "A"
-        explanation: "HTML stands for Hyper Text Markup Language, which is the standard language for creating web pages."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which tag is used to create a numbered list in HTML?"
-        choices:
-          A: "<ul>"
-          B: "<ol>"
-          C: "<li>"
-          D: "<dl>"
-        answer: "B"
-        explanation: "The <ol> tag creates a numbered (ordered) list in HTML."
-      - text: "Which HTML element is used for the most important heading?"
-        choices:
-          A: "<h1>"
-          B: "<h6>"
-          C: "<heading>"
-          D: "<head>"
-        answer: "A"
-        explanation: "<h1> is the most important heading in HTML, used for main titles."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML tag is used to define a table row?"
-        choices:
-          A: "<tr>"
-          B: "<td>"
-          C: "<th>"
-          D: "<table>"
-        answer: "A"
-        explanation: "The <tr> tag defines a row in an HTML table."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML5 element is best for embedding a video?"
-        choices:
-          A: "<video>"
-          B: "<media>"
-          C: "<movie>"
-          D: "<embed>"
-        answer: "A"
-        explanation: "The <video> element is used to embed video content in HTML5."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML tag is used to define an unordered list?"
-        choices:
-          A: "<ul>"
-          B: "<ol>"
-          C: "<li>"
-          D: "<list>"
-        answer: "A"
-        explanation: "The <ul> tag defines an unordered (bulleted) list in HTML."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML element provides metadata about the HTML document?"
-        choices:
-          A: "<meta>"
-          B: "<head>"
-          C: "<style>"
-          D: "<script>"
-        answer: "A"
-        explanation: "The <meta> element provides metadata about the HTML document."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML input type is used for fields that should contain an e-mail address?"
-        choices:
-          A: "type='email'"
-          B: "type='text'"
-          C: "type='url'"
-          D: "type='mail'"
-        answer: "B"
-        explanation: "The 'email' input type is used for fields that should contain an e-mail address."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML tag is used to define a table cell?"
-        choices:
-          A: "<td>"
-          B: "<tr>"
-          C: "<th>"
-          D: "<table>"
-        answer: "A"
-        explanation: "The <td> tag defines a cell in an HTML table."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML tag is used to define a form?"
-        choices:
-          A: "<form>"
-          B: "<input>"
-          C: "<fieldset>"
-          D: "<button>"
-        answer: "A"
-        explanation: "The <form> tag is used to create an HTML form for user input."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-      - text: "Which HTML tag is used to define a hyperlink?"
-        choices:
-          A: "<a>"
-          B: "<link>"
-          C: "<href>"
-          D: "<p>"
-        answer: "A"
-        explanation: "The <a> tag is used to create hyperlinks in HTML."
-        topic: "Introduction to Web Design and Editors, HTML Basics"
-
-      # CSS & CSS Framework (35 marks, 17 questions)
-      - text: "What does CSS stand for?"
-        choices:
-          A: "Cascading Style Sheets"
-          B: "Creative Style Sheets"
-          C: "Computer Style Sheets"
-          D: "Colorful Style Sheets"
-        answer: "A"
-        explanation: "CSS stands for Cascading Style Sheets, which is used to style and layout web pages."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which property is used to change the background color in CSS?"
-        choices:
-          A: "background-color"
-          B: "color"
-          C: "bgcolor"
-          D: "background"
-        answer: "A"
-        explanation: "The 'background-color' property sets the background color of an element in CSS."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which selector is used to select an element with id 'header'?"
-        choices:
-          A: "#header"
-          B: ".header"
-          C: "header"
-          D: "*header"
-        answer: "A"
-        explanation: "The '#' symbol is used to select elements by their id in CSS."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which property is used to change the font size?"
-        choices:
-          A: "font-size"
-          B: "font-weight"
-          C: "font-style"
-          D: "font-family"
-        answer: "A"
-        explanation: "The 'font-size' property changes the size of the text."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to make text bold?"
-        choices:
-          A: "font-weight"
-          B: "font-style"
-          C: "font-size"
-          D: "font-family"
-        answer: "A"
-        explanation: "The 'font-weight' property is used to make text bold in CSS."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to change the text color?"
-        choices:
-          A: "color"
-          B: "background-color"
-          C: "text-color"
-          D: "font-color"
-        answer: "A"
-        explanation: "The 'color' property sets the color of the text in CSS."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the spacing between lines of text?"
-        choices:
-          A: "line-height"
-          B: "letter-spacing"
-          C: "word-spacing"
-          D: "text-spacing"
-        answer: "A"
-        explanation: "The 'line-height' property sets the space between lines of text."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the width of an element?"
-        choices:
-          A: "width"
-          B: "height"
-          C: "size"
-          D: "max-width"
-        answer: "A"
-        explanation: "The 'width' property sets the width of an element."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the border of an element?"
-        choices:
-          A: "border"
-          B: "outline"
-          C: "border-style"
-          D: "border-width"
-        answer: "A"
-        explanation: "The 'border' property defines the border of an element in CSS."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the margin of an element?"
-        choices:
-          A: "margin"
-          B: "padding"
-          C: "border"
-          D: "outline"
-        answer: "A"
-        explanation: "The 'margin' property sets the outer space around an element."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the padding of an element?"
-        choices:
-          A: "padding"
-          B: "margin"
-          C: "border"
-          D: "outline"
-        answer: "A"
-        explanation: "The 'padding' property sets the inner space between the content and the border of an element."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the display of an element?"
-        choices:
-          A: "display"
-          B: "position"
-          C: "float"
-          D: "visibility"
-        answer: "A"
-        explanation: "The 'display' property specifies how an element is displayed on the page."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the position of an element?"
-        choices:
-          A: "position"
-          B: "display"
-          C: "float"
-          D: "top"
-        answer: "A"
-        explanation: "The 'position' property specifies the positioning method for an element."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the float of an element?"
-        choices:
-          A: "float"
-          B: "position"
-          C: "display"
-          D: "clear"
-        answer: "A"
-        explanation: "The 'float' property is used to float elements to the left or right."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the clear of an element?"
-        choices:
-          A: "clear"
-          B: "float"
-          C: "position"
-          D: "display"
-        answer: "A"
-        explanation: "The 'clear' property specifies what elements can float beside the cleared element."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the z-index of an element?"
-        choices:
-          A: "z-index"
-          B: "index"
-          C: "layer"
-          D: "order"
-        answer: "A"
-        explanation: "The 'z-index' property sets the stack order of an element."
-        topic: "Cascading Style Sheets (CSS)"
-      - text: "Which CSS property is used to set the overflow of an element?"
-        choices:
-          A: "overflow"
-          B: "visible"
-          C: "hidden"
-          D: "scroll"
-        answer: "A"
-        explanation: "The 'overflow' property controls what happens to content that overflows an element's box."
-        topic: "Cascading Style Sheets (CSS)"
-
-      # JavaScript and Angular JS (20 marks, 10 questions)
-      - text: "What is the purpose of JavaScript in web development?"
-        choices:
-          A: "To style the structure of web pages"
-          B: "To create the main content and structure of a page"
-          C: "To add interactivity and dynamic behavior to web pages"
-          D: "To manage and query databases"
-        answer: "C"
-        explanation: "JavaScript is used to add interactivity and dynamic features to web pages."
-        topic: "JavaScript"
-      - text: "Which JavaScript keyword is used to declare a variable that cannot be reassigned?"
-        choices:
-          A: "var"
-          B: "let"
-          C: "const"
-          D: "static"
-        answer: "C"
-        explanation: "'const' is used to declare variables that cannot be reassigned."
-        topic: "JavaScript"
-      - text: "How do you write 'Hello World' in an alert box using JavaScript?"
-        choices:
-          A: "msgBox('Hello World');"
-          B: "alertBox('Hello World');"
-          C: "alert('Hello World');"
-          D: "msg('Hello World');"
-        answer: "C"
-        explanation: "The alert('Hello World'); statement displays a popup alert box with the message."
-        topic: "JavaScript"
-      - text: "Which JavaScript method is used to write to an HTML element?"
-        choices:
-          A: "document.write()"
-          B: "console.log()"
-          C: "window.alert()"
-          D: "innerHTML"
-        answer: "D"
-        explanation: "The innerHTML property is used to write or change the content of an HTML element."
-        topic: "JavaScript"
-      - text: "What is the correct syntax for referring to an external script called 'app.js'?"
-        choices:
-          A: "<script src='app.js'>"
-          B: "<script href='app.js'>"
-          C: "<script name='app.js'>"
-          D: "<script file='app.js'>"
-        answer: "A"
-        explanation: "The correct syntax is <script src='app.js'> to include an external JavaScript file."
-        topic: "JavaScript"
-      - text: "How do you declare a JavaScript function?"
-        choices:
-          A: "function myFunction()"
-          B: "function: myFunction()"
-          C: "function = myFunction()"
-          D: "declare function myFunction()"
-        answer: "A"
-        explanation: "A JavaScript function is declared using the function keyword followed by the function name and parentheses."
-        topic: "JavaScript"
-      - text: "Which JavaScript event occurs when the user clicks on an HTML element?"
-        choices:
-          A: "onclick"
-          B: "onchange"
-          C: "onmouseover"
-          D: "onmouseclick"
-        answer: "A"
-        explanation: "The 'onclick' event is triggered when an HTML element is clicked."
-        topic: "JavaScript"
-      - text: "What is JSON?"
-        choices:
-          A: "A lightweight data-interchange format"
-          B: "A JavaScript function"
-          C: "A CSS framework"
-          D: "A type of web server"
-        answer: "A"
-        explanation: "JSON (JavaScript Object Notation) is a lightweight format for exchanging data."
-        topic: "JavaScript"
-      - text: "Which of these is a JavaScript framework/library?"
-        choices:
-          A: "React"
-          B: "Bootstrap"
-          C: "Sass"
-          D: "HTML5"
-        answer: "A"
-        explanation: "React is a popular JavaScript library for building user interfaces."
-        topic: "JavaScript"
-      - text: "Which method converts a JSON string into a JavaScript object?"
-        choices:
-          A: "JSON.parse()"
-          B: "JSON.stringify()"
-          C: "JSON.objectify()"
-          D: "JSON.toObject()"
-        answer: "A"
-        explanation: "JSON.parse() converts a JSON string into a JavaScript object."
-        topic: "JavaScript"
-
-      # Photo Editor, Web Publishing and Browsing (20 marks, 10 questions)
-      - text: "What is a 'web hosting' service?"
-        choices:
-          A: "A service that provides the technologies and services needed for a website to be viewed on the Internet"
-          B: "A service that designs websites"
-          C: "A service that markets websites"
-          D: "A service that writes website content"
-        answer: "A"
-        explanation: "A web hosting service stores website files and makes them accessible on the Internet."
-        topic: "Web Publishing"
-      - text: "What does 'FTP' stand for in the context of web publishing?"
-        choices:
-          A: "File Transfer Protocol"
-          B: "Fast Text Protocol"
-          C: "File Transaction Process"
-          D: "Folder Transfer Procedure"
-        answer: "A"
-        explanation: "'FTP' stands for File Transfer Protocol, which is a standard protocol used for transferring files between computers over a network."
-        topic: "Web Publishing"
-      - text: "What is the purpose of a photo editor in web development?"
-        choices:
-          A: "To create and edit images for websites"
-          B: "To write code"
-          C: "To design layouts"
-          D: "To manage databases"
-        answer: "A"
-        explanation: "A photo editor is used to create and edit images for use on websites."
-        topic: "Web Publishing"
-      - text: "What is 'responsive web design'?"
-        choices:
-          A: "A design that adapts to different screen sizes and devices"
-          B: "A design that uses only fixed layouts"
-          C: "A design that ignores mobile devices"
-          D: "A design that uses only tables"
-        answer: "A"
-        explanation: "Responsive web design ensures web pages look good on all devices by adapting layout and content."
-        topic: "Web Publishing"
-      - text: "What is progressive web app (PWA)?"
-        choices:
-          A: "A web app that uses modern web capabilities to deliver an app-like experience"
-          B: "A static website"
-          C: "A desktop application"
-          D: "A mobile-only app"
-        answer: "A"
-        explanation: "A PWA is a web application that behaves like a native app using modern web features."
-        topic: "Web Publishing"
-      - text: "What does 'AJAX' stand for in web development?"
-        choices:
-          A: "Asynchronous JavaScript and XML"
-          B: "Advanced JavaScript and XHTML"
-          C: "Automated JavaScript and XML"
-          D: "Asynchronous JavaScript and XHTML"
-        answer: "A"
-        explanation: "AJAX stands for Asynchronous JavaScript and XML, used for making asynchronous web requests."
-        topic: "Web Publishing"
-      - text: "What is a 'CDN' service?"
-        choices:
-          A: "Content Delivery Network"
-          B: "Central Data Network"
-          C: "Content Data Node"
-          D: "Central Delivery Node"
-        answer: "A"
-        explanation: "A CDN (Content Delivery Network) distributes website content across multiple servers for faster delivery."
-        topic: "Web Publishing"
-      - text: "What does 'UX' stand for in web development?"
-        choices:
-          A: "User Experience"
-          B: "Universal XML"
-          C: "User Extension"
-          D: "Unified Experience"
-        answer: "A"
-        explanation: "UX stands for User Experience, which refers to the overall experience a user has with a website or app."
-        topic: "Web Publishing"
-      - text: "What does 'API' stand for?"
-        choices:
-          A: "Application Programming Interface"
-          B: "Advanced Programming Interface"
-          C: "Application Program Integration"
-          D: "Automated Programming Interface"
-        answer: "A"
-        explanation: "API stands for Application Programming Interface, which allows different software to communicate."
-        topic: "Web Publishing"
-      - text: "What does 'REST' stand for in web development?"
-        choices:
-          A: "Representational State Transfer"
-          B: "Remote Execution Service Technology"
-          C: "Rapid Execution and Service Transfer"
-          D: "Resource Execution and Service Transfer"
-        answer: "A"
-        explanation: "REST stands for Representational State Transfer, an architectural style for designing networked applications."
-        topic: "Web Publishing"
-      - text: "Which of the following are web publishing protocols?"
-        type: "multiple"
-        choices:
-          A: "FTP"
-          B: "HTTP"
-          C: "HTTPS"
-          D: "SFTP"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are web publishing protocols."
-        topic: "Web Publishing"
-      - text: "Which of the following are web accessibility features?"
-        type: "multiple"
-        choices:
-          A: "Alt text for images"
-          B: "Keyboard navigation"
-          C: "Screen reader support"
-          D: "Semantic HTML"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are web accessibility features."
-        topic: "Web Publishing" 
+- duration_minutes: 120
+  id: 1
+  name: Comprehensive Practice Set 1 - Full Module M2-R5 (100 marks)
+  questions:
+  - answer: A
+    choices:
+      A: Hyper Text Markup Language
+      B: High Tech Modern Language
+      C: Hyperlink and Text Management Language
+      D: Home Tool Markup Language
+      E: All of the above
+    explanation: HTML stands for Hyper Text Markup Language, which is the standard
+      language for creating web pages.
+    text: What does HTML stand for?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: B
+    choices:
+      A: <link>
+      B: <a>
+      C: <href>
+      D: <p>
+      E: All of the above
+    explanation: The <a> tag is used to create hyperlinks in HTML.
+    text: Which HTML tag is used to create a hyperlink?
+  - answer: B
+    choices:
+      A: <head>
+      B: <title>
+      C: <meta>
+      D: <body>
+      E: All of the above
+    explanation: The <title> element defines the title of the document, shown in the
+      browser's title bar or tab.
+    text: Which HTML element is used to define the title of a document?
+  - answer: D
+    choices:
+      A: <ol>
+      B: <li>
+      C: <list>
+      D: <ul>
+      E: All of the above
+    explanation: The <ul> tag defines an unordered (bulleted) list in HTML.
+    text: Which HTML tag is used to define an unordered list?
+  - answer: B
+    choices:
+      A: <bottom>
+      B: <footer>
+      C: <section>
+      D: <end>
+      E: All of the above
+    explanation: The <footer> element specifies a footer for a document or section
+      in HTML5.
+    text: Which HTML element is used to specify a footer for a document or section?
+  - answer: A
+    choices:
+      A: range
+      B: slider
+      C: controls
+      D: search
+      E: All of the above
+    explanation: The 'range' input type creates a slider control in HTML5.
+    text: Which input type defines a slider control in HTML5?
+  - answer: B
+    choices:
+      A: <image>
+      B: <img>
+      C: <pic>
+      D: <src>
+      E: All of the above
+    explanation: The <img> tag is used to display images in HTML.
+    text: In HTML, which element is used to display an image?
+  - answer: C
+    choices:
+      A: <media>
+      B: <movie>
+      C: <video>
+      D: <embed>
+      E: All of the above
+    explanation: The <video> element is used to embed video content in HTML5.
+    text: Which HTML5 element is best for embedding a video?
+  - answer: B
+    choices:
+      A: <head>
+      B: <meta>
+      C: <style>
+      D: <script>
+      E: All of the above
+    explanation: The <meta> element provides metadata about the HTML document.
+    text: Which HTML element provides metadata about the HTML document, such as character
+      set and viewport settings?
+  - answer: D
+    choices:
+      A: <table>
+      B: <td>
+      C: <th>
+      D: <tr>
+      E: All of the above
+    explanation: The <tr> tag defines a row in an HTML table.
+    text: Which HTML tag is used to define a table row?
+  - answer: B
+    choices:
+      A: type='text'
+      B: type='email'
+      C: type='url'
+      D: type='mail'
+      E: All of the above
+    explanation: The 'email' input type is used for fields that should contain an
+      e-mail address.
+    text: Which HTML input type is used for fields that should contain an e-mail address?
+  - answer: C
+    choices:
+      A: <heading>
+      B: <h6>
+      C: <h1>
+      D: <head>
+      E: All of the above
+    explanation: <h1> is the most important heading in HTML, used for main titles.
+    text: Which HTML element is used for the most important heading?
+  - answer: B
+    choices:
+      A: <ul>
+      B: <ol>
+      C: <list>
+      D: <dl>
+      E: All of the above
+    explanation: The <ol> tag creates a numbered (ordered) list in HTML.
+    text: Which tag is used to create a numbered list in HTML?
+  - answer: E
+    choices:
+      A: <header>
+      B: <footer>
+      C: <section>
+      D: <article>
+      E: All of the above
+    explanation: All listed options are valid HTML5 elements.
+    text: Which of the following are valid HTML5 elements?
+    type: multiple
+  - answer: E
+    choices:
+      A: <ul>
+      B: <ol>
+      C: <li>
+      D: <dl>
+      E: All of the above
+    explanation: All listed tags are used for lists in HTML.
+    text: Which of the following HTML tags are used for lists?
+    type: multiple
+  - answer: C
+    choices:
+      A: Software that is free to use, modify, and distribute
+      B: Software whose source code is publicly available
+      C: Software that is owned by an individual or company and has restrictions on
+        use and modification
+      D: Software that is always open source
+      E: All of the above
+    explanation: Proprietary software is owned by an individual or company and usually
+      has restrictions on use, modification, and distribution.
+    text: Which of the following best describes proprietary software?
+    topic: Software Types and Licensing
+  - answer: B
+    choices:
+      A: Linux
+      B: Microsoft Windows
+      C: LibreOffice
+      D: GIMP
+      E: All of the above
+    explanation: Microsoft Windows is proprietary software, while Linux, LibreOffice,
+      and GIMP are open source.
+    text: Which of the following is an example of proprietary software?
+    topic: Software Types and Licensing
+  - answer: C
+    choices:
+      A: It cannot be modified by users
+      B: It is always paid
+      C: Its source code is available for anyone to view, modify, and distribute
+      D: It is owned by a single company
+      E: All of the above
+    explanation: Open source software allows anyone to view, modify, and distribute
+      its source code.
+    text: Which statement is true about open source software?
+    topic: Software Types and Licensing
+  - answer: A
+    choices:
+      A: Cascading Style Sheets
+      B: Creative Style Sheets
+      C: Computer Style Sheets
+      D: Colorful Style Sheets
+      E: All of the above
+    explanation: CSS stands for Cascading Style Sheets, which is used to style and
+      layout web pages.
+    text: What does CSS stand for?
+  - answer: A
+    choices:
+      A: background-color
+      B: color
+      C: bgcolor
+      D: background
+      E: All of the above
+    explanation: The 'background-color' property sets the background color of an element
+      in CSS.
+    text: Which property is used to change the background color in CSS?
+  - answer: A
+    choices:
+      A: '#header'
+      B: .header
+      C: header
+      D: '*header'
+      E: All of the above
+    explanation: The '#' symbol is used to select elements by their id in CSS.
+    text: Which selector is used to select an element with id 'header'?
+  - answer: A
+    choices:
+      A: font-size
+      B: font-weight
+      C: font-style
+      D: font-family
+      E: All of the above
+    explanation: The 'font-size' property changes the size of the text.
+    text: Which property is used to change the font size?
+  - answer: A
+    choices:
+      A: font-weight
+      B: font-style
+      C: font-size
+      D: font-family
+      E: All of the above
+    explanation: The 'font-weight' property is used to make text bold in CSS.
+    text: Which CSS property is used to make text bold?
+  - answer: A
+    choices:
+      A: color
+      B: background-color
+      C: text-color
+      D: font-color
+      E: All of the above
+    explanation: The 'color' property sets the color of the text in CSS.
+    text: Which CSS property is used to change the text color?
+  - answer: A
+    choices:
+      A: line-height
+      B: letter-spacing
+      C: word-spacing
+      D: text-spacing
+      E: All of the above
+    explanation: The 'line-height' property sets the space between lines of text.
+    text: Which CSS property is used to set the spacing between lines of text?
+  - answer: A
+    choices:
+      A: width
+      B: height
+      C: size
+      D: max-width
+      E: All of the above
+    explanation: The 'width' property sets the width of an element.
+    text: Which CSS property is used to set the width of an element?
+  - answer: A
+    choices:
+      A: border
+      B: outline
+      C: border-style
+      D: border-width
+      E: All of the above
+    explanation: The 'border' property defines the border of an element in CSS.
+    text: Which CSS property is used to set the border of an element?
+  - answer: A
+    choices:
+      A: margin
+      B: padding
+      C: border
+      D: outline
+      E: All of the above
+    explanation: The 'margin' property sets the outer space around an element.
+    text: Which CSS property is used to set the margin of an element?
+  - answer: A
+    choices:
+      A: padding
+      B: margin
+      C: border
+      D: outline
+      E: All of the above
+    explanation: The 'padding' property sets the inner space between the content and
+      the border of an element.
+    text: Which CSS property is used to set the padding of an element?
+  - answer: A
+    choices:
+      A: display
+      B: position
+      C: float
+      D: visibility
+      E: All of the above
+    explanation: The 'display' property specifies how an element is displayed on the
+      page.
+    text: Which CSS property is used to set the display of an element?
+  - answer: A
+    choices:
+      A: position
+      B: display
+      C: float
+      D: top
+      E: All of the above
+    explanation: The 'position' property specifies the positioning method for an element.
+    text: Which CSS property is used to set the position of an element?
+  - answer: A
+    choices:
+      A: float
+      B: position
+      C: display
+      D: clear
+      E: All of the above
+    explanation: The 'float' property is used to float elements to the left or right.
+    text: Which CSS property is used to set the float of an element?
+  - answer: A
+    choices:
+      A: clear
+      B: float
+      C: position
+      D: display
+      E: All of the above
+    explanation: The 'clear' property specifies what elements can float beside the
+      cleared element.
+    text: Which CSS property is used to set the clear of an element?
+  - answer: A
+    choices:
+      A: z-index
+      B: index
+      C: layer
+      D: order
+      E: All of the above
+    explanation: The 'z-index' property sets the stack order of an element.
+    text: Which CSS property is used to set the z-index of an element?
+  - answer: A
+    choices:
+      A: overflow
+      B: visible
+      C: hidden
+      D: scroll
+      E: All of the above
+    explanation: The 'overflow' property controls what happens to content that overflows
+      an element's box.
+    text: Which CSS property is used to set the overflow of an element?
+  - answer: E
+    choices:
+      A: Class selector
+      B: ID selector
+      C: Element selector
+      D: Universal selector
+      E: All of the above
+    explanation: All listed options are CSS selectors.
+    text: Which of the following are CSS selectors?
+    type: multiple
+  - answer: E
+    choices:
+      A: Grid system
+      B: Utility classes
+      C: Responsive design
+      D: Predefined components
+      E: All of the above
+    explanation: All listed options are features of CSS frameworks.
+    text: Which of the following are features of CSS frameworks?
+    type: multiple
+  - answer: C
+    choices:
+      A: To style the structure of web pages
+      B: To create the main content and structure of a page
+      C: To add interactivity and dynamic behavior to web pages
+      D: To manage and query databases
+      E: All of the above
+    explanation: JavaScript is used to add interactivity and dynamic features to web
+      pages.
+    text: What is the purpose of JavaScript in web development?
+  - answer: C
+    choices:
+      A: var
+      B: let
+      C: const
+      D: static
+      E: All of the above
+    explanation: '''const'' is used to declare variables that cannot be reassigned.'
+    text: Which JavaScript keyword is used to declare a variable that cannot be reassigned?
+  - answer: C
+    choices:
+      A: msgBox('Hello World');
+      B: alertBox('Hello World');
+      C: alert('Hello World');
+      D: msg('Hello World');
+      E: All of the above
+    explanation: The alert('Hello World'); statement displays a popup alert box with
+      the message.
+    text: How do you write 'Hello World' in an alert box using JavaScript?
+  - answer: D
+    choices:
+      A: document.write()
+      B: console.log()
+      C: window.alert()
+      D: innerHTML
+      E: All of the above
+    explanation: The innerHTML property is used to write or change the content of
+      an HTML element.
+    text: Which JavaScript method is used to write to an HTML element?
+  - answer: A
+    choices:
+      A: <script src='app.js'>
+      B: <script href='app.js'>
+      C: <script name='app.js'>
+      D: <script file='app.js'>
+      E: All of the above
+    explanation: The correct syntax is <script src='app.js'> to include an external
+      JavaScript file.
+    text: What is the correct syntax for referring to an external script called 'app.js'?
+  - answer: A
+    choices:
+      A: function myFunction()
+      B: 'function: myFunction()'
+      C: function = myFunction()
+      D: declare function myFunction()
+      E: All of the above
+    explanation: A JavaScript function is declared using the function keyword followed
+      by the function name and parentheses.
+    text: How do you declare a JavaScript function?
+  - answer: A
+    choices:
+      A: onclick
+      B: onchange
+      C: onmouseover
+      D: onmouseclick
+      E: All of the above
+    explanation: The 'onclick' event is triggered when an HTML element is clicked.
+    text: Which JavaScript event occurs when the user clicks on an HTML element?
+  - answer: A
+    choices:
+      A: A lightweight data-interchange format
+      B: A JavaScript function
+      C: A CSS framework
+      D: A type of web server
+      E: All of the above
+    explanation: JSON (JavaScript Object Notation) is a lightweight format for exchanging
+      data.
+    text: What is JSON?
+  - answer: A
+    choices:
+      A: React
+      B: Bootstrap
+      C: Sass
+      D: HTML5
+      E: All of the above
+    explanation: React is a popular JavaScript library for building user interfaces.
+    text: Which of these is a JavaScript framework/library?
+  - answer: A
+    choices:
+      A: JSON.parse()
+      B: JSON.stringify()
+      C: JSON.objectify()
+      D: JSON.toObject()
+      E: All of the above
+    explanation: JSON.parse() converts a JSON string into a JavaScript object.
+    text: Which method converts a JSON string into a JavaScript object?
+  - answer: E
+    choices:
+      A: String
+      B: Number
+      C: Boolean
+      D: Object
+      E: All of the above
+    explanation: All listed options are JavaScript data types.
+    text: Which of the following are JavaScript data types?
+    type: multiple
+  - answer: E
+    choices:
+      A: push()
+      B: pop()
+      C: map()
+      D: filter()
+      E: All of the above
+    explanation: All listed options are JavaScript array methods.
+    text: Which of the following are JavaScript array methods?
+    type: multiple
+  - answer: A
+    choices:
+      A: A service that provides the technologies and services needed for a website
+        to be viewed on the Internet
+      B: A service that designs websites
+      C: A service that markets websites
+      D: A service that writes website content
+      E: All of the above
+    explanation: A web hosting service stores website files and makes them accessible
+      on the Internet.
+    text: What is a 'web hosting' service?
+  - answer: A
+    choices:
+      A: File Transfer Protocol
+      B: Fast Text Protocol
+      C: File Transaction Process
+      D: Folder Transfer Procedure
+      E: All of the above
+    explanation: '''FTP'' stands for File Transfer Protocol, which is a standard protocol
+      used for transferring files between computers over a network.'
+    text: What does 'FTP' stand for in the context of web publishing?
+  - answer: A
+    choices:
+      A: To create and edit images for websites
+      B: To write code
+      C: To design layouts
+      D: To manage databases
+      E: All of the above
+    explanation: A photo editor is used to create and edit images for use on websites.
+    text: What is the purpose of a photo editor in web development?
+  - answer: A
+    choices:
+      A: A design that adapts to different screen sizes and devices
+      B: A design that uses only fixed layouts
+      C: A design that ignores mobile devices
+      D: A design that uses only tables
+      E: All of the above
+    explanation: Responsive web design ensures web pages look good on all devices
+      by adapting layout and content.
+    text: What is 'responsive web design'?
+  - answer: A
+    choices:
+      A: A web app that uses modern web capabilities to deliver an app-like experience
+      B: A static website
+      C: A desktop application
+      D: A mobile-only app
+      E: All of the above
+    explanation: A PWA is a web application that behaves like a native app using modern
+      web features.
+    text: What is progressive web app (PWA)?
+  - answer: A
+    choices:
+      A: Asynchronous JavaScript and XML
+      B: Advanced JavaScript and XHTML
+      C: Automated JavaScript and XML
+      D: Asynchronous JavaScript and XHTML
+      E: All of the above
+    explanation: AJAX stands for Asynchronous JavaScript and XML, used for making
+      asynchronous web requests.
+    text: What does 'AJAX' stand for in web development?
+  - answer: A
+    choices:
+      A: Content Delivery Network
+      B: Central Data Network
+      C: Content Data Node
+      D: Central Delivery Node
+      E: All of the above
+    explanation: A CDN (Content Delivery Network) distributes website content across
+      multiple servers for faster delivery.
+    text: What is a 'CDN' service?
+  - answer: A
+    choices:
+      A: User Experience
+      B: Universal XML
+      C: User Extension
+      D: Unified Experience
+      E: All of the above
+    explanation: UX stands for User Experience, which refers to the overall experience
+      a user has with a website or app.
+    text: What does 'UX' stand for in web development?
+  - answer: A
+    choices:
+      A: Application Programming Interface
+      B: Advanced Programming Interface
+      C: Application Program Integration
+      D: Automated Programming Interface
+      E: All of the above
+    explanation: API stands for Application Programming Interface, which allows different
+      software to communicate.
+    text: What does 'API' stand for?
+  - answer: A
+    choices:
+      A: Representational State Transfer
+      B: Remote Execution Service Technology
+      C: Rapid Execution and Service Transfer
+      D: Resource Execution and Service Transfer
+      E: All of the above
+    explanation: REST stands for Representational State Transfer, an architectural
+      style for designing networked applications.
+    text: What does 'REST' stand for in web development?
+  - answer: E
+    choices:
+      A: FTP
+      B: HTTP
+      C: HTTPS
+      D: SFTP
+      E: All of the above
+    explanation: All listed options are web publishing protocols.
+    text: Which of the following are web publishing protocols?
+    type: multiple
+  - answer: E
+    choices:
+      A: Alt text for images
+      B: Keyboard navigation
+      C: Screen reader support
+      D: Semantic HTML
+      E: All of the above
+    explanation: All listed options are web accessibility features.
+    text: Which of the following are web accessibility features?
+    type: multiple
+  - answer: E
+    choices:
+      A: <header>
+      B: <footer>
+      C: <section>
+      D: <aside>
+      E: All of the above
+    explanation: All are semantic elements for structuring HTML5 pages.
+    text: Which of the following are valid HTML5 semantic elements for structuring
+      a web page?
+    topic: HTML
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Flexbox
+      B: Grid
+      C: Media queries
+      D: Table layouts
+      E: All of the above
+    explanation: Flexbox, Grid, and media queries are modern responsive techniques;
+      tables are outdated.
+    text: Which of the following are valid CSS layout techniques for responsive design?
+    topic: CSS
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Inline styles
+      B: Internal <style> tag
+      C: External stylesheet
+      D: <css> tag
+      E: All of the above
+    explanation: A, B, and C are valid; <css> is not a real tag.
+    text: Which of the following are valid ways to include CSS in an HTML document?
+    topic: CSS
+    type: multiple
+  - answer: E
+    choices:
+      A: String
+      B: Number
+      C: Boolean
+      D: Object
+      E: All of the above
+    explanation: All listed options are JavaScript data types.
+    text: Which of the following are valid JavaScript data types?
+    topic: JavaScript
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: var
+      B: let
+      C: const
+      D: define
+      E: All of the above
+    explanation: var, let, and const are valid; define is not.
+    text: Which of the following are valid ways to declare a variable in JavaScript
+      (ES6+)?
+    topic: JavaScript
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: .container
+      B: .row
+      C: .col
+      D: .grid
+      E: All of the above
+    explanation: .container, .row, and .col are Bootstrap layout classes; .grid is
+      not.
+    text: Which of the following are valid Bootstrap CSS classes for layout?
+    topic: CSS Framework
+    type: multiple
+  - answer: E
+    choices:
+      A: text
+      B: email
+      C: number
+      D: date
+      E: All of the above
+    explanation: All are valid HTML input types.
+    text: Which of the following are valid HTML input types for forms?
+    topic: HTML
+    type: multiple
+  - answer: E
+    choices:
+      A: push()
+      B: pop()
+      C: map()
+      D: filter()
+      E: All of the above
+    explanation: All are valid array methods.
+    text: Which of the following are valid JavaScript array methods?
+    topic: JavaScript
+    type: multiple
+  - answer: E
+    choices:
+      A: px
+      B: em
+      C: '%'
+      D: rem
+      E: All of the above
+    explanation: All are valid CSS units.
+    text: Which of the following are valid CSS units for sizing elements?
+    topic: CSS
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Minifying CSS and JS
+      B: Image compression
+      C: Lazy loading images
+      D: Using large, uncompressed videos
+      E: All of the above
+    explanation: A, B, and C are optimizations; D is not.
+    text: Which of the following are valid ways to optimize website performance?
+    topic: Web Publishing
+    type: multiple
+  - answer: E
+    choices:
+      A: Geolocation API
+      B: Canvas API
+      C: Web Storage API
+      D: Clipboard API
+      E: All of the above
+    explanation: All are valid HTML5 APIs.
+    text: Which of the following are valid HTML5 APIs for web development?
+    topic: HTML
+    type: multiple
+  - answer: E
+    choices:
+      A: :hover
+      B: :active
+      C: :focus
+      D: :checked
+      E: All of the above
+    explanation: All are valid CSS pseudo-classes.
+    text: Which of the following are valid CSS pseudo-classes?
+    topic: CSS
+    type: multiple
+  - answer: E
+    choices:
+      A: click
+      B: mouseover
+      C: keydown
+      D: submit
+      E: All of the above
+    explanation: All are valid JavaScript event types.
+    text: Which of the following are valid JavaScript event types?
+    topic: JavaScript
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Input validation
+      B: Using HTTPS
+      C: Sanitizing user input
+      D: Disabling all security features
+      E: All of the above
+    explanation: A, B, and C are security measures; D is not.
+    text: Which of the following are valid ways to secure a web application?
+    topic: Web Publishing
+    type: multiple
+  - answer: E
+    choices:
+      A: display
+      B: position
+      C: float
+      D: z-index
+      E: All of the above
+    explanation: All are valid CSS layout properties.
+    text: Which of the following are valid CSS properties for controlling layout?
+    topic: CSS
+    type: multiple
+- duration_minutes: 105
+  id: 2
+  name: Comprehensive Practice Set 2 - Full Module M2-R5 (100 marks)
+  questions:
+  - answer: B
+    choices:
+      A: <link>
+      B: <a>
+      C: <href>
+      D: <p>
+      E: All of the above
+    explanation: The <a> tag is used to create hyperlinks in HTML.
+    text: Which tag is used to create a hyperlink in HTML?
+  - answer: A
+    choices:
+      A: <img>
+      B: <image>
+      C: <src>
+      D: <pic>
+      E: All of the above
+    explanation: The <img> tag is used to display images in HTML.
+    text: Which HTML tag is used to display an image?
+  - answer: A
+    choices:
+      A: Hyper Text Markup Language
+      B: Home Tool Markup Language
+      C: Hyperlinks and Text Markup Language
+      D: Hyperlinking Text Markup Language
+      E: All of the above
+    explanation: HTML stands for Hyper Text Markup Language, which is the standard
+      language for creating web pages.
+    text: What does HTML stand for?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: B
+    choices:
+      A: <ul>
+      B: <ol>
+      C: <li>
+      D: <dl>
+      E: All of the above
+    explanation: The <ol> tag creates a numbered (ordered) list in HTML.
+    text: Which tag is used to create a numbered list in HTML?
+  - answer: A
+    choices:
+      A: <h1>
+      B: <h6>
+      C: <heading>
+      D: <head>
+      E: All of the above
+    explanation: <h1> is the most important heading in HTML, used for main titles.
+    text: Which HTML element is used for the most important heading?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: <tr>
+      B: <td>
+      C: <th>
+      D: <table>
+      E: All of the above
+    explanation: The <tr> tag defines a row in an HTML table.
+    text: Which HTML tag is used to define a table row?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: <video>
+      B: <media>
+      C: <movie>
+      D: <embed>
+      E: All of the above
+    explanation: The <video> element is used to embed video content in HTML5.
+    text: Which HTML5 element is best for embedding a video?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: <ul>
+      B: <ol>
+      C: <li>
+      D: <list>
+      E: All of the above
+    explanation: The <ul> tag defines an unordered (bulleted) list in HTML.
+    text: Which HTML tag is used to define an unordered list?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: <meta>
+      B: <head>
+      C: <style>
+      D: <script>
+      E: All of the above
+    explanation: The <meta> element provides metadata about the HTML document.
+    text: Which HTML element provides metadata about the HTML document?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: B
+    choices:
+      A: type='email'
+      B: type='text'
+      C: type='url'
+      D: type='mail'
+      E: All of the above
+    explanation: The 'email' input type is used for fields that should contain an
+      e-mail address.
+    text: Which HTML input type is used for fields that should contain an e-mail address?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: <td>
+      B: <tr>
+      C: <th>
+      D: <table>
+      E: All of the above
+    explanation: The <td> tag defines a cell in an HTML table.
+    text: Which HTML tag is used to define a table cell?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: <form>
+      B: <input>
+      C: <fieldset>
+      D: <button>
+      E: All of the above
+    explanation: The <form> tag is used to create an HTML form for user input.
+    text: Which HTML tag is used to define a form?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: <a>
+      B: <link>
+      C: <href>
+      D: <p>
+      E: All of the above
+    explanation: The <a> tag is used to create hyperlinks in HTML.
+    text: Which HTML tag is used to define a hyperlink?
+    topic: Introduction to Web Design and Editors, HTML Basics
+  - answer: A
+    choices:
+      A: Cascading Style Sheets
+      B: Creative Style Sheets
+      C: Computer Style Sheets
+      D: Colorful Style Sheets
+      E: All of the above
+    explanation: CSS stands for Cascading Style Sheets, which is used to style and
+      layout web pages.
+    text: What does CSS stand for?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: background-color
+      B: color
+      C: bgcolor
+      D: background
+      E: All of the above
+    explanation: The 'background-color' property sets the background color of an element
+      in CSS.
+    text: Which property is used to change the background color in CSS?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: '#header'
+      B: .header
+      C: header
+      D: '*header'
+      E: All of the above
+    explanation: The '#' symbol is used to select elements by their id in CSS.
+    text: Which selector is used to select an element with id 'header'?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: font-size
+      B: font-weight
+      C: font-style
+      D: font-family
+      E: All of the above
+    explanation: The 'font-size' property changes the size of the text.
+    text: Which property is used to change the font size?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: font-weight
+      B: font-style
+      C: font-size
+      D: font-family
+      E: All of the above
+    explanation: The 'font-weight' property is used to make text bold in CSS.
+    text: Which CSS property is used to make text bold?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: color
+      B: background-color
+      C: text-color
+      D: font-color
+      E: All of the above
+    explanation: The 'color' property sets the color of the text in CSS.
+    text: Which CSS property is used to change the text color?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: line-height
+      B: letter-spacing
+      C: word-spacing
+      D: text-spacing
+      E: All of the above
+    explanation: The 'line-height' property sets the space between lines of text.
+    text: Which CSS property is used to set the spacing between lines of text?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: width
+      B: height
+      C: size
+      D: max-width
+      E: All of the above
+    explanation: The 'width' property sets the width of an element.
+    text: Which CSS property is used to set the width of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: border
+      B: outline
+      C: border-style
+      D: border-width
+      E: All of the above
+    explanation: The 'border' property defines the border of an element in CSS.
+    text: Which CSS property is used to set the border of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: margin
+      B: padding
+      C: border
+      D: outline
+      E: All of the above
+    explanation: The 'margin' property sets the outer space around an element.
+    text: Which CSS property is used to set the margin of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: padding
+      B: margin
+      C: border
+      D: outline
+      E: All of the above
+    explanation: The 'padding' property sets the inner space between the content and
+      the border of an element.
+    text: Which CSS property is used to set the padding of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: display
+      B: position
+      C: float
+      D: visibility
+      E: All of the above
+    explanation: The 'display' property specifies how an element is displayed on the
+      page.
+    text: Which CSS property is used to set the display of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: position
+      B: display
+      C: float
+      D: top
+      E: All of the above
+    explanation: The 'position' property specifies the positioning method for an element.
+    text: Which CSS property is used to set the position of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: float
+      B: position
+      C: display
+      D: clear
+      E: All of the above
+    explanation: The 'float' property is used to float elements to the left or right.
+    text: Which CSS property is used to set the float of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: clear
+      B: float
+      C: position
+      D: display
+      E: All of the above
+    explanation: The 'clear' property specifies what elements can float beside the
+      cleared element.
+    text: Which CSS property is used to set the clear of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: z-index
+      B: index
+      C: layer
+      D: order
+      E: All of the above
+    explanation: The 'z-index' property sets the stack order of an element.
+    text: Which CSS property is used to set the z-index of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: A
+    choices:
+      A: overflow
+      B: visible
+      C: hidden
+      D: scroll
+      E: All of the above
+    explanation: The 'overflow' property controls what happens to content that overflows
+      an element's box.
+    text: Which CSS property is used to set the overflow of an element?
+    topic: Cascading Style Sheets (CSS)
+  - answer: C
+    choices:
+      A: To style the structure of web pages
+      B: To create the main content and structure of a page
+      C: To add interactivity and dynamic behavior to web pages
+      D: To manage and query databases
+      E: All of the above
+    explanation: JavaScript is used to add interactivity and dynamic features to web
+      pages.
+    text: What is the purpose of JavaScript in web development?
+    topic: JavaScript
+  - answer: C
+    choices:
+      A: var
+      B: let
+      C: const
+      D: static
+      E: All of the above
+    explanation: '''const'' is used to declare variables that cannot be reassigned.'
+    text: Which JavaScript keyword is used to declare a variable that cannot be reassigned?
+    topic: JavaScript
+  - answer: C
+    choices:
+      A: msgBox('Hello World');
+      B: alertBox('Hello World');
+      C: alert('Hello World');
+      D: msg('Hello World');
+      E: All of the above
+    explanation: The alert('Hello World'); statement displays a popup alert box with
+      the message.
+    text: How do you write 'Hello World' in an alert box using JavaScript?
+    topic: JavaScript
+  - answer: D
+    choices:
+      A: document.write()
+      B: console.log()
+      C: window.alert()
+      D: innerHTML
+      E: All of the above
+    explanation: The innerHTML property is used to write or change the content of
+      an HTML element.
+    text: Which JavaScript method is used to write to an HTML element?
+    topic: JavaScript
+  - answer: A
+    choices:
+      A: <script src='app.js'>
+      B: <script href='app.js'>
+      C: <script name='app.js'>
+      D: <script file='app.js'>
+      E: All of the above
+    explanation: The correct syntax is <script src='app.js'> to include an external
+      JavaScript file.
+    text: What is the correct syntax for referring to an external script called 'app.js'?
+    topic: JavaScript
+  - answer: A
+    choices:
+      A: function myFunction()
+      B: 'function: myFunction()'
+      C: function = myFunction()
+      D: declare function myFunction()
+      E: All of the above
+    explanation: A JavaScript function is declared using the function keyword followed
+      by the function name and parentheses.
+    text: How do you declare a JavaScript function?
+    topic: JavaScript
+  - answer: A
+    choices:
+      A: onclick
+      B: onchange
+      C: onmouseover
+      D: onmouseclick
+      E: All of the above
+    explanation: The 'onclick' event is triggered when an HTML element is clicked.
+    text: Which JavaScript event occurs when the user clicks on an HTML element?
+    topic: JavaScript
+  - answer: A
+    choices:
+      A: A lightweight data-interchange format
+      B: A JavaScript function
+      C: A CSS framework
+      D: A type of web server
+      E: All of the above
+    explanation: JSON (JavaScript Object Notation) is a lightweight format for exchanging
+      data.
+    text: What is JSON?
+    topic: JavaScript
+  - answer: A
+    choices:
+      A: React
+      B: Bootstrap
+      C: Sass
+      D: HTML5
+      E: All of the above
+    explanation: React is a popular JavaScript library for building user interfaces.
+    text: Which of these is a JavaScript framework/library?
+    topic: JavaScript
+  - answer: A
+    choices:
+      A: JSON.parse()
+      B: JSON.stringify()
+      C: JSON.objectify()
+      D: JSON.toObject()
+      E: All of the above
+    explanation: JSON.parse() converts a JSON string into a JavaScript object.
+    text: Which method converts a JSON string into a JavaScript object?
+    topic: JavaScript
+  - answer: A
+    choices:
+      A: A service that provides the technologies and services needed for a website
+        to be viewed on the Internet
+      B: A service that designs websites
+      C: A service that markets websites
+      D: A service that writes website content
+      E: All of the above
+    explanation: A web hosting service stores website files and makes them accessible
+      on the Internet.
+    text: What is a 'web hosting' service?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: File Transfer Protocol
+      B: Fast Text Protocol
+      C: File Transaction Process
+      D: Folder Transfer Procedure
+      E: All of the above
+    explanation: '''FTP'' stands for File Transfer Protocol, which is a standard protocol
+      used for transferring files between computers over a network.'
+    text: What does 'FTP' stand for in the context of web publishing?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: To create and edit images for websites
+      B: To write code
+      C: To design layouts
+      D: To manage databases
+      E: All of the above
+    explanation: A photo editor is used to create and edit images for use on websites.
+    text: What is the purpose of a photo editor in web development?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: A design that adapts to different screen sizes and devices
+      B: A design that uses only fixed layouts
+      C: A design that ignores mobile devices
+      D: A design that uses only tables
+      E: All of the above
+    explanation: Responsive web design ensures web pages look good on all devices
+      by adapting layout and content.
+    text: What is 'responsive web design'?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: A web app that uses modern web capabilities to deliver an app-like experience
+      B: A static website
+      C: A desktop application
+      D: A mobile-only app
+      E: All of the above
+    explanation: A PWA is a web application that behaves like a native app using modern
+      web features.
+    text: What is progressive web app (PWA)?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: Asynchronous JavaScript and XML
+      B: Advanced JavaScript and XHTML
+      C: Automated JavaScript and XML
+      D: Asynchronous JavaScript and XHTML
+      E: All of the above
+    explanation: AJAX stands for Asynchronous JavaScript and XML, used for making
+      asynchronous web requests.
+    text: What does 'AJAX' stand for in web development?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: Content Delivery Network
+      B: Central Data Network
+      C: Content Data Node
+      D: Central Delivery Node
+      E: All of the above
+    explanation: A CDN (Content Delivery Network) distributes website content across
+      multiple servers for faster delivery.
+    text: What is a 'CDN' service?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: User Experience
+      B: Universal XML
+      C: User Extension
+      D: Unified Experience
+      E: All of the above
+    explanation: UX stands for User Experience, which refers to the overall experience
+      a user has with a website or app.
+    text: What does 'UX' stand for in web development?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: Application Programming Interface
+      B: Advanced Programming Interface
+      C: Application Program Integration
+      D: Automated Programming Interface
+      E: All of the above
+    explanation: API stands for Application Programming Interface, which allows different
+      software to communicate.
+    text: What does 'API' stand for?
+    topic: Web Publishing
+  - answer: A
+    choices:
+      A: Representational State Transfer
+      B: Remote Execution Service Technology
+      C: Rapid Execution and Service Transfer
+      D: Resource Execution and Service Transfer
+      E: All of the above
+    explanation: REST stands for Representational State Transfer, an architectural
+      style for designing networked applications.
+    text: What does 'REST' stand for in web development?
+    topic: Web Publishing
+  - answer: E
+    choices:
+      A: FTP
+      B: HTTP
+      C: HTTPS
+      D: SFTP
+      E: All of the above
+    explanation: All listed options are web publishing protocols.
+    text: Which of the following are web publishing protocols?
+    topic: Web Publishing
+    type: multiple
+  - answer: E
+    choices:
+      A: Alt text for images
+      B: Keyboard navigation
+      C: Screen reader support
+      D: Semantic HTML
+      E: All of the above
+    explanation: All listed options are web accessibility features.
+    text: Which of the following are web accessibility features?
+    topic: Web Publishing
+    type: multiple

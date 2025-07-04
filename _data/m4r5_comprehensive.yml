@@ -1,1110 +1,1310 @@
 sets:
-  - id: 1
-    name: "Comprehensive Practice Set 1 - Full Module M4-R5 (100 marks)"
-    duration_minutes: 120
-    questions:
-      # Introduction to IoT – Applications/Devices, Protocols and Communication Model (10 marks, 5 questions)
-      - text: "What is the core idea of the 'Internet of Things' (IoT)?"
-        choices:
-          A: "A global network of social media influencers"
-          B: "A network of physical objects embedded with sensors and software to connect and exchange data"
-          C: "A specialized, high-speed version of the internet"
-          D: "A new programming language for artificial intelligence"
-        answer: "B"
-        explanation: "IoT is a network of physical objects embedded with sensors and software to connect and exchange data."
-        topic: "Introduction to IoT – Applications/Devices, Protocols and Communication Model"
-      - text: "Which of the following is a common sensor used in IoT devices?"
-        choices:
-          A: "A CPU"
-          B: "A temperature sensor"
-          C: "A power supply unit"
-          D: "A USB port"
-        answer: "B"
-        explanation: "A temperature sensor is a common sensor used in IoT devices."
-        topic: "Introduction to IoT – Applications/Devices, Protocols and Communication Model"
-      - text: "Which wireless technology is commonly used for short-range communication in IoT?"
-        choices:
-          A: "5G"
-          B: "Satellite Internet"
-          C: "Bluetooth"
-          D: "Ethernet"
-        answer: "C"
-        explanation: "Bluetooth is commonly used for short-range communication in IoT."
-      - text: "What is a major concern for the security of IoT devices?"
-        choices:
-          A: "The physical size of the device"
-          B: "Default passwords and lack of regular updates"
-          C: "The color of the device's casing"
-          D: "The speed of their internet connection"
-        answer: "B"
-        explanation: "Default passwords and lack of regular updates are major security concerns for IoT devices."
-      - text: "What is an 'actuator' in an IoT system?"
-        choices:
-          A: "A device that measures physical input from the environment"
-          B: "A component that is responsible for taking action, like turning on a light or motor"
-          C: "The main processing unit of an IoT device"
-          D: "A cloud-based data storage service"
-        answer: "B"
-        explanation: "An actuator is a component that takes action, such as turning on a light or motor, in an IoT system."
-      - text: "Which of the following are common IoT communication protocols?"
-        type: "multiple"
-        choices:
-          A: "MQTT"
-          B: "CoAP"
-          C: "HTTP"
-          D: "LoRaWAN"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are common IoT communication protocols."
-      - text: "Which of the following are applications of IoT in smart homes?"
-        type: "multiple"
-        choices:
-          A: "Smart lighting"
-          B: "Smart thermostats"
-          C: "Smart security systems"
-          D: "Smart speakers"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are applications of IoT in smart homes."
-
-      # Things and Connections (10 marks, 5 questions)
-      - text: "What does 'IIoT' stand for?"
-        choices:
-          A: "Industrial Internet of Things"
-          B: "Informational Internet of Things"
-          C: "Interactive Internet of Things"
-          D: "Intelligent Internet of Things"
-        answer: "A"
-        explanation: "IIoT stands for Industrial Internet of Things, which refers to the use of IoT in industrial applications."
-      - text: "Which communication technology is designed for long-range, low-power IoT applications?"
-        choices:
-          A: "Wi-Fi"
-          B: "Bluetooth"
-          C: "NFC"
-          D: "LoRaWAN"
-        answer: "D"
-        explanation: "LoRaWAN is designed for long-range, low-power IoT applications."
-      - text: "What is a significant privacy concern related to IoT?"
-        choices:
-          A: "The high cost of devices"
-          B: "The collection of vast amounts of personal data without user consent"
-          C: "The limited color options for devices"
-          D: "The slow speed of internet connections"
-        answer: "B"
-        explanation: "A major privacy concern is collecting personal data without user consent."
-      - text: "Which of the following is an example of a wearable IoT device?"
-        choices:
-          A: "A smart TV"
-          B: "A smart refrigerator"
-          C: "A fitness tracker"
-          D: "A smart car"
-        answer: "C"
-        explanation: "A fitness tracker is a wearable IoT device."
-      - text: "In IoT, what is the primary function of a 'gateway'?"
-        choices:
-          A: "To generate power for the IoT devices"
-          B: "To act as a bridge between IoT devices and the cloud/internet"
-          C: "To display data on a screen"
-          D: "To cool the processors of the devices"
-        answer: "B"
-        explanation: "A gateway connects IoT devices to the cloud or internet."
-      - text: "Which of the following are types of IoT sensors?"
-        type: "multiple"
-        choices:
-          A: "Temperature sensor"
-          B: "Humidity sensor"
-          C: "Accelerometer"
-          D: "Light sensor"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are types of IoT sensors."
-      - text: "Which of the following are challenges for IoT security?"
-        type: "multiple"
-        choices:
-          A: "Default passwords"
-          B: "Lack of regular updates"
-          C: "Unencrypted data transmission"
-          D: "Physical tampering"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are challenges for IoT security."
-
-      # Sensors, Actuators and Microcontrollers (15 marks, 8 questions)
-      - text: "Which of the following is NOT a characteristic of Big Data in IoT?"
-        choices:
-          A: "Volume (large amounts of data)"
-          B: "Velocity (high-speed data generation)"
-          C: "Veracity (data accuracy and reliability)"
-          D: "Volatility (data that is constantly changing)"
-        answer: "D"
-        explanation: "Volatility is not a standard characteristic of Big Data in IoT."
-      - text: "What is the purpose of an API (Application Programming Interface) in IoT?"
-        choices:
-          A: "To physically connect IoT devices"
-          B: "To allow different software applications to communicate with each other"
-          C: "To provide electrical power"
-          D: "To design the user interface of an IoT application"
-        answer: "B"
-        explanation: "APIs allow different software applications to communicate."
-      - text: "What type of network is specifically designed for low-power, wide-area IoT applications?"
-        choices:
-          A: "Wi-Fi"
-          B: "LPWAN (Low-Power Wide-Area Network)"
-          C: "Ethernet"
-          D: "Bluetooth"
-        answer: "B"
-        explanation: "LPWAN is designed for low-power, wide-area IoT applications."
-      - text: "What is a 'botnet' in the context of IoT security?"
-        choices:
-          A: "A secure network of IoT devices"
-          B: "A network of hijacked IoT devices used to carry out malicious attacks"
-          C: "A type of antivirus for IoT"
-          D: "A marketplace for buying IoT devices"
-        answer: "B"
-        explanation: "A botnet is a network of hijacked IoT devices used for malicious purposes."
-      - text: "Which component of an IoT system is responsible for making decisions based on data?"
-        choices:
-          A: "Sensor"
-          B: "Actuator"
-          C: "Processor/Microcontroller"
-          D: "Power Supply"
-        answer: "C"
-        explanation: "The processor or microcontroller makes decisions based on data."
-      - text: "What is 'wearable technology'?"
-        choices:
-          A: "Software that can be worn"
-          B: "Clothing made from smart fabrics"
-          C: "Electronic devices that can be worn as accessories"
-          D: "A type of virtual reality headset"
-        answer: "C"
-        explanation: "Wearable technology refers to electronic devices worn as accessories."
-      - text: "Which of the following is a key component of a 'Smart City'?"
-        choices:
-          A: "More parks and green spaces"
-          B: "Using IoT to manage traffic, waste, and energy"
-          C: "Taller buildings and skyscrapers"
-          D: "Fewer cars on the road"
-        answer: "B"
-        explanation: "Smart cities use IoT to manage resources like traffic, waste, and energy."
-      - text: "What is a primary advantage of using cloud computing for IoT?"
-        choices:
-          A: "It works without an internet connection"
-          B: "It offers scalability and massive data storage"
-          C: "It is always free to use"
-          D: "It reduces the physical size of IoT devices"
-        answer: "B"
-        explanation: "Cloud computing offers scalability and large data storage for IoT."
-      - text: "Which of the following are examples of IoT actuators?"
-        type: "multiple"
-        choices:
-          A: "Electric motor"
-          B: "Relay switch"
-          C: "Servo motor"
-          D: "Heater"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are examples of IoT actuators."
-      - text: "Which of the following are benefits of edge computing in IoT?"
-        type: "multiple"
-        choices:
-          A: "Reduced latency"
-          B: "Faster response times"
-          C: "Lower bandwidth usage"
-          D: "Improved privacy"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All listed options are benefits of edge computing in IoT."
-
-      # Building IoT Applications (40 marks, 20 questions)
-      - text: "What is the main function of a 'sensor' in an IoT device?"
-        choices:
-          A: "To perform calculations"
-          B: "To display information"
-          C: "To take action on the physical world"
-          D: "To detect and respond to input from the physical environment"
-        answer: "D"
-        explanation: "A sensor detects and responds to input from the environment."
-      - text: "What is 'predictive maintenance' in an industrial IoT context?"
-        choices:
-          A: "Maintaining equipment after it breaks down"
-          B: "Using data from sensors to predict when equipment will fail"
-          C: "A fixed maintenance schedule"
-          D: "Cleaning the equipment regularly"
-        answer: "B"
-        explanation: "Predictive maintenance uses sensor data to predict equipment failure."
-      - text: "What does Raspberry Pi have that an Arduino Uno does not?"
-        choices:
-          A: "Input/Output pins"
-          B: "A full operating system like Linux"
-          C: "The ability to be programmed"
-          D: "A USB port"
-        answer: "B"
-        explanation: "Raspberry Pi runs a full operating system, unlike Arduino Uno."
-      - text: "Which of these is a major ethical concern for IoT?"
-        choices:
-          A: "The cost of devices"
-          B: "The potential for job displacement due to automation"
-          C: "The limited color choices of devices"
-          D: "The difficulty of programming devices"
-        answer: "B"
-        explanation: "Automation in IoT can lead to job displacement, which is an ethical concern."
-      - text: "What is the role of a 'protocol' in IoT communication?"
-        choices:
-          A: "It is the physical hardware of the device"
-          B: "It is a set of rules that governs the exchange of data"
-          C: "It is the power source for the device"
-          D: "It is the programming language used"
-        answer: "B"
-        explanation: "A protocol is a set of rules for data exchange in IoT communication."
-      - text: "What is a 'smart grid'?"
-        choices:
-          A: "A new type of solar panel"
-          B: "An electrical grid that uses information and communication technology to gather and act on information"
-          C: "A more organized way to lay out city streets"
-          D: "A software for designing grids"
-        answer: "B"
-        explanation: "A smart grid uses ICT to gather and act on information for efficient electricity management."
-      - text: "Which technology allows IoT devices to be identified and tracked using radio waves?"
-        choices:
-          A: "GPS"
-          B: "Bluetooth"
-          C: "RFID (Radio-Frequency Identification)"
-          D: "Wi-Fi"
-        answer: "C"
-        explanation: "RFID uses radio waves to identify and track objects."
-      - text: "What is a key difference between IoT and the traditional internet?"
-        choices:
-          A: "IoT is only for mobile phones"
-          B: "IoT involves connecting physical objects, not just computers and servers"
-          C: "IoT does not use IP addresses"
-          D: "The traditional internet is faster"
-        answer: "B"
-        explanation: "IoT connects physical objects, while the traditional internet connects computers and servers."
-      - text: "Why is 'power consumption' a critical factor for many IoT devices?"
-        choices:
-          A: "Because they are often small, battery-powered, and deployed for long periods"
-          B: "Because high power makes them work faster"
-          C: "Because it determines the color of the device"
-          D: "Because it affects the device's Wi-Fi signal strength"
-        answer: "A"
-        explanation: "Many IoT devices are battery-powered and need to last long periods."
-      - text: "In a smart home, what does a 'hub' or 'bridge' typically do?"
-        choices:
-          A: "It generates its own electricity"
-          B: "It connects to the TV to display information"
-          C: "It allows devices using different protocols (like Zigbee or Z-Wave) to communicate with each other and the internet"
-          D: "It is a smart speaker that plays music"
-        answer: "C"
-        explanation: "A hub or bridge connects devices using different protocols and the internet."
-      - text: "Which of the following is NOT an application of IoT?"
-        choices:
-          A: "Connected Cars"
-          B: "Smart Retail"
-          C: "Manual data entry into a spreadsheet"
-          D: "Smart Farming"
-        answer: "C"
-        explanation: "Manual data entry is not an IoT application."
-      - text: "What is the purpose of 'Over-the-Air' (OTA) updates for IoT devices?"
-        choices:
-          A: "To improve the device's radio signal"
-          B: "To update the device's software and firmware remotely"
-          C: "To physically replace the device"
-          D: "To cool down the device"
-        answer: "B"
-        explanation: "OTA updates allow remote updating of device software and firmware."
-      - text: "What is 'interoperability' in IoT?"
-        choices:
-          A: "The ability of different IoT devices and systems to work together"
-          B: "The security of an IoT device"
-          C: "The price of an IoT device"
-          D: "The physical size of an IoT device"
-        answer: "A"
-        explanation: "Interoperability means different IoT devices and systems can work together."
-      - text: "Which of these is a programming language commonly used for Arduino development?"
-        choices:
-          A: "Python"
-          B: "JavaScript"
-          C: "C/C++"
-          D: "HTML"
-        answer: "C"
-        explanation: "C/C++ is commonly used for Arduino development."
-      - text: "What kind of data would a soil moisture sensor in smart agriculture collect?"
-        choices:
-          A: "The temperature of the air"
-          B: "The amount of sunlight"
-          C: "The water content in the soil"
-          D: "The speed of the wind"
-        answer: "C"
-        explanation: "A soil moisture sensor measures the water content in soil."
-      - text: "What does 'latency' mean in the context of an IoT network?"
-        choices:
-          A: "The amount of data that can be sent"
-          B: "The physical distance between devices"
-          C: "The delay before a transfer of data begins following an instruction"
-          D: "The security level of the network"
-        answer: "C"
-        explanation: "Latency is the delay before data transfer begins after an instruction."
-      - text: "What is a 'smart lock'?"
-        choices:
-          A: "A very strong, traditional lock"
-          B: "An electromechanical lock that can be controlled or monitored remotely"
-          C: "A password manager for your computer"
-          D: "A type of firewall"
-        answer: "B"
-        explanation: "A smart lock is an electromechanical lock controllable remotely."
-      - text: "Which of these is a benefit of edge computing in IoT?"
-        choices:
-          A: "Faster response times and reduced latency"
-          B: "Increased reliance on the cloud"
-          C: "Higher data storage costs"
-          D: "Simplified network architecture"
-        answer: "C"
-        explanation: "Edge computing provides faster response times and reduced latency."
-      - text: "What is the primary goal of the 'Industrial Internet of Things' (IIoT)?"
-        choices:
-          A: "To improve industrial processes through the use of sensors, data, and analytics"
-          B: "To sell more consumer gadgets"
-          C: "To provide internet access to factory workers"
-          D: "To create social media for machines"
-        answer: "B"
-        explanation: "IIoT aims to improve industrial processes using sensors, data, and analytics."
-      - text: "Which sensor would be most useful for a fall detection system for the elderly?"
-        choices:
-          A: "A temperature sensor"
-          B: "An accelerometer"
-          C: "A humidity sensor"
-          D: "A light sensor"
-        answer: "B"
-        explanation: "An accelerometer detects sudden movements, useful for fall detection."
-      - text: "What is 'blockchain's' potential role in IoT?"
-        choices:
-          A: "To provide a decentralized and secure way to record transactions and manage interactions between devices"
-          B: "To increase the processing power of IoT devices"
-          C: "To design the user interface for IoT apps"
-          D: "To replace the internet"
-        answer: "A"
-        explanation: "Blockchain can securely record transactions and manage device interactions."
-      - text: "What does a GPS sensor provide?"
-        choices:
-          A: "Information about temperature"
-          B: "Information about humidity"
-          C: "Information about geographical location"
-          D: "Information about air pressure"
-        answer: "C"
-        explanation: "A GPS sensor provides information about geographical location."
-
-      # Security and Future of IoT Ecosystem (5 marks, 2 questions)
-      - text: "What is a major concern for the security of IoT devices?"
-        choices:
-          A: "The physical size of the device"
-          B: "Default passwords and lack of regular updates"
-          C: "The color of the device's casing"
-          D: "The speed of their internet connection"
-        answer: "B"
-        explanation: "Default passwords and lack of regular updates are major security concerns for IoT devices."
-      - text: "What is 'data encryption' used for in IoT?"
-        choices:
-          A: "To increase the speed of data transfer"
-          B: "To make data unreadable to unauthorized users"
-          C: "To store more data on a device"
-          D: "To analyze data for patterns"
-        answer: "B"
-        explanation: "Data encryption is used to make data unreadable to unauthorized users."
-
-      # Soft skills-Personality Development (20 marks, 10 questions)
-      - text: "What is 'personality development'?"
-        choices:
-          A: "Changing your physical appearance"
-          B: "The process of developing and enhancing your character, behavior, and interpersonal skills"
-          C: "Learning new programming languages"
-          D: "Improving technical skills only"
-        answer: "B"
-        explanation: "Personality development is the process of developing and enhancing your character, behavior, and interpersonal skills."
-      - text: "What is 'self-awareness' in personality development?"
-        choices:
-          A: "Being selfish"
-          B: "Understanding your own emotions, strengths, weaknesses, and motivations"
-          C: "Being aware of others only"
-          D: "Ignoring your feelings"
-        answer: "B"
-        explanation: "Self-awareness is understanding your own emotions, strengths, weaknesses, and motivations."
-      - text: "What is 'motivation' in the context of personal development?"
-        choices:
-          A: "External pressure to work"
-          B: "The internal drive that pushes you to achieve your goals"
-          C: "Fear of failure"
-          D: "Money and rewards only"
-        answer: "B"
-        explanation: "Motivation is the internal drive that pushes you to achieve your goals."
-      - text: "What is 'self-discipline'?"
-        choices:
-          A: "Being strict with others"
-          B: "The ability to control your impulses and stay focused on long-term goals"
-          C: "Following rules blindly"
-          D: "Being rigid and inflexible"
-        answer: "B"
-        explanation: "Self-discipline is the ability to control your impulses and stay focused on long-term goals."
-      - text: "What are 'gestures and body language' important for?"
-        choices:
-          A: "Physical exercise only"
-          B: "Effective communication and building positive relationships"
-          C: "Dancing and entertainment"
-          D: "Sports activities"
-        answer: "B"
-        explanation: "Gestures and body language are important for effective communication and building positive relationships."
-      - text: "What is 'self-esteem'?"
-        choices:
-          A: "Being arrogant"
-          B: "Confidence in your own worth and abilities"
-          C: "Thinking you're better than others"
-          D: "Ignoring your weaknesses"
-        answer: "B"
-        explanation: "Self-esteem is confidence in your own worth and abilities."
-      - text: "What is 'time management'?"
-        choices:
-          A: "Working longer hours"
-          B: "Organizing and planning how to divide your time between specific activities"
-          C: "Being busy all the time"
-          D: "Working faster"
-        answer: "B"
-        explanation: "Time management is organizing and planning how to divide your time between specific activities."
-      - text: "What is 'stress management'?"
-        choices:
-          A: "Avoiding all stressful situations"
-          B: "Techniques and strategies to handle and reduce stress effectively"
-          C: "Ignoring problems"
-          D: "Working harder under pressure"
-        answer: "B"
-        explanation: "Stress management is techniques and strategies to handle and reduce stress effectively."
-      - text: "What are 'professional etiquettes'?"
-        choices:
-          A: "Formal dress codes only"
-          B: "Proper behavior and manners in professional settings"
-          C: "Following company rules only"
-          D: "Being polite to superiors only"
-        answer: "B"
-        explanation: "Professional etiquettes are proper behavior and manners in professional settings."
-      - text: "What are 'communication skills'?"
-        choices:
-          A: "Speaking loudly"
-          B: "The ability to convey information clearly and effectively"
-          C: "Using technical jargon"
-          D: "Writing emails only"
-        answer: "B"
-        explanation: "Communication skills are the ability to convey information clearly and effectively."
-
-      # Tough, scenario-based, multiple-answer questions
-      - text: "Which of the following are valid security challenges in large-scale IoT deployments?"
-        type: "multiple"
-        choices:
-          A: "Default passwords on devices"
-          B: "Unencrypted data transmission"
-          C: "Physical tampering of devices"
-          D: "Frequent firmware updates"
-        answer: ["A", "B", "C"]
-        explanation: "Default passwords, unencrypted data, and physical tampering are major security challenges; frequent updates are a solution."
-        topic: "Security"
-
-      - text: "Which of the following are valid applications of IoT in healthcare?"
-        type: "multiple"
-        choices:
-          A: "Remote patient monitoring"
-          B: "Smart inhalers"
-          C: "Wearable ECG monitors"
-          D: "Online banking"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are healthcare IoT applications; D is not."
-        topic: "Applications"
-
-      - text: "Which of the following are valid IoT communication protocols for constrained devices?"
-        type: "multiple"
-        choices:
-          A: "MQTT"
-          B: "CoAP"
-          C: "HTTP"
-          D: "Bluetooth Low Energy (BLE)"
-        answer: ["A", "B", "D"]
-        explanation: "MQTT, CoAP, and BLE are suitable for constrained devices; HTTP is heavier."
-        topic: "Protocols"
-
-      - text: "Which of the following are valid features of a smart home IoT system?"
-        type: "multiple"
-        choices:
-          A: "Remote lighting control"
-          B: "Automated climate control"
-          C: "Voice-activated assistants"
-          D: "Manual water pumps"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are smart home features; D is not."
-        topic: "Applications"
-
-      - text: "Which of the following are valid reasons for using edge computing in IoT?"
-        type: "multiple"
-        choices:
-          A: "Reducing latency"
-          B: "Improving data privacy"
-          C: "Decreasing cloud storage costs"
-          D: "Increasing network congestion"
-        answer: ["A", "B", "C"]
-        explanation: "Edge computing reduces latency, improves privacy, and can lower cloud costs; it does not increase congestion."
-        topic: "Edge Computing"
-
-      - text: "Which of the following are valid IoT device management tasks?"
-        type: "multiple"
-        choices:
-          A: "Remote firmware updates"
-          B: "Device authentication"
-          C: "Monitoring device health"
-          D: "Manual data entry"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are device management tasks; D is not."
-        topic: "Device Management"
-
-      - text: "Which of the following are valid IoT data analytics use cases?"
-        type: "multiple"
-        choices:
-          A: "Predictive maintenance"
-          B: "Anomaly detection"
-          C: "Energy optimization"
-          D: "Manual report writing"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are analytics use cases; D is not."
-        topic: "Data Analytics"
-
-      - text: "Which of the following are valid IoT device connectivity options?"
-        type: "multiple"
-        choices:
-          A: "Wi-Fi"
-          B: "LoRaWAN"
-          C: "Zigbee"
-          D: "Ethernet"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid connectivity options for IoT devices."
-        topic: "Protocols"
-
-      - text: "Which of the following are valid challenges in IoT scalability?"
-        type: "multiple"
-        choices:
-          A: "Addressing billions of devices"
-          B: "Managing device heterogeneity"
-          C: "Ensuring interoperability"
-          D: "Reducing device costs"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are scalability challenges; D is a business goal."
-        topic: "Scalability"
-
-      - text: "Which of the following are valid IoT security best practices?"
-        type: "multiple"
-        choices:
-          A: "Changing default passwords"
-          B: "Encrypting data in transit"
-          C: "Regular software updates"
-          D: "Disabling all security features"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are best practices; D is not."
-        topic: "Security"
-
-      - text: "Which of the following are valid IoT device authentication methods?"
-        type: "multiple"
-        choices:
-          A: "Pre-shared keys"
-          B: "Digital certificates"
-          C: "Biometric authentication"
-          D: "Open access"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are authentication methods; D is not."
-        topic: "Security"
-
-      - text: "Which of the following are valid IoT use cases in agriculture?"
-        type: "multiple"
-        choices:
-          A: "Soil moisture monitoring"
-          B: "Automated irrigation"
-          C: "Livestock tracking"
-          D: "Online shopping"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are agricultural IoT use cases; D is not."
-        topic: "Applications"
-
-      - text: "Which of the following are valid IoT device power sources?"
-        type: "multiple"
-        choices:
-          A: "Battery"
-          B: "Solar power"
-          C: "Energy harvesting"
-          D: "Manual winding"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are valid power sources; D is not common in IoT."
-        topic: "Devices"
-
-      - text: "Which of the following are valid IoT data privacy concerns?"
-        type: "multiple"
-        choices:
-          A: "Unauthorized data access"
-          B: "Data sharing without consent"
-          C: "Data anonymization"
-          D: "Data loss prevention"
-        answer: ["A", "B"]
-        explanation: "A and B are privacy concerns; C and D are solutions."
-        topic: "Privacy"
-
-      - text: "Which of the following are valid IoT device communication models?"
-        type: "multiple"
-        choices:
-          A: "Device-to-Device"
-          B: "Device-to-Cloud"
-          C: "Device-to-Gateway"
-          D: "Device-to-User"
-        answer: ["A", "B", "C"]
-        explanation: "A, B, and C are standard communication models; D is not."
-        topic: "Communication Model"
-
-  - id: 2
-    name: "Comprehensive Practice Set 2 - Full Module M4-R5 (100 marks)"
-    duration_minutes: 120
-    questions:
-      # Introduction to IoT – Applications/Devices, Protocols and Communication Model (10 marks, 5 questions)
-      - text: "Which of the following best describes the Internet of Things (IoT)?"
-        choices:
-          A: "A network of physical objects embedded with sensors and software"
-          B: "A new type of social media"
-          C: "A programming language"
-          D: "A type of computer virus"
-        answer: "A"
-        explanation: "IoT is a network of physical objects with sensors and software."
-      - text: "Which of the following is a common IoT protocol?"
-        choices:
-          A: "HTTP"
-          B: "MQTT"
-          C: "SMTP"
-          D: "FTP"
-        answer: "B"
-        explanation: "MQTT is a lightweight messaging protocol commonly used in IoT."
-      - text: "What is the main function of a sensor in an IoT device?"
-        choices:
-          A: "To process data"
-          B: "To collect data from the environment"
-          C: "To display data"
-          D: "To store data"
-        answer: "B"
-        explanation: "A sensor collects data from the environment."
-      - text: "Which of the following is NOT a characteristic of IoT devices?"
-        choices:
-          A: "Connectivity"
-          B: "Autonomy"
-          C: "Manual operation only"
-          D: "Data collection"
-        answer: "C"
-        explanation: "Manual operation only is not a characteristic of IoT devices."
-      - text: "Which layer of the IoT architecture is responsible for data processing?"
-        choices:
-          A: "Perception layer"
-          B: "Network layer"
-          C: "Application layer"
-          D: "Physical layer"
-        answer: "C"
-        explanation: "The application layer is responsible for data processing in IoT."
-
-      # Things and Connections (10 marks, 5 questions)
-      - text: "What does 'M2M' stand for in IoT?"
-        choices:
-          A: "Machine to Machine"
-          B: "Mobile to Mobile"
-          C: "Module to Module"
-          D: "Monitor to Monitor"
-        answer: "A"
-        explanation: "M2M stands for Machine to Machine, referring to direct communication between devices."
-      - text: "Which of the following is a wearable IoT device?"
-        choices:
-          A: "Smartwatch"
-          B: "Smart TV"
-          C: "Smart Refrigerator"
-          D: "Smart Car"
-        answer: "A"
-        explanation: "A smartwatch is a wearable IoT device."
-      - text: "Which technology is used for short-range wireless communication in IoT?"
-        choices:
-          A: "Bluetooth"
-          B: "Wi-Fi"
-          C: "LoRaWAN"
-          D: "Ethernet"
-        answer: "A"
-        explanation: "Bluetooth is commonly used for short-range wireless communication in IoT."
-      - text: "What is the primary function of a gateway in IoT?"
-        choices:
-          A: "To connect IoT devices to the internet"
-          B: "To store data"
-          C: "To process data"
-          D: "To display data"
-        answer: "A"
-        explanation: "A gateway connects IoT devices to the internet."
-      - text: "Which of the following is a privacy concern in IoT?"
-        choices:
-          A: "Data collection without user consent"
-          B: "Device color"
-          C: "Device size"
-          D: "Device price"
-        answer: "A"
-        explanation: "Collecting data without user consent is a major privacy concern in IoT."
-
-      # Sensors, Actuators and Microcontrollers (15 marks, 8 questions)
-      - text: "Which of the following is NOT a type of sensor?"
-        choices:
-          A: "Temperature sensor"
-          B: "Light sensor"
-          C: "Actuator"
-          D: "Moisture sensor"
-        answer: "C"
-        explanation: "An actuator is not a sensor; it acts on data rather than sensing it."
-      - text: "What is the main function of an actuator in IoT?"
-        choices:
-          A: "To take action based on data received"
-          B: "To collect data"
-          C: "To process data"
-          D: "To store data"
-        answer: "A"
-        explanation: "An actuator takes action based on data, such as turning on a device."
-      - text: "Which microcontroller is commonly used in IoT projects?"
-        choices:
-          A: "Arduino Uno"
-          B: "Raspberry Pi"
-          C: "Intel Core i7"
-          D: "AMD Ryzen"
-        answer: "A"
-        explanation: "Arduino Uno is a popular microcontroller for IoT projects."
-      - text: "What is the role of a microcontroller in IoT?"
-        choices:
-          A: "To act as a gateway"
-          B: "To process and control data from sensors and actuators"
-          C: "To provide internet connectivity"
-          D: "To display data"
-        answer: "B"
-        explanation: "A microcontroller processes and controls data from sensors and actuators."
-      - text: "Which of the following is an example of a smart city application of IoT?"
-        choices:
-          A: "Smart traffic management"
-          B: "Smartphone"
-          C: "Smartwatch"
-          D: "Smart TV"
-        answer: "A"
-        explanation: "Smart traffic management is a common smart city IoT application."
-      - text: "What is a 'botnet' in IoT security?"
-        choices:
-          A: "A network of hijacked IoT devices used for malicious purposes"
-          B: "A type of sensor"
-          C: "A type of actuator"
-          D: "A type of microcontroller"
-        answer: "A"
-        explanation: "A botnet is a network of hijacked IoT devices used for malicious purposes."
-      - text: "Which of the following is a benefit of cloud computing in IoT?"
-        choices:
-          A: "Scalability and massive data storage"
-          B: "Increased device size"
-          C: "Reduced connectivity"
-          D: "Manual data entry"
-        answer: "A"
-        explanation: "Cloud computing provides scalability and large data storage for IoT."
-      - text: "What is wearable technology?"
-        choices:
-          A: "Electronic devices that can be worn as accessories"
-          B: "Software that can be worn"
-          C: "Clothing made from smart fabrics"
-          D: "A type of virtual reality headset"
-        answer: "A"
-        explanation: "Wearable technology refers to electronic devices worn as accessories."
-
-      # Building IoT Applications (40 marks, 20 questions)
-      - text: "What is the main function of a sensor in an IoT device?"
-        choices:
-          A: "To detect and respond to input from the physical environment"
-          B: "To perform calculations"
-          C: "To display information"
-          D: "To take action on the physical world"
-        answer: "A"
-        explanation: "A sensor detects and responds to input from the environment."
-      - text: "What is predictive maintenance in IoT?"
-        choices:
-          A: "Using data from sensors to predict when equipment will fail"
-          B: "Maintaining equipment after it breaks down"
-          C: "A fixed maintenance schedule"
-          D: "Cleaning the equipment regularly"
-        answer: "A"
-        explanation: "Predictive maintenance uses sensor data to predict equipment failure."
-      - text: "Which of the following is a programming language commonly used for Arduino development?"
-        choices:
-          A: "C/C++"
-          B: "Python"
-          C: "JavaScript"
-          D: "HTML"
-        answer: "A"
-        explanation: "C/C++ is commonly used for Arduino development."
-      - text: "What is the purpose of 'Over-the-Air' (OTA) updates for IoT devices?"
-        choices:
-          A: "To update the device's software and firmware remotely"
-          B: "To physically replace the device"
-          C: "To improve the device's radio signal"
-          D: "To cool down the device"
-        answer: "A"
-        explanation: "OTA updates allow remote updating of device software and firmware."
-      - text: "What is interoperability in IoT?"
-        choices:
-          A: "The ability of different IoT devices and systems to work together"
-          B: "The security of an IoT device"
-          C: "The price of an IoT device"
-          D: "The physical size of an IoT device"
-        answer: "A"
-        explanation: "Interoperability means different IoT devices and systems can work together."
-      - text: "What is a smart grid?"
-        choices:
-          A: "An electrical grid that uses information and communication technology to gather and act on information"
-          B: "A new type of solar panel"
-          C: "A more organized way to lay out city streets"
-          D: "A software for designing grids"
-        answer: "A"
-        explanation: "A smart grid uses ICT to gather and act on information for efficient electricity management."
-      - text: "Which technology allows IoT devices to be identified and tracked using radio waves?"
-        choices:
-          A: "RFID"
-          B: "GPS"
-          C: "Bluetooth"
-          D: "Wi-Fi"
-        answer: "A"
-        explanation: "RFID uses radio waves to identify and track objects."
-      - text: "What is a key difference between IoT and the traditional internet?"
-        choices:
-          A: "IoT involves connecting physical objects, not just computers and servers"
-          B: "IoT is only for mobile phones"
-          C: "IoT does not use IP addresses"
-          D: "The traditional internet is faster"
-        answer: "A"
-        explanation: "IoT connects physical objects, while the traditional internet connects computers and servers."
-      - text: "Why is power consumption a critical factor for many IoT devices?"
-        choices:
-          A: "Because they are often small, battery-powered, and deployed for long periods"
-          B: "Because high power makes them work faster"
-          C: "Because it determines the color of the device"
-          D: "Because it affects the device's Wi-Fi signal strength"
-        answer: "A"
-        explanation: "Many IoT devices are battery-powered and need to last long periods."
-      - text: "In a smart home, what does a 'hub' or 'bridge' typically do?"
-        choices:
-          A: "It allows devices using different protocols to communicate with each other and the internet"
-          B: "It generates its own electricity"
-          C: "It connects to the TV to display information"
-          D: "It is a smart speaker that plays music"
-        answer: "A"
-        explanation: "A hub or bridge connects devices using different protocols and the internet."
-      - text: "Which of the following is NOT an application of IoT?"
-        choices:
-          A: "Manual data entry into a spreadsheet"
-          B: "Connected Cars"
-          C: "Smart Retail"
-          D: "Smart Farming"
-        answer: "A"
-        explanation: "Manual data entry is not an IoT application."
-      - text: "What is latency in the context of an IoT network?"
-        choices:
-          A: "The delay before a transfer of data begins following an instruction"
-          B: "The amount of data that can be sent"
-          C: "The physical distance between devices"
-          D: "The security level of the network"
-        answer: "A"
-        explanation: "Latency is the delay before data transfer begins after an instruction."
-      - text: "What is a smart lock?"
-        choices:
-          A: "An electromechanical lock that can be controlled or monitored remotely"
-          B: "A very strong, traditional lock"
-          C: "A password manager for your computer"
-          D: "A type of firewall"
-        answer: "A"
-        explanation: "A smart lock is an electromechanical lock controllable remotely."
-      - text: "Which of the following is a benefit of edge computing in IoT?"
-        choices:
-          A: "Faster response times and reduced latency"
-          B: "Increased reliance on the cloud"
-          C: "Higher data storage costs"
-          D: "Simplified network architecture"
-        answer: "C"
-        explanation: "Edge computing provides faster response times and reduced latency."
-      - text: "What is the primary goal of the Industrial Internet of Things (IIoT)?"
-        choices:
-          A: "To improve industrial processes through the use of sensors, data, and analytics"
-          B: "To sell more consumer gadgets"
-          C: "To provide internet access to factory workers"
-          D: "To create social media for machines"
-        answer: "A"
-        explanation: "IIoT aims to improve industrial processes using sensors, data, and analytics."
-      - text: "Which sensor would be most useful for a fall detection system for the elderly?"
-        choices:
-          A: "An accelerometer"
-          B: "A temperature sensor"
-          C: "A humidity sensor"
-          D: "A light sensor"
-        answer: "A"
-        explanation: "An accelerometer detects sudden movements, useful for fall detection."
-      - text: "What is blockchain's potential role in IoT?"
-        choices:
-          A: "To provide a decentralized and secure way to record transactions and manage interactions between devices"
-          B: "To increase the processing power of IoT devices"
-          C: "To design the user interface for IoT apps"
-          D: "To replace the internet"
-        answer: "A"
-        explanation: "Blockchain can securely record transactions and manage device interactions."
-      - text: "What does a GPS sensor provide?"
-        choices:
-          A: "Information about geographical location"
-          B: "Information about temperature"
-          C: "Information about humidity"
-          D: "Information about air pressure"
-        answer: "A"
-        explanation: "A GPS sensor provides information about geographical location."
-      - text: "What is a relay module used for in IoT?"
-        choices:
-          A: "To control high voltage devices"
-          B: "To measure temperature"
-          C: "To display data"
-          D: "To store data"
-        answer: "A"
-        explanation: "A relay module is used to control high voltage devices in IoT."
-      - text: "What is the purpose of a DHT sensor in IoT?"
-        choices:
-          A: "To measure temperature and humidity"
-          B: "To measure light intensity"
-          C: "To measure air quality"
-          D: "To measure soil moisture"
-        answer: "A"
-        explanation: "A DHT sensor measures temperature and humidity."
-      - text: "Which of the following is a cloud platform for IoT?"
-        choices:
-          A: "AWS IoT"
-          B: "Google Docs"
-          C: "MS Word"
-          D: "Adobe Photoshop"
-        answer: "A"
-        explanation: "AWS IoT is a cloud platform for IoT applications."
-      - text: "What is the function of a Bluetooth module (HC-05) in IoT?"
-        choices:
-          A: "To enable wireless communication between devices"
-          B: "To store data"
-          C: "To process data"
-          D: "To display data"
-        answer: "A"
-        explanation: "A Bluetooth module (HC-05) enables wireless communication between devices."
-      - text: "What is the main advantage of using MQTT in IoT?"
-        choices:
-          A: "Low bandwidth and lightweight protocol"
-          B: "High power consumption"
-          C: "Complex setup"
-          D: "Limited scalability"
-        answer: "A"
-        explanation: "MQTT is a lightweight protocol that uses low bandwidth, ideal for IoT."
-      - text: "What is the purpose of a cloud dashboard in IoT?"
-        choices:
-          A: "To visualize and monitor IoT data remotely"
-          B: "To store data locally"
-          C: "To process data on the device"
-          D: "To control device power"
-        answer: "A"
-        explanation: "A cloud dashboard allows remote visualization and monitoring of IoT data."
-      - text: "Which of the following is a security concern in IoT?"
-        choices:
-          A: "Default passwords and lack of regular updates"
-          B: "Device color"
-          C: "Device size"
-          D: "Device price"
-        answer: "A"
-        explanation: "Default passwords and lack of updates are major IoT security concerns."
-
-      # Security and Future of IoT Ecosystem (5 marks, 2 questions)
-      - text: "What is data encryption used for in IoT?"
-        choices:
-          A: "To make data unreadable to unauthorized users"
-          B: "To increase the speed of data transfer"
-          C: "To store more data on a device"
-          D: "To analyze data for patterns"
-        answer: "A"
-        explanation: "Data encryption is used to make data unreadable to unauthorized users."
-      - text: "What is a major concern for the security of IoT devices?"
-        choices:
-          A: "Default passwords and lack of regular updates"
-          B: "The physical size of the device"
-          C: "The color of the device's casing"
-          D: "The speed of their internet connection"
-        answer: "A"
-        explanation: "Default passwords and lack of regular updates are major security concerns for IoT devices."
-
-      # Soft skills-Personality Development (20 marks, 10 questions)
-      - text: "What is personality development?"
-        choices:
-          A: "The process of developing and enhancing your character, behavior, and interpersonal skills"
-          B: "Changing your physical appearance"
-          C: "Learning new programming languages"
-          D: "Improving technical skills only"
-        answer: "A"
-        explanation: "Personality development is the process of developing and enhancing your character, behavior, and interpersonal skills."
-      - text: "What is self-awareness in personality development?"
-        choices:
-          A: "Understanding your own emotions, strengths, weaknesses, and motivations"
-          B: "Being selfish"
-          C: "Being aware of others only"
-          D: "Ignoring your feelings"
-        answer: "A"
-        explanation: "Self-awareness is understanding your own emotions, strengths, weaknesses, and motivations."
-      - text: "What is motivation in the context of personal development?"
-        choices:
-          A: "The internal drive that pushes you to achieve your goals"
-          B: "External pressure to work"
-          C: "Fear of failure"
-          D: "Money and rewards only"
-        answer: "A"
-        explanation: "Motivation is the internal drive that pushes you to achieve your goals."
-      - text: "What is self-discipline?"
-        choices:
-          A: "The ability to control your impulses and stay focused on long-term goals"
-          B: "Being strict with others"
-          C: "Following rules blindly"
-          D: "Being rigid and inflexible"
-        answer: "A"
-        explanation: "Self-discipline is the ability to control your impulses and stay focused on long-term goals."
-      - text: "What are gestures and body language important for?"
-        choices:
-          A: "Effective communication and building positive relationships"
-          B: "Physical exercise only"
-          C: "Dancing and entertainment"
-          D: "Sports activities"
-        answer: "A"
-        explanation: "Gestures and body language are important for effective communication and building positive relationships."
-      - text: "What is self-esteem?"
-        choices:
-          A: "Confidence in your own worth and abilities"
-          B: "Being arrogant"
-          C: "Thinking you're better than others"
-          D: "Ignoring your weaknesses"
-        answer: "A"
-        explanation: "Self-esteem is confidence in your own worth and abilities."
-      - text: "What is time management?"
-        choices:
-          A: "Organizing and planning how to divide your time between specific activities"
-          B: "Working longer hours"
-          C: "Being busy all the time"
-          D: "Working faster"
-        answer: "A"
-        explanation: "Time management is organizing and planning how to divide your time between specific activities."
-      - text: "What is stress management?"
-        choices:
-          A: "Techniques and strategies to handle and reduce stress effectively"
-          B: "Avoiding all stressful situations"
-          C: "Ignoring problems"
-          D: "Working harder under pressure"
-        answer: "A"
-        explanation: "Stress management is techniques and strategies to handle and reduce stress effectively."
-      - text: "What are professional etiquettes?"
-        choices:
-          A: "Proper behavior and manners in professional settings"
-          B: "Formal dress codes only"
-          C: "Following company rules only"
-          D: "Being polite to superiors only"
-        answer: "A"
-        explanation: "Professional etiquettes are proper behavior and manners in professional settings."
-      - text: "What are communication skills?"
-        choices:
-          A: "The ability to convey information clearly and effectively"
-          B: "Speaking loudly"
-          C: "Using technical jargon"
-          D: "Writing emails only"
-        answer: "A"
-        explanation: "Communication skills are the ability to convey information clearly and effectively." 
+- duration_minutes: 120
+  id: 1
+  name: Comprehensive Practice Set 1 - Full Module M4-R5 (100 marks)
+  questions:
+  - answer: B
+    choices:
+      A: A global network of social media influencers
+      B: A network of physical objects embedded with sensors and software to connect
+        and exchange data
+      C: A specialized, high-speed version of the internet
+      D: A new programming language for artificial intelligence
+      E: All of the above
+    explanation: IoT is a network of physical objects embedded with sensors and software
+      to connect and exchange data.
+    text: What is the core idea of the 'Internet of Things' (IoT)?
+    topic: Introduction to IoT – Applications/Devices, Protocols and Communication
+      Model
+  - answer: B
+    choices:
+      A: A CPU
+      B: A temperature sensor
+      C: A power supply unit
+      D: A USB port
+      E: All of the above
+    explanation: A temperature sensor is a common sensor used in IoT devices.
+    text: Which of the following is a common sensor used in IoT devices?
+    topic: Introduction to IoT – Applications/Devices, Protocols and Communication
+      Model
+  - answer: C
+    choices:
+      A: 5G
+      B: Satellite Internet
+      C: Bluetooth
+      D: Ethernet
+      E: All of the above
+    explanation: Bluetooth is commonly used for short-range communication in IoT.
+    text: Which wireless technology is commonly used for short-range communication
+      in IoT?
+  - answer: B
+    choices:
+      A: The physical size of the device
+      B: Default passwords and lack of regular updates
+      C: The color of the device's casing
+      D: The speed of their internet connection
+      E: All of the above
+    explanation: Default passwords and lack of regular updates are major security
+      concerns for IoT devices.
+    text: What is a major concern for the security of IoT devices?
+  - answer: B
+    choices:
+      A: A device that measures physical input from the environment
+      B: A component that is responsible for taking action, like turning on a light
+        or motor
+      C: The main processing unit of an IoT device
+      D: A cloud-based data storage service
+      E: All of the above
+    explanation: An actuator is a component that takes action, such as turning on
+      a light or motor, in an IoT system.
+    text: What is an 'actuator' in an IoT system?
+  - answer: E
+    choices:
+      A: MQTT
+      B: CoAP
+      C: HTTP
+      D: LoRaWAN
+      E: All of the above
+    explanation: All listed options are common IoT communication protocols.
+    text: Which of the following are common IoT communication protocols?
+    type: multiple
+  - answer: E
+    choices:
+      A: Smart lighting
+      B: Smart thermostats
+      C: Smart security systems
+      D: Smart speakers
+      E: All of the above
+    explanation: All listed options are applications of IoT in smart homes.
+    text: Which of the following are applications of IoT in smart homes?
+    type: multiple
+  - answer: A
+    choices:
+      A: Industrial Internet of Things
+      B: Informational Internet of Things
+      C: Interactive Internet of Things
+      D: Intelligent Internet of Things
+      E: All of the above
+    explanation: IIoT stands for Industrial Internet of Things, which refers to the
+      use of IoT in industrial applications.
+    text: What does 'IIoT' stand for?
+  - answer: D
+    choices:
+      A: Wi-Fi
+      B: Bluetooth
+      C: NFC
+      D: LoRaWAN
+      E: All of the above
+    explanation: LoRaWAN is designed for long-range, low-power IoT applications.
+    text: Which communication technology is designed for long-range, low-power IoT
+      applications?
+  - answer: B
+    choices:
+      A: The high cost of devices
+      B: The collection of vast amounts of personal data without user consent
+      C: The limited color options for devices
+      D: The slow speed of internet connections
+      E: All of the above
+    explanation: A major privacy concern is collecting personal data without user
+      consent.
+    text: What is a significant privacy concern related to IoT?
+  - answer: C
+    choices:
+      A: A smart TV
+      B: A smart refrigerator
+      C: A fitness tracker
+      D: A smart car
+      E: All of the above
+    explanation: A fitness tracker is a wearable IoT device.
+    text: Which of the following is an example of a wearable IoT device?
+  - answer: B
+    choices:
+      A: To generate power for the IoT devices
+      B: To act as a bridge between IoT devices and the cloud/internet
+      C: To display data on a screen
+      D: To cool the processors of the devices
+      E: All of the above
+    explanation: A gateway connects IoT devices to the cloud or internet.
+    text: In IoT, what is the primary function of a 'gateway'?
+  - answer: E
+    choices:
+      A: Temperature sensor
+      B: Humidity sensor
+      C: Accelerometer
+      D: Light sensor
+      E: All of the above
+    explanation: All listed options are types of IoT sensors.
+    text: Which of the following are types of IoT sensors?
+    type: multiple
+  - answer: E
+    choices:
+      A: Default passwords
+      B: Lack of regular updates
+      C: Unencrypted data transmission
+      D: Physical tampering
+      E: All of the above
+    explanation: All listed options are challenges for IoT security.
+    text: Which of the following are challenges for IoT security?
+    type: multiple
+  - answer: D
+    choices:
+      A: Volume (large amounts of data)
+      B: Velocity (high-speed data generation)
+      C: Veracity (data accuracy and reliability)
+      D: Volatility (data that is constantly changing)
+      E: All of the above
+    explanation: Volatility is not a standard characteristic of Big Data in IoT.
+    text: Which of the following is NOT a characteristic of Big Data in IoT?
+  - answer: B
+    choices:
+      A: To physically connect IoT devices
+      B: To allow different software applications to communicate with each other
+      C: To provide electrical power
+      D: To design the user interface of an IoT application
+      E: All of the above
+    explanation: APIs allow different software applications to communicate.
+    text: What is the purpose of an API (Application Programming Interface) in IoT?
+  - answer: B
+    choices:
+      A: Wi-Fi
+      B: LPWAN (Low-Power Wide-Area Network)
+      C: Ethernet
+      D: Bluetooth
+      E: All of the above
+    explanation: LPWAN is designed for low-power, wide-area IoT applications.
+    text: What type of network is specifically designed for low-power, wide-area IoT
+      applications?
+  - answer: B
+    choices:
+      A: A secure network of IoT devices
+      B: A network of hijacked IoT devices used to carry out malicious attacks
+      C: A type of antivirus for IoT
+      D: A marketplace for buying IoT devices
+      E: All of the above
+    explanation: A botnet is a network of hijacked IoT devices used for malicious
+      purposes.
+    text: What is a 'botnet' in the context of IoT security?
+  - answer: C
+    choices:
+      A: Sensor
+      B: Actuator
+      C: Processor/Microcontroller
+      D: Power Supply
+      E: All of the above
+    explanation: The processor or microcontroller makes decisions based on data.
+    text: Which component of an IoT system is responsible for making decisions based
+      on data?
+  - answer: C
+    choices:
+      A: Software that can be worn
+      B: Clothing made from smart fabrics
+      C: Electronic devices that can be worn as accessories
+      D: A type of virtual reality headset
+      E: All of the above
+    explanation: Wearable technology refers to electronic devices worn as accessories.
+    text: What is 'wearable technology'?
+  - answer: B
+    choices:
+      A: More parks and green spaces
+      B: Using IoT to manage traffic, waste, and energy
+      C: Taller buildings and skyscrapers
+      D: Fewer cars on the road
+      E: All of the above
+    explanation: Smart cities use IoT to manage resources like traffic, waste, and
+      energy.
+    text: Which of the following is a key component of a 'Smart City'?
+  - answer: B
+    choices:
+      A: It works without an internet connection
+      B: It offers scalability and massive data storage
+      C: It is always free to use
+      D: It reduces the physical size of IoT devices
+      E: All of the above
+    explanation: Cloud computing offers scalability and large data storage for IoT.
+    text: What is a primary advantage of using cloud computing for IoT?
+  - answer: E
+    choices:
+      A: Electric motor
+      B: Relay switch
+      C: Servo motor
+      D: Heater
+      E: All of the above
+    explanation: All listed options are examples of IoT actuators.
+    text: Which of the following are examples of IoT actuators?
+    type: multiple
+  - answer: E
+    choices:
+      A: Reduced latency
+      B: Faster response times
+      C: Lower bandwidth usage
+      D: Improved privacy
+      E: All of the above
+    explanation: All listed options are benefits of edge computing in IoT.
+    text: Which of the following are benefits of edge computing in IoT?
+    type: multiple
+  - answer: D
+    choices:
+      A: To perform calculations
+      B: To display information
+      C: To take action on the physical world
+      D: To detect and respond to input from the physical environment
+      E: All of the above
+    explanation: A sensor detects and responds to input from the environment.
+    text: What is the main function of a 'sensor' in an IoT device?
+  - answer: B
+    choices:
+      A: Maintaining equipment after it breaks down
+      B: Using data from sensors to predict when equipment will fail
+      C: A fixed maintenance schedule
+      D: Cleaning the equipment regularly
+      E: All of the above
+    explanation: Predictive maintenance uses sensor data to predict equipment failure.
+    text: What is 'predictive maintenance' in an industrial IoT context?
+  - answer: B
+    choices:
+      A: Input/Output pins
+      B: A full operating system like Linux
+      C: The ability to be programmed
+      D: A USB port
+      E: All of the above
+    explanation: Raspberry Pi runs a full operating system, unlike Arduino Uno.
+    text: What does Raspberry Pi have that an Arduino Uno does not?
+  - answer: B
+    choices:
+      A: The cost of devices
+      B: The potential for job displacement due to automation
+      C: The limited color choices of devices
+      D: The difficulty of programming devices
+      E: All of the above
+    explanation: Automation in IoT can lead to job displacement, which is an ethical
+      concern.
+    text: Which of these is a major ethical concern for IoT?
+  - answer: B
+    choices:
+      A: It is the physical hardware of the device
+      B: It is a set of rules that governs the exchange of data
+      C: It is the power source for the device
+      D: It is the programming language used
+      E: All of the above
+    explanation: A protocol is a set of rules for data exchange in IoT communication.
+    text: What is the role of a 'protocol' in IoT communication?
+  - answer: B
+    choices:
+      A: A new type of solar panel
+      B: An electrical grid that uses information and communication technology to
+        gather and act on information
+      C: A more organized way to lay out city streets
+      D: A software for designing grids
+      E: All of the above
+    explanation: A smart grid uses ICT to gather and act on information for efficient
+      electricity management.
+    text: What is a 'smart grid'?
+  - answer: C
+    choices:
+      A: GPS
+      B: Bluetooth
+      C: RFID (Radio-Frequency Identification)
+      D: Wi-Fi
+      E: All of the above
+    explanation: RFID uses radio waves to identify and track objects.
+    text: Which technology allows IoT devices to be identified and tracked using radio
+      waves?
+  - answer: B
+    choices:
+      A: IoT is only for mobile phones
+      B: IoT involves connecting physical objects, not just computers and servers
+      C: IoT does not use IP addresses
+      D: The traditional internet is faster
+      E: All of the above
+    explanation: IoT connects physical objects, while the traditional internet connects
+      computers and servers.
+    text: What is a key difference between IoT and the traditional internet?
+  - answer: A
+    choices:
+      A: Because they are often small, battery-powered, and deployed for long periods
+      B: Because high power makes them work faster
+      C: Because it determines the color of the device
+      D: Because it affects the device's Wi-Fi signal strength
+      E: All of the above
+    explanation: Many IoT devices are battery-powered and need to last long periods.
+    text: Why is 'power consumption' a critical factor for many IoT devices?
+  - answer: C
+    choices:
+      A: It generates its own electricity
+      B: It connects to the TV to display information
+      C: It allows devices using different protocols (like Zigbee or Z-Wave) to communicate
+        with each other and the internet
+      D: It is a smart speaker that plays music
+      E: All of the above
+    explanation: A hub or bridge connects devices using different protocols and the
+      internet.
+    text: In a smart home, what does a 'hub' or 'bridge' typically do?
+  - answer: C
+    choices:
+      A: Connected Cars
+      B: Smart Retail
+      C: Manual data entry into a spreadsheet
+      D: Smart Farming
+      E: All of the above
+    explanation: Manual data entry is not an IoT application.
+    text: Which of the following is NOT an application of IoT?
+  - answer: B
+    choices:
+      A: To improve the device's radio signal
+      B: To update the device's software and firmware remotely
+      C: To physically replace the device
+      D: To cool down the device
+      E: All of the above
+    explanation: OTA updates allow remote updating of device software and firmware.
+    text: What is the purpose of 'Over-the-Air' (OTA) updates for IoT devices?
+  - answer: A
+    choices:
+      A: The ability of different IoT devices and systems to work together
+      B: The security of an IoT device
+      C: The price of an IoT device
+      D: The physical size of an IoT device
+      E: All of the above
+    explanation: Interoperability means different IoT devices and systems can work
+      together.
+    text: What is 'interoperability' in IoT?
+  - answer: C
+    choices:
+      A: Python
+      B: JavaScript
+      C: C/C++
+      D: HTML
+      E: All of the above
+    explanation: C/C++ is commonly used for Arduino development.
+    text: Which of these is a programming language commonly used for Arduino development?
+  - answer: C
+    choices:
+      A: The temperature of the air
+      B: The amount of sunlight
+      C: The water content in the soil
+      D: The speed of the wind
+      E: All of the above
+    explanation: A soil moisture sensor measures the water content in soil.
+    text: What kind of data would a soil moisture sensor in smart agriculture collect?
+  - answer: C
+    choices:
+      A: The amount of data that can be sent
+      B: The physical distance between devices
+      C: The delay before a transfer of data begins following an instruction
+      D: The security level of the network
+      E: All of the above
+    explanation: Latency is the delay before data transfer begins after an instruction.
+    text: What does 'latency' mean in the context of an IoT network?
+  - answer: B
+    choices:
+      A: A very strong, traditional lock
+      B: An electromechanical lock that can be controlled or monitored remotely
+      C: A password manager for your computer
+      D: A type of firewall
+      E: All of the above
+    explanation: A smart lock is an electromechanical lock controllable remotely.
+    text: What is a 'smart lock'?
+  - answer: C
+    choices:
+      A: Faster response times and reduced latency
+      B: Increased reliance on the cloud
+      C: Higher data storage costs
+      D: Simplified network architecture
+      E: All of the above
+    explanation: Edge computing provides faster response times and reduced latency.
+    text: Which of these is a benefit of edge computing in IoT?
+  - answer: B
+    choices:
+      A: To improve industrial processes through the use of sensors, data, and analytics
+      B: To sell more consumer gadgets
+      C: To provide internet access to factory workers
+      D: To create social media for machines
+      E: All of the above
+    explanation: IIoT aims to improve industrial processes using sensors, data, and
+      analytics.
+    text: What is the primary goal of the 'Industrial Internet of Things' (IIoT)?
+  - answer: B
+    choices:
+      A: A temperature sensor
+      B: An accelerometer
+      C: A humidity sensor
+      D: A light sensor
+      E: All of the above
+    explanation: An accelerometer detects sudden movements, useful for fall detection.
+    text: Which sensor would be most useful for a fall detection system for the elderly?
+  - answer: A
+    choices:
+      A: To provide a decentralized and secure way to record transactions and manage
+        interactions between devices
+      B: To increase the processing power of IoT devices
+      C: To design the user interface for IoT apps
+      D: To replace the internet
+      E: All of the above
+    explanation: Blockchain can securely record transactions and manage device interactions.
+    text: What is 'blockchain's' potential role in IoT?
+  - answer: C
+    choices:
+      A: Information about temperature
+      B: Information about humidity
+      C: Information about geographical location
+      D: Information about air pressure
+      E: All of the above
+    explanation: A GPS sensor provides information about geographical location.
+    text: What does a GPS sensor provide?
+  - answer: B
+    choices:
+      A: The physical size of the device
+      B: Default passwords and lack of regular updates
+      C: The color of the device's casing
+      D: The speed of their internet connection
+      E: All of the above
+    explanation: Default passwords and lack of regular updates are major security
+      concerns for IoT devices.
+    text: What is a major concern for the security of IoT devices?
+  - answer: B
+    choices:
+      A: To increase the speed of data transfer
+      B: To make data unreadable to unauthorized users
+      C: To store more data on a device
+      D: To analyze data for patterns
+      E: All of the above
+    explanation: Data encryption is used to make data unreadable to unauthorized users.
+    text: What is 'data encryption' used for in IoT?
+  - answer: B
+    choices:
+      A: Changing your physical appearance
+      B: The process of developing and enhancing your character, behavior, and interpersonal
+        skills
+      C: Learning new programming languages
+      D: Improving technical skills only
+      E: All of the above
+    explanation: Personality development is the process of developing and enhancing
+      your character, behavior, and interpersonal skills.
+    text: What is 'personality development'?
+  - answer: B
+    choices:
+      A: Being selfish
+      B: Understanding your own emotions, strengths, weaknesses, and motivations
+      C: Being aware of others only
+      D: Ignoring your feelings
+      E: All of the above
+    explanation: Self-awareness is understanding your own emotions, strengths, weaknesses,
+      and motivations.
+    text: What is 'self-awareness' in personality development?
+  - answer: B
+    choices:
+      A: External pressure to work
+      B: The internal drive that pushes you to achieve your goals
+      C: Fear of failure
+      D: Money and rewards only
+      E: All of the above
+    explanation: Motivation is the internal drive that pushes you to achieve your
+      goals.
+    text: What is 'motivation' in the context of personal development?
+  - answer: B
+    choices:
+      A: Being strict with others
+      B: The ability to control your impulses and stay focused on long-term goals
+      C: Following rules blindly
+      D: Being rigid and inflexible
+      E: All of the above
+    explanation: Self-discipline is the ability to control your impulses and stay
+      focused on long-term goals.
+    text: What is 'self-discipline'?
+  - answer: B
+    choices:
+      A: Physical exercise only
+      B: Effective communication and building positive relationships
+      C: Dancing and entertainment
+      D: Sports activities
+      E: All of the above
+    explanation: Gestures and body language are important for effective communication
+      and building positive relationships.
+    text: What are 'gestures and body language' important for?
+  - answer: B
+    choices:
+      A: Being arrogant
+      B: Confidence in your own worth and abilities
+      C: Thinking you're better than others
+      D: Ignoring your weaknesses
+      E: All of the above
+    explanation: Self-esteem is confidence in your own worth and abilities.
+    text: What is 'self-esteem'?
+  - answer: B
+    choices:
+      A: Working longer hours
+      B: Organizing and planning how to divide your time between specific activities
+      C: Being busy all the time
+      D: Working faster
+      E: All of the above
+    explanation: Time management is organizing and planning how to divide your time
+      between specific activities.
+    text: What is 'time management'?
+  - answer: B
+    choices:
+      A: Avoiding all stressful situations
+      B: Techniques and strategies to handle and reduce stress effectively
+      C: Ignoring problems
+      D: Working harder under pressure
+      E: All of the above
+    explanation: Stress management is techniques and strategies to handle and reduce
+      stress effectively.
+    text: What is 'stress management'?
+  - answer: B
+    choices:
+      A: Formal dress codes only
+      B: Proper behavior and manners in professional settings
+      C: Following company rules only
+      D: Being polite to superiors only
+      E: All of the above
+    explanation: Professional etiquettes are proper behavior and manners in professional
+      settings.
+    text: What are 'professional etiquettes'?
+  - answer: B
+    choices:
+      A: Speaking loudly
+      B: The ability to convey information clearly and effectively
+      C: Using technical jargon
+      D: Writing emails only
+      E: All of the above
+    explanation: Communication skills are the ability to convey information clearly
+      and effectively.
+    text: What are 'communication skills'?
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Default passwords on devices
+      B: Unencrypted data transmission
+      C: Physical tampering of devices
+      D: Frequent firmware updates
+      E: All of the above
+    explanation: Default passwords, unencrypted data, and physical tampering are major
+      security challenges; frequent updates are a solution.
+    text: Which of the following are valid security challenges in large-scale IoT
+      deployments?
+    topic: Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Remote patient monitoring
+      B: Smart inhalers
+      C: Wearable ECG monitors
+      D: Online banking
+      E: All of the above
+    explanation: A, B, and C are healthcare IoT applications; D is not.
+    text: Which of the following are valid applications of IoT in healthcare?
+    topic: Applications
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: MQTT
+      B: CoAP
+      C: HTTP
+      D: Bluetooth Low Energy (BLE)
+      E: All of the above
+    explanation: MQTT, CoAP, and BLE are suitable for constrained devices; HTTP is
+      heavier.
+    text: Which of the following are valid IoT communication protocols for constrained
+      devices?
+    topic: Protocols
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Remote lighting control
+      B: Automated climate control
+      C: Voice-activated assistants
+      D: Manual water pumps
+      E: All of the above
+    explanation: A, B, and C are smart home features; D is not.
+    text: Which of the following are valid features of a smart home IoT system?
+    topic: Applications
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Reducing latency
+      B: Improving data privacy
+      C: Decreasing cloud storage costs
+      D: Increasing network congestion
+      E: All of the above
+    explanation: Edge computing reduces latency, improves privacy, and can lower cloud
+      costs; it does not increase congestion.
+    text: Which of the following are valid reasons for using edge computing in IoT?
+    topic: Edge Computing
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Remote firmware updates
+      B: Device authentication
+      C: Monitoring device health
+      D: Manual data entry
+      E: All of the above
+    explanation: A, B, and C are device management tasks; D is not.
+    text: Which of the following are valid IoT device management tasks?
+    topic: Device Management
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Predictive maintenance
+      B: Anomaly detection
+      C: Energy optimization
+      D: Manual report writing
+      E: All of the above
+    explanation: A, B, and C are analytics use cases; D is not.
+    text: Which of the following are valid IoT data analytics use cases?
+    topic: Data Analytics
+    type: multiple
+  - answer: E
+    choices:
+      A: Wi-Fi
+      B: LoRaWAN
+      C: Zigbee
+      D: Ethernet
+      E: All of the above
+    explanation: All are valid connectivity options for IoT devices.
+    text: Which of the following are valid IoT device connectivity options?
+    topic: Protocols
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Addressing billions of devices
+      B: Managing device heterogeneity
+      C: Ensuring interoperability
+      D: Reducing device costs
+      E: All of the above
+    explanation: A, B, and C are scalability challenges; D is a business goal.
+    text: Which of the following are valid challenges in IoT scalability?
+    topic: Scalability
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Changing default passwords
+      B: Encrypting data in transit
+      C: Regular software updates
+      D: Disabling all security features
+      E: All of the above
+    explanation: A, B, and C are best practices; D is not.
+    text: Which of the following are valid IoT security best practices?
+    topic: Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Pre-shared keys
+      B: Digital certificates
+      C: Biometric authentication
+      D: Open access
+      E: All of the above
+    explanation: A, B, and C are authentication methods; D is not.
+    text: Which of the following are valid IoT device authentication methods?
+    topic: Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Soil moisture monitoring
+      B: Automated irrigation
+      C: Livestock tracking
+      D: Online shopping
+      E: All of the above
+    explanation: A, B, and C are agricultural IoT use cases; D is not.
+    text: Which of the following are valid IoT use cases in agriculture?
+    topic: Applications
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Battery
+      B: Solar power
+      C: Energy harvesting
+      D: Manual winding
+      E: All of the above
+    explanation: A, B, and C are valid power sources; D is not common in IoT.
+    text: Which of the following are valid IoT device power sources?
+    topic: Devices
+    type: multiple
+  - answer:
+    - A
+    - B
+    choices:
+      A: Unauthorized data access
+      B: Data sharing without consent
+      C: Data anonymization
+      D: Data loss prevention
+      E: All of the above
+    explanation: A and B are privacy concerns; C and D are solutions.
+    text: Which of the following are valid IoT data privacy concerns?
+    topic: Privacy
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Device-to-Device
+      B: Device-to-Cloud
+      C: Device-to-Gateway
+      D: Device-to-User
+      E: All of the above
+    explanation: A, B, and C are standard communication models; D is not.
+    text: Which of the following are valid IoT device communication models?
+    topic: Communication Model
+    type: multiple
+- duration_minutes: 120
+  id: 2
+  name: Comprehensive Practice Set 2 - Full Module M4-R5 (100 marks)
+  questions:
+  - answer: A
+    choices:
+      A: A network of physical objects embedded with sensors and software
+      B: A new type of social media
+      C: A programming language
+      D: A type of computer virus
+      E: All of the above
+    explanation: IoT is a network of physical objects with sensors and software.
+    text: Which of the following best describes the Internet of Things (IoT)?
+  - answer: B
+    choices:
+      A: HTTP
+      B: MQTT
+      C: SMTP
+      D: FTP
+      E: All of the above
+    explanation: MQTT is a lightweight messaging protocol commonly used in IoT.
+    text: Which of the following is a common IoT protocol?
+  - answer: B
+    choices:
+      A: To process data
+      B: To collect data from the environment
+      C: To display data
+      D: To store data
+      E: All of the above
+    explanation: A sensor collects data from the environment.
+    text: What is the main function of a sensor in an IoT device?
+  - answer: C
+    choices:
+      A: Connectivity
+      B: Autonomy
+      C: Manual operation only
+      D: Data collection
+      E: All of the above
+    explanation: Manual operation only is not a characteristic of IoT devices.
+    text: Which of the following is NOT a characteristic of IoT devices?
+  - answer: C
+    choices:
+      A: Perception layer
+      B: Network layer
+      C: Application layer
+      D: Physical layer
+      E: All of the above
+    explanation: The application layer is responsible for data processing in IoT.
+    text: Which layer of the IoT architecture is responsible for data processing?
+  - answer: A
+    choices:
+      A: Machine to Machine
+      B: Mobile to Mobile
+      C: Module to Module
+      D: Monitor to Monitor
+      E: All of the above
+    explanation: M2M stands for Machine to Machine, referring to direct communication
+      between devices.
+    text: What does 'M2M' stand for in IoT?
+  - answer: A
+    choices:
+      A: Smartwatch
+      B: Smart TV
+      C: Smart Refrigerator
+      D: Smart Car
+      E: All of the above
+    explanation: A smartwatch is a wearable IoT device.
+    text: Which of the following is a wearable IoT device?
+  - answer: A
+    choices:
+      A: Bluetooth
+      B: Wi-Fi
+      C: LoRaWAN
+      D: Ethernet
+      E: All of the above
+    explanation: Bluetooth is commonly used for short-range wireless communication
+      in IoT.
+    text: Which technology is used for short-range wireless communication in IoT?
+  - answer: A
+    choices:
+      A: To connect IoT devices to the internet
+      B: To store data
+      C: To process data
+      D: To display data
+      E: All of the above
+    explanation: A gateway connects IoT devices to the internet.
+    text: What is the primary function of a gateway in IoT?
+  - answer: A
+    choices:
+      A: Data collection without user consent
+      B: Device color
+      C: Device size
+      D: Device price
+      E: All of the above
+    explanation: Collecting data without user consent is a major privacy concern in
+      IoT.
+    text: Which of the following is a privacy concern in IoT?
+  - answer: C
+    choices:
+      A: Temperature sensor
+      B: Light sensor
+      C: Actuator
+      D: Moisture sensor
+      E: All of the above
+    explanation: An actuator is not a sensor; it acts on data rather than sensing
+      it.
+    text: Which of the following is NOT a type of sensor?
+  - answer: A
+    choices:
+      A: To take action based on data received
+      B: To collect data
+      C: To process data
+      D: To store data
+      E: All of the above
+    explanation: An actuator takes action based on data, such as turning on a device.
+    text: What is the main function of an actuator in IoT?
+  - answer: A
+    choices:
+      A: Arduino Uno
+      B: Raspberry Pi
+      C: Intel Core i7
+      D: AMD Ryzen
+      E: All of the above
+    explanation: Arduino Uno is a popular microcontroller for IoT projects.
+    text: Which microcontroller is commonly used in IoT projects?
+  - answer: B
+    choices:
+      A: To act as a gateway
+      B: To process and control data from sensors and actuators
+      C: To provide internet connectivity
+      D: To display data
+      E: All of the above
+    explanation: A microcontroller processes and controls data from sensors and actuators.
+    text: What is the role of a microcontroller in IoT?
+  - answer: A
+    choices:
+      A: Smart traffic management
+      B: Smartphone
+      C: Smartwatch
+      D: Smart TV
+      E: All of the above
+    explanation: Smart traffic management is a common smart city IoT application.
+    text: Which of the following is an example of a smart city application of IoT?
+  - answer: A
+    choices:
+      A: A network of hijacked IoT devices used for malicious purposes
+      B: A type of sensor
+      C: A type of actuator
+      D: A type of microcontroller
+      E: All of the above
+    explanation: A botnet is a network of hijacked IoT devices used for malicious
+      purposes.
+    text: What is a 'botnet' in IoT security?
+  - answer: A
+    choices:
+      A: Scalability and massive data storage
+      B: Increased device size
+      C: Reduced connectivity
+      D: Manual data entry
+      E: All of the above
+    explanation: Cloud computing provides scalability and large data storage for IoT.
+    text: Which of the following is a benefit of cloud computing in IoT?
+  - answer: A
+    choices:
+      A: Electronic devices that can be worn as accessories
+      B: Software that can be worn
+      C: Clothing made from smart fabrics
+      D: A type of virtual reality headset
+      E: All of the above
+    explanation: Wearable technology refers to electronic devices worn as accessories.
+    text: What is wearable technology?
+  - answer: A
+    choices:
+      A: To detect and respond to input from the physical environment
+      B: To perform calculations
+      C: To display information
+      D: To take action on the physical world
+      E: All of the above
+    explanation: A sensor detects and responds to input from the environment.
+    text: What is the main function of a sensor in an IoT device?
+  - answer: A
+    choices:
+      A: Using data from sensors to predict when equipment will fail
+      B: Maintaining equipment after it breaks down
+      C: A fixed maintenance schedule
+      D: Cleaning the equipment regularly
+      E: All of the above
+    explanation: Predictive maintenance uses sensor data to predict equipment failure.
+    text: What is predictive maintenance in IoT?
+  - answer: A
+    choices:
+      A: C/C++
+      B: Python
+      C: JavaScript
+      D: HTML
+      E: All of the above
+    explanation: C/C++ is commonly used for Arduino development.
+    text: Which of the following is a programming language commonly used for Arduino
+      development?
+  - answer: A
+    choices:
+      A: To update the device's software and firmware remotely
+      B: To physically replace the device
+      C: To improve the device's radio signal
+      D: To cool down the device
+      E: All of the above
+    explanation: OTA updates allow remote updating of device software and firmware.
+    text: What is the purpose of 'Over-the-Air' (OTA) updates for IoT devices?
+  - answer: A
+    choices:
+      A: The ability of different IoT devices and systems to work together
+      B: The security of an IoT device
+      C: The price of an IoT device
+      D: The physical size of an IoT device
+      E: All of the above
+    explanation: Interoperability means different IoT devices and systems can work
+      together.
+    text: What is interoperability in IoT?
+  - answer: A
+    choices:
+      A: An electrical grid that uses information and communication technology to
+        gather and act on information
+      B: A new type of solar panel
+      C: A more organized way to lay out city streets
+      D: A software for designing grids
+      E: All of the above
+    explanation: A smart grid uses ICT to gather and act on information for efficient
+      electricity management.
+    text: What is a smart grid?
+  - answer: A
+    choices:
+      A: RFID
+      B: GPS
+      C: Bluetooth
+      D: Wi-Fi
+      E: All of the above
+    explanation: RFID uses radio waves to identify and track objects.
+    text: Which technology allows IoT devices to be identified and tracked using radio
+      waves?
+  - answer: A
+    choices:
+      A: IoT involves connecting physical objects, not just computers and servers
+      B: IoT is only for mobile phones
+      C: IoT does not use IP addresses
+      D: The traditional internet is faster
+      E: All of the above
+    explanation: IoT connects physical objects, while the traditional internet connects
+      computers and servers.
+    text: What is a key difference between IoT and the traditional internet?
+  - answer: A
+    choices:
+      A: Because they are often small, battery-powered, and deployed for long periods
+      B: Because high power makes them work faster
+      C: Because it determines the color of the device
+      D: Because it affects the device's Wi-Fi signal strength
+      E: All of the above
+    explanation: Many IoT devices are battery-powered and need to last long periods.
+    text: Why is power consumption a critical factor for many IoT devices?
+  - answer: A
+    choices:
+      A: It allows devices using different protocols to communicate with each other
+        and the internet
+      B: It generates its own electricity
+      C: It connects to the TV to display information
+      D: It is a smart speaker that plays music
+      E: All of the above
+    explanation: A hub or bridge connects devices using different protocols and the
+      internet.
+    text: In a smart home, what does a 'hub' or 'bridge' typically do?
+  - answer: A
+    choices:
+      A: Manual data entry into a spreadsheet
+      B: Connected Cars
+      C: Smart Retail
+      D: Smart Farming
+      E: All of the above
+    explanation: Manual data entry is not an IoT application.
+    text: Which of the following is NOT an application of IoT?
+  - answer: A
+    choices:
+      A: The delay before a transfer of data begins following an instruction
+      B: The amount of data that can be sent
+      C: The physical distance between devices
+      D: The security level of the network
+      E: All of the above
+    explanation: Latency is the delay before data transfer begins after an instruction.
+    text: What is latency in the context of an IoT network?
+  - answer: A
+    choices:
+      A: An electromechanical lock that can be controlled or monitored remotely
+      B: A very strong, traditional lock
+      C: A password manager for your computer
+      D: A type of firewall
+      E: All of the above
+    explanation: A smart lock is an electromechanical lock controllable remotely.
+    text: What is a smart lock?
+  - answer: C
+    choices:
+      A: Faster response times and reduced latency
+      B: Increased reliance on the cloud
+      C: Higher data storage costs
+      D: Simplified network architecture
+      E: All of the above
+    explanation: Edge computing provides faster response times and reduced latency.
+    text: Which of the following is a benefit of edge computing in IoT?
+  - answer: A
+    choices:
+      A: To improve industrial processes through the use of sensors, data, and analytics
+      B: To sell more consumer gadgets
+      C: To provide internet access to factory workers
+      D: To create social media for machines
+      E: All of the above
+    explanation: IIoT aims to improve industrial processes using sensors, data, and
+      analytics.
+    text: What is the primary goal of the Industrial Internet of Things (IIoT)?
+  - answer: A
+    choices:
+      A: An accelerometer
+      B: A temperature sensor
+      C: A humidity sensor
+      D: A light sensor
+      E: All of the above
+    explanation: An accelerometer detects sudden movements, useful for fall detection.
+    text: Which sensor would be most useful for a fall detection system for the elderly?
+  - answer: A
+    choices:
+      A: To provide a decentralized and secure way to record transactions and manage
+        interactions between devices
+      B: To increase the processing power of IoT devices
+      C: To design the user interface for IoT apps
+      D: To replace the internet
+      E: All of the above
+    explanation: Blockchain can securely record transactions and manage device interactions.
+    text: What is blockchain's potential role in IoT?
+  - answer: A
+    choices:
+      A: Information about geographical location
+      B: Information about temperature
+      C: Information about humidity
+      D: Information about air pressure
+      E: All of the above
+    explanation: A GPS sensor provides information about geographical location.
+    text: What does a GPS sensor provide?
+  - answer: A
+    choices:
+      A: To control high voltage devices
+      B: To measure temperature
+      C: To display data
+      D: To store data
+      E: All of the above
+    explanation: A relay module is used to control high voltage devices in IoT.
+    text: What is a relay module used for in IoT?
+  - answer: A
+    choices:
+      A: To measure temperature and humidity
+      B: To measure light intensity
+      C: To measure air quality
+      D: To measure soil moisture
+      E: All of the above
+    explanation: A DHT sensor measures temperature and humidity.
+    text: What is the purpose of a DHT sensor in IoT?
+  - answer: A
+    choices:
+      A: AWS IoT
+      B: Google Docs
+      C: MS Word
+      D: Adobe Photoshop
+      E: All of the above
+    explanation: AWS IoT is a cloud platform for IoT applications.
+    text: Which of the following is a cloud platform for IoT?
+  - answer: A
+    choices:
+      A: To enable wireless communication between devices
+      B: To store data
+      C: To process data
+      D: To display data
+      E: All of the above
+    explanation: A Bluetooth module (HC-05) enables wireless communication between
+      devices.
+    text: What is the function of a Bluetooth module (HC-05) in IoT?
+  - answer: A
+    choices:
+      A: Low bandwidth and lightweight protocol
+      B: High power consumption
+      C: Complex setup
+      D: Limited scalability
+      E: All of the above
+    explanation: MQTT is a lightweight protocol that uses low bandwidth, ideal for
+      IoT.
+    text: What is the main advantage of using MQTT in IoT?
+  - answer: A
+    choices:
+      A: To visualize and monitor IoT data remotely
+      B: To store data locally
+      C: To process data on the device
+      D: To control device power
+      E: All of the above
+    explanation: A cloud dashboard allows remote visualization and monitoring of IoT
+      data.
+    text: What is the purpose of a cloud dashboard in IoT?
+  - answer: A
+    choices:
+      A: Default passwords and lack of regular updates
+      B: Device color
+      C: Device size
+      D: Device price
+      E: All of the above
+    explanation: Default passwords and lack of updates are major IoT security concerns.
+    text: Which of the following is a security concern in IoT?
+  - answer: A
+    choices:
+      A: To make data unreadable to unauthorized users
+      B: To increase the speed of data transfer
+      C: To store more data on a device
+      D: To analyze data for patterns
+      E: All of the above
+    explanation: Data encryption is used to make data unreadable to unauthorized users.
+    text: What is data encryption used for in IoT?
+  - answer: A
+    choices:
+      A: Default passwords and lack of regular updates
+      B: The physical size of the device
+      C: The color of the device's casing
+      D: The speed of their internet connection
+      E: All of the above
+    explanation: Default passwords and lack of regular updates are major security
+      concerns for IoT devices.
+    text: What is a major concern for the security of IoT devices?
+  - answer: A
+    choices:
+      A: The process of developing and enhancing your character, behavior, and interpersonal
+        skills
+      B: Changing your physical appearance
+      C: Learning new programming languages
+      D: Improving technical skills only
+      E: All of the above
+    explanation: Personality development is the process of developing and enhancing
+      your character, behavior, and interpersonal skills.
+    text: What is personality development?
+  - answer: A
+    choices:
+      A: Understanding your own emotions, strengths, weaknesses, and motivations
+      B: Being selfish
+      C: Being aware of others only
+      D: Ignoring your feelings
+      E: All of the above
+    explanation: Self-awareness is understanding your own emotions, strengths, weaknesses,
+      and motivations.
+    text: What is self-awareness in personality development?
+  - answer: A
+    choices:
+      A: The internal drive that pushes you to achieve your goals
+      B: External pressure to work
+      C: Fear of failure
+      D: Money and rewards only
+      E: All of the above
+    explanation: Motivation is the internal drive that pushes you to achieve your
+      goals.
+    text: What is motivation in the context of personal development?
+  - answer: A
+    choices:
+      A: The ability to control your impulses and stay focused on long-term goals
+      B: Being strict with others
+      C: Following rules blindly
+      D: Being rigid and inflexible
+      E: All of the above
+    explanation: Self-discipline is the ability to control your impulses and stay
+      focused on long-term goals.
+    text: What is self-discipline?
+  - answer: A
+    choices:
+      A: Effective communication and building positive relationships
+      B: Physical exercise only
+      C: Dancing and entertainment
+      D: Sports activities
+      E: All of the above
+    explanation: Gestures and body language are important for effective communication
+      and building positive relationships.
+    text: What are gestures and body language important for?
+  - answer: A
+    choices:
+      A: Confidence in your own worth and abilities
+      B: Being arrogant
+      C: Thinking you're better than others
+      D: Ignoring your weaknesses
+      E: All of the above
+    explanation: Self-esteem is confidence in your own worth and abilities.
+    text: What is self-esteem?
+  - answer: A
+    choices:
+      A: Organizing and planning how to divide your time between specific activities
+      B: Working longer hours
+      C: Being busy all the time
+      D: Working faster
+      E: All of the above
+    explanation: Time management is organizing and planning how to divide your time
+      between specific activities.
+    text: What is time management?
+  - answer: A
+    choices:
+      A: Techniques and strategies to handle and reduce stress effectively
+      B: Avoiding all stressful situations
+      C: Ignoring problems
+      D: Working harder under pressure
+      E: All of the above
+    explanation: Stress management is techniques and strategies to handle and reduce
+      stress effectively.
+    text: What is stress management?
+  - answer: A
+    choices:
+      A: Proper behavior and manners in professional settings
+      B: Formal dress codes only
+      C: Following company rules only
+      D: Being polite to superiors only
+      E: All of the above
+    explanation: Professional etiquettes are proper behavior and manners in professional
+      settings.
+    text: What are professional etiquettes?
+  - answer: A
+    choices:
+      A: The ability to convey information clearly and effectively
+      B: Speaking loudly
+      C: Using technical jargon
+      D: Writing emails only
+      E: All of the above
+    explanation: Communication skills are the ability to convey information clearly
+      and effectively.
+    text: What are communication skills?

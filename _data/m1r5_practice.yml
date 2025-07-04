@@ -1,2449 +1,2769 @@
-﻿sets:
-  - id: 1
-    name: "Practice Set 1 - Computer Fundamentals & Operating System (10 marks)"
-    duration_minutes: 30
-    questions:
-      - text: "What does CPU stand for and what is its primary function?"
-        choices:
-          A: "Central Processing Unit - to store data permanently"
-          B: "Central Processing Unit - to execute instructions and process data"
-          C: "Computer Personal Unit - to display graphics"
-          D: "Control Processing Unit - to connect to internet"
-        answer: "B"
-        explanation: "CPU stands for Central Processing Unit and its main function is to execute instructions and process data."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following is an example of system software?"
-        choices:
-          A: "Microsoft Word"
-          B: "Adobe Photoshop"
-          C: "Windows 10"
-          D: "Google Chrome"
-        answer: "C"
-        explanation: "Windows 10 is an operating system, which is a type of system software."
-
-      - text: "What is the main function of RAM (Random Access Memory)?"
-        choices:
-          A: "Long-term storage of data"
-          B: "To execute the computer's boot sequence"
-          C: "Temporary storage for data and programs being actively used"
-          D: "To connect peripherals like keyboards and mice"
-        answer: "C"
-        explanation: "RAM temporarily stores data and programs that are actively being used."
-
-      - text: "Which component is known as the 'brain' of the computer?"
-        choices:
-          A: "RAM"
-          B: "Hard Drive"
-          C: "Motherboard"
-          D: "CPU"
-        answer: "D"
-        explanation: "The CPU is called the brain of the computer because it processes instructions and manages all operations."
-
-      - text: "What is the function of an Operating System?"
-        choices:
-          A: "To manage hardware and software resources"
-          B: "To browse the internet"
-          C: "To create documents"
-          D: "To play media files"
-        answer: "A"
-        explanation: "The operating system manages hardware and software resources and provides a user interface."
-
-      - text: "Which of the following is an input device?"
-        choices:
-          A: "Monitor"
-          B: "Printer"
-          C: "Keyboard"
-          D: "Speakers"
-        answer: "C"
-        explanation: "A keyboard is an input device used to enter data into a computer."
-
-      - text: "What type of software is Microsoft Word?"
-        choices:
-          A: "System Software"
-          B: "Application Software"
-          C: "Utility Software"
-          D: "Firmware"
-        answer: "B"
-        explanation: "Microsoft Word is application software used for word processing tasks."
-
-      - text: "What unit is used to measure the speed of a processor?"
-        choices:
-          A: "Gigabytes (GB)"
-          B: "Megabytes (MB)"
-          C: "Hertz (Hz)"
-          D: "Bytes"
-        answer: "C"
-        explanation: "Processor speed is measured in Hertz (Hz), indicating cycles per second."
-
-      - text: "Which of these is a permanent storage device?"
-        choices:
-          A: "RAM"
-          B: "Cache Memory"
-          C: "SSD (Solid State Drive)"
-          D: "Register"
-        answer: "C"
-        explanation: "An SSD is a permanent storage device that retains data even when powered off."
-
-      - text: "In the context of computer memory, what does ROM stand for?"
-        choices:
-          A: "Read-Only Memory"
-          B: "Random-Order Memory"
-          C: "Read-Once Memory"
-          D: "Rapid-Online Memory"
-        answer: "A"
-        explanation: "ROM stands for Read-Only Memory, which stores permanent instructions for the computer."
-
-      - text: "Which of the following are input devices?"
-        type: "multiple"
-        choices:
-          A: "Keyboard"
-          B: "Monitor"
-          C: "Mouse"
-          D: "Printer"
-        answer: ["A", "C"]
-        explanation: "Keyboard and Mouse are input devices that allow users to enter data and control the computer."
-
-      - text: "Which of the following are system software?"
-        type: "multiple"
-        choices:
-          A: "Windows 10"
-          B: "Microsoft Word"
-          C: "Linux"
-          D: "Adobe Photoshop"
-        answer: ["A", "C"]
-        explanation: "Windows 10 and Linux are operating systems, which are types of system software."
-
-      - text: "Which of the following are permanent storage devices?"
-        type: "multiple"
-        choices:
-          A: "RAM"
-          B: "Hard Drive"
-          C: "SSD"
-          D: "Cache Memory"
-        answer: ["B", "C"]
-        explanation: "Hard Drive and SSD are permanent storage devices that retain data when the computer is turned off."
-
-      - text: "Match the following computer components with their functions."
-        type: "match"
-        choices:
-          - left: "CPU"
-            right: "Processes instructions"
-          - left: "RAM"
-            right: "Temporary data storage"
-          - left: "SSD"
-            right: "Permanent storage"
-          - left: "Monitor"
-            right: "Displays output"
-        answer: ["Processes instructions", "Temporary data storage", "Permanent storage", "Displays output"]
-        explanation: "CPU processes instructions, RAM is for temporary storage, SSD is for permanent storage, and Monitor displays output."
-
-      - text: "What does Moore's Law primarily state?"
-        choices:
-          A: "The speed of computers doubles every year."
-          B: "The cost of hardware increases as performance improves."
-          C: "The number of transistors on a chip doubles approximately every two years."
-          D: "Computer memory doubles in price every 18 months."
-        answer: "C"
-        explanation: "Moore's Law observes that the number of transistors on a microchip doubles about every two years, leading to increased performance and decreased cost per transistor."
-        indicator: "out of syllabus"
-
-
-      - text: "Why has Moore's Law historically led to declining hardware costs?"
-        choices:
-          A: "Because newer hardware is made from cheaper materials."
-          B: "Because increased transistor density reduces cost per unit of computing power."
-          C: "Because manufacturers are subsidized by governments."
-          D: "Because older hardware becomes obsolete."
-        answer: "B"
-        explanation: "As transistor density increases, manufacturers can produce more powerful chips at lower costs per unit of performance, making hardware cheaper overall."
-        indicator: "out of syllabus"
-
-      - text: "Which of the following best describes proprietary software?"
-        choices:
-          A: "Software that is free to use, modify, and distribute"
-          B: "Software whose source code is publicly available"
-          C: "Software that is owned by an individual or company and has restrictions on use and modification"
-          D: "Software that is always open source"
-        answer: "C"
-        explanation: "Proprietary software is owned by an individual or company and usually has restrictions on use, modification, and distribution."
-        topic: "Software Types and Licensing"
-
-      - text: "Which of the following is an example of proprietary software?"
-        choices:
-          A: "Linux"
-          B: "Microsoft Windows"
-          C: "LibreOffice"
-          D: "GIMP"
-        answer: "B"
-        explanation: "Microsoft Windows is proprietary software, while Linux, LibreOffice, and GIMP are open source."
-        topic: "Software Types and Licensing"
-
-      - text: "Which statement is true about open source software?"
-        choices:
-          A: "It cannot be modified by users"
-          B: "It is always paid"
-          C: "Its source code is available for anyone to view, modify, and distribute"
-          D: "It is owned by a single company"
-        answer: "C"
-        explanation: "Open source software allows anyone to view, modify, and distribute its source code."
-        topic: "Software Types and Licensing"
-
-      - text: "Which generation of computers used vacuum tubes?"
-        choices:
-          A: "First Generation"
-          B: "Second Generation"
-          C: "Third Generation"
-          D: "Fourth Generation"
-        answer: "A"
-        explanation: "First generation computers (1940-1956) used vacuum tubes as their main hardware technology."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following is an example of a first generation computer?"
-        choices:
-          A: "IBM 7094"
-          B: "ENIAC"
-          C: "CDC 1604"
-          D: "Honeywell 400"
-        answer: "B"
-        explanation: "ENIAC is an example of a first generation computer."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following were characteristics of first generation computers?"
-        type: "multiple"
-        choices:
-          A: "Used vacuum tubes"
-          B: "Very reliable"
-          C: "Consumed a lot of electricity"
-          D: "Used machine language"
-        answer: ["A", "C", "D"]
-        explanation: "First generation computers used vacuum tubes, consumed a lot of electricity, and used machine language. They were not very reliable."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "What replaced vacuum tubes in second generation computers?"
-        choices:
-          A: "Magnetic tapes"
-          B: "Transistors"
-          C: "Integrated Circuits"
-          D: "Microprocessors"
-        answer: "B"
-        explanation: "Transistors replaced vacuum tubes in second generation computers."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following programming languages were introduced in the second generation of computers?"
-        type: "multiple"
-        choices:
-          A: "Assembly language"
-          B: "FORTRAN"
-          C: "COBOL"
-          D: "Machine language"
-        answer: ["A", "B", "C"]
-        explanation: "Second generation computers introduced assembly language and high-level languages like FORTRAN and COBOL."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following are characteristics of second generation computers?"
-        type: "multiple"
-        choices:
-          A: "Used transistors"
-          B: "Required more maintenance than first generation"
-          C: "Introduced operating system software"
-          D: "Used for scientific and commercial purposes"
-        answer: ["A", "C", "D"]
-        explanation: "Second generation computers used transistors, introduced operating system software, and were used for scientific and commercial purposes. They required less maintenance than first generation."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following is an example of a second generation computer?"
-        choices:
-          A: "UNIVAC"
-          B: "ENIAC"
-          C: "IBM 7094"
-          D: "EDVAC"
-        answer: "C"
-        explanation: "IBM 7094 is an example of a second generation computer."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Match the following features to the correct computer generation."
-        type: "match"
-        choices:
-          - left: "Vacuum tubes"
-            right: "First Generation"
-          - left: "Transistors"
-            right: "Second Generation"
-          - left: "Machine language"
-            right: "First Generation"
-          - left: "High-level languages (FORTRAN, COBOL)"
-            right: "Second Generation"
-        answer: ["First Generation", "Second Generation", "First Generation", "Second Generation"]
-        explanation: "Vacuum tubes and machine language are first generation features; transistors and high-level languages are second generation features."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which generation of computers introduced microcomputers and personal computers?"
-        choices:
-          A: "Third Generation"
-          B: "Fourth Generation"
-          C: "Fifth Generation"
-          D: "Second Generation"
-        answer: "B"
-        explanation: "Fourth generation computers (1972-2010) introduced microcomputers and personal computers."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which technology enabled the integration of thousands of transistors on a single chip in the fourth generation?"
-        choices:
-          A: "Vacuum Tubes"
-          B: "Transistors"
-          C: "LSI/VLSI"
-          D: "Magnetic Core"
-        answer: "C"
-        explanation: "Large Scale Integration (LSI) and Very Large Scale Integration (VLSI) enabled thousands of transistors on a single chip."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following are characteristics of fourth generation computers?"
-        type: "multiple"
-        choices:
-          A: "Used CPUs with thousands of transistors"
-          B: "Development of pointing and handheld devices"
-          C: "Used vacuum tubes"
-          D: "Supported graphical user interface (GUI)"
-        answer: ["A", "B", "D"]
-        explanation: "Fourth generation computers used CPUs with thousands of transistors, developed pointing/handheld devices, and supported GUI. They did not use vacuum tubes."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following is an example of a fourth generation computer?"
-        choices:
-          A: "ENIAC"
-          B: "VAX 9000"
-          C: "IBM 7094"
-          D: "UNIVAC"
-        answer: "B"
-        explanation: "VAX 9000 is an example of a fourth generation computer."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which generation of computers uses Ultra Large Scale Integration (ULSI) chips?"
-        choices:
-          A: "Third Generation"
-          B: "Fourth Generation"
-          C: "Fifth Generation"
-          D: "Second Generation"
-        answer: "C"
-        explanation: "Fifth generation computers use ULSI chips with millions of transistors."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following programming languages are associated with fifth generation computers?"
-        type: "multiple"
-        choices:
-          A: "Java"
-          B: "Python"
-          C: "C#"
-          D: "COBOL"
-        answer: ["A", "B", "C"]
-        explanation: "Java, Python, and C# are high-level languages used in fifth generation computers. COBOL is older."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following are characteristics of fifth generation computers?"
-        type: "multiple"
-        choices:
-          A: "Development of true artificial intelligence"
-          B: "Use of parallel processing"
-          C: "Use of vacuum tubes"
-          D: "User-friendly multimedia interfaces"
-        answer: ["A", "B", "D"]
-        explanation: "Fifth generation computers are known for AI, parallel processing, and user-friendly multimedia interfaces. They do not use vacuum tubes."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following is an example of a fifth generation computer?"
-        choices:
-          A: "ENIAC"
-          B: "PARAM 10000"
-          C: "VAX 9000"
-          D: "PDP 11"
-        answer: "B"
-        explanation: "PARAM 10000 is an example of a fifth generation computer."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - type: "match"
-        text: "Match the following features to the correct computer generation."
-        choices:
-          - left: "LSI/VLSI chips"
-            right: "Fourth Generation"
-          - left: "ULSI chips"
-            right: "Fifth Generation"
-          - left: "Development of AI"
-            right: "Fifth Generation"
-          - left: "Graphical User Interface (GUI)"
-            right: "Fourth Generation"
-        answer: ["Fourth Generation", "Fifth Generation", "Fifth Generation", "Fourth Generation"]
-        explanation: "LSI/VLSI and GUI are fourth generation features; ULSI and AI are fifth generation features."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-  - id: 2
-    name: "Practice Set 2 - Word Processing (20 marks)"
-    duration_minutes: 45
-    questions:
-      - text: "What is the file extension for a typical Word Processor document?"
-        choices:
-          A: ".xlsx"
-          B: ".pptx"
-          C: ".docx"
-          D: ".txt"
-        answer: "C"
-        explanation: "The .docx extension is the standard file format for modern Word documents."
-
-      - text: "Which key combination is commonly used to copy text?"
-        choices:
-          A: "Ctrl + X"
-          B: "Ctrl + V"
-          C: "Ctrl + C"
-          D: "Ctrl + Z"
-        answer: "C"
-        explanation: "Ctrl + C is the standard keyboard shortcut for copying selected text or objects."
-
-      - text: "What is the purpose of the 'Undo' command?"
-        choices:
-          A: "To save the current file"
-          B: "To delete the selected item"
-          C: "To reverse the last action performed"
-          D: "To repeat the last action"
-        answer: "C"
-        explanation: "The Undo command reverses the last action performed, allowing users to correct mistakes."
-
-      - text: "In a word processor, what is a 'header'?"
-        choices:
-          A: "The title of the document"
-          B: "Text that appears at the top of every page"
-          C: "The first paragraph of the document"
-          D: "A type of font style"
-        answer: "B"
-        explanation: "A header is text that appears at the top of every page in a document."
-
-      - text: "What is the purpose of 'Mail Merge' in word processing?"
-        choices:
-          A: "To merge multiple documents into one"
-          B: "To combine a main document with a data source to create personalized documents"
-          C: "To merge different font styles"
-          D: "To combine multiple files"
-        answer: "B"
-        explanation: "Mail Merge combines a main document with a data source to create personalized documents for multiple recipients."
-
-      - text: "Which feature allows you to track changes made to a document?"
-        choices:
-          A: "Spell Check"
-          B: "Track Changes"
-          C: "Auto Save"
-          D: "Word Count"
-        answer: "B"
-        explanation: "Track Changes allows users to see modifications made to a document and who made them."
-
-      - text: "What is the purpose of 'Styles' in word processing?"
-        choices:
-          A: "To change the color of text"
-          B: "To apply consistent formatting to text elements"
-          C: "To add pictures to documents"
-          D: "To create tables"
-        answer: "B"
-        explanation: "Styles apply consistent formatting to text elements, ensuring uniformity throughout a document."
-
-      - text: "Which feature helps create a list of topics with page numbers?"
-        choices:
-          A: "Index"
-          B: "Table of Contents"
-          C: "Bibliography"
-          D: "Footnotes"
-        answer: "B"
-        explanation: "Table of Contents automatically generates a list of topics with their corresponding page numbers."
-
-      - text: "What is the purpose of 'Page Setup' in word processing?"
-        choices:
-          A: "To change the font size"
-          B: "To configure page margins, orientation, and size"
-          C: "To add page numbers"
-          D: "To insert headers and footers"
-        answer: "B"
-        explanation: "Page Setup allows users to configure page margins, orientation, and size for printing."
-
-      - text: "Which feature allows you to create a document template?"
-        choices:
-          A: "Save As"
-          B: "Template"
-          C: "Master Document"
-          D: "Subdocument"
-        answer: "B"
-        explanation: "The Template feature allows users to create reusable document formats with predefined formatting."
-
-      - text: "What is the purpose of 'Comments' in word processing?"
-        choices:
-          A: "To add notes and feedback to documents"
-          B: "To create footnotes"
-          C: "To add page numbers"
-          D: "To insert headers"
-        answer: "A"
-        explanation: "Comments allow users to add notes and feedback to specific parts of a document."
-
-      - text: "Which feature allows you to create and format tables?"
-        choices:
-          A: "Insert Table"
-          B: "Table Tools"
-          C: "Grid Lines"
-          D: "All of the above"
-        answer: "D"
-        explanation: "All of these features work together to create and format tables in word processing."
-
-      - text: "What is the purpose of 'Paragraph Formatting'?"
-        choices:
-          A: "To format individual characters"
-          B: "To control spacing, alignment, and indentation of paragraphs"
-          C: "To add page borders"
-          D: "To create columns"
-        answer: "B"
-        explanation: "Paragraph Formatting controls spacing, alignment, and indentation of entire paragraphs."
-
-      - text: "Which feature allows you to insert page numbers?"
-        choices:
-          A: "Header and Footer"
-          B: "Page Number"
-          C: "Insert Menu"
-          D: "All of the above"
-        answer: "D"
-        explanation: "All of these methods can be used to insert page numbers in a document."
-
-      - text: "What is the purpose of 'Macros' in word processing?"
-        choices:
-          A: "To create large documents"
-          B: "To automate repetitive tasks"
-          C: "To add graphics"
-          D: "To format text"
-        answer: "B"
-        explanation: "Macros automate repetitive tasks by recording and replaying a series of commands."
-
-      - text: "Which feature allows you to find and replace text?"
-        choices:
-          A: "Find and Replace"
-          B: "Search"
-          C: "Locate"
-          D: "All of the above"
-        answer: "A"
-        explanation: "Find and Replace is the specific feature for locating and replacing text in documents."
-
-      - text: "What is the purpose of 'Document Views'?"
-        choices:
-          A: "To change the document's appearance"
-          B: "To display the document in different layouts for different purposes"
-          C: "To add graphics"
-          D: "To format text"
-        answer: "B"
-        explanation: "Document Views display the document in different layouts optimized for various purposes like editing or reading."
-
-      - text: "Which feature allows you to create footnotes and endnotes?"
-        choices:
-          A: "References"
-          B: "Insert"
-          C: "Review"
-          D: "All of the above"
-        answer: "A"
-        explanation: "The References tab contains tools for creating footnotes and endnotes."
-
-      - text: "What is the purpose of 'Document Protection'?"
-        choices:
-          A: "To prevent unauthorized changes to documents"
-          B: "To add passwords"
-          C: "To encrypt files"
-          D: "All of the above"
-        answer: "D"
-        explanation: "Document Protection includes all these security measures to protect document content."
-
-      - text: "Which feature allows you to create and manage document versions?"
-        choices:
-          A: "Version Control"
-          B: "Track Changes"
-          C: "Document History"
-          D: "All of the above"
-        answer: "D"
-        explanation: "All of these features help create and manage different versions of documents."
-
-      - text: "Which of the following are common keyboard shortcuts in word processing?"
-        type: "multiple"
-        choices:
-          A: "Ctrl + C (Copy)"
-          B: "Ctrl + V (Paste)"
-          C: "Ctrl + Z (Undo)"
-          D: "Ctrl + S (Save)"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are standard keyboard shortcuts used in word processing applications."
-
-      - text: "Which of the following are types of document views?"
-        type: "multiple"
-        choices:
-          A: "Print Layout"
-          B: "Web Layout"
-          C: "Outline View"
-          D: "Draft View"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are different document view options available in word processing software."
-
-  - id: 3
-    name: "Practice Set 3 - Spreadsheet (20 marks)"
-    duration_minutes: 45
-    questions:
-      - text: "In a spreadsheet, what is the intersection of a row and a column called?"
-        choices:
-          A: "A box"
-          B: "A grid"
-          C: "A cell"
-          D: "A field"
-        answer: "C"
-        explanation: "A cell is the intersection point of a row and column in a spreadsheet."
-
-      - text: "What is the file extension for a typical spreadsheet document?"
-        choices:
-          A: ".docx"
-          B: ".pptx"
-          C: ".xlsx"
-          D: ".txt"
-        answer: "C"
-        explanation: "The .xlsx extension is the standard file format for modern Excel spreadsheets."
-
-      - text: "In a spreadsheet, what is a formula?"
-        choices:
-          A: "A type of chart"
-          B: "A mathematical expression that performs calculations"
-          C: "A cell format"
-          D: "A data type"
-        answer: "B"
-        explanation: "A formula is a mathematical expression that performs calculations on data in spreadsheet cells."
-
-      - text: "In a spreadsheet, what does the function =SUM(A1:A5) do?"
-        choices:
-          A: "Finds the average of cells A1 to A5"
-          B: "Adds the values in cells A1 to A5"
-          C: "Finds the smallest value in cells A1 to A5"
-          D: "Counts the number of cells from A1 to A5"
-        answer: "B"
-        explanation: "The SUM function adds up all the values in the specified range of cells."
-
-      - text: "Which type of chart is best for showing proportions of a whole?"
-        choices:
-          A: "Line Chart"
-          B: "Bar Chart"
-          C: "Pie Chart"
-          D: "Scatter Plot"
-        answer: "C"
-        explanation: "Pie charts are ideal for showing how parts relate to the whole, displaying proportions clearly."
-
-      - text: "What is the purpose of 'Data Validation' in spreadsheets?"
-        choices:
-          A: "To check for spelling errors"
-          B: "To restrict the type of data that can be entered in a cell"
-          C: "To format numbers"
-          D: "To create charts"
-        answer: "B"
-        explanation: "Data Validation restricts the type of data that can be entered in a cell to ensure data integrity."
-
-      - text: "What does the function =AVERAGE(A1:A5) do?"
-        choices:
-          A: "Finds the average of cells A1 to A5"
-          B: "Adds the values in cells A1 to A5"
-          C: "Finds the smallest value in cells A1 to A5"
-          D: "Counts the number of cells from A1 to A5"
-        answer: "A"
-        explanation: "The AVERAGE function calculates the mean of all values in the specified range."
-
-      - text: "What is a 'Pivot Table' used for?"
-        choices:
-          A: "To create charts"
-          B: "To summarize and analyze large amounts of data"
-          C: "To sort data alphabetically"
-          D: "To format cells"
-        answer: "B"
-        explanation: "Pivot Tables summarize and analyze large amounts of data by grouping and calculating values."
-
-      - text: "Which type of chart is best for showing trends over time?"
-        choices:
-          A: "Line Chart"
-          B: "Bar Chart"
-          C: "Pie Chart"
-          D: "Scatter Plot"
-        answer: "A"
-        explanation: "Line charts are best for showing trends and changes over time periods."
-
-      - text: "What is the purpose of 'Sorting' in spreadsheets?"
-        choices:
-          A: "To change the font size"
-          B: "To arrange data in a specific order"
-          C: "To add borders to cells"
-          D: "To create formulas"
-        answer: "B"
-        explanation: "Sorting arranges data in a specific order, either alphabetically or numerically."
-
-      - text: "What does the function =COUNT(A1:A5) do?"
-        choices:
-          A: "Counts the number of cells with values in A1 to A5"
-          B: "Adds the values in cells A1 to A5"
-          C: "Finds the average of cells A1 to A5"
-          D: "Finds the maximum value in cells A1 to A5"
-        answer: "A"
-        explanation: "The COUNT function counts the number of cells that contain values in the specified range."
-
-      - text: "What is 'Filtering' in spreadsheets?"
-        choices:
-          A: "To change cell colors"
-          B: "To display only data that meets certain criteria"
-          C: "To add borders"
-          D: "To create formulas"
-        answer: "B"
-        explanation: "Filtering displays only data that meets certain criteria, hiding rows that don't match."
-
-      - text: "What does the function =MAX(A1:A5) do?"
-        choices:
-          A: "Finds the maximum value in cells A1 to A5"
-          B: "Adds the values in cells A1 to A5"
-          C: "Finds the average of cells A1 to A5"
-          D: "Counts the number of cells from A1 to A5"
-        answer: "A"
-        explanation: "The MAX function finds the highest value in the specified range of cells."
-
-      - text: "What is 'Conditional Formatting'?"
-        choices:
-          A: "To format cells based on their values"
-          B: "To add borders to cells"
-          C: "To change font styles"
-          D: "To create charts"
-        answer: "A"
-        explanation: "Conditional Formatting automatically formats cells based on their values or conditions."
-
-      - text: "What does the function =MIN(A1:A5) do?"
-        choices:
-          A: "Finds the minimum value in cells A1 to A5"
-          B: "Adds the values in cells A1 to A5"
-          C: "Finds the average of cells A1 to A5"
-          D: "Counts the number of cells from A1 to A5"
-        answer: "A"
-        explanation: "The MIN function finds the lowest value in the specified range of cells."
-
-      - text: "What is 'What-if Analysis'?"
-        choices:
-          A: "To analyze different scenarios by changing input values"
-          B: "To create charts"
-          C: "To sort data"
-          D: "To format cells"
-        answer: "A"
-        explanation: "What-if Analysis allows users to analyze different scenarios by changing input values to see their impact."
-
-      - text: "What does the function =IF(A1>10, 'Yes', 'No') do?"
-        choices:
-          A: "Returns 'Yes' if A1 is greater than 10, otherwise 'No'"
-          B: "Adds 10 to the value in A1"
-          C: "Checks if A1 equals 10"
-          D: "Returns the value in A1"
-        answer: "A"
-        explanation: "The IF function performs conditional logic, returning one value if true and another if false."
-
-      - text: "What is 'Database Functions' in spreadsheets?"
-        choices:
-          A: "Functions that work with database-like data"
-          B: "To create databases"
-          C: "To connect to external databases"
-          D: "To format data"
-        answer: "A"
-        explanation: "Database Functions work with data organized in database-like structures within spreadsheets."
-
-      - text: "What does the function =VLOOKUP(A1, B1:C10, 2, FALSE) do?"
-        choices:
-          A: "Looks up a value in the first column and returns a value from the second column"
-          B: "Adds values in a range"
-          C: "Finds the average of values"
-          D: "Counts values"
-        answer: "A"
-        explanation: "VLOOKUP searches for a value in the first column and returns a corresponding value from another column."
-
-      - text: "What is 'Array Formulas'?"
-        choices:
-          A: "Formulas that work with multiple values at once"
-          B: "To create arrays"
-          C: "To sort data"
-          D: "To format cells"
-        answer: "A"
-        explanation: "Array Formulas perform calculations on multiple values simultaneously rather than individual cells."
-
-      - text: "Which of the following are common spreadsheet functions?"
-        type: "multiple"
-        choices:
-          A: "SUM"
-          B: "AVERAGE"
-          C: "COUNT"
-          D: "MAX"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are fundamental spreadsheet functions used for data analysis and calculations."
-
-      - text: "Which of the following are types of charts in spreadsheets?"
-        type: "multiple"
-        choices:
-          A: "Bar Chart"
-          B: "Line Chart"
-          C: "Pie Chart"
-          D: "Scatter Plot"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are common chart types available in spreadsheet software for data visualization."
-
-      - text: "Which of the following are data analysis tools in spreadsheets?"
-        type: "multiple"
-        choices:
-          A: "Pivot Tables"
-          B: "Data Validation"
-          C: "Conditional Formatting"
-          D: "Filtering"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are data analysis tools that help organize, validate, and visualize spreadsheet data."
-
-  - id: 4
-    name: "Practice Set 4 - Presentation (20 marks)"
-    duration_minutes: 45
-    questions:
-      - text: "What is the file extension for a typical presentation document?"
-        choices:
-          A: ".docx"
-          B: ".xlsx"
-          C: ".pptx"
-          D: ".txt"
-        answer: "C"
-        explanation: "The .pptx extension is the standard file format for modern presentation documents."
-
-      - text: "Which of the following is a feature of presentation software?"
-        choices:
-          A: "Cell formatting"
-          B: "Mail merge"
-          C: "Slide transitions"
-          D: "Database queries"
-        answer: "C"
-        explanation: "Slide transitions are a key feature of presentation software, providing visual effects between slides."
-
-      - text: "What is a 'Master Slide' in presentation software?"
-        choices:
-          A: "The first slide of the presentation"
-          B: "A template that controls the layout and formatting of all slides"
-          C: "The most important slide"
-          D: "A slide with the most animations"
-        answer: "B"
-        explanation: "A Master Slide is a template that controls the layout and formatting for all slides in a presentation."
-
-      - text: "What is the purpose of 'Slide Transitions'?"
-        choices:
-          A: "To change the font style"
-          B: "To create visual effects when moving from one slide to another"
-          C: "To add sound to slides"
-          D: "To create bullet points"
-        answer: "B"
-        explanation: "Slide transitions create visual effects when moving from one slide to another."
-
-      - text: "What is 'Animation' in presentation software?"
-        choices:
-          A: "Moving pictures"
-          B: "Visual effects applied to text or objects on slides"
-          C: "Sound effects"
-          D: "Color changes"
-        answer: "B"
-        explanation: "Animation refers to visual effects applied to text or objects on slides to enhance presentations."
-
-      - text: "What is the purpose of 'Speaker Notes'?"
-        choices:
-          A: "To add comments to slides"
-          B: "To provide additional information for the presenter"
-          C: "To create footnotes"
-          D: "To add captions to images"
-        answer: "B"
-        explanation: "Speaker notes provide additional information for the presenter that is not visible to the audience."
-
-      - text: "What is a 'Template' in presentation software?"
-        choices:
-          A: "A blank slide"
-          B: "A pre-designed layout with formatting and placeholders"
-          C: "A type of font"
-          D: "A color scheme"
-        answer: "B"
-        explanation: "A template is a pre-designed layout with formatting and placeholders for content."
-
-      - text: "What is the purpose of 'Slide Sorter' view?"
-        choices:
-          A: "To view slides in full screen"
-          B: "To see all slides as thumbnails for easy organization"
-          C: "To edit slide content"
-          D: "To add animations"
-        answer: "B"
-        explanation: "Slide Sorter view displays all slides as thumbnails for easy organization and rearrangement."
-
-      - text: "What is 'Multimedia' in presentations?"
-        choices:
-          A: "Multiple slides"
-          B: "Content that includes text, images, audio, and video"
-          C: "Different fonts"
-          D: "Color schemes"
-        answer: "B"
-        explanation: "Multimedia in presentations refers to content that includes text, images, audio, and video."
-
-      - text: "What is the purpose of 'Print Handouts'?"
-        choices:
-          A: "To print the presentation in color"
-          B: "To print multiple slides per page for audience reference"
-          C: "To print speaker notes"
-          D: "To print in landscape orientation"
-        answer: "B"
-        explanation: "Print Handouts allows printing multiple slides per page for audience reference."
-
-      - text: "What is 'Slide Layout'?"
-        choices:
-          A: "The arrangement of elements on a slide"
-          B: "The number of slides"
-          C: "The color scheme"
-          D: "The font style"
-        answer: "A"
-        explanation: "Slide Layout refers to the arrangement of elements such as text and images on a slide."
-
-      - text: "What is the purpose of 'Action Buttons'?"
-        choices:
-          A: "To navigate between slides or perform actions"
-          B: "To add decorative elements"
-          C: "To change colors"
-          D: "To add text"
-        answer: "A"
-        explanation: "Action Buttons are used to navigate between slides or perform specific actions during a presentation."
-
-      - text: "What is 'Slide Show' mode?"
-        choices:
-          A: "A mode for editing slides"
-          B: "A full-screen presentation mode"
-          C: "A printing mode"
-          D: "A design mode"
-        answer: "B"
-        explanation: "Slide Show mode displays the presentation in full screen for the audience."
-
-      - text: "What is the purpose of 'Custom Animation'?"
-        choices:
-          A: "To create unique animations for specific elements"
-          B: "To change slide backgrounds"
-          C: "To add sound effects"
-          D: "To format text"
-        answer: "A"
-        explanation: "Custom Animation allows creation of unique animations for specific elements on a slide."
-
-      - text: "What is 'Slide Master'?"
-        choices:
-          A: "The main slide"
-          B: "A template that controls the design of all slides"
-          C: "The first slide"
-          D: "The last slide"
-        answer: "B"
-        explanation: "Slide Master is a template that controls the design and formatting of all slides."
-
-      - text: "What is the purpose of 'Rehearse Timings'?"
-        choices:
-          A: "To practice the presentation"
-          B: "To set automatic slide transitions based on timing"
-          C: "To record audio"
-          D: "To add animations"
-        answer: "B"
-        explanation: "Rehearse Timings is used to set automatic slide transitions based on the time spent on each slide."
-
-      - text: "What is 'Presenter View'?"
-        choices:
-          A: "A view for the audience"
-          B: "A special view for the presenter with notes and controls"
-          C: "A design view"
-          D: "A printing view"
-        answer: "B"
-        explanation: "Presenter View is a special view for the presenter with notes and controls, not visible to the audience."
-
-      - text: "What is the purpose of 'Slide Background'?"
-        choices:
-          A: "To add decorative elements behind slide content"
-          B: "To change text color"
-          C: "To add animations"
-          D: "To create transitions"
-        answer: "A"
-        explanation: "Slide Background is used to add decorative elements behind the main content of a slide."
-
-      - text: "What is 'SmartArt'?"
-        choices:
-          A: "Intelligent graphics and diagrams"
-          B: "Smart animations"
-          C: "Automatic formatting"
-          D: "Smart transitions"
-        answer: "A"
-        explanation: "SmartArt refers to intelligent graphics and diagrams used to visually represent information."
-
-      - text: "What is the purpose of 'Slide Numbering'?"
-        choices:
-          A: "To automatically number slides"
-          B: "To count slides"
-          C: "To organize slides"
-          D: "To create navigation"
-        answer: "A"
-
-      - text: "Which of the following are types of slide transitions?"
-        type: "multiple"
-        choices:
-          A: "Fade"
-          B: "Slide"
-          C: "Wipe"
-          D: "Dissolve"
-        answer: ["A", "B", "C", "D"]
-
-      - text: "Which of the following are presentation views?"
-        type: "multiple"
-        choices:
-          A: "Normal View"
-          B: "Slide Sorter"
-          C: "Slide Show"
-          D: "Notes View"
-        answer: ["A", "B", "C", "D"]
-
-      - text: "Which of the following are multimedia elements in presentations?"
-        type: "multiple"
-        choices:
-          A: "Images"
-          B: "Audio"
-          C: "Video"
-          D: "Animations"
-        answer: ["A", "B", "C", "D"]
-
-      - text: "Which of the following are valid uses of master slides in presentation software?"
-        type: "multiple"
-        choices:
-          A: "Applying consistent formatting to all slides"
-          B: "Setting default fonts and colors"
-          C: "Adding animations to individual objects"
-          D: "Inserting a company logo on every slide"
-        answer: ["A", "B", "D"]
-        explanation: "Master slides control formatting and repeated elements, not individual object animations."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid multimedia elements in presentations?"
-        type: "multiple"
-        choices:
-          A: "Audio clips"
-          B: "Video files"
-          C: "Animated GIFs"
-          D: "Hyperlinks"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All are valid multimedia or interactive elements in modern presentations."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid uses of slide transitions?"
-        type: "multiple"
-        choices:
-          A: "Creating visual effects between slides"
-          B: "Controlling the flow of a presentation"
-          C: "Changing the font style of text"
-          D: "Emphasizing section changes"
-        answer: ["A", "B", "D"]
-        explanation: "Transitions are for effects and flow, not font changes."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid ways to insert images in a presentation?"
-        type: "multiple"
-        choices:
-          A: "Insert > Picture command"
-          B: "Copy-paste from another application"
-          C: "Drag and drop from file explorer"
-          D: "Typing the image file name in a text box"
-        answer: ["A", "B", "C"]
-        explanation: "Images can be inserted, pasted, or dragged, but not typed in a text box."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid uses of custom animation in presentations?"
-        type: "multiple"
-        choices:
-          A: "Animating text on click"
-          B: "Making objects appear in sequence"
-          C: "Changing slide background color"
-          D: "Emphasizing key points"
-        answer: ["A", "B", "D"]
-        explanation: "Custom animation is for sequencing and emphasis, not background color."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid ways to organize slides in a presentation?"
-        type: "multiple"
-        choices:
-          A: "Slide Sorter view"
-          B: "Dragging slides in the navigation pane"
-          C: "Using the Outline view"
-          D: "Editing the master slide"
-        answer: ["A", "B", "C"]
-        explanation: "Slides are organized in sorter, navigation, and outline views, not via master slide."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid uses of hyperlinks in presentations?"
-        type: "multiple"
-        choices:
-          A: "Linking to another slide"
-          B: "Opening a website"
-          C: "Starting an email message"
-          D: "Changing the slide background"
-        answer: ["A", "B", "C"]
-        explanation: "Hyperlinks can link slides, open sites, or start emails, not change backgrounds."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid ways to print a presentation?"
-        type: "multiple"
-        choices:
-          A: "Print slides as handouts"
-          B: "Print notes pages"
-          C: "Print outline view"
-          D: "Print as a spreadsheet"
-        answer: ["A", "B", "C"]
-        explanation: "Handouts, notes, and outline can be printed; spreadsheet is not a print option."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid uses of the Slide Show mode?"
-        type: "multiple"
-        choices:
-          A: "Presenting to an audience"
-          B: "Testing animations and transitions"
-          C: "Editing slide content"
-          D: "Practicing presentation timing"
-        answer: ["A", "B", "D"]
-        explanation: "Slide Show is for presenting, testing, and practicing, not editing."
-        topic: "Presentation"
-
-      - text: "Which of the following are valid ways to add speaker notes in a presentation?"
-        type: "multiple"
-        choices:
-          A: "Using the Notes pane below each slide"
-          B: "Inserting a text box on the slide"
-          C: "Adding comments in the review tab"
-          D: "Typing in the outline view"
-        answer: ["A", "B"]
-        explanation: "Speaker notes are added in the notes pane or as text boxes, not comments or outline."
-        topic: "Presentation"
-
-  - id: 5
-    name: "Practice Set 5 - Internet and Digital Communication (20 marks)"
-    duration_minutes: 45
-    questions:
-      - text: "What does 'LAN' stand for in computer networking?"
-        choices:
-          A: "Large Area Network"
-          B: "Local Access Node"
-          C: "Landline Associated Network"
-          D: "Local Area Network"
-        answer: "D"
-        explanation: "LAN stands for Local Area Network, which connects devices within a limited geographical area."
-
-      - text: "What does 'HTTP' stand for?"
-        choices:
-          A: "HyperText Transfer Protocol"
-          B: "HyperText Transmission Protocol"
-          C: "High Transfer Text Protocol"
-          D: "Hyper Transfer Text Protocol"
-        answer: "A"
-        explanation: "HTTP stands for HyperText Transfer Protocol, the standard protocol for transferring web pages."
-
-      - text: "What is the purpose of a web browser?"
-        choices:
-          A: "To send emails"
-          B: "To access and display websites on the internet"
-          C: "To create and edit images"
-          D: "To manage computer files"
-        answer: "B"
-        explanation: "A web browser is software used to access and display websites on the internet."
-
-      - text: "What does 'URL' stand for?"
-        choices:
-          A: "Uniform Resource Locator"
-          B: "Universal Record Link"
-          C: "Uniform Record Locator"
-          D: "Universal Resource Link"
-        answer: "A"
-        explanation: "URL stands for Uniform Resource Locator, which is the address of a resource on the internet."
-
-      - text: "Which of the following is an example of an email client?"
-        choices:
-          A: "Google Chrome"
-          B: "Microsoft Outlook"
-          C: "Notepad"
-          D: "Windows Explorer"
-        answer: "B"
-        explanation: "Microsoft Outlook is an email client used to send and receive emails."
-
-      - text: "What does the 'CC' field in an email mean?"
-        choices:
-          A: "Carbon Copy"
-          B: "Creative Commons"
-          C: "Confidential Copy"
-          D: "Client Copy"
-        answer: "A"
-        explanation: "CC stands for Carbon Copy, allowing you to send a copy of the email to additional recipients."
-
-      - text: "What is the function of a 'search engine'?"
-        choices:
-          A: "To send and receive emails"
-          B: "To search the World Wide Web for specified keywords"
-          C: "To create websites"
-          D: "To protect a computer from viruses"
-        answer: "B"
-        explanation: "A search engine searches the World Wide Web for specified keywords and returns relevant results."
-
-      - text: "What does 'DNS' stand for?"
-        choices:
-          A: "Domain Name System"
-          B: "Dynamic Network Service"
-          C: "Digital Naming Standard"
-          D: "Data Network Security"
-        answer: "A"
-        explanation: "DNS stands for Domain Name System, which translates domain names to IP addresses."
-
-      - text: "Which protocol is used for sending email?"
-        choices:
-          A: "FTP"
-          B: "SMTP"
-          C: "HTTP"
-          D: "POP3"
-        answer: "B"
-        explanation: "SMTP (Simple Mail Transfer Protocol) is used for sending emails."
-
-      - text: "What does 'ISP' in internet terminology stand for?"
-        choices:
-          A: "Internet Service Provider"
-          B: "Internet Security Protocol"
-          C: "Internet System Program"
-          D: "Internet Service Program"
-        answer: "A"
-        explanation: "ISP stands for Internet Service Provider, which provides internet access to users."
-
-      - text: "What is 'Social Networking'?"
-        choices:
-          A: "Connecting computers in a network"
-          B: "Online platforms for social interaction and content sharing"
-          C: "Business networking"
-          D: "Internet security"
-        answer: "B"
-        explanation: "Social Networking refers to online platforms for social interaction and content sharing."
-
-      - text: "What is 'E-governance'?"
-        choices:
-          A: "Online shopping"
-          B: "Government services delivered electronically"
-          C: "Email communication"
-          D: "Social media"
-        answer: "B"
-        explanation: "E-governance refers to government services delivered electronically to citizens."
-
-      - text: "What is 'Instant Messaging'?"
-        choices:
-          A: "Email communication"
-          B: "Real-time text communication over the internet"
-          C: "Video calling"
-          D: "Social media posting"
-        answer: "B"
-        explanation: "Instant Messaging is real-time text communication over the internet."
-
-      - text: "What is a 'Blog'?"
-        choices:
-          A: "A type of email"
-          B: "A website with regular posts or articles"
-          C: "A social media platform"
-          D: "A search engine"
-        answer: "B"
-        explanation: "A blog is a website with regular posts or articles, often written by individuals or organizations."
-
-      - text: "What is 'E-commerce'?"
-        choices:
-          A: "Email commerce"
-          B: "Electronic commerce - buying and selling online"
-          C: "Social commerce"
-          D: "Mobile commerce"
-        answer: "B"
-        explanation: "E-commerce refers to electronic commerce - buying and selling goods and services online."
-
-      - text: "What are 'Netiquettes'?"
-        choices:
-          A: "Internet rules"
-          B: "Etiquette guidelines for online communication"
-          C: "Network protocols"
-          D: "Security measures"
-        answer: "B"
-        explanation: "Netiquettes are etiquette guidelines for proper online communication and behavior."
-
-      - text: "What is 'IP Address'?"
-        choices:
-          A: "Internet Protocol address - unique identifier for devices on a network"
-          B: "Internet Password"
-          C: "Internet Provider"
-          D: "Internet Program"
-        answer: "A"
-        explanation: "An IP Address is a unique identifier for devices on a network, allowing them to communicate."
-
-      - text: "What is 'Wi-Fi'?"
-        choices:
-          A: "Wireless Fidelity - wireless networking technology"
-          B: "Wired Internet"
-          C: "Web Interface"
-          D: "Wireless Internet"
-        answer: "A"
-        explanation: "Wi-Fi stands for Wireless Fidelity, a wireless networking technology for internet access."
-
-      - text: "What is 'Cloud Computing'?"
-        choices:
-          A: "Weather forecasting"
-          B: "Computing services delivered over the internet"
-          C: "Local computing"
-          D: "Mobile computing"
-        answer: "B"
-        explanation: "Cloud Computing refers to computing services delivered over the internet rather than locally."
-
-      - text: "What is 'Mobile Apps'?"
-        choices:
-          A: "Mobile applications - software for mobile devices"
-          B: "Mobile accessories"
-          C: "Mobile networks"
-          D: "Mobile websites"
-        answer: "A"
-        explanation: "Mobile Apps are software applications designed specifically for mobile devices."
-
-      - text: "Which of the following are types of computer networks?"
-        type: "multiple"
-        choices:
-          A: "LAN"
-          B: "WAN"
-          C: "MAN"
-          D: "PAN"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are different types of computer networks based on geographical coverage."
-
-      - text: "Which of the following are internet protocols?"
-        type: "multiple"
-        choices:
-          A: "HTTP"
-          B: "HTTPS"
-          C: "FTP"
-          D: "SMTP"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are common internet protocols used for different types of data transfer."
-
-      - text: "Which of the following are social media platforms?"
-        type: "multiple"
-        choices:
-          A: "Facebook"
-          B: "Twitter"
-          C: "Instagram"
-          D: "LinkedIn"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are popular social media platforms for online interaction and content sharing."
-
-      - text: "Which of the following are valid uses of DNS in networking?"
-        type: "multiple"
-        choices:
-          A: "Translating domain names to IP addresses"
-          B: "Providing email services"
-          C: "Load balancing web traffic"
-          D: "Blocking access to certain websites"
-        answer: ["A", "C", "D"]
-        explanation: "DNS translates names, can be used for load balancing and blocking, but not for email services."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid types of internet connections?"
-        type: "multiple"
-        choices:
-          A: "DSL"
-          B: "Fiber optic"
-          C: "Satellite"
-          D: "Bluetooth"
-        answer: ["A", "B", "C"]
-        explanation: "DSL, fiber, and satellite are internet connections; Bluetooth is for short-range device communication."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid uses of email clients?"
-        type: "multiple"
-        choices:
-          A: "Sending and receiving emails"
-          B: "Managing contacts"
-          C: "Scheduling calendar events"
-          D: "Editing videos"
-        answer: ["A", "B", "C"]
-        explanation: "Email clients handle email, contacts, and calendars, not video editing."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid social networking features?"
-        type: "multiple"
-        choices:
-          A: "Posting status updates"
-          B: "Sharing photos and videos"
-          C: "Instant messaging"
-          D: "Compiling code"
-        answer: ["A", "B", "C"]
-        explanation: "Social networks are for posts, sharing, and messaging, not code compilation."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid uses of cloud computing in communication?"
-        type: "multiple"
-        choices:
-          A: "Storing and sharing files online"
-          B: "Collaborative document editing"
-          C: "Hosting video conferences"
-          D: "Printing documents offline"
-        answer: ["A", "B", "C"]
-        explanation: "Cloud computing enables online storage, collaboration, and conferencing, not offline printing."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid internet protocols for secure communication?"
-        type: "multiple"
-        choices:
-          A: "HTTPS"
-          B: "SSL/TLS"
-          C: "FTP"
-          D: "SFTP"
-        answer: ["A", "B", "D"]
-        explanation: "HTTPS, SSL/TLS, and SFTP are secure; FTP is not."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid uses of instant messaging apps?"
-        type: "multiple"
-        choices:
-          A: "Real-time text communication"
-          B: "File sharing"
-          C: "Voice and video calls"
-          D: "Compiling spreadsheets"
-        answer: ["A", "B", "C"]
-        explanation: "IM apps are for text, file sharing, and calls, not spreadsheet compilation."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid netiquette rules for online communication?"
-        type: "multiple"
-        choices:
-          A: "Respecting others' privacy"
-          B: "Avoiding all caps (shouting)"
-          C: "Using clear and polite language"
-          D: "Sharing passwords openly"
-        answer: ["A", "B", "C"]
-        explanation: "Respect, clarity, and privacy are netiquette; sharing passwords is not."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid uses of blogs in digital communication?"
-        type: "multiple"
-        choices:
-          A: "Sharing personal experiences"
-          B: "Publishing tutorials and guides"
-          C: "Collaborative document editing"
-          D: "Announcing product updates"
-        answer: ["A", "B", "D"]
-        explanation: "Blogs are for sharing, publishing, and announcements, not collaborative editing."
-        topic: "Internet and Digital Communication"
-
-      - text: "Which of the following are valid e-governance services?"
-        type: "multiple"
-        choices:
-          A: "Online tax filing"
-          B: "E-voting"
-          C: "Government service portals"
-          D: "Online gaming"
-        answer: ["A", "B", "C"]
-        explanation: "E-governance includes tax, voting, and service portals, not gaming."
-        topic: "Internet and Digital Communication"
-
-      - text: "Who is the founder of Gmail?"
-        choices:
-          A: "Mark Zuckerberg"
-          B: "Paul Buchheit"
-          C: "Jan Koum"
-          D: "Sundar Pichai"
-        answer: "B"
-        explanation: "Paul Buchheit developed Gmail at Google."
-        topic: "Internet and Digital Communication"
-
-      - text: "Who is the founder of WhatsApp?"
-        choices:
-          A: "Brian Acton and Jan Koum"
-          B: "Larry Page and Sergey Brin"
-          C: "Mark Zuckerberg"
-          D: "Jack Dorsey"
-        answer: "A"
-        explanation: "WhatsApp was founded by Brian Acton and Jan Koum."
-        topic: "Internet and Digital Communication"
-
-      - text: "What is Code Red?"
-        choices:
-          A: "A type of computer virus/worm"
-          B: "A programming language"
-          C: "An antivirus software"
-          D: "A social media platform"
-        answer: "A"
-        explanation: "Code Red is a computer worm that attacked Microsoft IIS web servers in 2001."
-        topic: "Cyber Security"
-
-      - text: "When was DigiLocker launched?"
-        choices:
-          A: "2012"
-          B: "2015"
-          C: "2018"
-          D: "2020"
-        answer: "B"
-        explanation: "DigiLocker was launched by the Government of India in 2015."
-        topic: "E-Governance"
-
-      - text: "Telegram was developed by whom?"
-        choices:
-          A: "Mark Zuckerberg"
-          B: "Pavel Durov"
-          C: "Jan Koum"
-          D: "Brian Acton"
-        answer: "B"
-        explanation: "Telegram was developed by Pavel Durov, a Russian entrepreneur."
-        topic: "Internet and Digital Communication"
-
-      - text: "eMitra is related to which field?"
-        choices:
-          A: "E-Governance"
-          B: "E-Commerce"
-          C: "E-Learning"
-          D: "E-Banking"
-        answer: "A"
-        explanation: "eMitra is an e-Governance initiative by the Government of Rajasthan, India."
-        topic: "E-Governance"
-
-      - text: "UMANG App is related to:"
-        choices:
-          A: "FastTrack Mobile Governance"
-          B: "Online Shopping"
-          C: "Social Networking"
-          D: "Digital Payments"
-        answer: "A"
-        explanation: "UMANG (Unified Mobile Application for New-age Governance) is a mobile app for e-governance services."
-        topic: "E-Governance"
-
-      - text: "Twitter is an example of:"
-        choices:
-          A: "Search Engine"
-          B: "Social Networking Site"
-          C: "E-Commerce Platform"
-          D: "Cloud Storage"
-        answer: "B"
-        explanation: "Twitter is a social networking and microblogging platform."
-        topic: "Internet and Digital Communication"
-
-      - text: "Junk e-mail is also called:"
-        choices:
-          A: "Spam"
-          B: "Ham"
-          C: "Scam"
-          D: "Draft"
-        answer: "A"
-        explanation: "Junk e-mail is commonly referred to as spam."
-        topic: "Internet and Digital Communication"
-
-      - text: "Teletypewriter terminal is an example of:"
-        choices:
-          A: "Input device"
-          B: "Output device"
-          C: "Both input and output device"
-          D: "Storage device"
-        answer: "C"
-        explanation: "Teletypewriter terminals can both send (input) and receive (output) text."
-        topic: "Computer Fundamentals"
-
-      - text: "Walkie Talkie operates in:"
-        choices:
-          A: "Microwave frequency"
-          B: "Radio frequency"
-          C: "Infrared frequency"
-          D: "Satellite frequency"
-        answer: "B"
-        explanation: "Walkie Talkies operate in the radio frequency range."
-        topic: "Communication Technology"
-
-      - text: "Telegram was developed by whom?"
-        choices:
-          A: "Mark Zuckerberg"
-          B: "Pavel Durov"
-          C: "Jan Koum"
-          D: "Brian Acton"
-        answer: "B"
-        explanation: "Telegram was developed by Pavel Durov, a Russian entrepreneur."
-        topic: "Internet and Digital Communication"
-
-  - id: 6
-    name: "Practice Set 6 - Digital Finance & Cyber Security (10 marks)"
-    duration_minutes: 30
-    questions:
-      - text: "What is 'UPI' in digital finance?"
-        choices:
-          A: "Universal Payment Interface"
-          B: "Unified Payment Interface"
-          C: "United Payment Integration"
-          D: "Universal Payment Integration"
-        answer: "B"
-        explanation: "UPI stands for Unified Payment Interface, a real-time payment system in India."
-
-      - text: "What is the purpose of 'OTP' in digital transactions?"
-        choices:
-          A: "One Time Password for secure authentication"
-          B: "Online Transaction Protocol"
-          C: "One Time Payment"
-          D: "Online Transfer Process"
-        answer: "A"
-        explanation: "OTP (One Time Password) is used for secure authentication in digital transactions."
-
-      - text: "What is a 'firewall' used for in computer security?"
-        choices:
-          A: "To increase internet speed"
-          B: "To monitor and control incoming and outgoing network traffic"
-          C: "To clean viruses from the computer"
-          D: "To store passwords securely"
-        answer: "B"
-        explanation: "A firewall monitors and controls incoming and outgoing network traffic for security."
-
-      - text: "What is the purpose of 'phishing'?"
-        choices:
-          A: "To secure a computer network"
-          B: "To trick individuals into revealing sensitive information"
-          C: "To improve internet speed"
-          D: "To block unwanted emails"
-        answer: "B"
-        explanation: "Phishing is a cyber attack that tricks individuals into revealing sensitive information."
-
-      - text: "What is 'malware'?"
-        choices:
-          A: "A type of computer hardware"
-          B: "Software designed to disrupt, damage, or gain unauthorized access to a computer system"
-          C: "A network security protocol"
-          D: "A brand of antivirus software"
-        answer: "B"
-        explanation: "Malware is malicious software designed to disrupt, damage, or gain unauthorized access to systems."
-
-      - text: "What is 'Cloud Computing'?"
-        choices:
-          A: "Storing data on your local computer"
-          B: "A type of weather forecasting technology"
-          C: "Delivering computing services over the internet"
-          D: "A new type of laptop"
-        answer: "C"
-        explanation: "Cloud Computing delivers computing services over the internet rather than locally."
-
-      - text: "What is 'Big Data Analytics'?"
-        choices:
-          A: "Analyzing small amounts of data"
-          B: "Processing and analyzing large and complex data sets"
-          C: "Creating data backups"
-          D: "Deleting old data"
-        answer: "B"
-        explanation: "Big Data Analytics involves processing and analyzing large and complex data sets."
-
-      - text: "What is 'Artificial Intelligence'?"
-        choices:
-          A: "A type of computer virus"
-          B: "The simulation of human intelligence in machines"
-          C: "A programming language"
-          D: "A type of hardware"
-        answer: "B"
-        explanation: "Artificial Intelligence is the simulation of human intelligence in machines."
-
-      - text: "What is 'Blockchain' technology?"
-        choices:
-          A: "A type of computer memory"
-          B: "A decentralized digital ledger technology"
-          C: "A programming language"
-          D: "A type of database"
-        answer: "B"
-        explanation: "Blockchain is a decentralized digital ledger technology for secure record-keeping."
-
-      - text: "What is 'Virtual Reality'?"
-        choices:
-          A: "A type of computer virus"
-          B: "A computer-generated simulation of a three-dimensional environment"
-          C: "A type of cloud storage"
-          D: "A new type of laptop"
-        answer: "B"
-        explanation: "Virtual Reality creates computer-generated simulations of three-dimensional environments."
-
-      - text: "Which of the following are types of malware?"
-        type: "multiple"
-        choices:
-          A: "Virus"
-          B: "Worm"
-          C: "Trojan Horse"
-          D: "Spyware"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are different types of malicious software that can harm computer systems."
-
-      - text: "Which of the following are digital payment methods?"
-        type: "multiple"
-        choices:
-          A: "UPI"
-          B: "Credit Card"
-          C: "Digital Wallet"
-          D: "Net Banking"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are modern digital payment methods used for online transactions."
-
-      - text: "Which of the following are cybersecurity measures?"
-        type: "multiple"
-        choices:
-          A: "Firewall"
-          B: "Antivirus"
-          C: "Encryption"
-          D: "Two-Factor Authentication"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are important cybersecurity measures to protect systems and data."
-
-      - text: "Which of the following are valid features of two-factor authentication?"
-        type: "multiple"
-        choices:
-          A: "Requires something you know (password)"
-          B: "Requires something you have (phone or token)"
-          C: "Requires something you are (biometrics)"
-          D: "Requires only a username"
-        answer: ["A", "B", "C"]
-        explanation: "2FA uses knowledge, possession, and biometrics; username alone is not 2FA."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are valid types of digital wallets?"
-        type: "multiple"
-        choices:
-          A: "Mobile wallets (e.g., Paytm, Google Pay)"
-          B: "Cryptocurrency wallets"
-          C: "Physical cash wallets"
-          D: "Web-based wallets"
-        answer: ["A", "B", "D"]
-        explanation: "Mobile, crypto, and web wallets are digital; physical cash is not."
-        topic: "Digital Finance"
-
-      - text: "Which of the following are valid uses of encryption in cybersecurity?"
-        type: "multiple"
-        choices:
-          A: "Protecting data in transit"
-          B: "Securing stored files"
-          C: "Authenticating users"
-          D: "Preventing unauthorized access to data"
-        answer: ["A", "B", "D"]
-        explanation: "Encryption protects data in transit and at rest, and prevents unauthorized access."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are valid types of cyber attacks?"
-        type: "multiple"
-        choices:
-          A: "Phishing"
-          B: "Ransomware"
-          C: "DDoS (Distributed Denial of Service)"
-          D: "Firewall"
-        answer: ["A", "B", "C"]
-        explanation: "Phishing, ransomware, and DDoS are attacks; firewall is a defense."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are valid uses of blockchain technology in finance?"
-        type: "multiple"
-        choices:
-          A: "Cryptocurrency transactions"
-          B: "Smart contracts"
-          C: "Centralized banking"
-          D: "Supply chain tracking"
-        answer: ["A", "B", "D"]
-        explanation: "Blockchain is used for crypto, smart contracts, and supply chain, not centralized banking."
-        topic: "Digital Finance"
-
-      - text: "Which of the following are valid digital payment security practices?"
-        type: "multiple"
-        choices:
-          A: "Using strong passwords"
-          B: "Enabling transaction alerts"
-          C: "Sharing OTPs with friends"
-          D: "Verifying recipient details"
-        answer: ["A", "B", "D"]
-        explanation: "Strong passwords, alerts, and verification are good practices; sharing OTPs is not."
-        topic: "Digital Finance"
-
-      - text: "Which of the following are valid features of UPI (Unified Payments Interface)?"
-        type: "multiple"
-        choices:
-          A: "Instant money transfer"
-          B: "Works 24/7"
-          C: "Requires only a mobile number for all transactions"
-          D: "Supports multiple bank accounts"
-        answer: ["A", "B", "D"]
-        explanation: "UPI is instant, 24/7, and supports multiple accounts; not all transactions use only a mobile number."
-        topic: "Digital Finance"
-
-      - text: "Which of the following are valid types of malware?"
-        type: "multiple"
-        choices:
-          A: "Virus"
-          B: "Worm"
-          C: "Trojan Horse"
-          D: "Firewall"
-        answer: ["A", "B", "C"]
-        explanation: "Virus, worm, and trojan are malware; firewall is not."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are valid uses of biometric authentication?"
-        type: "multiple"
-        choices:
-          A: "Fingerprint scanning"
-          B: "Facial recognition"
-          C: "Password entry"
-          D: "Iris scanning"
-        answer: ["A", "B", "D"]
-        explanation: "Biometrics include fingerprint, face, and iris; password is not biometric."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are valid ways to protect against phishing attacks?"
-        type: "multiple"
-        choices:
-          A: "Checking email sender addresses"
-          B: "Avoiding clicking on suspicious links"
-          C: "Using two-factor authentication"
-          D: "Sharing login credentials via email"
-        answer: ["A", "B", "C"]
-        explanation: "Check senders, avoid suspicious links, and use 2FA; never share credentials."
-        topic: "Cyber Security"
-
-      - text: "Match the following IT gadgets with their primary function."
-        type: "match"
-        choices:
-          - left: "Smartphone"
-            right: "Mobile communication and computing"
-          - left: "Tablet"
-            right: "Portable touch-screen computer"
-          - left: "Smartwatch"
-            right: "Wearable device for notifications and tracking"
-          - left: "VR Headset"
-            right: "Immersive virtual reality experiences"
-        answer: ["Mobile communication and computing", "Portable touch-screen computer", "Wearable device for notifications and tracking", "Immersive virtual reality experiences"]
-        explanation: "Smartphones are for communication, tablets for portable computing, smartwatches for wearable tech, and VR headsets for virtual reality."
-        topic: "Introduction to Computer"
-
-      - text: "Match the following file extensions with their corresponding application type."
-        type: "match"
-        choices:
-          - left: ".docx"
-            right: "Word Processing Document"
-          - left: ".xlsx"
-            right: "Spreadsheet File"
-          - left: ".pptx"
-            right: "Presentation File"
-          - left: ".zip"
-            right: "Compressed Archive"
-        answer: ["Word Processing Document", "Spreadsheet File", "Presentation File", "Compressed Archive"]
-        explanation: ".docx is for Word, .xlsx for Excel (Spreadsheet), .pptx for PowerPoint (Presentation), and .zip for compressed files."
-        topic: "Operating System Basics"
-
-  - id: 7
-    name: "Practice Set 7 - Cyber Crime and Virus (10 marks)"
-    duration_minutes: 30
-    questions:
-      - text: "What is a computer virus?"
-        choices:
-          A: "A hardware malfunction"
-          B: "A computer program designed by hackers for destruction purposes"
-          C: "A software update"
-          D: "A type of firewall"
-        answer: "B"
-        explanation: "A computer virus is a malicious program designed by hackers to cause damage, steal data, or gain unauthorized access to systems."
-        topic: "Cyber Security"
-
-      - text: "Which type of virus locks your system by encrypting data and demands money to decrypt it?"
-        choices:
-          A: "Trojan horse"
-          B: "Worm"
-          C: "Ransomware"
-          D: "Spyware"
-        answer: "C"
-        explanation: "Ransomware encrypts files and demands payment to restore access to the data."
-        topic: "Cyber Security"
-
-      - text: "What is a Trojan horse virus?"
-        choices:
-          A: "A virus that replicates itself without any host"
-          B: "A backdoor virus that allows unauthorized access to a system"
-          C: "A virus that steals data"
-          D: "A virus that sends spam emails"
-        answer: "B"
-        explanation: "A Trojan horse disguises itself as legitimate software but creates a backdoor for unauthorized access."
-        topic: "Cyber Security"
-
-      - text: "Which virus can replicate itself without needing a host?"
-        choices:
-          A: "Malware"
-          B: "Worm"
-          C: "Adware"
-          D: "Botnet"
-        answer: "B"
-        explanation: "A worm is a standalone malware that can replicate itself and spread without needing to attach to a host file."
-        topic: "Cyber Security"
-
-      - text: "What is a Botnet?"
-        choices:
-          A: "A type of spyware"
-          B: "A herd of infected computers controlled remotely to perform malicious activities"
-          C: "A virus that steals passwords"
-          D: "A firewall software"
-        answer: "B"
-        explanation: "A botnet is a network of compromised computers controlled by a single attacker to perform coordinated malicious activities."
-        topic: "Cyber Security"
-
-      - text: "What is the primary purpose of spyware?"
-        choices:
-          A: "To display unwanted ads"
-          B: "To steal information secretly"
-          C: "To encrypt files"
-          D: "To replicate itself"
-        answer: "B"
-        explanation: "Spyware is designed to secretly monitor and collect information about users without their knowledge."
-        topic: "Cyber Security"
-
-      - text: "Which of the following is NOT a precaution against viruses?"
-        choices:
-          A: "Using antivirus software"
-          B: "Using genuine software"
-          C: "Ignoring software updates"
-          D: "Using a firewall"
-        answer: "C"
-        explanation: "Ignoring software updates leaves systems vulnerable to known security flaws that viruses can exploit."
-        topic: "Cyber Security"
-
-      - text: "What does a firewall do?"
-        choices:
-          A: "Detects intrusion attempts"
-          B: "Prevents unauthorized access to a network or system"
-          C: "Encrypts data"
-          D: "Sends spam emails"
-        answer: "B"
-        explanation: "A firewall acts as a barrier between trusted and untrusted networks, preventing unauthorized access."
-        topic: "Cyber Security"
-
-      - text: "What is hacking?"
-        choices:
-          A: "Sending large volumes of emails"
-          B: "Unauthorized access to a computer system"
-          C: "Encrypting data for ransom"
-          D: "Displaying ads on a website"
-        answer: "B"
-        explanation: "Hacking involves gaining unauthorized access to computer systems or networks."
-        topic: "Cyber Security"
-
-      - text: "What is email bombing?"
-        choices:
-          A: "Sending a virus through email"
-          B: "Sending a large volume of emails to overwhelm a mail server"
-          C: "Stealing email passwords"
-          D: "Encrypting email content"
-        answer: "B"
-        explanation: "Email bombing floods a target's email inbox with a large volume of messages to disrupt service."
-        topic: "Cyber Security"
-
-      - text: "What is a logic bomb?"
-        choices:
-          A: "A virus that replicates itself"
-          B: "A malicious code triggered by a specific event or time"
-          C: "A type of firewall"
-          D: "A phishing attack"
-        answer: "B"
-        explanation: "A logic bomb is malicious code that remains dormant until triggered by a specific condition or time."
-        topic: "Cyber Security"
-
-      - text: "What is phishing?"
-        choices:
-          A: "Hacking into a system"
-          B: "Sending fraudulent emails to steal sensitive information"
-          C: "Encrypting files for ransom"
-          D: "Overloading a server with emails"
-        answer: "B"
-        explanation: "Phishing uses deceptive emails to trick users into revealing sensitive information like passwords or credit card details."
-        topic: "Cyber Security"
-
-      - text: "What is session hijacking?"
-        choices:
-          A: "Stealing data from a database"
-          B: "Taking over a valid user session to gain unauthorized access"
-          C: "Sending spam emails"
-          D: "Encrypting user files"
-        answer: "B"
-        explanation: "Session hijacking involves intercepting and taking control of a user's active session to gain unauthorized access."
-        topic: "Cyber Security"
-
-      - text: "What is debit/credit card fraud?"
-        choices:
-          A: "Using stolen card information for unauthorized transactions"
-          B: "Sending spam emails"
-          C: "Encrypting card data"
-          D: "Blocking card transactions"
-        answer: "A"
-        explanation: "Card fraud involves using stolen or compromised card information to make unauthorized purchases or transactions."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are types of computer viruses?"
-        type: "multiple"
-        choices:
-          A: "File infector virus"
-          B: "Boot sector virus"
-          C: "Macro virus"
-          D: "Polymorphic virus"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are different types of computer viruses that infect systems in various ways."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are common cyber attack methods?"
-        type: "multiple"
-        choices:
-          A: "Phishing"
-          B: "DDoS (Distributed Denial of Service)"
-          C: "Man-in-the-middle attack"
-          D: "SQL injection"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these are common cyber attack methods used by hackers to compromise systems."
-        topic: "Cyber Security"
-
-      - text: "Which of the following are effective cybersecurity practices?"
-        type: "multiple"
-        choices:
-          A: "Regular software updates"
-          B: "Strong password policies"
-          C: "Two-factor authentication"
-          D: "Regular data backups"
-        answer: ["A", "B", "C", "D"]
-        explanation: "All of these practices help protect against cyber threats and data loss."
-        topic: "Cyber Security"
-
-      - text: "Match the following cyber threats with their descriptions."
-        type: "match"
-        choices:
-          - left: "Ransomware"
-            right: "Encrypts files and demands payment for decryption"
-          - left: "Spyware"
-            right: "Secretly monitors and collects user information"
-          - left: "Trojan Horse"
-            right: "Disguises itself as legitimate software"
-          - left: "Worm"
-            right: "Self-replicating malware that spreads independently"
-        answer: ["Encrypts files and demands payment for decryption", "Secretly monitors and collects user information", "Disguises itself as legitimate software", "Self-replicating malware that spreads independently"]
-        explanation: "Ransomware encrypts and demands payment, spyware monitors secretly, trojan disguises itself, and worms self-replicate."
-        topic: "Cyber Security"
-
-  - id: 8
-    name: "Practice Set 8 - Future Skills, IoT & AI (10 marks)"
-    duration_minutes: 30
-    questions:
-      - text: "The huge number of devices connected to the Internet of Things have to communicate automatically, not via humans. What is this called?"
-        choices:
-          A: "Bot to Bot (B2B)"
-          B: "Machine to Machine (M2M)"
-          C: "InterCloud"
-          D: "SkyNet"
-        answer: "B"
-        explanation: "Machine to Machine (M2M) communication is the automatic exchange of information between devices without human intervention."
-        topic: "Internet of Things"
-
-      - text: "What was the first recognized IoT device?"
-        choices:
-          A: "Smart Watch"
-          B: "ATM"
-          C: "Radio"
-          D: "Video Game"
-        answer: "B"
-        explanation: "ATM is considered the first recognized IoT device."
-        topic: "Internet of Things"
-
-      - text: "______________ is being used by Internet of Things?"
-        choices:
-          A: "Radio Identification Technology"
-          B: "Satellite"
-          C: "Cable"
-          D: "Broadband"
-        answer: "A"
-        explanation: "Radio Identification Technology (RFID) is widely used in IoT for device identification and tracking."
-        topic: "Internet of Things"
-
-      - text: "Which best describes the MQTT Protocol?"
-        choices:
-          A: "Machine to Machine"
-          B: "Publish/Subscribe"
-          C: "Request/Response"
-          D: "Mesh Networking"
-        answer: "B"
-        explanation: "MQTT is a lightweight messaging protocol based on the publish/subscribe model."
-        topic: "Internet of Things"
-
-      - text: "When was the term IoT first coined?"
-        choices:
-          A: "1998"
-          B: "1999"
-          C: "2000"
-          D: "2001"
-        answer: "B"
-        explanation: "The term IoT was first coined in 1999."
-        topic: "Internet of Things"
-
-      - text: "When did IoT devices surpass people in number?"
-        choices:
-          A: "2005"
-          B: "2007"
-          C: "2006"
-          D: "2008"
-        answer: "A"
-        explanation: "IoT devices surpassed the number of people in 2005."
-        topic: "Internet of Things"
-
-      - text: "Which is NOT a feature of IoT?"
-        choices:
-          A: "Remotely controllable"
-          B: "Programmable"
-          C: "Can turn themselves off if necessary"
-          D: "All are features"
-        answer: "C"
-        explanation: "Not all IoT devices can turn themselves off if necessary."
-        topic: "Internet of Things"
-
-      - text: "How many devices were estimated to be connected to the Internet of Things by 2020?"
-        choices:
-          A: "Approx 2 million"
-          B: "Approx 20 million"
-          C: "Approx 75 million"
-          D: "Approx 100 million"
-        answer: "D"
-        explanation: "By 2020, it was estimated that around 100 million devices were connected to the IoT."
-        topic: "Internet of Things"
-
-      - text: "What risks and challenges should be considered in the Internet of Things?"
-        choices:
-          A: "Privacy and Security"
-          B: "Energy Consumption"
-          C: "Network Congestion"
-          D: "All of the above"
-        answer: "D"
-        explanation: "All of these are important risks and challenges in IoT."
-        topic: "Internet of Things"
-
-      - text: "What is IIoT?"
-        choices:
-          A: "Information Internet of Things"
-          B: "Industrial Internet of Things"
-          C: "Innovative Internet of Things"
-          D: "None of the above"
-        answer: "B"
-        explanation: "IIoT stands for Industrial Internet of Things."
-        topic: "Internet of Things"
-
-      - text: "Another way of referring to IoT devices?"
-        choices:
-          A: "Connected"
-          B: "Smart"
-          C: "Both A & B"
-          D: "Neither"
-        answer: "C"
-        explanation: "IoT devices are often called connected or smart devices."
-        topic: "Internet of Things"
-
-      - text: "What is IoT built on?"
-        choices:
-          A: "Networks of data-gathering sensors"
-          B: "Cloud computing"
-          C: "Both a & b"
-          D: "Neither"
-        answer: "C"
-        explanation: "IoT is built on both sensor networks and cloud computing."
-        topic: "Internet of Things"
-
-      - text: "Who coined the word 'Big Data'?"
-        choices:
-          A: "John Brady"
-          B: "Timothy Philip"
-          C: "Samuel John"
-          D: "John Mashey"
-        answer: "D"
-        explanation: "John Mashey coined the term 'Big Data'."
-        topic: "Big Data"
-
-      - text: "The term 'Big Data' was coined in which year?"
-        choices:
-          A: "1900s"
-          B: "1980s"
-          C: "2000s"
-          D: "1970s"
-        answer: "D"
-        explanation: "The term 'Big Data' was coined in the 1970s."
-        topic: "Big Data"
-
-      - text: "Big Data Analytics has helped healthcare improve by providing?"
-        choices:
-          A: "Money"
-          B: "Predictive analytics"
-          C: "Laboratory"
-          D: "Analytical Chemistry"
-        answer: "B"
-        explanation: "Predictive analytics is a major benefit of Big Data Analytics in healthcare."
-        topic: "Big Data"
-
-      - text: "Big Data has increased the demand for?"
-        choices:
-          A: "Information specialists"
-          B: "Hackers"
-          C: "Innovators"
-          D: "Ethical Scientists"
-        answer: "A"
-        explanation: "Big Data has increased the demand for information specialists."
-        topic: "Big Data"
-
-      - text: "The science of examining raw data with the purpose of drawing conclusions about that information is called?"
-        choices:
-          A: "Data analytics"
-          B: "Descriptive analytics"
-          C: "In-memory analytics"
-          D: "Predictive analytics"
-        answer: "A"
-        explanation: "Data analytics is the science of examining raw data to draw conclusions."
-        topic: "Big Data"
-
-      - text: "Which is the AI nearest base?"
-        choices:
-          A: "Wiring"
-          B: "Drawing"
-          C: "Mathematics"
-          D: "French"
-        answer: "C"
-        explanation: "Mathematics is the foundational base for AI."
-        topic: "Artificial Intelligence"
-
-      - text: "Who invented the term IoT?"
-        choices:
-          A: "Kevin Ashton"
-          B: "Bill Gates"
-          C: "Steve Jobs"
-          D: "None"
-        answer: "A"
-        explanation: "Kevin Ashton invented the term IoT."
-        topic: "Internet of Things"
-
-      - text: "Who invented Big Data Analytics?"
-        choices:
-          A: "Kevin Ashton"
-          B: "Bill Gates"
-          C: "Steve Jobs"
-          D: "John R Mashey"
-        answer: "D"
-        explanation: "John R Mashey invented Big Data Analytics."
-        topic: "Big Data"
-
-      - text: "Who invented cloud computing?"
-        choices:
-          A: "Kevin Ashton"
-          B: "Bill Gates"
-          C: "Steve Jobs"
-          D: "J. C. R. Licklider"
-        answer: "D"
-        explanation: "J. C. R. Licklider invented cloud computing."
-        topic: "Cloud Computing"
-
-      - text: "Where was the first conference of Artificial Intelligence held?"
-        choices:
-          A: "Dartmouth College, US"
-          B: "Emory University"
-          C: "Oxford University"
-          D: "Stanford University"
-        answer: "A"
-        explanation: "The first AI conference was held at Dartmouth College, US."
-        topic: "Artificial Intelligence"
-
-      - text: "Who was the inventor of 3D printing technology?"
-        choices:
-          A: "Chuck Hull"
-          B: "J. C. R. Licklider"
-          C: "Satoshi Nakamoto"
-          D: "Bill Gates"
-        answer: "A"
-        explanation: "Chuck Hull invented 3D printing technology."
-        topic: "Future Technologies"
-
-      - text: "Who launched the FutureSkills portal?"
-        choices:
-          A: "HCL"
-          B: "NIELIT"
-          C: "NASSCOM"
-          D: "Wipro"
-        answer: "C"
-        explanation: "NASSCOM launched the FutureSkills portal."
-        topic: "Future Skills"
-
-      - text: "The first AI programming language is?"
-        choices:
-          A: "BASIC"
-          B: "FORTRAN"
-          C: "IPL"
-          D: "LISP"
-        answer: "D"
-        explanation: "LISP is considered the first AI programming language."
-        topic: "Artificial Intelligence"
-
-  - id: 9
-    name: "Practice Set 9 - IT Tools and Network Basics (10 marks)"
-    duration_minutes: 30
-    questions:
-      - text: "Which component is considered the core of the Linux operating system?"
-        choices:
-          A: "Shell"
-          B: "System Library"
-          C: "Kernel"
-          D: "File System"
-        answer: "C"
-        explanation: "The kernel is the core of the Linux operating system, managing hardware and system resources."
-        topic: "Operating System Basics"
-
-      - text: "What is the primary role of the Shell in Linux?"
-        choices:
-          A: "It manages hardware resources"
-          B: "It is a command interpreter between user and system"
-          C: "It stores system files"
-          D: "It provides network connectivity"
-        answer: "B"
-        explanation: "The shell acts as a command interpreter between the user and the system in Linux."
-        topic: "Operating System Basics"
-
-      - text: "Which of the following is NOT a feature of a word processor?"
-        choices:
-          A: "File management"
-          B: "Font specification"
-          C: "Graphics insertion"
-          D: "Virus scanning"
-        answer: "D"
-        explanation: "Virus scanning is not a feature of word processors."
-        topic: "Word Processing"
-
-      - text: "What does WYSIWYG stand for in word processing?"
-        choices:
-          A: "What You See Is What You Get"
-          B: "When You Save It Will Go"
-          C: "Where You See Is Where You Go"
-          D: "What You Send Is What You Get"
-        answer: "A"
-        explanation: "WYSIWYG stands for 'What You See Is What You Get' in word processing."
-        topic: "Word Processing"
-
-      - text: "Which of the following is NOT a type of Intellectual Property Right?"
-        choices:
-          A: "Patent"
-          B: "Trademark"
-          C: "Copyright"
-          D: "License Agreement"
-        answer: "D"
-        explanation: "License Agreement is not a type of Intellectual Property Right."
-        topic: "Intellectual Property Rights"
-
-      - text: "What is the function of a System Library in Linux?"
-        choices:
-          A: "Manages user input"
-          B: "Provides special functions for application programs to access kernel features"
-          C: "Stores multimedia files"
-          D: "Handles network protocols"
-        answer: "B"
-        explanation: "System libraries provide special functions for application programs to access kernel features."
-        topic: "Operating System Basics"
-
-      - text: "What is the display resolution of a monitor defined as?"
-        choices:
-          A: "Number of colors displayed"
-          B: "Number of pixels in each dimension"
-          C: "Size of the monitor"
-          D: "Refresh rate"
-        answer: "B"
-        explanation: "Display resolution is defined as the number of pixels in each dimension."
-        topic: "Computer Fundamentals"
-
-      - text: "What is the aspect ratio of a standard HD display?"
-        choices:
-          A: "4:3"
-          B: "16:9"
-          C: "21:9"
-          D: "1:1"
-        answer: "B"
-        explanation: "The aspect ratio of a standard HD display is 16:9."
-        topic: "Computer Fundamentals"
-
-      - text: "What does the refresh rate of a display measure?"
-        choices:
-          A: "Number of pixels per inch"
-          B: "Number of times per second the display draws a new image"
-          C: "Amount of data stored"
-          D: "Number of colors displayed"
-        answer: "B"
-        explanation: "Refresh rate measures how many times per second the display draws a new image."
-        topic: "Computer Fundamentals"
-
-      - text: "Which of the following best defines 'Multimedia'?"
-        choices:
-          A: "Only text and images"
-          B: "Only audio and video"
-          C: "Combination of text, graphics, audio, and video"
-          D: "Only graphics"
-        answer: "C"
-        explanation: "Multimedia is the combination of text, graphics, audio, and video."
-        topic: "Multimedia"
-
-      - text: "In which field is multimedia frequently used according to the document?"
-        choices:
-          A: "Agriculture"
-          B: "Education"
-          C: "Mining"
-          D: "Construction"
-        answer: "B"
-        explanation: "Multimedia is frequently used in education."
-        topic: "Multimedia"
-
-      - text: "Which of the following is an example of a trade secret?"
-        choices:
-          A: "A company's logo"
-          B: "A patented invention"
-          C: "Confidential business formula"
-          D: "A published book"
-        answer: "C"
-        explanation: "A confidential business formula is an example of a trade secret."
-        topic: "Intellectual Property Rights"
-
-      - text: "What hardware technology was introduced in third generation computers?"
-        choices:
-          A: "Vacuum Tubes"
-          B: "Transistors"
-          C: "Integrated Circuits (ICs)"
-          D: "Microprocessors"
-        answer: "C"
-        explanation: "Third generation computers used Integrated Circuits (ICs), which increased speed and efficiency."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following are characteristics of third generation computers?"
-        type: "multiple"
-        choices:
-          A: "Used ICs and parallel processing"
-          B: "Smaller in size and faster"
-          C: "High power consumption and generated more heat"
-          D: "Supported high-level languages"
-        answer: ["A", "B", "D"]
-        explanation: "Third generation computers used ICs, were smaller and faster, and supported high-level languages. They had lower power consumption and generated less heat."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which programming languages were commonly used in third generation computers?"
-        type: "multiple"
-        choices:
-          A: "FORTRAN"
-          B: "COBOL"
-          C: "Pascal"
-          D: "BASIC"
-        answer: ["A", "B", "C", "D"]
-        explanation: "High-level languages such as FORTRAN, COBOL, Pascal, and BASIC were used in third generation computers."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - text: "Which of the following is an example of a third generation computer?"
-        choices:
-          A: "ENIAC"
-          B: "IBM System 360"
-          C: "VAX 9000"
-          D: "PARAM 10000"
-        answer: "B"
-        explanation: "IBM System 360 is an example of a third generation computer."
-        topic: "Introduction to Computer, Introduction to Operating System"
-
-      - type: "match"
-        text: "Match the following features to the correct computer generation."
-        choices:
-          - left: "Integrated Circuits (ICs)"
-            right: "Third Generation"
-          - left: "Vacuum Tubes"
-            right: "First Generation"
-          - left: "Transistors"
-            right: "Second Generation"
-          - left: "Microprocessors"
-            right: "Fourth Generation"
-        answer: ["Third Generation", "First Generation", "Second Generation", "Fourth Generation"]
-        explanation: "ICs were used in third generation, vacuum tubes in first, transistors in second, and microprocessors in fourth generation computers."
-        topic: "Introduction to Computer, Introduction to Operating System"
+sets:
+- duration_minutes: 30
+  id: 1
+  name: Practice Set 1 - Computer Fundamentals & Operating System (10 marks)
+  questions:
+  - answer: B
+    choices:
+      A: Central Processing Unit - to store data permanently
+      B: Central Processing Unit - to execute instructions and process data
+      C: Computer Personal Unit - to display graphics
+      D: Control Processing Unit - to connect to internet
+      E: All of the above
+    explanation: CPU stands for Central Processing Unit and its main function is to
+      execute instructions and process data.
+    text: What does CPU stand for and what is its primary function?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer: C
+    choices:
+      A: Microsoft Word
+      B: Adobe Photoshop
+      C: Windows 10
+      D: Google Chrome
+      E: All of the above
+    explanation: Windows 10 is an operating system, which is a type of system software.
+    text: Which of the following is an example of system software?
+  - answer: C
+    choices:
+      A: Long-term storage of data
+      B: To execute the computer's boot sequence
+      C: Temporary storage for data and programs being actively used
+      D: To connect peripherals like keyboards and mice
+      E: All of the above
+    explanation: RAM temporarily stores data and programs that are actively being
+      used.
+    text: What is the main function of RAM (Random Access Memory)?
+  - answer: D
+    choices:
+      A: RAM
+      B: Hard Drive
+      C: Motherboard
+      D: CPU
+      E: All of the above
+    explanation: The CPU is called the brain of the computer because it processes
+      instructions and manages all operations.
+    text: Which component is known as the 'brain' of the computer?
+  - answer: A
+    choices:
+      A: To manage hardware and software resources
+      B: To browse the internet
+      C: To create documents
+      D: To play media files
+      E: All of the above
+    explanation: The operating system manages hardware and software resources and
+      provides a user interface.
+    text: What is the function of an Operating System?
+  - answer: C
+    choices:
+      A: Monitor
+      B: Printer
+      C: Keyboard
+      D: Speakers
+      E: All of the above
+    explanation: A keyboard is an input device used to enter data into a computer.
+    text: Which of the following is an input device?
+  - answer: B
+    choices:
+      A: System Software
+      B: Application Software
+      C: Utility Software
+      D: Firmware
+      E: All of the above
+    explanation: Microsoft Word is application software used for word processing tasks.
+    text: What type of software is Microsoft Word?
+  - answer: C
+    choices:
+      A: Gigabytes (GB)
+      B: Megabytes (MB)
+      C: Hertz (Hz)
+      D: Bytes
+      E: All of the above
+    explanation: Processor speed is measured in Hertz (Hz), indicating cycles per
+      second.
+    text: What unit is used to measure the speed of a processor?
+  - answer: C
+    choices:
+      A: RAM
+      B: Cache Memory
+      C: SSD (Solid State Drive)
+      D: Register
+      E: All of the above
+    explanation: An SSD is a permanent storage device that retains data even when
+      powered off.
+    text: Which of these is a permanent storage device?
+  - answer: A
+    choices:
+      A: Read-Only Memory
+      B: Random-Order Memory
+      C: Read-Once Memory
+      D: Rapid-Online Memory
+      E: All of the above
+    explanation: ROM stands for Read-Only Memory, which stores permanent instructions
+      for the computer.
+    text: In the context of computer memory, what does ROM stand for?
+  - answer:
+    - A
+    - C
+    choices:
+      A: Keyboard
+      B: Monitor
+      C: Mouse
+      D: Printer
+      E: All of the above
+    explanation: Keyboard and Mouse are input devices that allow users to enter data
+      and control the computer.
+    text: Which of the following are input devices?
+    type: multiple
+  - answer:
+    - A
+    - C
+    choices:
+      A: Windows 10
+      B: Microsoft Word
+      C: Linux
+      D: Adobe Photoshop
+      E: All of the above
+    explanation: Windows 10 and Linux are operating systems, which are types of system
+      software.
+    text: Which of the following are system software?
+    type: multiple
+  - answer:
+    - B
+    - C
+    choices:
+      A: RAM
+      B: Hard Drive
+      C: SSD
+      D: Cache Memory
+      E: All of the above
+    explanation: Hard Drive and SSD are permanent storage devices that retain data
+      when the computer is turned off.
+    text: Which of the following are permanent storage devices?
+    type: multiple
+  - answer:
+    - Processes instructions
+    - Temporary data storage
+    - Permanent storage
+    - Displays output
+    choices:
+    - left: CPU
+      right: Processes instructions
+    - left: RAM
+      right: Temporary data storage
+    - left: SSD
+      right: Permanent storage
+    - left: Monitor
+      right: Displays output
+    explanation: CPU processes instructions, RAM is for temporary storage, SSD is
+      for permanent storage, and Monitor displays output.
+    text: Match the following computer components with their functions.
+    type: match
+  - answer: C
+    choices:
+      A: The speed of computers doubles every year.
+      B: The cost of hardware increases as performance improves.
+      C: The number of transistors on a chip doubles approximately every two years.
+      D: Computer memory doubles in price every 18 months.
+      E: All of the above
+    explanation: Moore's Law observes that the number of transistors on a microchip
+      doubles about every two years, leading to increased performance and decreased
+      cost per transistor.
+    indicator: out of syllabus
+    text: What does Moore's Law primarily state?
+  - answer: B
+    choices:
+      A: Because newer hardware is made from cheaper materials.
+      B: Because increased transistor density reduces cost per unit of computing power.
+      C: Because manufacturers are subsidized by governments.
+      D: Because older hardware becomes obsolete.
+      E: All of the above
+    explanation: As transistor density increases, manufacturers can produce more powerful
+      chips at lower costs per unit of performance, making hardware cheaper overall.
+    indicator: out of syllabus
+    text: Why has Moore's Law historically led to declining hardware costs?
+  - answer: C
+    choices:
+      A: Software that is free to use, modify, and distribute
+      B: Software whose source code is publicly available
+      C: Software that is owned by an individual or company and has restrictions on
+        use and modification
+      D: Software that is always open source
+      E: All of the above
+    explanation: Proprietary software is owned by an individual or company and usually
+      has restrictions on use, modification, and distribution.
+    text: Which of the following best describes proprietary software?
+    topic: Software Types and Licensing
+  - answer: B
+    choices:
+      A: Linux
+      B: Microsoft Windows
+      C: LibreOffice
+      D: GIMP
+      E: All of the above
+    explanation: Microsoft Windows is proprietary software, while Linux, LibreOffice,
+      and GIMP are open source.
+    text: Which of the following is an example of proprietary software?
+    topic: Software Types and Licensing
+  - answer: C
+    choices:
+      A: It cannot be modified by users
+      B: It is always paid
+      C: Its source code is available for anyone to view, modify, and distribute
+      D: It is owned by a single company
+      E: All of the above
+    explanation: Open source software allows anyone to view, modify, and distribute
+      its source code.
+    text: Which statement is true about open source software?
+    topic: Software Types and Licensing
+  - answer: A
+    choices:
+      A: First Generation
+      B: Second Generation
+      C: Third Generation
+      D: Fourth Generation
+      E: All of the above
+    explanation: First generation computers (1940-1956) used vacuum tubes as their
+      main hardware technology.
+    text: Which generation of computers used vacuum tubes?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer: B
+    choices:
+      A: IBM 7094
+      B: ENIAC
+      C: CDC 1604
+      D: Honeywell 400
+      E: All of the above
+    explanation: ENIAC is an example of a first generation computer.
+    text: Which of the following is an example of a first generation computer?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - A
+    - C
+    - D
+    choices:
+      A: Used vacuum tubes
+      B: Very reliable
+      C: Consumed a lot of electricity
+      D: Used machine language
+      E: All of the above
+    explanation: First generation computers used vacuum tubes, consumed a lot of electricity,
+      and used machine language. They were not very reliable.
+    text: Which of the following were characteristics of first generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer: B
+    choices:
+      A: Magnetic tapes
+      B: Transistors
+      C: Integrated Circuits
+      D: Microprocessors
+      E: All of the above
+    explanation: Transistors replaced vacuum tubes in second generation computers.
+    text: What replaced vacuum tubes in second generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Assembly language
+      B: FORTRAN
+      C: COBOL
+      D: Machine language
+      E: All of the above
+    explanation: Second generation computers introduced assembly language and high-level
+      languages like FORTRAN and COBOL.
+    text: Which of the following programming languages were introduced in the second
+      generation of computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer:
+    - A
+    - C
+    - D
+    choices:
+      A: Used transistors
+      B: Required more maintenance than first generation
+      C: Introduced operating system software
+      D: Used for scientific and commercial purposes
+      E: All of the above
+    explanation: Second generation computers used transistors, introduced operating
+      system software, and were used for scientific and commercial purposes. They
+      required less maintenance than first generation.
+    text: Which of the following are characteristics of second generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer: C
+    choices:
+      A: UNIVAC
+      B: ENIAC
+      C: IBM 7094
+      D: EDVAC
+      E: All of the above
+    explanation: IBM 7094 is an example of a second generation computer.
+    text: Which of the following is an example of a second generation computer?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - First Generation
+    - Second Generation
+    - First Generation
+    - Second Generation
+    choices:
+    - left: Vacuum tubes
+      right: First Generation
+    - left: Transistors
+      right: Second Generation
+    - left: Machine language
+      right: First Generation
+    - left: High-level languages (FORTRAN, COBOL)
+      right: Second Generation
+    explanation: Vacuum tubes and machine language are first generation features;
+      transistors and high-level languages are second generation features.
+    text: Match the following features to the correct computer generation.
+    topic: Introduction to Computer, Introduction to Operating System
+    type: match
+  - answer: B
+    choices:
+      A: Third Generation
+      B: Fourth Generation
+      C: Fifth Generation
+      D: Second Generation
+      E: All of the above
+    explanation: Fourth generation computers (1972-2010) introduced microcomputers
+      and personal computers.
+    text: Which generation of computers introduced microcomputers and personal computers?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer: C
+    choices:
+      A: Vacuum Tubes
+      B: Transistors
+      C: LSI/VLSI
+      D: Magnetic Core
+      E: All of the above
+    explanation: Large Scale Integration (LSI) and Very Large Scale Integration (VLSI)
+      enabled thousands of transistors on a single chip.
+    text: Which technology enabled the integration of thousands of transistors on
+      a single chip in the fourth generation?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Used CPUs with thousands of transistors
+      B: Development of pointing and handheld devices
+      C: Used vacuum tubes
+      D: Supported graphical user interface (GUI)
+      E: All of the above
+    explanation: Fourth generation computers used CPUs with thousands of transistors,
+      developed pointing/handheld devices, and supported GUI. They did not use vacuum
+      tubes.
+    text: Which of the following are characteristics of fourth generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer: B
+    choices:
+      A: ENIAC
+      B: VAX 9000
+      C: IBM 7094
+      D: UNIVAC
+      E: All of the above
+    explanation: VAX 9000 is an example of a fourth generation computer.
+    text: Which of the following is an example of a fourth generation computer?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer: C
+    choices:
+      A: Third Generation
+      B: Fourth Generation
+      C: Fifth Generation
+      D: Second Generation
+      E: All of the above
+    explanation: Fifth generation computers use ULSI chips with millions of transistors.
+    text: Which generation of computers uses Ultra Large Scale Integration (ULSI)
+      chips?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Java
+      B: Python
+      C: C#
+      D: COBOL
+      E: All of the above
+    explanation: Java, Python, and C# are high-level languages used in fifth generation
+      computers. COBOL is older.
+    text: Which of the following programming languages are associated with fifth generation
+      computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Development of true artificial intelligence
+      B: Use of parallel processing
+      C: Use of vacuum tubes
+      D: User-friendly multimedia interfaces
+      E: All of the above
+    explanation: Fifth generation computers are known for AI, parallel processing,
+      and user-friendly multimedia interfaces. They do not use vacuum tubes.
+    text: Which of the following are characteristics of fifth generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer: B
+    choices:
+      A: ENIAC
+      B: PARAM 10000
+      C: VAX 9000
+      D: PDP 11
+      E: All of the above
+    explanation: PARAM 10000 is an example of a fifth generation computer.
+    text: Which of the following is an example of a fifth generation computer?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - Fourth Generation
+    - Fifth Generation
+    - Fifth Generation
+    - Fourth Generation
+    choices:
+    - left: LSI/VLSI chips
+      right: Fourth Generation
+    - left: ULSI chips
+      right: Fifth Generation
+    - left: Development of AI
+      right: Fifth Generation
+    - left: Graphical User Interface (GUI)
+      right: Fourth Generation
+    explanation: LSI/VLSI and GUI are fourth generation features; ULSI and AI are
+      fifth generation features.
+    text: Match the following features to the correct computer generation.
+    topic: Introduction to Computer, Introduction to Operating System
+    type: match
+- duration_minutes: 45
+  id: 2
+  name: Practice Set 2 - Word Processing (20 marks)
+  questions:
+  - answer: C
+    choices:
+      A: .xlsx
+      B: .pptx
+      C: .docx
+      D: .txt
+      E: All of the above
+    explanation: The .docx extension is the standard file format for modern Word documents.
+    text: What is the file extension for a typical Word Processor document?
+  - answer: C
+    choices:
+      A: Ctrl + X
+      B: Ctrl + V
+      C: Ctrl + C
+      D: Ctrl + Z
+      E: All of the above
+    explanation: Ctrl + C is the standard keyboard shortcut for copying selected text
+      or objects.
+    text: Which key combination is commonly used to copy text?
+  - answer: C
+    choices:
+      A: To save the current file
+      B: To delete the selected item
+      C: To reverse the last action performed
+      D: To repeat the last action
+      E: All of the above
+    explanation: The Undo command reverses the last action performed, allowing users
+      to correct mistakes.
+    text: What is the purpose of the 'Undo' command?
+  - answer: B
+    choices:
+      A: The title of the document
+      B: Text that appears at the top of every page
+      C: The first paragraph of the document
+      D: A type of font style
+      E: All of the above
+    explanation: A header is text that appears at the top of every page in a document.
+    text: In a word processor, what is a 'header'?
+  - answer: B
+    choices:
+      A: To merge multiple documents into one
+      B: To combine a main document with a data source to create personalized documents
+      C: To merge different font styles
+      D: To combine multiple files
+      E: All of the above
+    explanation: Mail Merge combines a main document with a data source to create
+      personalized documents for multiple recipients.
+    text: What is the purpose of 'Mail Merge' in word processing?
+  - answer: B
+    choices:
+      A: Spell Check
+      B: Track Changes
+      C: Auto Save
+      D: Word Count
+      E: All of the above
+    explanation: Track Changes allows users to see modifications made to a document
+      and who made them.
+    text: Which feature allows you to track changes made to a document?
+  - answer: B
+    choices:
+      A: To change the color of text
+      B: To apply consistent formatting to text elements
+      C: To add pictures to documents
+      D: To create tables
+      E: All of the above
+    explanation: Styles apply consistent formatting to text elements, ensuring uniformity
+      throughout a document.
+    text: What is the purpose of 'Styles' in word processing?
+  - answer: B
+    choices:
+      A: Index
+      B: Table of Contents
+      C: Bibliography
+      D: Footnotes
+      E: All of the above
+    explanation: Table of Contents automatically generates a list of topics with their
+      corresponding page numbers.
+    text: Which feature helps create a list of topics with page numbers?
+  - answer: B
+    choices:
+      A: To change the font size
+      B: To configure page margins, orientation, and size
+      C: To add page numbers
+      D: To insert headers and footers
+      E: All of the above
+    explanation: Page Setup allows users to configure page margins, orientation, and
+      size for printing.
+    text: What is the purpose of 'Page Setup' in word processing?
+  - answer: B
+    choices:
+      A: Save As
+      B: Template
+      C: Master Document
+      D: Subdocument
+      E: All of the above
+    explanation: The Template feature allows users to create reusable document formats
+      with predefined formatting.
+    text: Which feature allows you to create a document template?
+  - answer: A
+    choices:
+      A: To add notes and feedback to documents
+      B: To create footnotes
+      C: To add page numbers
+      D: To insert headers
+      E: All of the above
+    explanation: Comments allow users to add notes and feedback to specific parts
+      of a document.
+    text: What is the purpose of 'Comments' in word processing?
+  - answer: D
+    choices:
+      A: Insert Table
+      B: Table Tools
+      C: Grid Lines
+      D: All of the above
+      E: All of the above
+    explanation: All of these features work together to create and format tables in
+      word processing.
+    text: Which feature allows you to create and format tables?
+  - answer: B
+    choices:
+      A: To format individual characters
+      B: To control spacing, alignment, and indentation of paragraphs
+      C: To add page borders
+      D: To create columns
+      E: All of the above
+    explanation: Paragraph Formatting controls spacing, alignment, and indentation
+      of entire paragraphs.
+    text: What is the purpose of 'Paragraph Formatting'?
+  - answer: D
+    choices:
+      A: Header and Footer
+      B: Page Number
+      C: Insert Menu
+      D: All of the above
+      E: All of the above
+    explanation: All of these methods can be used to insert page numbers in a document.
+    text: Which feature allows you to insert page numbers?
+  - answer: B
+    choices:
+      A: To create large documents
+      B: To automate repetitive tasks
+      C: To add graphics
+      D: To format text
+      E: All of the above
+    explanation: Macros automate repetitive tasks by recording and replaying a series
+      of commands.
+    text: What is the purpose of 'Macros' in word processing?
+  - answer: A
+    choices:
+      A: Find and Replace
+      B: Search
+      C: Locate
+      D: All of the above
+      E: All of the above
+    explanation: Find and Replace is the specific feature for locating and replacing
+      text in documents.
+    text: Which feature allows you to find and replace text?
+  - answer: B
+    choices:
+      A: To change the document's appearance
+      B: To display the document in different layouts for different purposes
+      C: To add graphics
+      D: To format text
+      E: All of the above
+    explanation: Document Views display the document in different layouts optimized
+      for various purposes like editing or reading.
+    text: What is the purpose of 'Document Views'?
+  - answer: A
+    choices:
+      A: References
+      B: Insert
+      C: Review
+      D: All of the above
+      E: All of the above
+    explanation: The References tab contains tools for creating footnotes and endnotes.
+    text: Which feature allows you to create footnotes and endnotes?
+  - answer: D
+    choices:
+      A: To prevent unauthorized changes to documents
+      B: To add passwords
+      C: To encrypt files
+      D: All of the above
+      E: All of the above
+    explanation: Document Protection includes all these security measures to protect
+      document content.
+    text: What is the purpose of 'Document Protection'?
+  - answer: D
+    choices:
+      A: Version Control
+      B: Track Changes
+      C: Document History
+      D: All of the above
+      E: All of the above
+    explanation: All of these features help create and manage different versions of
+      documents.
+    text: Which feature allows you to create and manage document versions?
+  - answer: E
+    choices:
+      A: Ctrl + C (Copy)
+      B: Ctrl + V (Paste)
+      C: Ctrl + Z (Undo)
+      D: Ctrl + S (Save)
+      E: All of the above
+    explanation: All of these are standard keyboard shortcuts used in word processing
+      applications.
+    text: Which of the following are common keyboard shortcuts in word processing?
+    type: multiple
+  - answer: E
+    choices:
+      A: Print Layout
+      B: Web Layout
+      C: Outline View
+      D: Draft View
+      E: All of the above
+    explanation: All of these are different document view options available in word
+      processing software.
+    text: Which of the following are types of document views?
+    type: multiple
+- duration_minutes: 45
+  id: 3
+  name: Practice Set 3 - Spreadsheet (20 marks)
+  questions:
+  - answer: C
+    choices:
+      A: A box
+      B: A grid
+      C: A cell
+      D: A field
+      E: All of the above
+    explanation: A cell is the intersection point of a row and column in a spreadsheet.
+    text: In a spreadsheet, what is the intersection of a row and a column called?
+  - answer: C
+    choices:
+      A: .docx
+      B: .pptx
+      C: .xlsx
+      D: .txt
+      E: All of the above
+    explanation: The .xlsx extension is the standard file format for modern Excel
+      spreadsheets.
+    text: What is the file extension for a typical spreadsheet document?
+  - answer: B
+    choices:
+      A: A type of chart
+      B: A mathematical expression that performs calculations
+      C: A cell format
+      D: A data type
+      E: All of the above
+    explanation: A formula is a mathematical expression that performs calculations
+      on data in spreadsheet cells.
+    text: In a spreadsheet, what is a formula?
+  - answer: B
+    choices:
+      A: Finds the average of cells A1 to A5
+      B: Adds the values in cells A1 to A5
+      C: Finds the smallest value in cells A1 to A5
+      D: Counts the number of cells from A1 to A5
+      E: All of the above
+    explanation: The SUM function adds up all the values in the specified range of
+      cells.
+    text: In a spreadsheet, what does the function =SUM(A1:A5) do?
+  - answer: C
+    choices:
+      A: Line Chart
+      B: Bar Chart
+      C: Pie Chart
+      D: Scatter Plot
+      E: All of the above
+    explanation: Pie charts are ideal for showing how parts relate to the whole, displaying
+      proportions clearly.
+    text: Which type of chart is best for showing proportions of a whole?
+  - answer: B
+    choices:
+      A: To check for spelling errors
+      B: To restrict the type of data that can be entered in a cell
+      C: To format numbers
+      D: To create charts
+      E: All of the above
+    explanation: Data Validation restricts the type of data that can be entered in
+      a cell to ensure data integrity.
+    text: What is the purpose of 'Data Validation' in spreadsheets?
+  - answer: A
+    choices:
+      A: Finds the average of cells A1 to A5
+      B: Adds the values in cells A1 to A5
+      C: Finds the smallest value in cells A1 to A5
+      D: Counts the number of cells from A1 to A5
+      E: All of the above
+    explanation: The AVERAGE function calculates the mean of all values in the specified
+      range.
+    text: What does the function =AVERAGE(A1:A5) do?
+  - answer: B
+    choices:
+      A: To create charts
+      B: To summarize and analyze large amounts of data
+      C: To sort data alphabetically
+      D: To format cells
+      E: All of the above
+    explanation: Pivot Tables summarize and analyze large amounts of data by grouping
+      and calculating values.
+    text: What is a 'Pivot Table' used for?
+  - answer: A
+    choices:
+      A: Line Chart
+      B: Bar Chart
+      C: Pie Chart
+      D: Scatter Plot
+      E: All of the above
+    explanation: Line charts are best for showing trends and changes over time periods.
+    text: Which type of chart is best for showing trends over time?
+  - answer: B
+    choices:
+      A: To change the font size
+      B: To arrange data in a specific order
+      C: To add borders to cells
+      D: To create formulas
+      E: All of the above
+    explanation: Sorting arranges data in a specific order, either alphabetically
+      or numerically.
+    text: What is the purpose of 'Sorting' in spreadsheets?
+  - answer: A
+    choices:
+      A: Counts the number of cells with values in A1 to A5
+      B: Adds the values in cells A1 to A5
+      C: Finds the average of cells A1 to A5
+      D: Finds the maximum value in cells A1 to A5
+      E: All of the above
+    explanation: The COUNT function counts the number of cells that contain values
+      in the specified range.
+    text: What does the function =COUNT(A1:A5) do?
+  - answer: B
+    choices:
+      A: To change cell colors
+      B: To display only data that meets certain criteria
+      C: To add borders
+      D: To create formulas
+      E: All of the above
+    explanation: Filtering displays only data that meets certain criteria, hiding
+      rows that don't match.
+    text: What is 'Filtering' in spreadsheets?
+  - answer: A
+    choices:
+      A: Finds the maximum value in cells A1 to A5
+      B: Adds the values in cells A1 to A5
+      C: Finds the average of cells A1 to A5
+      D: Counts the number of cells from A1 to A5
+      E: All of the above
+    explanation: The MAX function finds the highest value in the specified range of
+      cells.
+    text: What does the function =MAX(A1:A5) do?
+  - answer: A
+    choices:
+      A: To format cells based on their values
+      B: To add borders to cells
+      C: To change font styles
+      D: To create charts
+      E: All of the above
+    explanation: Conditional Formatting automatically formats cells based on their
+      values or conditions.
+    text: What is 'Conditional Formatting'?
+  - answer: A
+    choices:
+      A: Finds the minimum value in cells A1 to A5
+      B: Adds the values in cells A1 to A5
+      C: Finds the average of cells A1 to A5
+      D: Counts the number of cells from A1 to A5
+      E: All of the above
+    explanation: The MIN function finds the lowest value in the specified range of
+      cells.
+    text: What does the function =MIN(A1:A5) do?
+  - answer: A
+    choices:
+      A: To analyze different scenarios by changing input values
+      B: To create charts
+      C: To sort data
+      D: To format cells
+      E: All of the above
+    explanation: What-if Analysis allows users to analyze different scenarios by changing
+      input values to see their impact.
+    text: What is 'What-if Analysis'?
+  - answer: A
+    choices:
+      A: Returns 'Yes' if A1 is greater than 10, otherwise 'No'
+      B: Adds 10 to the value in A1
+      C: Checks if A1 equals 10
+      D: Returns the value in A1
+      E: All of the above
+    explanation: The IF function performs conditional logic, returning one value if
+      true and another if false.
+    text: What does the function =IF(A1>10, 'Yes', 'No') do?
+  - answer: A
+    choices:
+      A: Functions that work with database-like data
+      B: To create databases
+      C: To connect to external databases
+      D: To format data
+      E: All of the above
+    explanation: Database Functions work with data organized in database-like structures
+      within spreadsheets.
+    text: What is 'Database Functions' in spreadsheets?
+  - answer: A
+    choices:
+      A: Looks up a value in the first column and returns a value from the second
+        column
+      B: Adds values in a range
+      C: Finds the average of values
+      D: Counts values
+      E: All of the above
+    explanation: VLOOKUP searches for a value in the first column and returns a corresponding
+      value from another column.
+    text: What does the function =VLOOKUP(A1, B1:C10, 2, FALSE) do?
+  - answer: A
+    choices:
+      A: Formulas that work with multiple values at once
+      B: To create arrays
+      C: To sort data
+      D: To format cells
+      E: All of the above
+    explanation: Array Formulas perform calculations on multiple values simultaneously
+      rather than individual cells.
+    text: What is 'Array Formulas'?
+  - answer: E
+    choices:
+      A: SUM
+      B: AVERAGE
+      C: COUNT
+      D: MAX
+      E: All of the above
+    explanation: All of these are fundamental spreadsheet functions used for data
+      analysis and calculations.
+    text: Which of the following are common spreadsheet functions?
+    type: multiple
+  - answer: E
+    choices:
+      A: Bar Chart
+      B: Line Chart
+      C: Pie Chart
+      D: Scatter Plot
+      E: All of the above
+    explanation: All of these are common chart types available in spreadsheet software
+      for data visualization.
+    text: Which of the following are types of charts in spreadsheets?
+    type: multiple
+  - answer: E
+    choices:
+      A: Pivot Tables
+      B: Data Validation
+      C: Conditional Formatting
+      D: Filtering
+      E: All of the above
+    explanation: All of these are data analysis tools that help organize, validate,
+      and visualize spreadsheet data.
+    text: Which of the following are data analysis tools in spreadsheets?
+    type: multiple
+- duration_minutes: 45
+  id: 4
+  name: Practice Set 4 - Presentation (20 marks)
+  questions:
+  - answer: C
+    choices:
+      A: .docx
+      B: .xlsx
+      C: .pptx
+      D: .txt
+      E: All of the above
+    explanation: The .pptx extension is the standard file format for modern presentation
+      documents.
+    text: What is the file extension for a typical presentation document?
+  - answer: C
+    choices:
+      A: Cell formatting
+      B: Mail merge
+      C: Slide transitions
+      D: Database queries
+      E: All of the above
+    explanation: Slide transitions are a key feature of presentation software, providing
+      visual effects between slides.
+    text: Which of the following is a feature of presentation software?
+  - answer: B
+    choices:
+      A: The first slide of the presentation
+      B: A template that controls the layout and formatting of all slides
+      C: The most important slide
+      D: A slide with the most animations
+      E: All of the above
+    explanation: A Master Slide is a template that controls the layout and formatting
+      for all slides in a presentation.
+    text: What is a 'Master Slide' in presentation software?
+  - answer: B
+    choices:
+      A: To change the font style
+      B: To create visual effects when moving from one slide to another
+      C: To add sound to slides
+      D: To create bullet points
+      E: All of the above
+    explanation: Slide transitions create visual effects when moving from one slide
+      to another.
+    text: What is the purpose of 'Slide Transitions'?
+  - answer: B
+    choices:
+      A: Moving pictures
+      B: Visual effects applied to text or objects on slides
+      C: Sound effects
+      D: Color changes
+      E: All of the above
+    explanation: Animation refers to visual effects applied to text or objects on
+      slides to enhance presentations.
+    text: What is 'Animation' in presentation software?
+  - answer: B
+    choices:
+      A: To add comments to slides
+      B: To provide additional information for the presenter
+      C: To create footnotes
+      D: To add captions to images
+      E: All of the above
+    explanation: Speaker notes provide additional information for the presenter that
+      is not visible to the audience.
+    text: What is the purpose of 'Speaker Notes'?
+  - answer: B
+    choices:
+      A: A blank slide
+      B: A pre-designed layout with formatting and placeholders
+      C: A type of font
+      D: A color scheme
+      E: All of the above
+    explanation: A template is a pre-designed layout with formatting and placeholders
+      for content.
+    text: What is a 'Template' in presentation software?
+  - answer: B
+    choices:
+      A: To view slides in full screen
+      B: To see all slides as thumbnails for easy organization
+      C: To edit slide content
+      D: To add animations
+      E: All of the above
+    explanation: Slide Sorter view displays all slides as thumbnails for easy organization
+      and rearrangement.
+    text: What is the purpose of 'Slide Sorter' view?
+  - answer: B
+    choices:
+      A: Multiple slides
+      B: Content that includes text, images, audio, and video
+      C: Different fonts
+      D: Color schemes
+      E: All of the above
+    explanation: Multimedia in presentations refers to content that includes text,
+      images, audio, and video.
+    text: What is 'Multimedia' in presentations?
+  - answer: B
+    choices:
+      A: To print the presentation in color
+      B: To print multiple slides per page for audience reference
+      C: To print speaker notes
+      D: To print in landscape orientation
+      E: All of the above
+    explanation: Print Handouts allows printing multiple slides per page for audience
+      reference.
+    text: What is the purpose of 'Print Handouts'?
+  - answer: A
+    choices:
+      A: The arrangement of elements on a slide
+      B: The number of slides
+      C: The color scheme
+      D: The font style
+      E: All of the above
+    explanation: Slide Layout refers to the arrangement of elements such as text and
+      images on a slide.
+    text: What is 'Slide Layout'?
+  - answer: A
+    choices:
+      A: To navigate between slides or perform actions
+      B: To add decorative elements
+      C: To change colors
+      D: To add text
+      E: All of the above
+    explanation: Action Buttons are used to navigate between slides or perform specific
+      actions during a presentation.
+    text: What is the purpose of 'Action Buttons'?
+  - answer: B
+    choices:
+      A: A mode for editing slides
+      B: A full-screen presentation mode
+      C: A printing mode
+      D: A design mode
+      E: All of the above
+    explanation: Slide Show mode displays the presentation in full screen for the
+      audience.
+    text: What is 'Slide Show' mode?
+  - answer: A
+    choices:
+      A: To create unique animations for specific elements
+      B: To change slide backgrounds
+      C: To add sound effects
+      D: To format text
+      E: All of the above
+    explanation: Custom Animation allows creation of unique animations for specific
+      elements on a slide.
+    text: What is the purpose of 'Custom Animation'?
+  - answer: B
+    choices:
+      A: The main slide
+      B: A template that controls the design of all slides
+      C: The first slide
+      D: The last slide
+      E: All of the above
+    explanation: Slide Master is a template that controls the design and formatting
+      of all slides.
+    text: What is 'Slide Master'?
+  - answer: B
+    choices:
+      A: To practice the presentation
+      B: To set automatic slide transitions based on timing
+      C: To record audio
+      D: To add animations
+      E: All of the above
+    explanation: Rehearse Timings is used to set automatic slide transitions based
+      on the time spent on each slide.
+    text: What is the purpose of 'Rehearse Timings'?
+  - answer: B
+    choices:
+      A: A view for the audience
+      B: A special view for the presenter with notes and controls
+      C: A design view
+      D: A printing view
+      E: All of the above
+    explanation: Presenter View is a special view for the presenter with notes and
+      controls, not visible to the audience.
+    text: What is 'Presenter View'?
+  - answer: A
+    choices:
+      A: To add decorative elements behind slide content
+      B: To change text color
+      C: To add animations
+      D: To create transitions
+      E: All of the above
+    explanation: Slide Background is used to add decorative elements behind the main
+      content of a slide.
+    text: What is the purpose of 'Slide Background'?
+  - answer: A
+    choices:
+      A: Intelligent graphics and diagrams
+      B: Smart animations
+      C: Automatic formatting
+      D: Smart transitions
+      E: All of the above
+    explanation: SmartArt refers to intelligent graphics and diagrams used to visually
+      represent information.
+    text: What is 'SmartArt'?
+  - answer: A
+    choices:
+      A: To automatically number slides
+      B: To count slides
+      C: To organize slides
+      D: To create navigation
+      E: All of the above
+    text: What is the purpose of 'Slide Numbering'?
+  - answer: E
+    choices:
+      A: Fade
+      B: Slide
+      C: Wipe
+      D: Dissolve
+      E: All of the above
+    text: Which of the following are types of slide transitions?
+    type: multiple
+  - answer: E
+    choices:
+      A: Normal View
+      B: Slide Sorter
+      C: Slide Show
+      D: Notes View
+      E: All of the above
+    text: Which of the following are presentation views?
+    type: multiple
+  - answer: E
+    choices:
+      A: Images
+      B: Audio
+      C: Video
+      D: Animations
+      E: All of the above
+    text: Which of the following are multimedia elements in presentations?
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Applying consistent formatting to all slides
+      B: Setting default fonts and colors
+      C: Adding animations to individual objects
+      D: Inserting a company logo on every slide
+      E: All of the above
+    explanation: Master slides control formatting and repeated elements, not individual
+      object animations.
+    text: Which of the following are valid uses of master slides in presentation software?
+    topic: Presentation
+    type: multiple
+  - answer: E
+    choices:
+      A: Audio clips
+      B: Video files
+      C: Animated GIFs
+      D: Hyperlinks
+      E: All of the above
+    explanation: All are valid multimedia or interactive elements in modern presentations.
+    text: Which of the following are valid multimedia elements in presentations?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Creating visual effects between slides
+      B: Controlling the flow of a presentation
+      C: Changing the font style of text
+      D: Emphasizing section changes
+      E: All of the above
+    explanation: Transitions are for effects and flow, not font changes.
+    text: Which of the following are valid uses of slide transitions?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Insert > Picture command
+      B: Copy-paste from another application
+      C: Drag and drop from file explorer
+      D: Typing the image file name in a text box
+      E: All of the above
+    explanation: Images can be inserted, pasted, or dragged, but not typed in a text
+      box.
+    text: Which of the following are valid ways to insert images in a presentation?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Animating text on click
+      B: Making objects appear in sequence
+      C: Changing slide background color
+      D: Emphasizing key points
+      E: All of the above
+    explanation: Custom animation is for sequencing and emphasis, not background color.
+    text: Which of the following are valid uses of custom animation in presentations?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Slide Sorter view
+      B: Dragging slides in the navigation pane
+      C: Using the Outline view
+      D: Editing the master slide
+      E: All of the above
+    explanation: Slides are organized in sorter, navigation, and outline views, not
+      via master slide.
+    text: Which of the following are valid ways to organize slides in a presentation?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Linking to another slide
+      B: Opening a website
+      C: Starting an email message
+      D: Changing the slide background
+      E: All of the above
+    explanation: Hyperlinks can link slides, open sites, or start emails, not change
+      backgrounds.
+    text: Which of the following are valid uses of hyperlinks in presentations?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Print slides as handouts
+      B: Print notes pages
+      C: Print outline view
+      D: Print as a spreadsheet
+      E: All of the above
+    explanation: Handouts, notes, and outline can be printed; spreadsheet is not a
+      print option.
+    text: Which of the following are valid ways to print a presentation?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Presenting to an audience
+      B: Testing animations and transitions
+      C: Editing slide content
+      D: Practicing presentation timing
+      E: All of the above
+    explanation: Slide Show is for presenting, testing, and practicing, not editing.
+    text: Which of the following are valid uses of the Slide Show mode?
+    topic: Presentation
+    type: multiple
+  - answer:
+    - A
+    - B
+    choices:
+      A: Using the Notes pane below each slide
+      B: Inserting a text box on the slide
+      C: Adding comments in the review tab
+      D: Typing in the outline view
+      E: All of the above
+    explanation: Speaker notes are added in the notes pane or as text boxes, not comments
+      or outline.
+    text: Which of the following are valid ways to add speaker notes in a presentation?
+    topic: Presentation
+    type: multiple
+- duration_minutes: 45
+  id: 5
+  name: Practice Set 5 - Internet and Digital Communication (20 marks)
+  questions:
+  - answer: D
+    choices:
+      A: Large Area Network
+      B: Local Access Node
+      C: Landline Associated Network
+      D: Local Area Network
+      E: All of the above
+    explanation: LAN stands for Local Area Network, which connects devices within
+      a limited geographical area.
+    text: What does 'LAN' stand for in computer networking?
+  - answer: A
+    choices:
+      A: HyperText Transfer Protocol
+      B: HyperText Transmission Protocol
+      C: High Transfer Text Protocol
+      D: Hyper Transfer Text Protocol
+      E: All of the above
+    explanation: HTTP stands for HyperText Transfer Protocol, the standard protocol
+      for transferring web pages.
+    text: What does 'HTTP' stand for?
+  - answer: B
+    choices:
+      A: To send emails
+      B: To access and display websites on the internet
+      C: To create and edit images
+      D: To manage computer files
+      E: All of the above
+    explanation: A web browser is software used to access and display websites on
+      the internet.
+    text: What is the purpose of a web browser?
+  - answer: A
+    choices:
+      A: Uniform Resource Locator
+      B: Universal Record Link
+      C: Uniform Record Locator
+      D: Universal Resource Link
+      E: All of the above
+    explanation: URL stands for Uniform Resource Locator, which is the address of
+      a resource on the internet.
+    text: What does 'URL' stand for?
+  - answer: B
+    choices:
+      A: Google Chrome
+      B: Microsoft Outlook
+      C: Notepad
+      D: Windows Explorer
+      E: All of the above
+    explanation: Microsoft Outlook is an email client used to send and receive emails.
+    text: Which of the following is an example of an email client?
+  - answer: A
+    choices:
+      A: Carbon Copy
+      B: Creative Commons
+      C: Confidential Copy
+      D: Client Copy
+      E: All of the above
+    explanation: CC stands for Carbon Copy, allowing you to send a copy of the email
+      to additional recipients.
+    text: What does the 'CC' field in an email mean?
+  - answer: B
+    choices:
+      A: To send and receive emails
+      B: To search the World Wide Web for specified keywords
+      C: To create websites
+      D: To protect a computer from viruses
+      E: All of the above
+    explanation: A search engine searches the World Wide Web for specified keywords
+      and returns relevant results.
+    text: What is the function of a 'search engine'?
+  - answer: A
+    choices:
+      A: Domain Name System
+      B: Dynamic Network Service
+      C: Digital Naming Standard
+      D: Data Network Security
+      E: All of the above
+    explanation: DNS stands for Domain Name System, which translates domain names
+      to IP addresses.
+    text: What does 'DNS' stand for?
+  - answer: B
+    choices:
+      A: FTP
+      B: SMTP
+      C: HTTP
+      D: POP3
+      E: All of the above
+    explanation: SMTP (Simple Mail Transfer Protocol) is used for sending emails.
+    text: Which protocol is used for sending email?
+  - answer: A
+    choices:
+      A: Internet Service Provider
+      B: Internet Security Protocol
+      C: Internet System Program
+      D: Internet Service Program
+      E: All of the above
+    explanation: ISP stands for Internet Service Provider, which provides internet
+      access to users.
+    text: What does 'ISP' in internet terminology stand for?
+  - answer: B
+    choices:
+      A: Connecting computers in a network
+      B: Online platforms for social interaction and content sharing
+      C: Business networking
+      D: Internet security
+      E: All of the above
+    explanation: Social Networking refers to online platforms for social interaction
+      and content sharing.
+    text: What is 'Social Networking'?
+  - answer: B
+    choices:
+      A: Online shopping
+      B: Government services delivered electronically
+      C: Email communication
+      D: Social media
+      E: All of the above
+    explanation: E-governance refers to government services delivered electronically
+      to citizens.
+    text: What is 'E-governance'?
+  - answer: B
+    choices:
+      A: Email communication
+      B: Real-time text communication over the internet
+      C: Video calling
+      D: Social media posting
+      E: All of the above
+    explanation: Instant Messaging is real-time text communication over the internet.
+    text: What is 'Instant Messaging'?
+  - answer: B
+    choices:
+      A: A type of email
+      B: A website with regular posts or articles
+      C: A social media platform
+      D: A search engine
+      E: All of the above
+    explanation: A blog is a website with regular posts or articles, often written
+      by individuals or organizations.
+    text: What is a 'Blog'?
+  - answer: B
+    choices:
+      A: Email commerce
+      B: Electronic commerce - buying and selling online
+      C: Social commerce
+      D: Mobile commerce
+      E: All of the above
+    explanation: E-commerce refers to electronic commerce - buying and selling goods
+      and services online.
+    text: What is 'E-commerce'?
+  - answer: B
+    choices:
+      A: Internet rules
+      B: Etiquette guidelines for online communication
+      C: Network protocols
+      D: Security measures
+      E: All of the above
+    explanation: Netiquettes are etiquette guidelines for proper online communication
+      and behavior.
+    text: What are 'Netiquettes'?
+  - answer: A
+    choices:
+      A: Internet Protocol address - unique identifier for devices on a network
+      B: Internet Password
+      C: Internet Provider
+      D: Internet Program
+      E: All of the above
+    explanation: An IP Address is a unique identifier for devices on a network, allowing
+      them to communicate.
+    text: What is 'IP Address'?
+  - answer: A
+    choices:
+      A: Wireless Fidelity - wireless networking technology
+      B: Wired Internet
+      C: Web Interface
+      D: Wireless Internet
+      E: All of the above
+    explanation: Wi-Fi stands for Wireless Fidelity, a wireless networking technology
+      for internet access.
+    text: What is 'Wi-Fi'?
+  - answer: B
+    choices:
+      A: Weather forecasting
+      B: Computing services delivered over the internet
+      C: Local computing
+      D: Mobile computing
+      E: All of the above
+    explanation: Cloud Computing refers to computing services delivered over the internet
+      rather than locally.
+    text: What is 'Cloud Computing'?
+  - answer: A
+    choices:
+      A: Mobile applications - software for mobile devices
+      B: Mobile accessories
+      C: Mobile networks
+      D: Mobile websites
+      E: All of the above
+    explanation: Mobile Apps are software applications designed specifically for mobile
+      devices.
+    text: What is 'Mobile Apps'?
+  - answer: E
+    choices:
+      A: LAN
+      B: WAN
+      C: MAN
+      D: PAN
+      E: All of the above
+    explanation: All of these are different types of computer networks based on geographical
+      coverage.
+    text: Which of the following are types of computer networks?
+    type: multiple
+  - answer: E
+    choices:
+      A: HTTP
+      B: HTTPS
+      C: FTP
+      D: SMTP
+      E: All of the above
+    explanation: All of these are common internet protocols used for different types
+      of data transfer.
+    text: Which of the following are internet protocols?
+    type: multiple
+  - answer: E
+    choices:
+      A: Facebook
+      B: Twitter
+      C: Instagram
+      D: LinkedIn
+      E: All of the above
+    explanation: All of these are popular social media platforms for online interaction
+      and content sharing.
+    text: Which of the following are social media platforms?
+    type: multiple
+  - answer:
+    - A
+    - C
+    - D
+    choices:
+      A: Translating domain names to IP addresses
+      B: Providing email services
+      C: Load balancing web traffic
+      D: Blocking access to certain websites
+      E: All of the above
+    explanation: DNS translates names, can be used for load balancing and blocking,
+      but not for email services.
+    text: Which of the following are valid uses of DNS in networking?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: DSL
+      B: Fiber optic
+      C: Satellite
+      D: Bluetooth
+      E: All of the above
+    explanation: DSL, fiber, and satellite are internet connections; Bluetooth is
+      for short-range device communication.
+    text: Which of the following are valid types of internet connections?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Sending and receiving emails
+      B: Managing contacts
+      C: Scheduling calendar events
+      D: Editing videos
+      E: All of the above
+    explanation: Email clients handle email, contacts, and calendars, not video editing.
+    text: Which of the following are valid uses of email clients?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Posting status updates
+      B: Sharing photos and videos
+      C: Instant messaging
+      D: Compiling code
+      E: All of the above
+    explanation: Social networks are for posts, sharing, and messaging, not code compilation.
+    text: Which of the following are valid social networking features?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Storing and sharing files online
+      B: Collaborative document editing
+      C: Hosting video conferences
+      D: Printing documents offline
+      E: All of the above
+    explanation: Cloud computing enables online storage, collaboration, and conferencing,
+      not offline printing.
+    text: Which of the following are valid uses of cloud computing in communication?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: HTTPS
+      B: SSL/TLS
+      C: FTP
+      D: SFTP
+      E: All of the above
+    explanation: HTTPS, SSL/TLS, and SFTP are secure; FTP is not.
+    text: Which of the following are valid internet protocols for secure communication?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Real-time text communication
+      B: File sharing
+      C: Voice and video calls
+      D: Compiling spreadsheets
+      E: All of the above
+    explanation: IM apps are for text, file sharing, and calls, not spreadsheet compilation.
+    text: Which of the following are valid uses of instant messaging apps?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Respecting others' privacy
+      B: Avoiding all caps (shouting)
+      C: Using clear and polite language
+      D: Sharing passwords openly
+      E: All of the above
+    explanation: Respect, clarity, and privacy are netiquette; sharing passwords is
+      not.
+    text: Which of the following are valid netiquette rules for online communication?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Sharing personal experiences
+      B: Publishing tutorials and guides
+      C: Collaborative document editing
+      D: Announcing product updates
+      E: All of the above
+    explanation: Blogs are for sharing, publishing, and announcements, not collaborative
+      editing.
+    text: Which of the following are valid uses of blogs in digital communication?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Online tax filing
+      B: E-voting
+      C: Government service portals
+      D: Online gaming
+      E: All of the above
+    explanation: E-governance includes tax, voting, and service portals, not gaming.
+    text: Which of the following are valid e-governance services?
+    topic: Internet and Digital Communication
+    type: multiple
+  - answer: B
+    choices:
+      A: Mark Zuckerberg
+      B: Paul Buchheit
+      C: Jan Koum
+      D: Sundar Pichai
+      E: All of the above
+    explanation: Paul Buchheit developed Gmail at Google.
+    text: Who is the founder of Gmail?
+    topic: Internet and Digital Communication
+  - answer: A
+    choices:
+      A: Brian Acton and Jan Koum
+      B: Larry Page and Sergey Brin
+      C: Mark Zuckerberg
+      D: Jack Dorsey
+      E: All of the above
+    explanation: WhatsApp was founded by Brian Acton and Jan Koum.
+    text: Who is the founder of WhatsApp?
+    topic: Internet and Digital Communication
+  - answer: A
+    choices:
+      A: A type of computer virus/worm
+      B: A programming language
+      C: An antivirus software
+      D: A social media platform
+      E: All of the above
+    explanation: Code Red is a computer worm that attacked Microsoft IIS web servers
+      in 2001.
+    text: What is Code Red?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: '2012'
+      B: '2015'
+      C: '2018'
+      D: '2020'
+      E: All of the above
+    explanation: DigiLocker was launched by the Government of India in 2015.
+    text: When was DigiLocker launched?
+    topic: E-Governance
+  - answer: B
+    choices:
+      A: Mark Zuckerberg
+      B: Pavel Durov
+      C: Jan Koum
+      D: Brian Acton
+      E: All of the above
+    explanation: Telegram was developed by Pavel Durov, a Russian entrepreneur.
+    text: Telegram was developed by whom?
+    topic: Internet and Digital Communication
+  - answer: A
+    choices:
+      A: E-Governance
+      B: E-Commerce
+      C: E-Learning
+      D: E-Banking
+      E: All of the above
+    explanation: eMitra is an e-Governance initiative by the Government of Rajasthan,
+      India.
+    text: eMitra is related to which field?
+    topic: E-Governance
+  - answer: A
+    choices:
+      A: FastTrack Mobile Governance
+      B: Online Shopping
+      C: Social Networking
+      D: Digital Payments
+      E: All of the above
+    explanation: UMANG (Unified Mobile Application for New-age Governance) is a mobile
+      app for e-governance services.
+    text: 'UMANG App is related to:'
+    topic: E-Governance
+  - answer: B
+    choices:
+      A: Search Engine
+      B: Social Networking Site
+      C: E-Commerce Platform
+      D: Cloud Storage
+      E: All of the above
+    explanation: Twitter is a social networking and microblogging platform.
+    text: 'Twitter is an example of:'
+    topic: Internet and Digital Communication
+  - answer: A
+    choices:
+      A: Spam
+      B: Ham
+      C: Scam
+      D: Draft
+      E: All of the above
+    explanation: Junk e-mail is commonly referred to as spam.
+    text: 'Junk e-mail is also called:'
+    topic: Internet and Digital Communication
+  - answer: C
+    choices:
+      A: Input device
+      B: Output device
+      C: Both input and output device
+      D: Storage device
+      E: All of the above
+    explanation: Teletypewriter terminals can both send (input) and receive (output)
+      text.
+    text: 'Teletypewriter terminal is an example of:'
+    topic: Computer Fundamentals
+  - answer: B
+    choices:
+      A: Microwave frequency
+      B: Radio frequency
+      C: Infrared frequency
+      D: Satellite frequency
+      E: All of the above
+    explanation: Walkie Talkies operate in the radio frequency range.
+    text: 'Walkie Talkie operates in:'
+    topic: Communication Technology
+  - answer: B
+    choices:
+      A: Mark Zuckerberg
+      B: Pavel Durov
+      C: Jan Koum
+      D: Brian Acton
+      E: All of the above
+    explanation: Telegram was developed by Pavel Durov, a Russian entrepreneur.
+    text: Telegram was developed by whom?
+    topic: Internet and Digital Communication
+- duration_minutes: 30
+  id: 6
+  name: Practice Set 6 - Digital Finance & Cyber Security (10 marks)
+  questions:
+  - answer: B
+    choices:
+      A: Universal Payment Interface
+      B: Unified Payment Interface
+      C: United Payment Integration
+      D: Universal Payment Integration
+      E: All of the above
+    explanation: UPI stands for Unified Payment Interface, a real-time payment system
+      in India.
+    text: What is 'UPI' in digital finance?
+  - answer: A
+    choices:
+      A: One Time Password for secure authentication
+      B: Online Transaction Protocol
+      C: One Time Payment
+      D: Online Transfer Process
+      E: All of the above
+    explanation: OTP (One Time Password) is used for secure authentication in digital
+      transactions.
+    text: What is the purpose of 'OTP' in digital transactions?
+  - answer: B
+    choices:
+      A: To increase internet speed
+      B: To monitor and control incoming and outgoing network traffic
+      C: To clean viruses from the computer
+      D: To store passwords securely
+      E: All of the above
+    explanation: A firewall monitors and controls incoming and outgoing network traffic
+      for security.
+    text: What is a 'firewall' used for in computer security?
+  - answer: B
+    choices:
+      A: To secure a computer network
+      B: To trick individuals into revealing sensitive information
+      C: To improve internet speed
+      D: To block unwanted emails
+      E: All of the above
+    explanation: Phishing is a cyber attack that tricks individuals into revealing
+      sensitive information.
+    text: What is the purpose of 'phishing'?
+  - answer: B
+    choices:
+      A: A type of computer hardware
+      B: Software designed to disrupt, damage, or gain unauthorized access to a computer
+        system
+      C: A network security protocol
+      D: A brand of antivirus software
+      E: All of the above
+    explanation: Malware is malicious software designed to disrupt, damage, or gain
+      unauthorized access to systems.
+    text: What is 'malware'?
+  - answer: C
+    choices:
+      A: Storing data on your local computer
+      B: A type of weather forecasting technology
+      C: Delivering computing services over the internet
+      D: A new type of laptop
+      E: All of the above
+    explanation: Cloud Computing delivers computing services over the internet rather
+      than locally.
+    text: What is 'Cloud Computing'?
+  - answer: B
+    choices:
+      A: Analyzing small amounts of data
+      B: Processing and analyzing large and complex data sets
+      C: Creating data backups
+      D: Deleting old data
+      E: All of the above
+    explanation: Big Data Analytics involves processing and analyzing large and complex
+      data sets.
+    text: What is 'Big Data Analytics'?
+  - answer: B
+    choices:
+      A: A type of computer virus
+      B: The simulation of human intelligence in machines
+      C: A programming language
+      D: A type of hardware
+      E: All of the above
+    explanation: Artificial Intelligence is the simulation of human intelligence in
+      machines.
+    text: What is 'Artificial Intelligence'?
+  - answer: B
+    choices:
+      A: A type of computer memory
+      B: A decentralized digital ledger technology
+      C: A programming language
+      D: A type of database
+      E: All of the above
+    explanation: Blockchain is a decentralized digital ledger technology for secure
+      record-keeping.
+    text: What is 'Blockchain' technology?
+  - answer: B
+    choices:
+      A: A type of computer virus
+      B: A computer-generated simulation of a three-dimensional environment
+      C: A type of cloud storage
+      D: A new type of laptop
+      E: All of the above
+    explanation: Virtual Reality creates computer-generated simulations of three-dimensional
+      environments.
+    text: What is 'Virtual Reality'?
+  - answer: E
+    choices:
+      A: Virus
+      B: Worm
+      C: Trojan Horse
+      D: Spyware
+      E: All of the above
+    explanation: All of these are different types of malicious software that can harm
+      computer systems.
+    text: Which of the following are types of malware?
+    type: multiple
+  - answer: E
+    choices:
+      A: UPI
+      B: Credit Card
+      C: Digital Wallet
+      D: Net Banking
+      E: All of the above
+    explanation: All of these are modern digital payment methods used for online transactions.
+    text: Which of the following are digital payment methods?
+    type: multiple
+  - answer: E
+    choices:
+      A: Firewall
+      B: Antivirus
+      C: Encryption
+      D: Two-Factor Authentication
+      E: All of the above
+    explanation: All of these are important cybersecurity measures to protect systems
+      and data.
+    text: Which of the following are cybersecurity measures?
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Requires something you know (password)
+      B: Requires something you have (phone or token)
+      C: Requires something you are (biometrics)
+      D: Requires only a username
+      E: All of the above
+    explanation: 2FA uses knowledge, possession, and biometrics; username alone is
+      not 2FA.
+    text: Which of the following are valid features of two-factor authentication?
+    topic: Cyber Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Mobile wallets (e.g., Paytm, Google Pay)
+      B: Cryptocurrency wallets
+      C: Physical cash wallets
+      D: Web-based wallets
+      E: All of the above
+    explanation: Mobile, crypto, and web wallets are digital; physical cash is not.
+    text: Which of the following are valid types of digital wallets?
+    topic: Digital Finance
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Protecting data in transit
+      B: Securing stored files
+      C: Authenticating users
+      D: Preventing unauthorized access to data
+      E: All of the above
+    explanation: Encryption protects data in transit and at rest, and prevents unauthorized
+      access.
+    text: Which of the following are valid uses of encryption in cybersecurity?
+    topic: Cyber Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Phishing
+      B: Ransomware
+      C: DDoS (Distributed Denial of Service)
+      D: Firewall
+      E: All of the above
+    explanation: Phishing, ransomware, and DDoS are attacks; firewall is a defense.
+    text: Which of the following are valid types of cyber attacks?
+    topic: Cyber Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Cryptocurrency transactions
+      B: Smart contracts
+      C: Centralized banking
+      D: Supply chain tracking
+      E: All of the above
+    explanation: Blockchain is used for crypto, smart contracts, and supply chain,
+      not centralized banking.
+    text: Which of the following are valid uses of blockchain technology in finance?
+    topic: Digital Finance
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Using strong passwords
+      B: Enabling transaction alerts
+      C: Sharing OTPs with friends
+      D: Verifying recipient details
+      E: All of the above
+    explanation: Strong passwords, alerts, and verification are good practices; sharing
+      OTPs is not.
+    text: Which of the following are valid digital payment security practices?
+    topic: Digital Finance
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Instant money transfer
+      B: Works 24/7
+      C: Requires only a mobile number for all transactions
+      D: Supports multiple bank accounts
+      E: All of the above
+    explanation: UPI is instant, 24/7, and supports multiple accounts; not all transactions
+      use only a mobile number.
+    text: Which of the following are valid features of UPI (Unified Payments Interface)?
+    topic: Digital Finance
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Virus
+      B: Worm
+      C: Trojan Horse
+      D: Firewall
+      E: All of the above
+    explanation: Virus, worm, and trojan are malware; firewall is not.
+    text: Which of the following are valid types of malware?
+    topic: Cyber Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Fingerprint scanning
+      B: Facial recognition
+      C: Password entry
+      D: Iris scanning
+      E: All of the above
+    explanation: Biometrics include fingerprint, face, and iris; password is not biometric.
+    text: Which of the following are valid uses of biometric authentication?
+    topic: Cyber Security
+    type: multiple
+  - answer:
+    - A
+    - B
+    - C
+    choices:
+      A: Checking email sender addresses
+      B: Avoiding clicking on suspicious links
+      C: Using two-factor authentication
+      D: Sharing login credentials via email
+      E: All of the above
+    explanation: Check senders, avoid suspicious links, and use 2FA; never share credentials.
+    text: Which of the following are valid ways to protect against phishing attacks?
+    topic: Cyber Security
+    type: multiple
+  - answer:
+    - Mobile communication and computing
+    - Portable touch-screen computer
+    - Wearable device for notifications and tracking
+    - Immersive virtual reality experiences
+    choices:
+    - left: Smartphone
+      right: Mobile communication and computing
+    - left: Tablet
+      right: Portable touch-screen computer
+    - left: Smartwatch
+      right: Wearable device for notifications and tracking
+    - left: VR Headset
+      right: Immersive virtual reality experiences
+    explanation: Smartphones are for communication, tablets for portable computing,
+      smartwatches for wearable tech, and VR headsets for virtual reality.
+    text: Match the following IT gadgets with their primary function.
+    topic: Introduction to Computer
+    type: match
+  - answer:
+    - Word Processing Document
+    - Spreadsheet File
+    - Presentation File
+    - Compressed Archive
+    choices:
+    - left: .docx
+      right: Word Processing Document
+    - left: .xlsx
+      right: Spreadsheet File
+    - left: .pptx
+      right: Presentation File
+    - left: .zip
+      right: Compressed Archive
+    explanation: .docx is for Word, .xlsx for Excel (Spreadsheet), .pptx for PowerPoint
+      (Presentation), and .zip for compressed files.
+    text: Match the following file extensions with their corresponding application
+      type.
+    topic: Operating System Basics
+    type: match
+- duration_minutes: 30
+  id: 7
+  name: Practice Set 7 - Cyber Crime and Virus (10 marks)
+  questions:
+  - answer: B
+    choices:
+      A: A hardware malfunction
+      B: A computer program designed by hackers for destruction purposes
+      C: A software update
+      D: A type of firewall
+      E: All of the above
+    explanation: A computer virus is a malicious program designed by hackers to cause
+      damage, steal data, or gain unauthorized access to systems.
+    text: What is a computer virus?
+    topic: Cyber Security
+  - answer: C
+    choices:
+      A: Trojan horse
+      B: Worm
+      C: Ransomware
+      D: Spyware
+      E: All of the above
+    explanation: Ransomware encrypts files and demands payment to restore access to
+      the data.
+    text: Which type of virus locks your system by encrypting data and demands money
+      to decrypt it?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: A virus that replicates itself without any host
+      B: A backdoor virus that allows unauthorized access to a system
+      C: A virus that steals data
+      D: A virus that sends spam emails
+      E: All of the above
+    explanation: A Trojan horse disguises itself as legitimate software but creates
+      a backdoor for unauthorized access.
+    text: What is a Trojan horse virus?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: Malware
+      B: Worm
+      C: Adware
+      D: Botnet
+      E: All of the above
+    explanation: A worm is a standalone malware that can replicate itself and spread
+      without needing to attach to a host file.
+    text: Which virus can replicate itself without needing a host?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: A type of spyware
+      B: A herd of infected computers controlled remotely to perform malicious activities
+      C: A virus that steals passwords
+      D: A firewall software
+      E: All of the above
+    explanation: A botnet is a network of compromised computers controlled by a single
+      attacker to perform coordinated malicious activities.
+    text: What is a Botnet?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: To display unwanted ads
+      B: To steal information secretly
+      C: To encrypt files
+      D: To replicate itself
+      E: All of the above
+    explanation: Spyware is designed to secretly monitor and collect information about
+      users without their knowledge.
+    text: What is the primary purpose of spyware?
+    topic: Cyber Security
+  - answer: C
+    choices:
+      A: Using antivirus software
+      B: Using genuine software
+      C: Ignoring software updates
+      D: Using a firewall
+      E: All of the above
+    explanation: Ignoring software updates leaves systems vulnerable to known security
+      flaws that viruses can exploit.
+    text: Which of the following is NOT a precaution against viruses?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: Detects intrusion attempts
+      B: Prevents unauthorized access to a network or system
+      C: Encrypts data
+      D: Sends spam emails
+      E: All of the above
+    explanation: A firewall acts as a barrier between trusted and untrusted networks,
+      preventing unauthorized access.
+    text: What does a firewall do?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: Sending large volumes of emails
+      B: Unauthorized access to a computer system
+      C: Encrypting data for ransom
+      D: Displaying ads on a website
+      E: All of the above
+    explanation: Hacking involves gaining unauthorized access to computer systems
+      or networks.
+    text: What is hacking?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: Sending a virus through email
+      B: Sending a large volume of emails to overwhelm a mail server
+      C: Stealing email passwords
+      D: Encrypting email content
+      E: All of the above
+    explanation: Email bombing floods a target's email inbox with a large volume of
+      messages to disrupt service.
+    text: What is email bombing?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: A virus that replicates itself
+      B: A malicious code triggered by a specific event or time
+      C: A type of firewall
+      D: A phishing attack
+      E: All of the above
+    explanation: A logic bomb is malicious code that remains dormant until triggered
+      by a specific condition or time.
+    text: What is a logic bomb?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: Hacking into a system
+      B: Sending fraudulent emails to steal sensitive information
+      C: Encrypting files for ransom
+      D: Overloading a server with emails
+      E: All of the above
+    explanation: Phishing uses deceptive emails to trick users into revealing sensitive
+      information like passwords or credit card details.
+    text: What is phishing?
+    topic: Cyber Security
+  - answer: B
+    choices:
+      A: Stealing data from a database
+      B: Taking over a valid user session to gain unauthorized access
+      C: Sending spam emails
+      D: Encrypting user files
+      E: All of the above
+    explanation: Session hijacking involves intercepting and taking control of a user's
+      active session to gain unauthorized access.
+    text: What is session hijacking?
+    topic: Cyber Security
+  - answer: A
+    choices:
+      A: Using stolen card information for unauthorized transactions
+      B: Sending spam emails
+      C: Encrypting card data
+      D: Blocking card transactions
+      E: All of the above
+    explanation: Card fraud involves using stolen or compromised card information
+      to make unauthorized purchases or transactions.
+    text: What is debit/credit card fraud?
+    topic: Cyber Security
+  - answer: E
+    choices:
+      A: File infector virus
+      B: Boot sector virus
+      C: Macro virus
+      D: Polymorphic virus
+      E: All of the above
+    explanation: All of these are different types of computer viruses that infect
+      systems in various ways.
+    text: Which of the following are types of computer viruses?
+    topic: Cyber Security
+    type: multiple
+  - answer: E
+    choices:
+      A: Phishing
+      B: DDoS (Distributed Denial of Service)
+      C: Man-in-the-middle attack
+      D: SQL injection
+      E: All of the above
+    explanation: All of these are common cyber attack methods used by hackers to compromise
+      systems.
+    text: Which of the following are common cyber attack methods?
+    topic: Cyber Security
+    type: multiple
+  - answer: E
+    choices:
+      A: Regular software updates
+      B: Strong password policies
+      C: Two-factor authentication
+      D: Regular data backups
+      E: All of the above
+    explanation: All of these practices help protect against cyber threats and data
+      loss.
+    text: Which of the following are effective cybersecurity practices?
+    topic: Cyber Security
+    type: multiple
+  - answer:
+    - Encrypts files and demands payment for decryption
+    - Secretly monitors and collects user information
+    - Disguises itself as legitimate software
+    - Self-replicating malware that spreads independently
+    choices:
+    - left: Ransomware
+      right: Encrypts files and demands payment for decryption
+    - left: Spyware
+      right: Secretly monitors and collects user information
+    - left: Trojan Horse
+      right: Disguises itself as legitimate software
+    - left: Worm
+      right: Self-replicating malware that spreads independently
+    explanation: Ransomware encrypts and demands payment, spyware monitors secretly,
+      trojan disguises itself, and worms self-replicate.
+    text: Match the following cyber threats with their descriptions.
+    topic: Cyber Security
+    type: match
+- duration_minutes: 30
+  id: 8
+  name: Practice Set 8 - Future Skills, IoT & AI (10 marks)
+  questions:
+  - answer: B
+    choices:
+      A: Bot to Bot (B2B)
+      B: Machine to Machine (M2M)
+      C: InterCloud
+      D: SkyNet
+      E: All of the above
+    explanation: Machine to Machine (M2M) communication is the automatic exchange
+      of information between devices without human intervention.
+    text: The huge number of devices connected to the Internet of Things have to communicate
+      automatically, not via humans. What is this called?
+    topic: Internet of Things
+  - answer: B
+    choices:
+      A: Smart Watch
+      B: ATM
+      C: Radio
+      D: Video Game
+      E: All of the above
+    explanation: ATM is considered the first recognized IoT device.
+    text: What was the first recognized IoT device?
+    topic: Internet of Things
+  - answer: A
+    choices:
+      A: Radio Identification Technology
+      B: Satellite
+      C: Cable
+      D: Broadband
+      E: All of the above
+    explanation: Radio Identification Technology (RFID) is widely used in IoT for
+      device identification and tracking.
+    text: ______________ is being used by Internet of Things?
+    topic: Internet of Things
+  - answer: B
+    choices:
+      A: Machine to Machine
+      B: Publish/Subscribe
+      C: Request/Response
+      D: Mesh Networking
+      E: All of the above
+    explanation: MQTT is a lightweight messaging protocol based on the publish/subscribe
+      model.
+    text: Which best describes the MQTT Protocol?
+    topic: Internet of Things
+  - answer: B
+    choices:
+      A: '1998'
+      B: '1999'
+      C: '2000'
+      D: '2001'
+      E: All of the above
+    explanation: The term IoT was first coined in 1999.
+    text: When was the term IoT first coined?
+    topic: Internet of Things
+  - answer: A
+    choices:
+      A: '2005'
+      B: '2007'
+      C: '2006'
+      D: '2008'
+      E: All of the above
+    explanation: IoT devices surpassed the number of people in 2005.
+    text: When did IoT devices surpass people in number?
+    topic: Internet of Things
+  - answer: C
+    choices:
+      A: Remotely controllable
+      B: Programmable
+      C: Can turn themselves off if necessary
+      D: All are features
+      E: All of the above
+    explanation: Not all IoT devices can turn themselves off if necessary.
+    text: Which is NOT a feature of IoT?
+    topic: Internet of Things
+  - answer: D
+    choices:
+      A: Approx 2 million
+      B: Approx 20 million
+      C: Approx 75 million
+      D: Approx 100 million
+      E: All of the above
+    explanation: By 2020, it was estimated that around 100 million devices were connected
+      to the IoT.
+    text: How many devices were estimated to be connected to the Internet of Things
+      by 2020?
+    topic: Internet of Things
+  - answer: D
+    choices:
+      A: Privacy and Security
+      B: Energy Consumption
+      C: Network Congestion
+      D: All of the above
+      E: All of the above
+    explanation: All of these are important risks and challenges in IoT.
+    text: What risks and challenges should be considered in the Internet of Things?
+    topic: Internet of Things
+  - answer: B
+    choices:
+      A: Information Internet of Things
+      B: Industrial Internet of Things
+      C: Innovative Internet of Things
+      D: None of the above
+      E: All of the above
+    explanation: IIoT stands for Industrial Internet of Things.
+    text: What is IIoT?
+    topic: Internet of Things
+  - answer: C
+    choices:
+      A: Connected
+      B: Smart
+      C: Both A & B
+      D: Neither
+      E: All of the above
+    explanation: IoT devices are often called connected or smart devices.
+    text: Another way of referring to IoT devices?
+    topic: Internet of Things
+  - answer: C
+    choices:
+      A: Networks of data-gathering sensors
+      B: Cloud computing
+      C: Both a & b
+      D: Neither
+      E: All of the above
+    explanation: IoT is built on both sensor networks and cloud computing.
+    text: What is IoT built on?
+    topic: Internet of Things
+  - answer: D
+    choices:
+      A: John Brady
+      B: Timothy Philip
+      C: Samuel John
+      D: John Mashey
+      E: All of the above
+    explanation: John Mashey coined the term 'Big Data'.
+    text: Who coined the word 'Big Data'?
+    topic: Big Data
+  - answer: D
+    choices:
+      A: 1900s
+      B: 1980s
+      C: 2000s
+      D: 1970s
+      E: All of the above
+    explanation: The term 'Big Data' was coined in the 1970s.
+    text: The term 'Big Data' was coined in which year?
+    topic: Big Data
+  - answer: B
+    choices:
+      A: Money
+      B: Predictive analytics
+      C: Laboratory
+      D: Analytical Chemistry
+      E: All of the above
+    explanation: Predictive analytics is a major benefit of Big Data Analytics in
+      healthcare.
+    text: Big Data Analytics has helped healthcare improve by providing?
+    topic: Big Data
+  - answer: A
+    choices:
+      A: Information specialists
+      B: Hackers
+      C: Innovators
+      D: Ethical Scientists
+      E: All of the above
+    explanation: Big Data has increased the demand for information specialists.
+    text: Big Data has increased the demand for?
+    topic: Big Data
+  - answer: A
+    choices:
+      A: Data analytics
+      B: Descriptive analytics
+      C: In-memory analytics
+      D: Predictive analytics
+      E: All of the above
+    explanation: Data analytics is the science of examining raw data to draw conclusions.
+    text: The science of examining raw data with the purpose of drawing conclusions
+      about that information is called?
+    topic: Big Data
+  - answer: C
+    choices:
+      A: Wiring
+      B: Drawing
+      C: Mathematics
+      D: French
+      E: All of the above
+    explanation: Mathematics is the foundational base for AI.
+    text: Which is the AI nearest base?
+    topic: Artificial Intelligence
+  - answer: A
+    choices:
+      A: Kevin Ashton
+      B: Bill Gates
+      C: Steve Jobs
+      D: None
+      E: All of the above
+    explanation: Kevin Ashton invented the term IoT.
+    text: Who invented the term IoT?
+    topic: Internet of Things
+  - answer: D
+    choices:
+      A: Kevin Ashton
+      B: Bill Gates
+      C: Steve Jobs
+      D: John R Mashey
+      E: All of the above
+    explanation: John R Mashey invented Big Data Analytics.
+    text: Who invented Big Data Analytics?
+    topic: Big Data
+  - answer: D
+    choices:
+      A: Kevin Ashton
+      B: Bill Gates
+      C: Steve Jobs
+      D: J. C. R. Licklider
+      E: All of the above
+    explanation: J. C. R. Licklider invented cloud computing.
+    text: Who invented cloud computing?
+    topic: Cloud Computing
+  - answer: A
+    choices:
+      A: Dartmouth College, US
+      B: Emory University
+      C: Oxford University
+      D: Stanford University
+      E: All of the above
+    explanation: The first AI conference was held at Dartmouth College, US.
+    text: Where was the first conference of Artificial Intelligence held?
+    topic: Artificial Intelligence
+  - answer: A
+    choices:
+      A: Chuck Hull
+      B: J. C. R. Licklider
+      C: Satoshi Nakamoto
+      D: Bill Gates
+      E: All of the above
+    explanation: Chuck Hull invented 3D printing technology.
+    text: Who was the inventor of 3D printing technology?
+    topic: Future Technologies
+  - answer: C
+    choices:
+      A: HCL
+      B: NIELIT
+      C: NASSCOM
+      D: Wipro
+      E: All of the above
+    explanation: NASSCOM launched the FutureSkills portal.
+    text: Who launched the FutureSkills portal?
+    topic: Future Skills
+  - answer: D
+    choices:
+      A: BASIC
+      B: FORTRAN
+      C: IPL
+      D: LISP
+      E: All of the above
+    explanation: LISP is considered the first AI programming language.
+    text: The first AI programming language is?
+    topic: Artificial Intelligence
+- duration_minutes: 30
+  id: 9
+  name: Practice Set 9 - IT Tools and Network Basics (10 marks)
+  questions:
+  - answer: C
+    choices:
+      A: Shell
+      B: System Library
+      C: Kernel
+      D: File System
+      E: All of the above
+    explanation: The kernel is the core of the Linux operating system, managing hardware
+      and system resources.
+    text: Which component is considered the core of the Linux operating system?
+    topic: Operating System Basics
+  - answer: B
+    choices:
+      A: It manages hardware resources
+      B: It is a command interpreter between user and system
+      C: It stores system files
+      D: It provides network connectivity
+      E: All of the above
+    explanation: The shell acts as a command interpreter between the user and the
+      system in Linux.
+    text: What is the primary role of the Shell in Linux?
+    topic: Operating System Basics
+  - answer: D
+    choices:
+      A: File management
+      B: Font specification
+      C: Graphics insertion
+      D: Virus scanning
+      E: All of the above
+    explanation: Virus scanning is not a feature of word processors.
+    text: Which of the following is NOT a feature of a word processor?
+    topic: Word Processing
+  - answer: A
+    choices:
+      A: What You See Is What You Get
+      B: When You Save It Will Go
+      C: Where You See Is Where You Go
+      D: What You Send Is What You Get
+      E: All of the above
+    explanation: WYSIWYG stands for 'What You See Is What You Get' in word processing.
+    text: What does WYSIWYG stand for in word processing?
+    topic: Word Processing
+  - answer: D
+    choices:
+      A: Patent
+      B: Trademark
+      C: Copyright
+      D: License Agreement
+      E: All of the above
+    explanation: License Agreement is not a type of Intellectual Property Right.
+    text: Which of the following is NOT a type of Intellectual Property Right?
+    topic: Intellectual Property Rights
+  - answer: B
+    choices:
+      A: Manages user input
+      B: Provides special functions for application programs to access kernel features
+      C: Stores multimedia files
+      D: Handles network protocols
+      E: All of the above
+    explanation: System libraries provide special functions for application programs
+      to access kernel features.
+    text: What is the function of a System Library in Linux?
+    topic: Operating System Basics
+  - answer: B
+    choices:
+      A: Number of colors displayed
+      B: Number of pixels in each dimension
+      C: Size of the monitor
+      D: Refresh rate
+      E: All of the above
+    explanation: Display resolution is defined as the number of pixels in each dimension.
+    text: What is the display resolution of a monitor defined as?
+    topic: Computer Fundamentals
+  - answer: B
+    choices:
+      A: '4:3'
+      B: '16:9'
+      C: '21:9'
+      D: '1:1'
+      E: All of the above
+    explanation: The aspect ratio of a standard HD display is 16:9.
+    text: What is the aspect ratio of a standard HD display?
+    topic: Computer Fundamentals
+  - answer: B
+    choices:
+      A: Number of pixels per inch
+      B: Number of times per second the display draws a new image
+      C: Amount of data stored
+      D: Number of colors displayed
+      E: All of the above
+    explanation: Refresh rate measures how many times per second the display draws
+      a new image.
+    text: What does the refresh rate of a display measure?
+    topic: Computer Fundamentals
+  - answer: C
+    choices:
+      A: Only text and images
+      B: Only audio and video
+      C: Combination of text, graphics, audio, and video
+      D: Only graphics
+      E: All of the above
+    explanation: Multimedia is the combination of text, graphics, audio, and video.
+    text: Which of the following best defines 'Multimedia'?
+    topic: Multimedia
+  - answer: B
+    choices:
+      A: Agriculture
+      B: Education
+      C: Mining
+      D: Construction
+      E: All of the above
+    explanation: Multimedia is frequently used in education.
+    text: In which field is multimedia frequently used according to the document?
+    topic: Multimedia
+  - answer: C
+    choices:
+      A: A company's logo
+      B: A patented invention
+      C: Confidential business formula
+      D: A published book
+      E: All of the above
+    explanation: A confidential business formula is an example of a trade secret.
+    text: Which of the following is an example of a trade secret?
+    topic: Intellectual Property Rights
+  - answer: C
+    choices:
+      A: Vacuum Tubes
+      B: Transistors
+      C: Integrated Circuits (ICs)
+      D: Microprocessors
+      E: All of the above
+    explanation: Third generation computers used Integrated Circuits (ICs), which
+      increased speed and efficiency.
+    text: What hardware technology was introduced in third generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - A
+    - B
+    - D
+    choices:
+      A: Used ICs and parallel processing
+      B: Smaller in size and faster
+      C: High power consumption and generated more heat
+      D: Supported high-level languages
+      E: All of the above
+    explanation: Third generation computers used ICs, were smaller and faster, and
+      supported high-level languages. They had lower power consumption and generated
+      less heat.
+    text: Which of the following are characteristics of third generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer: E
+    choices:
+      A: FORTRAN
+      B: COBOL
+      C: Pascal
+      D: BASIC
+      E: All of the above
+    explanation: High-level languages such as FORTRAN, COBOL, Pascal, and BASIC were
+      used in third generation computers.
+    text: Which programming languages were commonly used in third generation computers?
+    topic: Introduction to Computer, Introduction to Operating System
+    type: multiple
+  - answer: B
+    choices:
+      A: ENIAC
+      B: IBM System 360
+      C: VAX 9000
+      D: PARAM 10000
+      E: All of the above
+    explanation: IBM System 360 is an example of a third generation computer.
+    text: Which of the following is an example of a third generation computer?
+    topic: Introduction to Computer, Introduction to Operating System
+  - answer:
+    - Third Generation
+    - First Generation
+    - Second Generation
+    - Fourth Generation
+    choices:
+    - left: Integrated Circuits (ICs)
+      right: Third Generation
+    - left: Vacuum Tubes
+      right: First Generation
+    - left: Transistors
+      right: Second Generation
+    - left: Microprocessors
+      right: Fourth Generation
+    explanation: ICs were used in third generation, vacuum tubes in first, transistors
+      in second, and microprocessors in fourth generation computers.
+    text: Match the following features to the correct computer generation.
+    topic: Introduction to Computer, Introduction to Operating System
+    type: match
