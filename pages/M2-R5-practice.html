@@ -11,15 +11,14 @@ permalink: /m2r5-practice/
 
   <h2>Topic-Specific Practice Sets</h2>
   <ul>
-    {% for set in site.data.m2r5_practice.sets %}
-      {% if set.id <= 6 %}
+    {% for set in site.data.m2r5_practice.sets %}      
         <li>
           <a href="{{ site.baseurl }}/practice-sets/m2r5-practice-{{ set.id }}/">
             {{ set.name }}
           </a>
           <span>({{ set.questions | size }} questions)</span>
         </li>
-      {% endif %}
+      
     {% endfor %}
   </ul>
 

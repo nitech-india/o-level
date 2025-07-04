@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="practice-page">
     {% assign practice_data = page.practice_set %}
-    <div class="main-content">
+    <div class="main-content" id="mainContent">
         <h1>{{ page.title }}</h1>
         
         <div class="instructions collapsible-section">
@@ -60,30 +60,38 @@ layout: default
         <!-- Include the reusable question component -->
     </div>
 
-    <div class="progress-sidebar">
-        <div class="progress-header">
-            <div class="progress-title">
-                <h2>Progress</h2>
-                <button type="button" onclick="resetQuiz()" class="reset-btn">Reset Quiz</button>
-            </div>
-            <div class="progress-stats">
-                <p>Score: <span id="score">0</span> / {{ total_questions }}</p>
-                <p>Completed: <span id="completed">0</span> / {{ total_questions }}</p>
-                {% if practice_data.duration_minutes %}
-                <p>Time Left: <span id="timer">--:--</span></p>
-                {% endif %}
-            </div>
-            <div class="progress-bar">
-                <div class="progress-fill" style="width: 0%"></div>
-            </div>
-        </div>
-        <div class="question-grid">
-            {% for i in (1..total_questions) %}
-            <div class="question-status" data-question="{{ i }}">
-                {{ i }}
-            </div>
-            {% endfor %}
-        </div>
+    <!-- Collapsible Progress Sidebar -->
+    <div id="progressSidebarContainer">
+      <span id="toggleProgressSidebar" class="toggle-progress-icon" tabindex="0" aria-label="Show/Hide Progress" role="button">
+        <svg id="chevronIcon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <div class="progress-sidebar" id="progressSidebar">
+          <div class="progress-header">
+              <div class="progress-title">
+                  <h2>Progress</h2>
+                  <button type="button" onclick="resetQuiz()" class="reset-btn">Reset Quiz</button>
+              </div>
+              <div class="progress-stats">
+                  <p>Score: <span id="score">0</span> / {{ total_questions }}</p>
+                  <p>Completed: <span id="completed">0</span> / {{ total_questions }}</p>
+                  {% if practice_data.duration_minutes %}
+                  <p>Time Left: <span id="timer">--:--</span></p>
+                  {% endif %}
+              </div>
+              <div class="progress-bar">
+                  <div class="progress-fill" style="width: 0%"></div>
+              </div>
+          </div>
+          <div class="question-grid">
+              {% for i in (1..total_questions) %}
+              <div class="question-status" data-question="{{ i }}">
+                  {{ i }}
+              </div>
+              {% endfor %}
+          </div>
+      </div>
     </div>
 </div>
 
@@ -432,6 +440,70 @@ body[data-theme="dark"] .exam-tips h3 {
 body[data-theme="dark"] .exam-tips ul {
     color: var(--md-on-tertiary-container, #ffcc02);
 }
+
+#progressSidebarContainer {
+    position: relative;
+}
+#toggleProgressSidebar.toggle-progress-icon {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 1002;
+    background: var(--md-primary, #007bff);
+    color: var(--md-on-primary, #fff);
+    border-radius: 8px 0 0 8px;
+    padding: 8px 4px 8px 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+    outline: none;
+}
+#toggleProgressSidebar.toggle-progress-icon:focus {
+    outline: 2px solid var(--md-primary-dark, #0056b3);
+}
+#toggleProgressSidebar svg {
+    display: block;
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s;
+}
+#toggleProgressSidebar.collapsed svg {
+    transform: rotate(180deg);
+}
+#progressSidebar {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 320px;
+    max-width: 90vw;
+    height: calc(100vh - 60px);
+    background: var(--md-surface-container, #f8f9fa);
+    color: var(--md-on-surface, #333);
+    box-shadow: -2px 0 12px rgba(0,0,0,0.08);
+    border-radius: 8px 0 0 8px;
+    z-index: 1001;
+    overflow-y: auto;
+    display: block;
+    transform: translateX(0);
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1), visibility 0.3s, opacity 0.3s;
+    opacity: 1;
+    visibility: visible;
+}
+#progressSidebar.collapsed {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+@media (max-width: 1200px) {
+    #progressSidebar {
+        width: 100vw;
+        max-width: 100vw;
+        border-radius: 0;
+    }
+}
 </style>
 
 <!-- Load the reusable question JS -->
@@ -625,6 +697,36 @@ document.addEventListener('DOMContentLoaded', function() {
         {% if practice_data.duration_minutes %}
         startTimer({{ practice_data.duration_minutes }} * 60, document.getElementById('timer'));
         {% endif %}
+
+        // Collapsible Progress Sidebar logic
+        const sidebar = document.getElementById('progressSidebar');
+        const toggleBtn = document.getElementById('toggleProgressSidebar');
+        let sidebarOpen = true;
+        function setSidebarState(open) {
+            sidebarOpen = open;
+            if (open) {
+                sidebar.classList.remove('collapsed');
+                toggleBtn.classList.remove('collapsed');
+                // Place toggle icon just outside the sidebar
+                toggleBtn.style.right = sidebar.offsetWidth + 'px';
+            } else {
+                sidebar.classList.add('collapsed');
+                toggleBtn.classList.add('collapsed');
+                // Place toggle icon at the edge of the screen
+                toggleBtn.style.right = '0px';
+            }
+        }
+        toggleBtn.addEventListener('click', function() {
+            setSidebarState(!sidebarOpen);
+        });
+        toggleBtn.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                setSidebarState(!sidebarOpen);
+                e.preventDefault();
+            }
+        });
+        // Start with sidebar open
+        setSidebarState(true);
     } else {
         // Handle case where there are no questions
         document.getElementById('question-area').innerHTML = '<p>No questions found for this module.</p>';

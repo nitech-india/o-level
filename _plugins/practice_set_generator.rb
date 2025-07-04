@@ -6,7 +6,8 @@ module Jekyll
       # Find all practice data files (regular and comprehensive)
       practice_files = [
         'm1r5_practice', 'm2r5_practice', 'm3r5_practice', 'm4r5_practice',
-        'm1r5_comprehensive', 'm2r5_comprehensive', 'm3r5_comprehensive', 'm4r5_comprehensive'
+        'm1r5_comprehensive', 'm2r5_comprehensive', 'm3r5_comprehensive', 'm4r5_comprehensive',
+        'match_together_questions', 'multiple_answer_questions'
       ]
       
       practice_files.each do |file_key|
@@ -16,10 +17,19 @@ module Jekyll
         next unless data.is_a?(Hash) && data.key?('sets')
         
         data['sets'].each do |set_info|
-          # Extract module name
-          module_match = file_key.match(/^(m\d)r(\d)/)
-          module_name = "#{module_match[1].upcase}-R#{module_match[2]}"
-          is_comprehensive = file_key.include?('comprehensive')
+          # Extract module name for module-specific files
+          module_name = nil
+          is_comprehensive = false
+          
+          if file_key.match(/^(m\d)r(\d)/)
+            module_match = file_key.match(/^(m\d)r(\d)/)
+            module_name = "#{module_match[1].upcase}-R#{module_match[2]}"
+            is_comprehensive = file_key.include?('comprehensive')
+          else
+            # For question type files like match_together_questions and multiple_answer_questions
+            question_type = file_key.gsub('_questions', '').capitalize
+            module_name = question_type
+          end
 
           # --- Normalize questions ---
           if set_info['questions'].is_a?(Array)
@@ -57,9 +67,15 @@ module Jekyll
           # --- End normalization ---
 
           # Create page directory path
-          if is_comprehensive
-            page_dir = "practice-sets/#{file_key.gsub('_', '-')}-#{set_info['id']}"
+          if file_key.match(/^m\d/)
+            # For module-specific files
+            if is_comprehensive
+              page_dir = "practice-sets/#{file_key.gsub('_', '-')}-#{set_info['id']}"
+            else
+              page_dir = "practice-sets/#{file_key.gsub('_', '-')}-#{set_info['id']}"
+            end
           else
+            # For question type files
             page_dir = "practice-sets/#{file_key.gsub('_', '-')}-#{set_info['id']}"
           end
           
@@ -83,11 +99,17 @@ module Jekyll
       self.data = {}
       self.data['layout'] = 'practice'
       
-      # Set title based on whether it's comprehensive or regular
-      if is_comprehensive
-        self.data['title'] = "Module #{module_name} Comprehensive Practice Set ##{practice_set['id']}"
+      # Set title based on whether it's comprehensive, module-specific, or question type
+      if module_name.match(/^M\d-R\d$/)
+        # Module-specific title
+        if is_comprehensive
+          self.data['title'] = "Module #{module_name} Comprehensive Practice Set ##{practice_set['id']}"
+        else
+          self.data['title'] = "Module #{module_name} Practice Set ##{practice_set['id']}"
+        end
       else
-        self.data['title'] = "Module #{module_name} Practice Set ##{practice_set['id']}"
+        # Question type title
+        self.data['title'] = "Practice Set ##{practice_set['id']}"
       end
       
       self.data['practice_set'] = practice_set
@@ -113,9 +135,23 @@ module Jekyll
         content += "<li><strong>Total Marks:</strong> 100</li>"
         content += "</ul>"
         content += "</div>"
+      elsif !module_name.match(/^M\d-R\d$/)
+        # For question type practice sets
+        content += "<div class='question-type-banner'>"
+        content += "<h2>#{module_name} Questions</h2>"
+        content += "<p>This practice set focuses on #{module_name.downcase} questions.</p>"
+        content += "<ul>"
+        content += "<li><strong>Total Questions:</strong> #{practice_set['questions'].size}</li>"
+        content += "<li><strong>Duration:</strong> #{practice_set['duration_minutes']} minutes</li>"
+        content += "</ul>"
+        content += "</div>"
       end
       
-      content += "<p>This practice set contains questions for Module #{module_name}. "
+      if module_name.match(/^M\d-R\d$/)
+        content += "<p>This practice set contains questions for Module #{module_name}. "
+      else
+        content += "<p>This practice set contains #{module_name.downcase} questions. "
+      end
       content += "Select your answer for each question to see immediate feedback.</p>\n"
       content += "<p>Questions are shown one per page. Use the navigation buttons to move between pages.</p>\n"
       

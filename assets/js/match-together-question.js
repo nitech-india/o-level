@@ -328,6 +328,13 @@ function checkMatchAnswerDnd(question) {
         warning.style.display = 'none';
     }
 
+    // Defensive: Check if answer exists and is an array
+    if (!Array.isArray(question.answer)) {
+        warning.textContent = 'This question is missing its answer key. Please contact the site maintainer.';
+        warning.style.display = 'block';
+        return;
+    }
+
     // Save user's answers
     userAnswers[question.number] = userAnswersForQuestion;
 
