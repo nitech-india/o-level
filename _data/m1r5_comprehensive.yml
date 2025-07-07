@@ -3525,7 +3525,6 @@ sets:
       B: Energy Consumption
       C: Network Congestion
       D: All of the above
-      E: All of the above
     explanation: All of these are important risks and challenges in IoT.
     text: What risks and challenges should be considered in the Internet of Things?
     topic: Internet of Things

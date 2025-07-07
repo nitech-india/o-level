@@ -560,7 +560,6 @@ sets:
       B: Table Tools
       C: Grid Lines
       D: All of the above
-      E: All of the above
     explanation: All of these features work together to create and format tables in
       word processing.
     text: Which feature allows you to create and format tables?
@@ -580,7 +579,6 @@ sets:
       B: Page Number
       C: Insert Menu
       D: All of the above
-      E: All of the above
     explanation: All of these methods can be used to insert page numbers in a document.
     text: Which feature allows you to insert page numbers?
   - answer: B
@@ -599,7 +597,6 @@ sets:
       B: Search
       C: Locate
       D: All of the above
-      E: All of the above
     explanation: Find and Replace is the specific feature for locating and replacing
       text in documents.
     text: Which feature allows you to find and replace text?
@@ -619,7 +616,6 @@ sets:
       B: Insert
       C: Review
       D: All of the above
-      E: All of the above
     explanation: The References tab contains tools for creating footnotes and endnotes.
     text: Which feature allows you to create footnotes and endnotes?
   - answer: D
@@ -628,7 +624,6 @@ sets:
       B: To add passwords
       C: To encrypt files
       D: All of the above
-      E: All of the above
     explanation: Document Protection includes all these security measures to protect
       document content.
     text: What is the purpose of 'Document Protection'?
@@ -638,7 +633,6 @@ sets:
       B: Track Changes
       C: Document History
       D: All of the above
-      E: All of the above
     explanation: All of these features help create and manage different versions of
       documents.
     text: Which feature allows you to create and manage document versions?
@@ -2405,7 +2399,6 @@ sets:
       B: Energy Consumption
       C: Network Congestion
       D: All of the above
-      E: All of the above
     explanation: All of these are important risks and challenges in IoT.
     text: What risks and challenges should be considered in the Internet of Things?
     topic: Internet of Things

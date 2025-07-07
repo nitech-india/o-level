@@ -1607,7 +1607,6 @@ sets:
       B: np.array([1, 2, 3])
       C: numpy.array([1, 2, 3])
       D: All of the above
-      E: All of the above
     explanation: All these methods can create a NumPy array from a list.
     text: How do you create a NumPy array from a list?
   - answer: A
@@ -1671,7 +1670,6 @@ sets:
       B: numpy.array([1, 2, 3])
       C: array([1, 2, 3])
       D: All of the above
-      E: All of the above
     explanation: All these are valid ways to create a NumPy array from data.
     text: Which of the following are valid ways to create a NumPy array?
     type: multiple
