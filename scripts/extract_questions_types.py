@@ -52,13 +52,17 @@ def extract_and_append_questions_by_type(files, question_type, target_file, data
             continue
         for s in data['sets']:
             for q in s.get('questions', []):
-                if (
-                    q.get('type') == question_type
-                    and q.get('text') not in existing_texts
-                    and 'answer' in q
-                ):
-                    target_questions.append(q)
-                    existing_texts.add(q.get('text'))
+                if q.get('type') == question_type and q.get('text') not in existing_texts:
+                    # For match questions without answer field, generate answer from choices
+                    if question_type == 'match' and 'answer' not in q and 'choices' in q:
+                        q = q.copy()  # Create a copy to avoid modifying the original
+                        q['answer'] = [choice.get('right', '') for choice in q['choices']]
+                    
+                    # Only include questions that have an answer field (original or generated)
+                    if 'answer' in q:
+                        target_questions.append(q)
+                        existing_texts.add(q.get('text'))
+    
     target_data['sets'][0]['questions'] = target_questions
     write_yaml_file(target_path, target_data)
 
