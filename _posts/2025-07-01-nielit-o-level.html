@@ -30,22 +30,27 @@ date: 2025-07-01
     <h2>Module & Practice Summary</h2>
     <div class="modules-summary">
       <ul>
-        <li><strong>M1-R5: IT Tools and Business Systems</strong><br>
-          13 Sets | 529 Questions<br>          
-          <a href="{{ site.baseurl }}/m1r5/m1r5-practice">Start Practice</a>
-        </li>
-        <li><strong>M2-R5: Web Designing and Publishing</strong><br>
-          7 Sets | 287 Questions<br>
-          <a href="{{ site.baseurl }}/m2r5/m2r5-practice">Start Practice</a>
-        </li>
-        <li><strong>M3-R5: Programming and Problem Solving Through Python</strong><br>
-          6 Sets | 302 Questions<br>
-          <a href="{{ site.baseurl }}/m3r5/m3r5-practice">Start Practice</a>
-        </li>
-        <li><strong>M4-R5: Internet of Things and Its Applications</strong><br>
-          8 Sets | 280 Questions<br>
-          <a href="{{ site.baseurl }}/m4r5/m4r5-practice">Start Practice</a>
-        </li>
+        {% assign modules = site.data.course_modules.modules %}
+        {% for module in modules %}
+            {% if module.left_nav %}
+              <li><strong>{{ module.title }}</strong><br>
+                {% assign practice_key = module.code | replace: '-', '' | downcase | append: '_practice' %}
+                {% assign comprehensive_key = module.code | replace: '-', '' | downcase | append: '_comprehensive' %}
+                {% assign practice_sets = site.data[practice_key].sets | default: empty_array %}
+                {% assign comprehensive_sets = site.data[comprehensive_key].sets | default: empty_array %}
+                {% assign total_questions = 0 %}
+                {% assign total_sets = practice_sets.size | plus: comprehensive_sets.size %}
+                {% for set in practice_sets %}
+                  {% assign total_questions = total_questions | plus: set.questions.size %}
+                {% endfor %}
+                {% for set in comprehensive_sets %}
+                  {% assign total_questions = total_questions | plus: set.questions.size %}
+                {% endfor %}
+                {{ total_sets }} Sets | {{ total_questions }} Questions<br>                
+                <a href="{{ site.baseurl }}{{ module.url }}{{ module.code | downcase | replace: '-', '' }}-practice">Start Practice</a>
+              </li>
+            {% endif %}        
+        {% endfor %}
       </ul>
     </div>
 
@@ -53,10 +58,10 @@ date: 2025-07-01
       <p><strong>34 Practice Sets</strong> | <strong>1398 Total Questions</strong> | <strong>891 Unique Questions</strong></p>      
       <h3>Question Types Breakdown (Unique Questions)</h3>
       <ul>
-        <li>628 Single Answer Questions</li>
-        <li>245 Multiple Answer Questions</li>
-        <li>18 Match Together Questions</li>
-        <li>Total Unique Questions: 891</li>
+        <li>{{ site.single_answer_questions }} Single Answer Questions</li>
+        <li>{{ site.multiple_answer_questions }} Multiple Answer Questions</li>
+        <li>{{ site.match_together_questions }} Match Together Questions</li>
+        <li>Total Unique Questions: {{ site.unique_questions }}</li>
       </ul>
     </div>
 
