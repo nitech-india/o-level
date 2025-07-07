@@ -52,7 +52,11 @@ def extract_and_append_questions_by_type(files, question_type, target_file, data
             continue
         for s in data['sets']:
             for q in s.get('questions', []):
-                if q.get('type') == question_type and q.get('text') not in existing_texts:
+                if (
+                    q.get('type') == question_type
+                    and q.get('text') not in existing_texts
+                    and 'answer' in q
+                ):
                     target_questions.append(q)
                     existing_texts.add(q.get('text'))
     target_data['sets'][0]['questions'] = target_questions
