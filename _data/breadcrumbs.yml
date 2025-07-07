@@ -108,11 +108,7 @@
         url: /m4r5/m4r5-comprehensive/m4r5-comprehensive-1/
       - title: Practice Set 2
         url: /m4r5/m4r5-comprehensive/m4r5-comprehensive-2/
-  - title: Multiple Answer Questions    
-    children:
-    - title: Multiple Answer Questions
-      url: /question-types/multiple-answer-questions/multiple-answer-questions-1/
-  - title: Match Together Questions
-    children:
     - title: Match Together Questions
-      url: "/question-types/match-together-questions/match-together-questions-1/"
+      url: /question-types/match-together-questions/match-together-questions-1/
+    - title: Multiple Answer Questions
+      url: /question-types/multiple-answer-questions/multiple-answer-questions-1/      
