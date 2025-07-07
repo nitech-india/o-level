@@ -1,0 +1,148 @@
+---
+layout: default
+---
+
+{% assign ui = site.data.modules_data.ui_text %}
+{% assign module_code = page.module_name | downcase %}
+{% assign module = site.data.course_modules.modules | where: 'code', module_code | first %}
+
+<div class="practice-set-list">
+  <h1>
+    {% if module and module.title %}
+      {{ module.title }}: Practice Sets
+    {% elsif page.module_title %}
+      {{ page.module_title }}: Practice Sets
+    {% elsif page.module_name %}
+      {{ page.module_name }}: Practice Sets
+    {% else %}
+      Practice Sets
+    {% endif %}
+  </h1>
+  <p>This page contains practice sets for {% if module and module.title %}{{ module.title }}{% elsif page.module_title %}{{ page.module_title }}{% elsif page.module_name %}{{ page.module_name }}{% else %}this module{% endif %}.</p>
+  <p>Please choose a practice set to start the quiz.</p>
+  
+
+  <h2>{{ ui.topic_sets_header }}</h2>
+  {% assign sets_array = page.practice_sets | default: empty_array %}
+  {% if sets_array.size == nil and sets_array != nil %}
+    {%- assign sets_array = sets_array | array -%}
+  {% endif %}
+  <ul>
+    {% for set in sets_array %}
+      <li>
+        <a href="{{ site.baseurl }}{{ page.url }}{{ page.url | split: '/' | last }}-{{ set.id }}/">
+          {{ set.name }}
+        </a>
+        <span>({{ set.questions | size }} questions)</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if module and module.topics %}
+    <h2>Module Topics</h2>
+    <ul>
+      {% for topic in module.topics %}
+        <li>
+          <a href="{{ site.baseurl }}/pages/coming-soon.html" class="coming-soon">{{ topic.name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if page.comprehensive_sets and page.comprehensive_sets.size > 0 %}
+    <h2>Comprehensive Sets</h2>
+    <ul>
+      {% for set in page.comprehensive_sets %}
+        <li>
+          <a href="{{ site.baseurl }}{{ page.url | replace: 'practice', 'comprehensive' }}{{ page.url | split: '/' | last | replace: 'practice', 'comprehensive' }}-{{ set.id }}/">
+            {{ set.name }}
+          </a>
+          <span>({{ set.questions | size }} questions)</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+
+<style>
+  .practice-set-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .practice-set-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--md-on-surface, #333);
+    transition: color 0.3s;
+  }
+  .practice-set-list h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--md-on-surface, #333);
+    border-bottom: 2px solid var(--md-primary, #007bff);
+    padding-bottom: 5px;
+    transition: color 0.3s, border-color 0.3s;
+  }
+  .practice-set-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .practice-set-list li {
+    background: var(--md-surface-container, #f8f9fa);
+    color: var(--md-on-surface, #333);
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .practice-set-list li:hover {
+    background-color: var(--md-surface-container-high, #e9ecef);
+  }
+  .practice-set-list a {
+    text-decoration: none;
+    color: var(--md-primary, #007bff);
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  .practice-set-list span {
+    color: var(--md-on-surface-variant, #6c757d);
+    font-size: 0.9em;
+    transition: color 0.3s;
+  }
+  .start-practice-cta {
+    text-align: center;
+    margin: 25px 0 20px 0;
+  }
+  .start-practice-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--md-primary, #007bff);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.15em;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.2s, color 0.2s;
+  }
+  .start-practice-btn:hover {
+    background: #0056b3;
+    color: #fff;
+  }
+  .start-practice-btn .material-symbols-outlined {
+    font-size: 1.4em;
+    margin-right: 10px;
+  }
+  .practice-set-list a.coming-soon {
+    color: var(--md-primary, #007bff);
+    pointer-events: auto;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style> 

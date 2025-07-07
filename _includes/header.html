@@ -2,12 +2,17 @@
   <div class="header-bar">
     <div class="header-left">
       <span class="material-symbols-outlined header-icon">school</span>
-      <span class="site-title">NIELIT O Level Preparation @ NITECH</span>
+      <span class="site-title"> {{ site.title }} </span>
+      <span class="site-quote" style="font-size:0.98rem; font-weight:400; color:#e3f2fd; margin-left:1.5rem; white-space:normal; max-width:60vw; display:inline-block; vertical-align:middle;">True understanding is revealed not by what we remember, but by what we can apply—tests and quizzes are the mirrors that reflect the depth of our knowledge.</span>
     </div>
-    <img src="{{ '/assets/images/nitech-logo.png' | relative_url }}" alt="NITECH Logo" class="nitech-logo">
     {% if site.google_login %}
     <div id="auth-section" class="header-auth"></div>
     {% endif %}
+    <div class="top-logo-right">
+      <a href="{{ site.website }}" target="_blank">
+        <img src="{{ site.logo }}" alt="{{ site.institute }} Logo" style="height:44px; margin: 10px 24px 10px auto; float:right; display:block;" />
+      </a>
+    </div>
   </div>
 </header>
 

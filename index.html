@@ -1,6 +1,6 @@
 ---
 layout: default
-title: NITECH - NIELIT O Level Exam Preparation Resources
+title: Open AGI Codes Quiz
 ---
 
 <!-- Add Material Icons CDN -->
@@ -8,95 +8,62 @@ title: NITECH - NIELIT O Level Exam Preparation Resources
 <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 
 <div class="home">
-  <h1>NIELIT O Level Exam Preparation Resources</h1>
+  <h1>{{ site.main_heading }}</h1>
   
-  <p>Aims to help you prepare for the NIELIT O Level examination.</p>
+  <p>{{ site.main_subtitle }}</p>
 
-  <h2>Practice Sets Available</h2>
+  <h2>Try it now</h2>
   <div class="practice-stats">
     <div class="stats-grid">
-      <div class="stat-card card-m1">
-        <div class="stat-icon-circle card-m1"><span class="material-icons-outlined stat-icon">computer</span></div>
-        <div class="stat-title">M1-R5: IT Tools and Business Systems</div>
-        <div class="stat-numbers-row">
-          <div>
-            <span class="stat-number">{{ site.data.m1r5_practice.sets.size | plus: site.data.m1r5_comprehensive.sets.size }}</span>
-            <span class="stat-label">Sets</span>
+      {% assign modules = site.data.course_modules.modules %}
+      {% for module in modules %}
+        {% if module.left_nav %}
+        <div class="stat-card card-{{ module.code }}">
+          <div class="stat-icon-circle card-{{ module.code }}" style="border-color: {{ module.color }}"><span class="material-icons-outlined stat-icon" style="color: {{ module.color }}">{{ module.icon }}</span></div>
+          <div class="stat-title">{{ module.title }}</div>
+          <div class="stat-numbers-row">
+            <div>
+              <span class="stat-number">
+                {% assign practice_key = module.code | replace: '-', '' | downcase | append: '_practice' %}
+                {% assign comprehensive_key = module.code | replace: '-', '' | downcase | append: '_comprehensive' %}
+                {% assign practice_sets = site.data[practice_key].sets | default: empty_array %}
+                {% assign comprehensive_sets = site.data[comprehensive_key].sets | default: empty_array %}
+                {{ practice_sets.size | plus: comprehensive_sets.size }}
+              </span>
+              <span class="stat-label">Sets</span>
+            </div>
+            <div>
+              <span class="stat-number">
+                {% assign total_questions = 0 %}
+                {% for set in practice_sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+                {% for set in comprehensive_sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
+                {{ total_questions }}
+              </span>
+              <span class="stat-label">Questions</span>
+            </div>
           </div>
-          <div>
-            <span class="stat-number">
-              {% assign total_questions = 0 %}
-              {% for set in site.data.m1r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {% for set in site.data.m1r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {{ total_questions }}
-            </span>
-            <span class="stat-label">Questions</span>
-          </div>
+          <a href="{{ site.baseurl }}{{ module.url }}{{ module.code | downcase | replace: '-', '' }}-practice/" class="practice-link prominent">Start Practice</a>
         </div>
-        <a href="{{ site.baseurl }}/m1r5-practice/" class="practice-link prominent">Start Practice</a>
-      </div>
-      <div class="stat-card card-m2">
-        <div class="stat-icon-circle card-m2"><span class="material-icons-outlined stat-icon">view_sidebar</span></div>
-        <div class="stat-title">M2-R5: Web Designing and Publishing</div>
-        <div class="stat-numbers-row">
-          <div>
-            <span class="stat-number">{{ site.data.m2r5_practice.sets.size | plus: site.data.m2r5_comprehensive.sets.size }}</span>
-            <span class="stat-label">Sets</span>
-          </div>
-          <div>
-            <span class="stat-number">
-              {% assign total_questions = 0 %}
-              {% for set in site.data.m2r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {% for set in site.data.m2r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {{ total_questions }}
-            </span>
-            <span class="stat-label">Questions</span>
-          </div>
-        </div>
-        <a href="{{ site.baseurl }}/m2r5-practice/" class="practice-link prominent">Start Practice</a>
-      </div>
-      <div class="stat-card card-m3">
-        <div class="stat-icon-circle card-m3"><span class="material-icons-outlined stat-icon">code</span></div>
-        <div class="stat-title">M3-R5: Programming and Problem Solving Through Python</div>
-        <div class="stat-numbers-row">
-          <div>
-            <span class="stat-number">{{ site.data.m3r5_practice.sets.size | plus: site.data.m3r5_comprehensive.sets.size }}</span>
-            <span class="stat-label">Sets</span>
-          </div>
-          <div>
-            <span class="stat-number">
-              {% assign total_questions = 0 %}
-              {% for set in site.data.m3r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {% for set in site.data.m3r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {{ total_questions }}
-            </span>
-            <span class="stat-label">Questions</span>
-          </div>
-        </div>
-        <a href="{{ site.baseurl }}/m3r5-practice/" class="practice-link prominent">Start Practice</a>
-      </div>
-      <div class="stat-card card-m4">
-        <div class="stat-icon-circle card-m4"><span class="material-icons-outlined stat-icon">sensors</span></div>
-        <div class="stat-title">M4-R5: Internet of Things and Its Applications</div>
-        <div class="stat-numbers-row">
-          <div>
-            <span class="stat-number">{{ site.data.m4r5_practice.sets.size | plus: site.data.m4r5_comprehensive.sets.size }}</span>
-            <span class="stat-label">Sets</span>
-          </div>
-          <div>
-            <span class="stat-number">
-              {% assign total_questions = 0 %}
-              {% for set in site.data.m4r5_practice.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {% for set in site.data.m4r5_comprehensive.sets %}{% assign total_questions = total_questions | plus: set.questions.size %}{% endfor %}
-              {{ total_questions }}
-            </span>
-            <span class="stat-label">Questions</span>
-          </div>
-        </div>
-        <a href="{{ site.baseurl }}/m4r5-practice/" class="practice-link prominent">Start Practice</a>
-      </div>
+        {% endif %}
+      {% endfor %}
     </div>
     
+    <div class="question-types-section-horizontal">
+      <span class="section-title-horizontal">Question Types Breakdown</span>
+      <div class="question-types-grid-horizontal">        
+        <a href="{{ site.baseurl }}/question-types/multiple-answer-questions/multiple-answer-questions-1/" class="question-type-card-horizontal card-multiple">
+          <span class="material-icons-outlined">check_box</span>
+          <span class="question-type-number">{{ site.multiple_answer_questions }}</span>
+          <span class="question-type-label">Multiple Answer</span>
+        </a>
+        <a href="{{ site.baseurl }}/question-types/match-together-questions/match-together-questions-1/" class="question-type-card-horizontal card-match">
+          <span class="material-icons-outlined">link</span>
+          <span class="question-type-number">{{ site.match_together_questions }}</span>
+          <span class="question-type-label">Match Together</span>
+        </a>        
+      </div>
+    </div>
+
     <div class="total-card centered">
       <div class="total-line">
         <span class="total-number">
@@ -105,16 +72,7 @@ title: NITECH - NIELIT O Level Exam Preparation Resources
         <span class="total-label">Practice Sets</span>
         <span class="total-sep">|</span>
         <span class="total-number">
-          {% assign grand_total_questions = 0 %}
-          {% for set in site.data.m1r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {% for set in site.data.m1r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {% for set in site.data.m2r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {% for set in site.data.m2r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {% for set in site.data.m3r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {% for set in site.data.m3r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {% for set in site.data.m4r5_practice.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {% for set in site.data.m4r5_comprehensive.sets %}{% assign grand_total_questions = grand_total_questions | plus: set.questions.size %}{% endfor %}
-          {{ grand_total_questions }}
+          {{ site.total_questions }}          
         </span>
         <span class="total-label">Total Questions</span>
         <span class="total-sep">|</span>
@@ -123,86 +81,75 @@ title: NITECH - NIELIT O Level Exam Preparation Resources
       </div>
     </div>
     
-    <div class="question-types-card centered">
-      <div class="question-types-title">Question Types Breakdown</div>
-      <div class="question-types-grid">
-        <div class="question-type-item">
-          <span class="question-type-number">{{ site.single_answer_questions }}</span>
-          <span class="question-type-label">Single Answer</span>
-        </div>
-        <div class="question-type-item">
-          <span class="question-type-number">{{ site.multiple_answer_questions }}</span>
-          <span class="question-type-label">Multiple Answer</span>
-        </div>
-        <div class="question-type-item">
-          <span class="question-type-number">{{ site.match_together_questions }}</span>
-          <span class="question-type-label">Match Together</span>
+    <div class="course-table-container">
+      <h2>Exam Syllabus and Marking Scheme</h2>
+      <div class="course-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Module Code</th>
+              <th>Module</th>
+              <th>Theory Hours</th>
+              <th>Practical Hours</th>
+              <th>Total Hours</th>
+              <th>Theory Marks</th>
+              <th>Practical Marks</th>
+              <th>Total Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for module in site.data.course_modules.modules %}
+                <tr>
+                  <td>{{ module.display_code }}</td>
+                  {% if module.url %}
+                    <td><a href="{{ site.baseurl }}{{ module.url }}">{{ module.title }}</a></td>
+                  {% else %}
+                    <td>{{ module.title }}</td>
+                  {% endif %}
+                  <td>{{ module.theory_hours }}</td>
+                  <td>{{ module.practical_hours }}</td>
+                  <td>{{ module.total_hours }}</td>
+                  {% if module.note %}
+                    <td colspan="3">{{ module.note }}</td>
+                  {% else %}                  
+                    <td>{{ module.theory_marks.min }} - {{ module.theory_marks.max }}</td>
+                    {% if module.practical_marks %}
+                      <td>{{ module.practical_marks.min }} - {{ module.practical_marks.max }}</td>
+                    {% else %}
+                      <td></td>
+                    {% endif %}
+                    {% if module.total_marks %}
+                      <td>{{ module.total_marks.min }} - {{ module.total_marks.max }}</td>
+                    {% else %}
+                      <td></td>
+                    {% endif %}
+                  {% endif %}
+                </tr>
+            {% endfor %}
+            <tr class="total-row">
+              {% if site.data.course_modules.totals.show_marks %}
+              <td>Total</td>
+              <td></td>
+              <td>{{ site.data.course_modules.totals.theory_hours }}</td>
+              <td>{{ site.data.course_modules.totals.practical_hours }}</td>
+              <td>{{ site.data.course_modules.totals.total_hours }}</td>
+              <td colspan="3">{{ site.data.course_modules.max_marks_level }}</td>
+              {% endif %}
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="marking-note">          
+          <h3>{{ site.data.course_modules.note_on_marking_scheme_name }}</h3>
+          <ul>
+            {% for note in site.data.course_modules.note_on_marking_scheme %}
+              <li>{{ note }}</li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
-
-  <h2>Exam Syllabus and Marking Scheme</h2>
-
-  <div class="course-table">
-    <table>
-      <thead>
-        <tr>
-          <th>Module Code</th>
-          <th>Module</th>
-          <th>Theory Hours</th>
-          <th>Practical Hours</th>
-          <th>Total Hours</th>
-          <th>Theory Marks (Min-Max)</th>
-          <th>Practical Marks (Min-Max)</th>
-          <th>Total Marks (Min-Max)</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for module in site.data.course_modules.modules %}
-        <tr>
-          {% if module.url %}
-          <td data-label="Module Code"><a href="{{ site.baseurl }}{{ module.url }}">{{ module.code }}</a></td>
-          {% else %}
-          <td data-label="Module Code">{{ module.code }}</td>
-          {% endif %}
-          {% if module.url %}
-          <td data-label="Module Name"><a href="{{ site.baseurl }}{{ module.url }}">{{ module.name }}</a></td>
-          {% else %}
-          <td data-label="Module Name">{{ module.name }}</td>
-          {% endif %}
-          <td data-label="Theory Hours">{{ module.theory_hours }}</td>
-          <td data-label="Practical Hours">{{ module.practical_hours }}</td>
-          <td data-label="Total Hours">{{ module.total_hours }}</td>
-          {% if module.theory_marks %}
-          <td data-label="Theory Marks">{{ module.theory_marks.min }}-{{ module.theory_marks.max }}</td>
-          <td data-label="Practical Marks">{{ module.practical_marks.min }}-{{ module.practical_marks.max }}</td>
-          <td data-label="Total Marks">{{ module.total_marks.min }}-{{ module.total_marks.max }}</td>
-          {% else %}
-          <td data-label="Theory Marks" colspan="3">{% if module.note %}{{ module.note }}{% else %}-{% endif %}</td>
-          {% endif %}
-        </tr>
-        {% endfor %}
-        <tr class="total-row">
-          <td colspan="2" data-label="">Total</td>
-          <td data-label="Theory Hours">{{ site.data.course_modules.totals.theory_hours }}</td>
-          <td data-label="Practical Hours">{{ site.data.course_modules.totals.practical_hours }}</td>
-          <td data-label="Total Hours">{{ site.data.course_modules.totals.total_hours }}</td>
-          <td colspan="3" data-label="Maximum Marks">Maximum Marks in the level: {{ site.data.course_modules.totals.max_marks }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="marking-note">
-    <h3>Note on Marking Scheme:</h3>
-    <ul>
-      <li>Module Marks = 60% of Theory Marks + 40% of Practical Marks</li>
-      <li>Minimum passing marks are required in both theory and practical components</li>
-      <li>Project completion certificate is required to qualify for 'O' Level-IT</li>
-    </ul>
-  </div>
-
+    </div>    
+  </div> 
   {% if site.posts.size > 0 %}
     <h2>Latest Updates</h2>
     <ul class="post-list">
@@ -445,92 +392,83 @@ title: NITECH - NIELIT O Level Exam Preparation Resources
   transition: color 0.3s;
 }
 
-.question-types-card.centered {
+.question-types-section-horizontal {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background: var(--question-types-bg);
-  box-shadow: var(--stat-card-shadow);
+  background: var(--stat-card-bg);
   border-radius: 14px;
+  box-shadow: var(--stat-card-shadow);
+  padding: 0.7rem 1.2rem;
   margin: 2rem auto 0 auto;
-  padding: 2rem 3rem;
-  max-width: 900px;
-  min-width: 600px;
-  border: 2.5px solid var(--question-types-border);
-  transition: background 0.3s, border-color 0.3s;
+  width: fit-content;
+  border: 2px solid var(--stat-m2);
+  gap: 2rem;
 }
-
-.question-types-title {
+.section-title-horizontal {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--stat-title);
+  margin-right: 1.5rem;
+  white-space: nowrap;
+}
+.question-types-grid-horizontal {
+  display: flex;
+  gap: 1.2rem;
+}
+.question-type-card-horizontal {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: var(--stat-card-bg);
+  border-radius: 10px;
+  box-shadow: var(--stat-card-shadow);
+  padding: 0.5rem 1.1rem;
+  min-width: 0;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+  cursor: pointer;
+}
+.question-type-card-horizontal:hover {
+  box-shadow: 0 4px 16px rgba(33,150,243,0.15);
+  border-color: var(--stat-m2);
+  background: var(--stat-card-bg);
+}
+.card-single .material-icons-outlined { color: var(--stat-m1); }
+.card-multiple .material-icons-outlined { color: var(--stat-m2); }
+.card-match .material-icons-outlined { color: var(--stat-m3); }
+.question-type-number {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--question-types-title);
-  margin-bottom: 1.5rem;
-  text-align: center;
-  transition: color 0.3s;
+  color: var(--stat-title);
 }
-
-.question-types-grid {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  gap: 3rem;
-}
-
-.question-type-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.question-type-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--question-types-number);
-  margin-bottom: 0.5rem;
-  transition: color 0.3s;
-}
-
 .question-type-label {
-  font-size: 1.1rem;
-  color: var(--question-types-label);
+  font-size: 1rem;
+  color: var(--stat-label);
   font-weight: 500;
-  transition: color 0.3s;
+  white-space: nowrap;
 }
 @media (max-width: 900px) {
-  .stats-grid {
+  .question-types-section-horizontal {
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  .total-card.centered {
-    padding: 1.2rem 0.5rem;
-    max-width: 95vw;
-    min-width: unset;
-  }
-  .total-line {
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 1.1rem;
-  }
-  .total-number {
-    font-size: 1.5rem;
-  }
-  .question-types-card.centered {
-    padding: 1.2rem 0.5rem;
-    max-width: 95vw;
-    min-width: unset;
-  }
-  .question-types-grid {
-    flex-direction: column;
+    align-items: stretch;
     gap: 1rem;
+    width: 100%;
+    padding: 0.7rem 0.5rem;
   }
-  .question-type-number {
-    font-size: 1.8rem;
+  .section-title-horizontal {
+    margin-right: 0;
+    margin-bottom: 0.7rem;
+    text-align: center;
   }
-  .question-type-label {
-    font-size: 1rem;
+  .question-types-grid-horizontal {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: stretch;
+  }
+  .question-type-card-horizontal {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 

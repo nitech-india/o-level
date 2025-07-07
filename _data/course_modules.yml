@@ -1,6 +1,13 @@
 modules:
-  - code: M1-R5
-    name: Information Technology Tools and Network Basics
+  - code: m1r5
+    display_code: M1-R5
+    icon: computer
+    color: "#2196f3"
+    name: IT Tools
+    title: "M1-R5: Information Technology Tools and Network Basics"
+    left_nav: true
+    visible: true
+    show_marks: true
     theory_hours: 48
     practical_hours: 72
     total_hours: 120
@@ -13,7 +20,7 @@ modules:
     total_marks:
       min: 50
       max: 100
-    url: /M1-R5/
+    url: /m1r5/
     description: This module covers the fundamental concepts of Information Technology, computer hardware, software, and networking basics.
     topics:
       - name: Introduction to Computer, Introduction to Operating System
@@ -156,8 +163,15 @@ modules:
           - Data protection
           - Online safety
 
-  - code: M2-R5
-    name: Web Designing & Publishing
+  - code: m2r5
+    display_code: M2-R5
+    color: "#43a047"
+    icon: web
+    name: Web Design
+    title: "M2-R5: Web Designing & Publishing"
+    left_nav: true
+    visible: true
+    show_marks: true
     theory_hours: 48
     practical_hours: 72
     total_hours: 120
@@ -170,7 +184,7 @@ modules:
     total_marks:
       min: 50
       max: 100
-    url: /M2-R5/
+    url: /m2r5/
     description: This module covers web design fundamentals, HTML5, CSS3, JavaScript, and web publishing concepts.
     topics:
       - name: Introduction to Web Design and Editors, HTML Basics
@@ -290,8 +304,15 @@ modules:
           - Browser and HTTP
           - Publishing Tools
 
-  - code: M3-R5
-    name: Programming and Problem Solving through Python
+  - code: m3r5
+    display_code: M3-R5
+    icon: code
+    color: "#ffb300"
+    name: Python
+    title: "M3-R5: Programming and Problem Solving through Python"
+    left_nav: true
+    visible: true
+    show_marks: true
     theory_hours: 48
     practical_hours: 72
     total_hours: 120
@@ -304,7 +325,7 @@ modules:
     total_marks:
       min: 50
       max: 100
-    url: /M3-R5/
+    url: /m3r5/
     description: This module introduces programming concepts and problem-solving techniques using the Python programming language.
     topics:
       - name: Introduction to Programming, Algorithm and Flowcharts to solve problems
@@ -399,8 +420,15 @@ modules:
           - Array operations
           - Indexing and Slicing
 
-  - code: M4-R5
-    name: Internet of Things and its Applications
+  - code: m4r5
+    display_code: M4-R5
+    icon: sensors
+    color: "#8e24aa"
+    name: IoT
+    title: "M4-R5: Internet of Things and its Applications"
+    left_nav: true
+    visible: true
+    show_marks: true
     theory_hours: 48
     practical_hours: 72
     total_hours: 120
@@ -413,7 +441,7 @@ modules:
     total_marks:
       min: 50
       max: 100
-    url: /M4-R5/
+    url: /m4r5/
     description: This module covers the Internet of Things (IoT) technology, its architecture, and various applications in the modern world.
     topics:
       - name: Introduction to IoT – Applications/Devices, Protocols and Communication Model
@@ -512,20 +540,35 @@ modules:
           - Interview preparation
 
   - code: PR1-R5
+    display_code: PR1-R5
     name: Practical based on M1-R5, M2-R5, M3-R5 and M4-R5
+    title: "PR1-R5: Practical based on M1-R5, M2-R5, M3-R5 and M4-R5"
     theory_hours: 
     practical_hours: 
     total_hours: 
 
   - code: PJ1-R5
+    display_code: PJ1-R5
     name: Project
+    title: "PJ1-R5: Project"
     theory_hours: 
     practical_hours: 40
     total_hours: 40
     note: Project completion certificate is required to qualify 'O' Level-IT
 
 totals:
+  show_marks: true
   theory_hours: 192
   practical_hours: 328
   total_hours: 520
   max_marks: 400 
+
+max_marks_level: "Maximum Marks in the level: 400"
+
+note_on_marking_scheme_name: "Note on Marking Scheme:"
+note_on_marking_scheme:  
+  - "Module Marks = 60% of Theory Marks + 40% of Practical Marks"
+  - "Minimum passing marks are required in both theory and practical components"  
+  - "Project completion certificate is required to qualify for 'O' Level-IT"
+
+

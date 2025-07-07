@@ -44,9 +44,10 @@ jobs:
           pip3 install pyyaml
       - name: Update unique_questions and question types in _config.yml
         run: |
-          count=$(python3 scripts/count_unique_questions.py --count-only)
-          sed -i "s/^unique_questions: .*/unique_questions: $count/" _config.yml
           python3 scripts/count_unique_questions.py --update-config
+      - name: Extract questions by type
+        run: |
+          python3 scripts/extract_questions_types.py
           
       - name: Build with Jekyll (with plugins)
         run: |

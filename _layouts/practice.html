@@ -1,63 +1,34 @@
 ---
 layout: default
 ---
+
+{% assign ui = site.data.modules_data.ui_text %}
+
 <div class="practice-page">
     {% assign practice_data = page.practice_set %}
+    {% assign ui = site.data.modules_data.ui_text %}
     <div class="main-content" id="mainContent">
-        <h1>{{ page.title }}</h1>
-        
-        <div class="instructions collapsible-section">
-            <button class="collapsible-toggle" type="button" onclick="toggleSection('instructions-content', this)">Instructions & Exam Info ▼</button>
-            <div id="instructions-content" class="collapsible-content" style="display: none;">
-                {{ content | split: "<div class='exam-tips'>" | first }}
-                <div class="hint-info" style="margin-top:10px;color:#007bff;font-weight:500;">
-                  For questions with multiple correct answers, a hint will show how many choices to select.
-                </div>
-            </div>
-        </div>
-        {% assign exam_tips_html = content | split: "<div class='exam-tips'>" | last %}
-        {% if exam_tips_html contains '</div>' %}
-            <div class="exam-tips collapsible-section">
-                <button class="collapsible-toggle" type="button" onclick="toggleSection('exam-tips-content', this)">Exam Tips ▼</button>
-                <div id="exam-tips-content" class="collapsible-content" style="display: none;">
-                    <div class='exam-tips'>
-                        {{ exam_tips_html | split: '</div>' | first }}
-                    </div>
-                </div>
-            </div>
-        {% endif %}
-
-        <script>
-        const questionsData = [
-        {% for question in practice_data.questions %}
-            {
-                number: {{ forloop.index }},
-                text: {{ question.text | jsonify }},
-                answer: {{ question.answer | jsonify }},
-                type: {{ question.type | jsonify }},
-                explanation: {{ question.explanation | jsonify }},
-                choices: {{ question.choices | jsonify }},
-                indicator: {{ question.indicator | jsonify }}
-            }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-        ];
-        </script>
+        <!-- Removed: set info banner, instructions, exam info, and exam tips sections -->
         {% assign total_questions = practice_data.questions | size %}
         <form id="quizForm" data-total-questions="{{ total_questions }}">
             <div id="question-area"></div>
 
             <div class="pagination">
-                <button type="button" onclick="previousPage()" id="prevBtn" disabled>Previous</button>
-                <span id="pageInfo">Question <span id="currentPage">1</span> of <span id="totalPages">{{ total_questions }}</span></span>
-                <button type="button" onclick="nextPage()" id="nextBtn">Next</button>
+                <button type="button" onclick="previousPage()" id="prevBtn" disabled>{{ ui.previous }}</button>
+                <span id="pageInfo">{{ ui.question_of }} <span id="currentPage">1</span> of  <span id="totalPages">{{ total_questions }}</span></span>
+                <button type="button" onclick="nextPage()" id="nextBtn">{{ ui.next }}</button>
             </div>
 
             <div class="controls">
-                <button type="button" onclick="resetQuiz()">Reset</button>
+                <button type="button" onclick="resetQuiz()">{{ ui.reset }}</button>
             </div>
         </form>
-        
-        <!-- Include the reusable question component -->
+
+        <ul class="practice-features modern-card">
+            <li><span class="material-symbols-outlined">check_circle</span> Topic-specific practice sets</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Full-length comprehensive sets</li>
+            <li><span class="material-symbols-outlined">check_circle</span> Simulated exam conditions with time limits</li>
+        </ul>
     </div>
 
     <!-- Collapsible Progress Sidebar -->
@@ -70,14 +41,14 @@ layout: default
       <div class="progress-sidebar" id="progressSidebar">
           <div class="progress-header">
               <div class="progress-title">
-                  <h2>Progress</h2>
-                  <button type="button" onclick="resetQuiz()" class="reset-btn">Reset Quiz</button>
+                  <h2>{{ ui.progress | default: "Progress" }}</h2>
+                  <button type="button" onclick="resetQuiz()" class="reset-btn">{{ ui.reset_quiz | default: "Reset Quiz" }}</button>
               </div>
               <div class="progress-stats">
-                  <p>Score: <span id="score">0</span> / {{ total_questions }}</p>
-                  <p>Completed: <span id="completed">0</span> / {{ total_questions }}</p>
+                  <p>{{ ui.score | default: "Score" }}: <span id="score">0</span> / {{ total_questions }}</p>
+                  <p>{{ ui.completed | default: "Completed" }}: <span id="completed">0</span> / {{ total_questions }}</p>
                   {% if practice_data.duration_minutes %}
-                  <p>Time Left: <span id="timer">--:--</span></p>
+                  <p>{{ ui.time_left | default: "Time Left" }}: <span id="timer">--:--</span></p>
                   {% endif %}
               </div>
               <div class="progress-bar">
@@ -338,27 +309,42 @@ body[data-theme="dark"] .incorrect {
     }
 }
 
-.collapsible-toggle {
-    background: var(--md-primary, #007bff);
-    color: var(--md-on-primary, #fff);
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    text-align: center;
+.section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 0;
 }
-.collapsible-toggle:focus {
-    outline: 2px solid var(--md-primary-dark, #0056b3);
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    font-size: 1.4em;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
 }
-.collapsible-content {
-    transition: max-height 0.3s ease;
+.collapsible-toggle.with-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    min-width: 180px;
+    position: static !important;
+    margin-left: 0;
+}
+.instructions.collapsible-section, .exam-tips.collapsible-section {
+    padding-top: 0;
+    margin-bottom: 24px;
+}
+@media (max-width: 900px) {
+    .section-header, .collapsible-toggle.with-icon {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
 }
 
 .comprehensive-banner {
@@ -504,9 +490,149 @@ body[data-theme="dark"] .exam-tips ul {
         border-radius: 0;
     }
 }
+
+.practice-set-info {
+  background: var(--md-primary-container, #e3f2fd);
+  color: var(--md-on-primary-container, #0d223a);
+  border-left: 4px solid var(--md-primary, #1976d2);
+  padding: 14px 20px;
+  margin: 18px 0 24px 0;
+  border-radius: 6px;
+  font-size: 1.15em;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.07);
+  letter-spacing: 0.01em;
+  transition: background 0.3s, color 0.3s;
+}
+body[data-theme="dark"] .practice-set-info {
+  background: var(--md-primary-container, #1a237e);
+  color: var(--md-on-primary-container, #fff);
+  border-left-color: var(--md-primary, #90caf9);
+}
+
+.set-info-banner.modern-banner {
+  display: flex;
+  align-items: flex-start;
+  background: var(--module-banner-color, var(--md-primary, #1976d2));
+  color: var(--md-on-primary, #fff);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(33, 150, 243, 0.10);
+  padding: 22px 28px;
+  margin-bottom: 28px;
+  gap: 18px;
+}
+.set-info-banner[style] {
+  background: unset !important;
+}
+.set-info-banner[style] .banner-content,
+.set-info-banner[style] .banner-details {
+  color: #fff;
+}
+.set-info-banner .banner-icon {
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.set-info-banner .banner-content h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+.set-info-banner .banner-details {
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+  color: var(--md-on-primary, #fff);
+  font-size: 1em;
+}
+
+.practice-info.modern-card,
+.practice-features.modern-card,
+.exam-tips.modern-card {
+  background: var(--md-surface-container, #f8f9fa);
+  color: var(--md-on-surface, #333);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.07);
+  padding: 18px 24px;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+body[data-theme="dark"] .practice-info.modern-card,
+body[data-theme="dark"] .practice-features.modern-card,
+body[data-theme="dark"] .exam-tips.modern-card {
+  background: var(--md-surface-container, #23272f);
+  color: var(--md-on-surface, #fff);
+}
+
+.practice-features.modern-card {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.practice-features.modern-card li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.08em;
+}
+
+.exam-tips.modern-card.modern-tips {
+  background: var(--md-tertiary-container, #fff3cd);
+  color: #856404;
+  border-left: 5px solid var(--md-tertiary, #ffc107);
+  margin-top: 32px;
+}
+.exam-tips.modern-card.modern-tips .material-symbols-outlined {
+  color: #ffc107;
+}
+body[data-theme="dark"] .exam-tips.modern-card.modern-tips {
+  background: var(--md-tertiary-container, #3e2723);
+  color: #ffcc02;
+  border-left-color: var(--md-tertiary, #ffb74d);
+}
+body[data-theme="dark"] .exam-tips.modern-card.modern-tips .material-symbols-outlined {
+  color: #ffcc02;
+}
+.tips-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  gap: 8px;
+}
+.tips-list {
+  margin: 0;
+  padding-left: 20px;
+}
 </style>
 
 <!-- Load the reusable question JS -->
+<script>
+//<![CDATA[
+const questionsData = 
+{% if practice_data and practice_data.questions %}
+[
+  {% for question in practice_data.questions %}
+    {
+        number: {{ forloop.index }},
+        text: {{ question.text | jsonify }},
+        answer: {{ question.answer | jsonify }},
+        type: {{ question.type | jsonify }},
+        explanation: {{ question.explanation | jsonify }},
+        choices: {{ question.choices | jsonify }},
+        indicator: {{ question.indicator | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+{% else %}
+[]
+{% endif %};
+//]]>
+</script>
 <script src="{{ site.baseurl }}/assets/js/one-answer-question.js"></script>
 <script src="{{ site.baseurl }}/assets/js/multiple-answer-question.js"></script>
 <script src="{{ site.baseurl }}/assets/js/match-together-question.js"></script>
@@ -580,7 +706,7 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             clearInterval(timerInterval);
-            timerDisplay.textContent = "Time's up!";
+            timerDisplay.textContent = "{{ ui.times_up }}";
             const questionArea = document.getElementById('question-area');
             const pagination = document.querySelector('.pagination');
             if (questionArea) {
@@ -642,13 +768,18 @@ function updateProgress() {
 // Initialize the page when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // a graceful check if questionsData is not empty
-    if (typeof questionsData !== 'undefined' && questionsData.length > 0) {
-        document.querySelectorAll('.question-status').forEach(indicator => {
-            indicator.addEventListener('click', () => {
-                const questionNumber = parseInt(indicator.dataset.question);
-                renderQuestionPage(questionNumber);
+    if (typeof questionsData !== 'undefined' && Array.isArray(questionsData) && questionsData.length > 0) {
+        // Use event delegation for question-status clicks
+        const questionGrid = document.querySelector('.question-grid');
+        if (questionGrid) {
+            questionGrid.addEventListener('click', function(e) {
+                const indicator = e.target.closest('.question-status');
+                if (indicator) {
+                    const questionNumber = parseInt(indicator.dataset.question);
+                    renderQuestionPage(questionNumber);
+                }
             });
-        });
+        }
         
         // Listen for question answered events from the include
         document.addEventListener('questionAnswered', function(event) {
@@ -729,7 +860,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setSidebarState(true);
     } else {
         // Handle case where there are no questions
-        document.getElementById('question-area').innerHTML = '<p>No questions found for this module.</p>';
+        document.getElementById('question-area').innerHTML = '<p>{{ ui.no_questions }}</p>';
         document.querySelector('.pagination').style.display = 'none';
         document.querySelector('.progress-sidebar').style.display = 'none';
     }

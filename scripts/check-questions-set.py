@@ -3,6 +3,7 @@ import fnmatch
 import yaml
 from collections import Counter
 from collections import defaultdict
+import argparse
 
 def find_mxr_files(data_dir='_data'):
     """
@@ -27,31 +28,49 @@ def check_topic(question):
     if 'topic' not in question or question['topic'] == '':
         print(f"No topic: {question.get('text', '[No text field]')}")
 
-def discrpency_check(file):
-    with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+def discrpency_check(file, data_dir):
+    with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
         data = yaml.safe_load(f)
-        for s in data.get('sets', []):
+        if isinstance(data, dict) and 'sets' in data:
+            sets = data['sets']
+        elif isinstance(data, list):
+            sets = [{'questions': data}]
+        else:
+            sets = []
+        for s in sets:
             for question in s.get('questions', []):
                 check_explanation(question)
                 check_choices(question)
                 check_answer(question)
                 check_topic(question)
 
-def summarize_total_questions(files):
+def summarize_total_questions(files, data_dir):
     total_questions = 0
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 total_questions += len(s.get('questions', []))
     print(f"Total questions: {total_questions}")
 
-def summarize_questions_by_topic(files):
+def summarize_questions_by_topic(files, data_dir):
     topic_counter = Counter()
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 for question in s.get('questions', []):
                     topic = question.get('topic', '[No topic]')
                     topic_counter[topic] += 1
@@ -59,60 +78,90 @@ def summarize_questions_by_topic(files):
     for topic, count in topic_counter.items():
         print(f"  {topic}: {count}")
 
-def summarize_questions_by_module(files):
+def summarize_questions_by_module(files, data_dir):
     module_counter = {}
     for file in files:
         count = 0
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 count += len(s.get('questions', []))
         module_counter[file] = count
     print("Questions by module (file):")
     for module, count in module_counter.items():
         print(f"  {module}: {count}")
 
-def summarize_questions_by_set(files):
+def summarize_questions_by_set(files, data_dir):
     print("Questions by set:")
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 set_id = s.get('id', '[No id]')
                 set_name = s.get('name', '[No name]')
                 count = len(s.get('questions', []))
                 print(f"  {file} | Set {set_id} ({set_name}): {count}")
 
-def summarize_subtotal_by_pattern(files, pattern, label=None):
+def summarize_subtotal_by_pattern(files, pattern, label=None, data_dir='_data'):
     subtotal = 0
     set_count = 0
     matching_files = [f for f in files if fnmatch.fnmatch(f.lower(), pattern.lower())]
     for file in matching_files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 set_count += 1
                 subtotal += len(s.get('questions', []))
     label = label or pattern
     print(f"{label} - {set_count} Sets and {subtotal} Questions")
 
-def summarize_total_sets_and_questions(files):
+def summarize_total_sets_and_questions(files, data_dir):
     total_sets = 0
     total_questions = 0
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 total_sets += 1
                 total_questions += len(s.get('questions', []))
     print(f"{total_sets} Practice Sets {total_questions} Total Questions")
 
-def find_duplicate_questions(files):
+def find_duplicate_questions(files, data_dir):
     question_map = defaultdict(list)  # text -> list of (file, set_id, set_name)
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 set_id = s.get('id', '[No id]')
                 set_name = s.get('name', '[No name]')
                 for question in s.get('questions', []):
@@ -130,12 +179,18 @@ def find_duplicate_questions(files):
     if not found:
         print("No duplicates found.")
 
-def summarize_duplicates_by_file(files):
+def summarize_duplicates_by_file(files, data_dir):
     question_map = defaultdict(list)  # text -> list of (file, set_id, set_name)
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 set_id = s.get('id', '[No id]')
                 set_name = s.get('name', '[No name]')
                 for question in s.get('questions', []):
@@ -152,19 +207,25 @@ def summarize_duplicates_by_file(files):
     for file in files:
         print(f"{file}: {file_duplicate_count[file]} duplicate questions")
 
-def count_unique_questions(files):
+def count_unique_questions(files, data_dir):
     unique_questions = set()
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 for question in s.get('questions', []):
                     text = question.get('text', '').strip()
                     if text:
                         unique_questions.add(text)
     print(f"Total unique questions: {len(unique_questions)}")
 
-def count_question_types(files):
+def count_question_types(files, data_dir):
     """
     Count all types of unique questions across all modules.
     Question types:
@@ -177,9 +238,15 @@ def count_question_types(files):
     match_together_questions = set()
     
     for file in files:
-        with open(os.path.join('_data', file), 'r', encoding='utf-8-sig') as f:
+        with open(os.path.join(data_dir, file), 'r', encoding='utf-8-sig') as f:
             data = yaml.safe_load(f)
-            for s in data.get('sets', []):
+            if isinstance(data, dict) and 'sets' in data:
+                sets = data['sets']
+            elif isinstance(data, list):
+                sets = [{'questions': data}]
+            else:
+                sets = []
+            for s in sets:
                 for question in s.get('questions', []):
                     question_text = question.get('text', '').strip()
                     if question_text:  # Only count questions with text
@@ -203,20 +270,14 @@ def count_question_types(files):
     print(f"  Total Unique Questions: {total_questions}")
 
 if __name__ == "__main__":
-    #all_files = os.listdir('_data')
-    #print("All files in _data:", all_files)
-    files = find_mxr_files()
-    #print("Matching files:", files)
-    #summarize_total_questions(files)
-    #summarize_questions_by_module(files)
-    #summarize_questions_by_set(files)
-    #summarize_questions_by_topic(files)
-    summarize_subtotal_by_pattern(files, pattern='m1r5_*', label='M1-R5')
-    summarize_subtotal_by_pattern(files, pattern='m2r5_*', label='M2-R5')
-    summarize_subtotal_by_pattern(files, pattern='m3r5_*', label='M3-R5')
-    summarize_subtotal_by_pattern(files, pattern='m4r5_*', label='M4-R5')
-    summarize_total_sets_and_questions(files)
-    #find_duplicate_questions(files)
-    #summarize_duplicates_by_file(files)
-    #count_unique_questions(files)
-    count_question_types(files)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--data-dir', default='_data', help='Directory to scan for question files')
+    args = parser.parse_args()
+    data_dir = args.data_dir
+    files = find_mxr_files(data_dir)
+    summarize_subtotal_by_pattern(files, pattern='m1r5_*', label='M1-R5', data_dir=data_dir)
+    summarize_subtotal_by_pattern(files, pattern='m2r5_*', label='M2-R5', data_dir=data_dir)
+    summarize_subtotal_by_pattern(files, pattern='m3r5_*', label='M3-R5', data_dir=data_dir)
+    summarize_subtotal_by_pattern(files, pattern='m4r5_*', label='M4-R5', data_dir=data_dir)
+    summarize_total_sets_and_questions(files, data_dir)
+    count_question_types(files, data_dir)

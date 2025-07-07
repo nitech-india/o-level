@@ -1,0 +1,118 @@
+- title: Home
+  url: /
+  children:
+  - title: IT Tools
+    url: /m1r5/
+    children:
+    - title: Practice Sets
+      url: /m1r5/m1r5-practice/
+      children:
+      - title: Practice Set 1 - Computer Fundamentals & Operating System (10 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-1/
+      - title: Practice Set 2 - Word Processing (20 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-2/
+      - title: Practice Set 3 - Spreadsheet (20 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-3/
+      - title: Practice Set 4 - Presentation (20 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-4/
+      - title: Practice Set 5 - Internet and Digital Communication (20 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-5/
+      - title: Practice Set 6 - Digital Finance & Cyber Security (10 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-6/
+      - title: Practice Set 7 - Cyber Crime and Virus (10 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-7/
+      - title: Practice Set 8 - Future Skills, IoT & AI (10 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-8/
+      - title: Practice Set 9 - IT Tools and Network Basics (10 marks)
+        url: /m1r5/m1r5-practice/m1r5-practice-9/
+    - title: Comprehensive Sets
+      url: /m1r5/m1r5-comprehensive/
+      children:
+      - title: Practice Set 1
+        url: /m1r5/m1r5-comprehensive/m1r5-comprehensive-1/
+      - title: Practice Set 2
+        url: /m1r5/m1r5-comprehensive/m1r5-comprehensive-2/
+      - title: Practice Set 3
+        url: /m1r5/m1r5-comprehensive/m1r5-comprehensive-3/
+      - title: Practice Set 4
+        url: /m1r5/m1r5-comprehensive/m1r5-comprehensive-4/
+  - title: Web Design
+    url: /m2r5/
+    children:
+    - title: Practice Sets
+      url: /m2r5/m2r5-practice/
+      children:
+      - title: Practice Set 1 - Web Design Fundamentals & HTML Basics (25 marks)
+        url: /m2r5/m2r5-practice/m2r5-practice-1/
+      - title: Practice Set 2 - Cascading Style Sheets (CSS) (20 marks)
+        url: /m2r5/m2r5-practice/m2r5-practice-2/
+      - title: Practice Set 3 - CSS Framework (15 marks)
+        url: /m2r5/m2r5-practice/m2r5-practice-3/
+      - title: Practice Set 4 - JavaScript and Angular JS (20 marks)
+        url: /m2r5/m2r5-practice/m2r5-practice-4/
+      - title: Practice Set 5 - Photo Editor, Web Publishing and Browsing (20 marks)
+        url: /m2r5/m2r5-practice/m2r5-practice-5/
+    - title: Comprehensive Sets
+      url: /m2r5/m2r5-comprehensive/
+      children:
+      - title: Practice Set 1
+        url: /m2r5/m2r5-comprehensive/m2r5-comprehensive-1/
+      - title: Practice Set 2
+        url: /m2r5/m2r5-comprehensive/m2r5-comprehensive-2/
+  - title: Programming in Python
+    url: /m3r5/
+    children:
+    - title: Practice Sets
+      url: /m3r5/m3r5-practice/
+      children:
+      - title: Practice Set 1 - Introduction to Programming, Algorithm and Flowcharts
+          (20 marks)
+        url: /m3r5/m3r5-practice/m3r5-practice-1/
+      - title: Practice Set 2 - Introduction to Python, Operators, Expressions and
+          Python Statements, Sequence data types (30 marks)
+        url: /m3r5/m3r5-practice/m3r5-practice-2/
+      - title: Practice Set 3 - Functions, File Processing, Modules (40 marks)
+        url: /m3r5/m3r5-practice/m3r5-practice-3/
+      - title: Practice Set 4 - NumPy Basics (10 marks)
+        url: /m3r5/m3r5-practice/m3r5-practice-4/
+    - title: Comprehensive Sets
+      url: /m3r5/m3r5-comprehensive/
+      children:
+      - title: Practice Set 1
+        url: /m3r5/m3r5-comprehensive/m3r5-comprehensive-1/
+      - title: Practice Set 2
+        url: /m3r5/m3r5-comprehensive/m3r5-comprehensive-2/
+  - title: IoT
+    url: /m4r5/
+    children:
+    - title: Practice Sets
+      url: /m4r5/m4r5-practice/
+      children:
+      - title: Practice Set 1 - Introduction to IoT – Applications/Devices, Protocols
+          and Communication Model (10 marks)
+        url: /m4r5/m4r5-practice/m4r5-practice-1/
+      - title: Practice Set 2 - Things and Connections (10 marks)
+        url: /m4r5/m4r5-practice/m4r5-practice-2/
+      - title: Practice Set 3 - Sensors, Actuators and Microcontrollers (15 marks)
+        url: /m4r5/m4r5-practice/m4r5-practice-3/
+      - title: Practice Set 4 - Building IoT Applications (40 marks)
+        url: /m4r5/m4r5-practice/m4r5-practice-4/
+      - title: Practice Set 5 - Security and Future of IoT Ecosystem (5 marks)
+        url: /m4r5/m4r5-practice/m4r5-practice-5/
+      - title: Practice Set 6 - Soft skills-Personality Development (20 marks)
+        url: /m4r5/m4r5-practice/m4r5-practice-6/
+    - title: Comprehensive Sets
+      url: /m4r5/m4r5-comprehensive/
+      children:
+      - title: Practice Set 1
+        url: /m4r5/m4r5-comprehensive/m4r5-comprehensive-1/
+      - title: Practice Set 2
+        url: /m4r5/m4r5-comprehensive/m4r5-comprehensive-2/
+  - title: Multiple Answer Questions    
+    children:
+    - title: Multiple Answer Questions
+      url: /question-types/multiple-answer-questions/multiple-answer-questions-1/
+  - title: Match Together Questions
+    children:
+    - title: Match Together Questions
+      url: "/question-types/match-together-questions/match-together-questions-1/"

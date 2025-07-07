@@ -1,8 +1,14 @@
-title: NIELIT O Level Preparation @ NITECH
-short_title: NIELIT O Level
-description: NIELIT O Level Exam Resources and Study Materials
+title: "NIELIT O Level Preparation @ NITECH"
+short_title: "NIELIT O Level"
+description: "NIELIT O Level Exam Resources and Study Materials"
+main_heading: "NIELIT O Level Exam Preparation Resources" 
+main_subtitle: "Aims to help you prepare for the NIELIT O Level examination."
 baseurl: "/o-level"
 url: "https://nitech-india.github.io"
+favicon: "https://www.nitechindia.co.in/assets/img/favicon.jpeg"
+logo: "https://www.nitechindia.co.in/assets/img/logo.jpeg"
+keywords: "computer education, o level, computer, it literacy, computer course, career oriented, ccc, tally,tally prime, programming language, programming, computer education at indira nagar lucknow,computer education in lucknow,nielit courses,nielit,isc, icse, cbse, tally certification, ms office, excel, advance excel, libre office, office 365, upp,si,cgl,banking,railways,uppcl,secretriat aps,secretriat ro, aps, aro,best computer education lucknow, good computer education"
+website: "https://www.nitechindia.co.in"
 institute: "NITECH"
 version: "1.0"
 # Social media profiles
@@ -13,9 +19,9 @@ unique_questions: 926
 single_answer_questions: 653
 multiple_answer_questions: 254
 match_together_questions: 19
+total_questions: 1465
 # Google OAuth Configuration
 google_login: false
-google_client_id: "418717365642-ui85inftl59bj0gvcd3dqggukque4b7q.apps.googleusercontent.com"
 # Build settings
 plugins:
   - jekyll-optional-front-matter

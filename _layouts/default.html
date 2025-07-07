@@ -5,7 +5,6 @@
 </head>
 <body>
     {% include header.html %}
-    
     <div class="page-container">
         <div class="nav-drawer">
             <md-list>
@@ -13,26 +12,77 @@
                     <span class="material-symbols-outlined">home</span>
                     Home
                 </a>
-                <a href="{{ site.baseurl }}/M1-R5/" class="nav-item {% if page.url contains 'M1-R5' %}active{% endif %}">
-                    <span class="material-symbols-outlined">computer</span>
-                    IT Tools
-                </a>
-                <a href="{{ site.baseurl }}/M2-R5/" class="nav-item {% if page.url contains 'M2-R5' %}active{% endif %}">
-                    <span class="material-symbols-outlined">web</span>
-                    Web Design
-                </a>
-                <a href="{{ site.baseurl }}/M3-R5/" class="nav-item {% if page.url contains 'M3-R5' %}active{% endif %}">
-                    <span class="material-symbols-outlined">code</span>
-                    Programming in Python
-                </a>
-                <a href="{{ site.baseurl }}/M4-R5/" class="nav-item {% if page.url contains 'M4-R5' %}active{% endif %}">
-                    <span class="material-symbols-outlined">sensors</span>
-                    IoT
-                </a>
+                {% assign modules = site.data.course_modules.modules %}
+                {% for mod in modules %}
+                  {% if mod.left_nav %}
+                    <a href="{{ site.baseurl }}{{ mod.url }}" class="{% if page.url == mod.url %}active{% endif %} nav-item">
+                        <span class="material-symbols-outlined">{{ mod.icon }}</span>
+                        {{ mod.name }}
+                    </a>
+                  {% endif %}
+                {% endfor %}
             </md-list>
             {% include footer.html %}
         </div>
         <main class="main-content">
+            {% assign breadcrumbs = site.data.breadcrumbs %}
+            {% assign current_url = page.url | downcase %}
+            {% unless current_url == '/' or current_url == '' %}
+              {% assign current_url_last = current_url | slice: -1, 1 %}
+              {% if current_url_last != '/' %}
+                {% assign current_url = current_url | append: '/' %}
+              {% endif %}
+            {% endunless %}
+            {% assign breadcrumb_trail = '' | split: ',' %}
+            {% assign node_list = breadcrumbs %}
+            {% assign found_node = nil %}
+
+            {% for level in (1..6) %}
+              {% assign found_node = nil %}
+              {% for n in node_list %}
+                {% assign n_url = n.url | downcase %}
+                {% unless n_url == '/' or n_url == '' %}
+                  {% assign n_url_last = n_url | slice: -1, 1 %}
+                  {% if n_url_last != '/' %}
+                    {% assign n_url = n_url | append: '/' %}
+                  {% endif %}
+                {% endunless %}
+                {% if current_url contains n_url %}
+                  {% assign found_node = n %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if found_node %}
+                {% assign breadcrumb_trail = breadcrumb_trail | push: found_node %}
+                {% if found_node.url == current_url %}
+                  {% break %}
+                {% endif %}
+                {% if found_node.children %}
+                  {% assign node_list = found_node.children %}
+                {% else %}
+                  {% break %}
+                {% endif %}
+              {% else %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <ol class="breadcrumb-list">
+                    {% for crumb in breadcrumb_trail %}
+                        <li class="breadcrumb-item">
+                            {% if forloop.last %}
+                                <span>{{ crumb.title }}</span>
+                            {% else %}
+                              {% if crumb.url %}
+                                <a href="{{ site.baseurl }}{{ crumb.url }}">{{ crumb.title }}</a>
+                              {% else %}
+                                <span>{{ crumb.title }}</span>
+                              {% endif %}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ol>
+            </nav>
             {{ content }}
         </main>
     </div>
