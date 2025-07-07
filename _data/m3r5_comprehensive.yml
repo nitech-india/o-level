@@ -526,7 +526,6 @@ sets:
       B: import numpy as np
       C: from numpy import *
       D: All of the above
-      E: All of the above
     explanation: All these statements are valid ways to import NumPy.
     text: How do you import NumPy?
   - answer: B
